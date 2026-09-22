@@ -1,0 +1,34 @@
+# Vercel ignora .gitignore cuando existe este archivo, asi que aca va todo.
+#
+# Lo que SI necesita el build (no excluir):
+#   web/                          fuente Next.js
+#   src/*.py                      los copia scripts/sync-python.mjs a public/py/
+#   dashboard/build_dashboard.py  idem
+#   web/public/data/canonical-run.json  corrida precomputada (Vercel no tiene Python)
+
+# Dataset generado: 37 MB, se reconstruye con python src/data_generator.py
+# La barra inicial ancla a la raiz: sin ella se excluiria web/public/data/,
+# donde vive canonical-run.json.
+/data/
+
+# Salida del pipeline local. El dashboard no la lee en el build: usa la corrida
+# canonica ya exportada a web/public/data/.
+/results/
+
+# Entrada de desarrollo, no de build
+run_all.py
+README.md
+
+# Generados o instalados durante el build
+node_modules/
+.next/
+out/
+__pycache__/
+*.py[cod]
+web/public/py/
+web/lib/generated/
+*.tsbuildinfo
+
+# Credenciales
+.env
+.env*.local

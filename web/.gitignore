@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+.env*.local
+# generado por scripts/sync-python.mjs desde ../src
+public/py/
+lib/generated/

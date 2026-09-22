@@ -1,0 +1,823 @@
+{
+  "top_windows": [
+    {
+      "zone": "EL_POBLADO",
+      "minute": "2026-09-06T18:30",
+      "n_requests": 101,
+      "chaining": {
+        "loads": [
+          5,
+          5,
+          7,
+          7,
+          5,
+          6,
+          10,
+          4,
+          4,
+          8,
+          4,
+          6,
+          2,
+          8,
+          12,
+          8
+        ],
+        "max_load": 12,
+        "variance": 5.965
+      },
+      "power_of_two_choices": {
+        "loads": [
+          6,
+          7,
+          6,
+          7,
+          6,
+          6,
+          6,
+          6,
+          6,
+          7,
+          5,
+          8,
+          6,
+          6,
+          7,
+          6
+        ],
+        "max_load": 8,
+        "variance": 0.465
+      },
+      "theory": {
+        "avg_load": 6.312,
+        "chaining_expected_max": 12.23,
+        "p2c_expected_max": 7.78
+      }
+    },
+    {
+      "zone": "DOWNTOWN",
+      "minute": "2026-09-14T08:25",
+      "n_requests": 98,
+      "chaining": {
+        "loads": [
+          6,
+          6,
+          8,
+          7,
+          6,
+          2,
+          7,
+          4,
+          5,
+          9,
+          9,
+          5,
+          3,
+          6,
+          13,
+          2
+        ],
+        "max_load": 13,
+        "variance": 7.484
+      },
+      "power_of_two_choices": {
+        "loads": [
+          5,
+          7,
+          6,
+          7,
+          6,
+          6,
+          7,
+          5,
+          5,
+          7,
+          6,
+          5,
+          6,
+          7,
+          6,
+          7
+        ],
+        "max_load": 7,
+        "variance": 0.609
+      },
+      "theory": {
+        "avg_load": 6.125,
+        "chaining_expected_max": 11.95,
+        "p2c_expected_max": 7.6
+      }
+    },
+    {
+      "zone": "DOWNTOWN",
+      "minute": "2026-09-04T08:25",
+      "n_requests": 93,
+      "chaining": {
+        "loads": [
+          4,
+          11,
+          7,
+          6,
+          4,
+          5,
+          7,
+          6,
+          4,
+          8,
+          5,
+          4,
+          9,
+          1,
+          6,
+          6
+        ],
+        "max_load": 11,
+        "variance": 5.152
+      },
+      "power_of_two_choices": {
+        "loads": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          4,
+          5,
+          5,
+          6,
+          7,
+          6,
+          7,
+          7,
+          4,
+          6,
+          6
+        ],
+        "max_load": 7,
+        "variance": 0.777
+      },
+      "theory": {
+        "avg_load": 5.812,
+        "chaining_expected_max": 11.49,
+        "p2c_expected_max": 7.28
+      }
+    },
+    {
+      "zone": "DOWNTOWN",
+      "minute": "2026-09-05T17:30",
+      "n_requests": 93,
+      "chaining": {
+        "loads": [
+          5,
+          6,
+          4,
+          5,
+          5,
+          5,
+          5,
+          8,
+          9,
+          8,
+          4,
+          9,
+          5,
+          5,
+          7,
+          3
+        ],
+        "max_load": 9,
+        "variance": 3.152
+      },
+      "power_of_two_choices": {
+        "loads": [
+          6,
+          6,
+          6,
+          5,
+          6,
+          4,
+          5,
+          6,
+          6,
+          5,
+          6,
+          6,
+          6,
+          6,
+          7,
+          7
+        ],
+        "max_load": 7,
+        "variance": 0.527
+      },
+      "theory": {
+        "avg_load": 5.812,
+        "chaining_expected_max": 11.49,
+        "p2c_expected_max": 7.28
+      }
+    },
+    {
+      "zone": "EL_POBLADO",
+      "minute": "2026-09-07T18:30",
+      "n_requests": 93,
+      "chaining": {
+        "loads": [
+          5,
+          5,
+          4,
+          9,
+          9,
+          4,
+          4,
+          8,
+          7,
+          3,
+          3,
+          12,
+          3,
+          7,
+          5,
+          5
+        ],
+        "max_load": 12,
+        "variance": 6.402
+      },
+      "power_of_two_choices": {
+        "loads": [
+          7,
+          6,
+          7,
+          4,
+          5,
+          5,
+          7,
+          6,
+          6,
+          6,
+          6,
+          6,
+          5,
+          7,
+          5,
+          5
+        ],
+        "max_load": 7,
+        "variance": 0.777
+      },
+      "theory": {
+        "avg_load": 5.812,
+        "chaining_expected_max": 11.49,
+        "p2c_expected_max": 7.28
+      }
+    },
+    {
+      "zone": "EL_POBLADO",
+      "minute": "2026-09-13T18:30",
+      "n_requests": 93,
+      "chaining": {
+        "loads": [
+          5,
+          5,
+          6,
+          7,
+          4,
+          4,
+          7,
+          5,
+          2,
+          8,
+          4,
+          13,
+          6,
+          4,
+          8,
+          5
+        ],
+        "max_load": 13,
+        "variance": 5.902
+      },
+      "power_of_two_choices": {
+        "loads": [
+          7,
+          6,
+          6,
+          7,
+          5,
+          6,
+          6,
+          7,
+          3,
+          7,
+          7,
+          4,
+          5,
+          5,
+          6,
+          6
+        ],
+        "max_load": 7,
+        "variance": 1.277
+      },
+      "theory": {
+        "avg_load": 5.812,
+        "chaining_expected_max": 11.49,
+        "p2c_expected_max": 7.28
+      }
+    },
+    {
+      "zone": "DOWNTOWN",
+      "minute": "2026-09-11T17:30",
+      "n_requests": 92,
+      "chaining": {
+        "loads": [
+          4,
+          2,
+          9,
+          12,
+          8,
+          5,
+          4,
+          6,
+          2,
+          8,
+          4,
+          3,
+          8,
+          7,
+          5,
+          5
+        ],
+        "max_load": 12,
+        "variance": 7.062
+      },
+      "power_of_two_choices": {
+        "loads": [
+          6,
+          5,
+          7,
+          6,
+          5,
+          5,
+          6,
+          5,
+          6,
+          6,
+          6,
+          6,
+          6,
+          5,
+          5,
+          7
+        ],
+        "max_load": 7,
+        "variance": 0.438
+      },
+      "theory": {
+        "avg_load": 5.75,
+        "chaining_expected_max": 11.4,
+        "p2c_expected_max": 7.22
+      }
+    },
+    {
+      "zone": "DOWNTOWN",
+      "minute": "2026-09-07T17:25",
+      "n_requests": 91,
+      "chaining": {
+        "loads": [
+          6,
+          7,
+          6,
+          5,
+          5,
+          5,
+          8,
+          8,
+          6,
+          5,
+          8,
+          5,
+          4,
+          7,
+          2,
+          4
+        ],
+        "max_load": 8,
+        "variance": 2.59
+      },
+      "power_of_two_choices": {
+        "loads": [
+          6,
+          5,
+          6,
+          6,
+          6,
+          5,
+          5,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          4
+        ],
+        "max_load": 6,
+        "variance": 0.34
+      },
+      "theory": {
+        "avg_load": 5.688,
+        "chaining_expected_max": 11.3,
+        "p2c_expected_max": 7.16
+      }
+    },
+    {
+      "zone": "EL_POBLADO",
+      "minute": "2026-09-01T18:30",
+      "n_requests": 90,
+      "chaining": {
+        "loads": [
+          4,
+          7,
+          6,
+          6,
+          9,
+          9,
+          8,
+          7,
+          6,
+          4,
+          3,
+          5,
+          3,
+          5,
+          4,
+          4
+        ],
+        "max_load": 9,
+        "variance": 3.609
+      },
+      "power_of_two_choices": {
+        "loads": [
+          6,
+          6,
+          5,
+          4,
+          6,
+          6,
+          6,
+          7,
+          6,
+          6,
+          5,
+          3,
+          7,
+          5,
+          6,
+          6
+        ],
+        "max_load": 7,
+        "variance": 0.984
+      },
+      "theory": {
+        "avg_load": 5.625,
+        "chaining_expected_max": 11.21,
+        "p2c_expected_max": 7.1
+      }
+    },
+    {
+      "zone": "EL_POBLADO",
+      "minute": "2026-09-02T17:25",
+      "n_requests": 90,
+      "chaining": {
+        "loads": [
+          3,
+          4,
+          6,
+          9,
+          8,
+          2,
+          6,
+          6,
+          9,
+          4,
+          4,
+          7,
+          6,
+          7,
+          6,
+          3
+        ],
+        "max_load": 9,
+        "variance": 4.234
+      },
+      "power_of_two_choices": {
+        "loads": [
+          6,
+          6,
+          7,
+          3,
+          5,
+          6,
+          5,
+          8,
+          5,
+          6,
+          6,
+          4,
+          7,
+          7,
+          3,
+          6
+        ],
+        "max_load": 8,
+        "variance": 1.859
+      },
+      "theory": {
+        "avg_load": 5.625,
+        "chaining_expected_max": 11.21,
+        "p2c_expected_max": 7.1
+      }
+    },
+    {
+      "zone": "DOWNTOWN",
+      "minute": "2026-09-05T08:30",
+      "n_requests": 90,
+      "chaining": {
+        "loads": [
+          3,
+          7,
+          6,
+          6,
+          9,
+          2,
+          5,
+          9,
+          5,
+          4,
+          4,
+          6,
+          6,
+          5,
+          7,
+          6
+        ],
+        "max_load": 9,
+        "variance": 3.359
+      },
+      "power_of_two_choices": {
+        "loads": [
+          7,
+          6,
+          6,
+          5,
+          6,
+          6,
+          6,
+          4,
+          5,
+          6,
+          6,
+          6,
+          6,
+          4,
+          6,
+          5
+        ],
+        "max_load": 7,
+        "variance": 0.609
+      },
+      "theory": {
+        "avg_load": 5.625,
+        "chaining_expected_max": 11.21,
+        "p2c_expected_max": 7.1
+      }
+    },
+    {
+      "zone": "DOWNTOWN",
+      "minute": "2026-09-10T08:35",
+      "n_requests": 90,
+      "chaining": {
+        "loads": [
+          1,
+          8,
+          9,
+          4,
+          5,
+          5,
+          4,
+          5,
+          7,
+          7,
+          6,
+          8,
+          7,
+          7,
+          2,
+          5
+        ],
+        "max_load": 9,
+        "variance": 4.484
+      },
+      "power_of_two_choices": {
+        "loads": [
+          6,
+          8,
+          6,
+          6,
+          6,
+          5,
+          6,
+          5,
+          5,
+          5,
+          5,
+          5,
+          5,
+          7,
+          6,
+          4
+        ],
+        "max_load": 8,
+        "variance": 0.859
+      },
+      "theory": {
+        "avg_load": 5.625,
+        "chaining_expected_max": 11.21,
+        "p2c_expected_max": 7.1
+      }
+    },
+    {
+      "zone": "DOWNTOWN",
+      "minute": "2026-09-01T18:25",
+      "n_requests": 88,
+      "chaining": {
+        "loads": [
+          5,
+          8,
+          6,
+          3,
+          6,
+          3,
+          4,
+          5,
+          4,
+          7,
+          11,
+          7,
+          3,
+          6,
+          6,
+          4
+        ],
+        "max_load": 11,
+        "variance": 4.25
+      },
+      "power_of_two_choices": {
+        "loads": [
+          6,
+          6,
+          5,
+          6,
+          5,
+          5,
+          6,
+          7,
+          4,
+          6,
+          5,
+          6,
+          6,
+          4,
+          5,
+          6
+        ],
+        "max_load": 7,
+        "variance": 0.625
+      },
+      "theory": {
+        "avg_load": 5.5,
+        "chaining_expected_max": 11.02,
+        "p2c_expected_max": 6.97
+      }
+    },
+    {
+      "zone": "DOWNTOWN",
+      "minute": "2026-09-03T08:25",
+      "n_requests": 88,
+      "chaining": {
+        "loads": [
+          4,
+          6,
+          10,
+          3,
+          8,
+          8,
+          6,
+          4,
+          2,
+          2,
+          7,
+          3,
+          5,
+          3,
+          7,
+          10
+        ],
+        "max_load": 10,
+        "variance": 6.625
+      },
+      "power_of_two_choices": {
+        "loads": [
+          5,
+          3,
+          4,
+          5,
+          6,
+          7,
+          7,
+          5,
+          6,
+          7,
+          7,
+          4,
+          6,
+          6,
+          5,
+          5
+        ],
+        "max_load": 7,
+        "variance": 1.375
+      },
+      "theory": {
+        "avg_load": 5.5,
+        "chaining_expected_max": 11.02,
+        "p2c_expected_max": 6.97
+      }
+    },
+    {
+      "zone": "EL_POBLADO",
+      "minute": "2026-09-04T18:20",
+      "n_requests": 87,
+      "chaining": {
+        "loads": [
+          5,
+          6,
+          8,
+          3,
+          8,
+          7,
+          4,
+          1,
+          5,
+          6,
+          5,
+          7,
+          5,
+          7,
+          5,
+          5
+        ],
+        "max_load": 8,
+        "variance": 3.121
+      },
+      "power_of_two_choices": {
+        "loads": [
+          5,
+          5,
+          6,
+          4,
+          6,
+          6,
+          6,
+          6,
+          6,
+          6,
+          3,
+          5,
+          4,
+          7,
+          6,
+          6
+        ],
+        "max_load": 7,
+        "variance": 0.996
+      },
+      "theory": {
+        "avg_load": 5.438,
+        "chaining_expected_max": 10.93,
+        "p2c_expected_max": 6.91
+      }
+    }
+  ],
+  "summary": {
+    "B_buckets": 16,
+    "n_windows_analyzed": 34613,
+    "avg_max_load_chaining": 2.688,
+    "avg_max_load_p2c": 1.918,
+    "worst_max_load_chaining": 13,
+    "worst_max_load_p2c": 8,
+    "theory_note": "Cotas para el regimen cargado (n/B >> 1): chaining n/B + sqrt(2(n/B)ln B), P2C n/B + ln ln B / ln 2. Las formulas de clase (3 ln n / ln ln n y ln ln n / ln 2) suponen m = n y no aplican aqui."
+  }
+}
