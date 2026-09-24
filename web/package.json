@@ -1,0 +1,24 @@
+{
+  "name": "logica3-workshops",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "sync-python": "node scripts/sync-python.mjs",
+    "dev": "npm run sync-python && next dev",
+    "build": "npm run sync-python && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export-canonical": "python scripts/export_canonical.py"
+  },
+  "dependencies": {
+    "next": "^15.5.25",
+    "react": "19.1.0",
+    "react-dom": "19.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "typescript": "^5.6"
+  }
+}

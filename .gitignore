@@ -1,0 +1,51 @@
+# ---------------------------------------------------------------------------
+# Dataset generado
+# ---------------------------------------------------------------------------
+# rides.csv pesa ~36 MB y es reproducible byte a byte con un solo comando
+# (python src/data_generator.py), porque el generador es determinista para
+# unos parametros y una semilla dados. No tiene sentido versionarlo.
+data/rides.csv
+data/*.csv
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+
+# ---------------------------------------------------------------------------
+# App web (web/)
+# ---------------------------------------------------------------------------
+node_modules/
+.next/
+out/
+next-env.d.ts
+.vercel/
+*.tsbuildinfo
+
+# Generados por scripts/sync-python.mjs desde ../src — no se editan a mano.
+web/public/py/
+web/lib/generated/
+
+# Variables de entorno. El proyecto no necesita ninguna, pero si alguien
+# agrega un .env local no debe terminar en el repo.
+.env
+.env.local
+.env*.local
+
+# ---------------------------------------------------------------------------
+# Sistema operativo y editores
+# ---------------------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+*.swp
+.idea/
+.vscode/*
+!.vscode/settings.json
+
+.vercel
