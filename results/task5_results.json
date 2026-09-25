@@ -1,0 +1,2407 @@
+{
+  "task": "Task 5 - Probability Analysis",
+  "delta_surge": 0.5,
+  "total_records_analyzed": 240,
+  "data": [
+    {
+      "zone": "AIRPORT",
+      "hour": 0,
+      "mean_requests": 117.43,
+      "variance": 110.53,
+      "threshold": 176.14,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 3e-06,
+      "chebyshev_bound": 0.032062
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 1,
+      "mean_requests": 91.57,
+      "variance": 85.1,
+      "threshold": 137.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 5e-05,
+      "chebyshev_bound": 0.040596
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 2,
+      "mean_requests": 86.64,
+      "variance": 65.09,
+      "threshold": 129.96,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 8.5e-05,
+      "chebyshev_bound": 0.034681
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 3,
+      "mean_requests": 86.43,
+      "variance": 102.53,
+      "threshold": 129.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 8.7e-05,
+      "chebyshev_bound": 0.054903
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 4,
+      "mean_requests": 119.29,
+      "variance": 118.78,
+      "threshold": 178.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 2e-06,
+      "chebyshev_bound": 0.03339
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 5,
+      "mean_requests": 184.93,
+      "variance": 114.92,
+      "threshold": 277.39,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.013442
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 6,
+      "mean_requests": 246.21,
+      "variance": 161.74,
+      "threshold": 369.32,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.010672
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 7,
+      "mean_requests": 273.0,
+      "variance": 149.71,
+      "threshold": 409.5,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.008035
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 8,
+      "mean_requests": 238.29,
+      "variance": 107.2,
+      "threshold": 357.43,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.007552
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 9,
+      "mean_requests": 214.93,
+      "variance": 209.35,
+      "threshold": 322.39,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.018128
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 10,
+      "mean_requests": 213.21,
+      "variance": 163.31,
+      "threshold": 319.82,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.01437
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 11,
+      "mean_requests": 250.07,
+      "variance": 120.64,
+      "threshold": 375.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.007716
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 12,
+      "mean_requests": 246.29,
+      "variance": 129.49,
+      "threshold": 369.43,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.008539
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 13,
+      "mean_requests": 212.07,
+      "variance": 201.92,
+      "threshold": 318.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.017959
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 14,
+      "mean_requests": 211.64,
+      "variance": 134.94,
+      "threshold": 317.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.012051
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 15,
+      "mean_requests": 243.07,
+      "variance": 237.78,
+      "threshold": 364.61,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.016098
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 16,
+      "mean_requests": 264.14,
+      "variance": 342.41,
+      "threshold": 396.21,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.01963
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 17,
+      "mean_requests": 301.0,
+      "variance": 213.14,
+      "threshold": 451.5,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.00941
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 18,
+      "mean_requests": 324.43,
+      "variance": 314.67,
+      "threshold": 486.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011959
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 19,
+      "mean_requests": 298.71,
+      "variance": 199.63,
+      "threshold": 448.07,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.008949
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 20,
+      "mean_requests": 237.64,
+      "variance": 217.23,
+      "threshold": 356.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.015386
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 21,
+      "mean_requests": 211.86,
+      "variance": 125.55,
+      "threshold": 317.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011189
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 22,
+      "mean_requests": 182.57,
+      "variance": 92.53,
+      "threshold": 273.86,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011104
+    },
+    {
+      "zone": "AIRPORT",
+      "hour": 23,
+      "mean_requests": 144.86,
+      "variance": 278.69,
+      "threshold": 217.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.053126
+    },
+    {
+      "zone": "BELEN",
+      "hour": 0,
+      "mean_requests": 30.64,
+      "variance": 29.52,
+      "threshold": 45.96,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.036316,
+      "chebyshev_bound": 0.125733
+    },
+    {
+      "zone": "BELEN",
+      "hour": 1,
+      "mean_requests": 29.43,
+      "variance": 30.67,
+      "threshold": 44.14,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.041415,
+      "chebyshev_bound": 0.141672
+    },
+    {
+      "zone": "BELEN",
+      "hour": 2,
+      "mean_requests": 28.86,
+      "variance": 17.84,
+      "threshold": 43.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.044057,
+      "chebyshev_bound": 0.085678
+    },
+    {
+      "zone": "BELEN",
+      "hour": 3,
+      "mean_requests": 28.21,
+      "variance": 21.88,
+      "threshold": 42.32,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.04723,
+      "chebyshev_bound": 0.109957
+    },
+    {
+      "zone": "BELEN",
+      "hour": 4,
+      "mean_requests": 30.36,
+      "variance": 40.37,
+      "threshold": 45.54,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.037457,
+      "chebyshev_bound": 0.175236
+    },
+    {
+      "zone": "BELEN",
+      "hour": 5,
+      "mean_requests": 32.07,
+      "variance": 16.64,
+      "threshold": 48.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.031115,
+      "chebyshev_bound": 0.064702
+    },
+    {
+      "zone": "BELEN",
+      "hour": 6,
+      "mean_requests": 93.29,
+      "variance": 67.78,
+      "threshold": 139.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 4.1e-05,
+      "chebyshev_bound": 0.031153
+    },
+    {
+      "zone": "BELEN",
+      "hour": 7,
+      "mean_requests": 179.43,
+      "variance": 348.39,
+      "threshold": 269.14,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.043285
+    },
+    {
+      "zone": "BELEN",
+      "hour": 8,
+      "mean_requests": 181.71,
+      "variance": 175.49,
+      "threshold": 272.57,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.021259
+    },
+    {
+      "zone": "BELEN",
+      "hour": 9,
+      "mean_requests": 151.79,
+      "variance": 125.6,
+      "threshold": 227.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.021806
+    },
+    {
+      "zone": "BELEN",
+      "hour": 10,
+      "mean_requests": 147.93,
+      "variance": 131.78,
+      "threshold": 221.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.024088
+    },
+    {
+      "zone": "BELEN",
+      "hour": 11,
+      "mean_requests": 146.86,
+      "variance": 172.12,
+      "threshold": 220.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.031923
+    },
+    {
+      "zone": "BELEN",
+      "hour": 12,
+      "mean_requests": 185.86,
+      "variance": 64.84,
+      "threshold": 278.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.007508
+    },
+    {
+      "zone": "BELEN",
+      "hour": 13,
+      "mean_requests": 149.57,
+      "variance": 155.53,
+      "threshold": 224.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.027809
+    },
+    {
+      "zone": "BELEN",
+      "hour": 14,
+      "mean_requests": 148.07,
+      "variance": 148.21,
+      "threshold": 222.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.027039
+    },
+    {
+      "zone": "BELEN",
+      "hour": 15,
+      "mean_requests": 179.43,
+      "variance": 204.67,
+      "threshold": 269.14,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.02543
+    },
+    {
+      "zone": "BELEN",
+      "hour": 16,
+      "mean_requests": 215.57,
+      "variance": 226.82,
+      "threshold": 323.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.019523
+    },
+    {
+      "zone": "BELEN",
+      "hour": 17,
+      "mean_requests": 242.14,
+      "variance": 142.98,
+      "threshold": 363.21,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.009754
+    },
+    {
+      "zone": "BELEN",
+      "hour": 18,
+      "mean_requests": 207.0,
+      "variance": 128.0,
+      "threshold": 310.5,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011949
+    },
+    {
+      "zone": "BELEN",
+      "hour": 19,
+      "mean_requests": 145.79,
+      "variance": 124.6,
+      "threshold": 218.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.02345
+    },
+    {
+      "zone": "BELEN",
+      "hour": 20,
+      "mean_requests": 121.57,
+      "variance": 125.53,
+      "threshold": 182.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 2e-06,
+      "chebyshev_bound": 0.033974
+    },
+    {
+      "zone": "BELEN",
+      "hour": 21,
+      "mean_requests": 92.43,
+      "variance": 81.24,
+      "threshold": 138.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 4.5e-05,
+      "chebyshev_bound": 0.03804
+    },
+    {
+      "zone": "BELEN",
+      "hour": 22,
+      "mean_requests": 60.93,
+      "variance": 48.92,
+      "threshold": 91.39,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001371,
+      "chebyshev_bound": 0.052715
+    },
+    {
+      "zone": "BELEN",
+      "hour": 23,
+      "mean_requests": 32.21,
+      "variance": 55.88,
+      "threshold": 48.32,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.030638,
+      "chebyshev_bound": 0.215397
+    },
+    {
+      "zone": "BELLO",
+      "hour": 0,
+      "mean_requests": 31.43,
+      "variance": 34.96,
+      "threshold": 47.14,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.033357,
+      "chebyshev_bound": 0.14157
+    },
+    {
+      "zone": "BELLO",
+      "hour": 1,
+      "mean_requests": 28.14,
+      "variance": 39.41,
+      "threshold": 42.21,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.047597,
+      "chebyshev_bound": 0.199026
+    },
+    {
+      "zone": "BELLO",
+      "hour": 2,
+      "mean_requests": 30.64,
+      "variance": 36.23,
+      "threshold": 45.96,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.036316,
+      "chebyshev_bound": 0.154335
+    },
+    {
+      "zone": "BELLO",
+      "hour": 3,
+      "mean_requests": 31.0,
+      "variance": 21.43,
+      "threshold": 46.5,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.03494,
+      "chebyshev_bound": 0.089193
+    },
+    {
+      "zone": "BELLO",
+      "hour": 4,
+      "mean_requests": 30.86,
+      "variance": 13.27,
+      "threshold": 46.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.035484,
+      "chebyshev_bound": 0.055727
+    },
+    {
+      "zone": "BELLO",
+      "hour": 5,
+      "mean_requests": 60.5,
+      "variance": 77.39,
+      "threshold": 90.75,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001436,
+      "chebyshev_bound": 0.084577
+    },
+    {
+      "zone": "BELLO",
+      "hour": 6,
+      "mean_requests": 116.71,
+      "variance": 50.35,
+      "threshold": 175.07,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 3e-06,
+      "chebyshev_bound": 0.014784
+    },
+    {
+      "zone": "BELLO",
+      "hour": 7,
+      "mean_requests": 209.79,
+      "variance": 259.31,
+      "threshold": 314.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.023568
+    },
+    {
+      "zone": "BELLO",
+      "hour": 8,
+      "mean_requests": 206.14,
+      "variance": 231.69,
+      "threshold": 309.21,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.021809
+    },
+    {
+      "zone": "BELLO",
+      "hour": 9,
+      "mean_requests": 147.79,
+      "variance": 101.74,
+      "threshold": 221.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.018633
+    },
+    {
+      "zone": "BELLO",
+      "hour": 10,
+      "mean_requests": 150.36,
+      "variance": 65.09,
+      "threshold": 225.54,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011516
+    },
+    {
+      "zone": "BELLO",
+      "hour": 11,
+      "mean_requests": 180.21,
+      "variance": 101.03,
+      "threshold": 270.32,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.012443
+    },
+    {
+      "zone": "BELLO",
+      "hour": 12,
+      "mean_requests": 175.64,
+      "variance": 180.66,
+      "threshold": 263.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.023424
+    },
+    {
+      "zone": "BELLO",
+      "hour": 13,
+      "mean_requests": 146.86,
+      "variance": 95.98,
+      "threshold": 220.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.017801
+    },
+    {
+      "zone": "BELLO",
+      "hour": 14,
+      "mean_requests": 146.5,
+      "variance": 121.11,
+      "threshold": 219.75,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.022571
+    },
+    {
+      "zone": "BELLO",
+      "hour": 15,
+      "mean_requests": 187.36,
+      "variance": 98.23,
+      "threshold": 281.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011193
+    },
+    {
+      "zone": "BELLO",
+      "hour": 16,
+      "mean_requests": 236.21,
+      "variance": 162.17,
+      "threshold": 354.32,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011626
+    },
+    {
+      "zone": "BELLO",
+      "hour": 17,
+      "mean_requests": 270.57,
+      "variance": 284.39,
+      "threshold": 405.86,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.015538
+    },
+    {
+      "zone": "BELLO",
+      "hour": 18,
+      "mean_requests": 237.86,
+      "variance": 174.41,
+      "threshold": 356.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.012331
+    },
+    {
+      "zone": "BELLO",
+      "hour": 19,
+      "mean_requests": 185.07,
+      "variance": 207.64,
+      "threshold": 277.61,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.024249
+    },
+    {
+      "zone": "BELLO",
+      "hour": 20,
+      "mean_requests": 115.93,
+      "variance": 161.21,
+      "threshold": 173.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 4e-06,
+      "chebyshev_bound": 0.047981
+    },
+    {
+      "zone": "BELLO",
+      "hour": 21,
+      "mean_requests": 89.5,
+      "variance": 24.68,
+      "threshold": 134.25,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 6.2e-05,
+      "chebyshev_bound": 0.012323
+    },
+    {
+      "zone": "BELLO",
+      "hour": 22,
+      "mean_requests": 61.64,
+      "variance": 43.09,
+      "threshold": 92.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001269,
+      "chebyshev_bound": 0.045356
+    },
+    {
+      "zone": "BELLO",
+      "hour": 23,
+      "mean_requests": 29.21,
+      "variance": 25.03,
+      "threshold": 43.82,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.042387,
+      "chebyshev_bound": 0.117288
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 0,
+      "mean_requests": 56.93,
+      "variance": 39.35,
+      "threshold": 85.39,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.002113,
+      "chebyshev_bound": 0.04857
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 1,
+      "mean_requests": 28.07,
+      "variance": 20.21,
+      "threshold": 42.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.047966,
+      "chebyshev_bound": 0.102584
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 2,
+      "mean_requests": 29.79,
+      "variance": 27.03,
+      "threshold": 44.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.039846,
+      "chebyshev_bound": 0.121848
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 3,
+      "mean_requests": 30.0,
+      "variance": 29.0,
+      "threshold": 45.0,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.038932,
+      "chebyshev_bound": 0.128889
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 4,
+      "mean_requests": 31.07,
+      "variance": 16.78,
+      "threshold": 46.61,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.034671,
+      "chebyshev_bound": 0.069526
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 5,
+      "mean_requests": 59.93,
+      "variance": 84.64,
+      "threshold": 89.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001527,
+      "chebyshev_bound": 0.094266
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 6,
+      "mean_requests": 147.5,
+      "variance": 106.68,
+      "threshold": 221.25,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.019613
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 7,
+      "mean_requests": 420.93,
+      "variance": 282.92,
+      "threshold": 631.39,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.006387
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 8,
+      "mean_requests": 483.14,
+      "variance": 568.41,
+      "threshold": 724.71,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.00974
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 9,
+      "mean_requests": 237.29,
+      "variance": 240.2,
+      "threshold": 355.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.017065
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 10,
+      "mean_requests": 179.0,
+      "variance": 225.57,
+      "threshold": 268.5,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.02816
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 11,
+      "mean_requests": 182.29,
+      "variance": 281.2,
+      "threshold": 273.43,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.033851
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 12,
+      "mean_requests": 204.86,
+      "variance": 140.84,
+      "threshold": 307.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.013424
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 13,
+      "mean_requests": 177.93,
+      "variance": 255.78,
+      "threshold": 266.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.032317
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 14,
+      "mean_requests": 176.86,
+      "variance": 212.98,
+      "threshold": 265.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.027237
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 15,
+      "mean_requests": 243.86,
+      "variance": 126.41,
+      "threshold": 365.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.008503
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 16,
+      "mean_requests": 305.36,
+      "variance": 254.37,
+      "threshold": 458.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.010912
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 17,
+      "mean_requests": 478.93,
+      "variance": 327.07,
+      "threshold": 718.39,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.005704
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 18,
+      "mean_requests": 438.79,
+      "variance": 238.17,
+      "threshold": 658.18,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.004948
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 19,
+      "mean_requests": 271.29,
+      "variance": 157.2,
+      "threshold": 406.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.008544
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 20,
+      "mean_requests": 173.36,
+      "variance": 136.37,
+      "threshold": 260.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.018151
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 21,
+      "mean_requests": 117.64,
+      "variance": 111.52,
+      "threshold": 176.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 3e-06,
+      "chebyshev_bound": 0.03223
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 22,
+      "mean_requests": 88.5,
+      "variance": 104.96,
+      "threshold": 132.75,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 6.9e-05,
+      "chebyshev_bound": 0.053606
+    },
+    {
+      "zone": "DOWNTOWN",
+      "hour": 23,
+      "mean_requests": 60.07,
+      "variance": 52.64,
+      "threshold": 90.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001504,
+      "chebyshev_bound": 0.058347
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 0,
+      "mean_requests": 87.29,
+      "variance": 72.63,
+      "threshold": 130.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 7.9e-05,
+      "chebyshev_bound": 0.038133
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 1,
+      "mean_requests": 59.29,
+      "variance": 99.35,
+      "threshold": 88.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001638,
+      "chebyshev_bound": 0.113061
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 2,
+      "mean_requests": 29.43,
+      "variance": 26.82,
+      "threshold": 44.14,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.041415,
+      "chebyshev_bound": 0.123857
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 3,
+      "mean_requests": 29.0,
+      "variance": 31.71,
+      "threshold": 43.5,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.043381,
+      "chebyshev_bound": 0.150841
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 4,
+      "mean_requests": 31.64,
+      "variance": 19.23,
+      "threshold": 47.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.032592,
+      "chebyshev_bound": 0.076821
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 5,
+      "mean_requests": 62.64,
+      "variance": 33.94,
+      "threshold": 93.96,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001139,
+      "chebyshev_bound": 0.0346
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 6,
+      "mean_requests": 116.86,
+      "variance": 61.41,
+      "threshold": 175.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 3e-06,
+      "chebyshev_bound": 0.017988
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 7,
+      "mean_requests": 241.36,
+      "variance": 133.23,
+      "threshold": 362.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.009148
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 8,
+      "mean_requests": 269.57,
+      "variance": 213.82,
+      "threshold": 404.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011769
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 9,
+      "mean_requests": 207.93,
+      "variance": 119.35,
+      "threshold": 311.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011042
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 10,
+      "mean_requests": 212.14,
+      "variance": 119.27,
+      "threshold": 318.21,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.0106
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 11,
+      "mean_requests": 235.93,
+      "variance": 250.07,
+      "threshold": 353.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.01797
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 12,
+      "mean_requests": 262.86,
+      "variance": 70.41,
+      "threshold": 394.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.004076
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 13,
+      "mean_requests": 236.0,
+      "variance": 167.0,
+      "threshold": 354.0,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011994
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 14,
+      "mean_requests": 241.14,
+      "variance": 160.98,
+      "threshold": 361.71,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011073
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 15,
+      "mean_requests": 268.21,
+      "variance": 332.31,
+      "threshold": 402.32,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.018477
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 16,
+      "mean_requests": 322.5,
+      "variance": 272.68,
+      "threshold": 483.75,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.010487
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 17,
+      "mean_requests": 458.57,
+      "variance": 262.67,
+      "threshold": 687.86,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.004996
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 18,
+      "mean_requests": 509.86,
+      "variance": 472.12,
+      "threshold": 764.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.007265
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 19,
+      "mean_requests": 385.64,
+      "variance": 484.09,
+      "threshold": 578.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.01302
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 20,
+      "mean_requests": 305.29,
+      "variance": 425.06,
+      "threshold": 457.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.018243
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 21,
+      "mean_requests": 211.5,
+      "variance": 147.11,
+      "threshold": 317.25,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.013154
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 22,
+      "mean_requests": 149.57,
+      "variance": 163.53,
+      "threshold": 224.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.029239
+    },
+    {
+      "zone": "EL_POBLADO",
+      "hour": 23,
+      "mean_requests": 115.93,
+      "variance": 87.64,
+      "threshold": 173.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 4e-06,
+      "chebyshev_bound": 0.026084
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 0,
+      "mean_requests": 32.57,
+      "variance": 31.24,
+      "threshold": 48.86,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.029477,
+      "chebyshev_bound": 0.117805
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 1,
+      "mean_requests": 28.71,
+      "variance": 17.63,
+      "threshold": 43.07,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.044743,
+      "chebyshev_bound": 0.085542
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 2,
+      "mean_requests": 28.71,
+      "variance": 19.78,
+      "threshold": 43.07,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.044743,
+      "chebyshev_bound": 0.095938
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 3,
+      "mean_requests": 29.5,
+      "variance": 31.96,
+      "threshold": 44.25,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.041097,
+      "chebyshev_bound": 0.14692
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 4,
+      "mean_requests": 29.29,
+      "variance": 34.63,
+      "threshold": 43.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.042061,
+      "chebyshev_bound": 0.161523
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 5,
+      "mean_requests": 28.93,
+      "variance": 24.49,
+      "threshold": 43.39,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.043718,
+      "chebyshev_bound": 0.11708
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 6,
+      "mean_requests": 86.36,
+      "variance": 55.52,
+      "threshold": 129.54,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 8.8e-05,
+      "chebyshev_bound": 0.029777
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 7,
+      "mean_requests": 184.71,
+      "variance": 156.63,
+      "threshold": 277.07,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.018363
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 8,
+      "mean_requests": 178.43,
+      "variance": 209.24,
+      "threshold": 267.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.02629
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 9,
+      "mean_requests": 147.29,
+      "variance": 212.92,
+      "threshold": 220.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.03926
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 10,
+      "mean_requests": 151.0,
+      "variance": 172.71,
+      "threshold": 226.5,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.030299
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 11,
+      "mean_requests": 175.57,
+      "variance": 187.82,
+      "threshold": 263.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.024372
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 12,
+      "mean_requests": 179.93,
+      "variance": 121.21,
+      "threshold": 269.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.014976
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 13,
+      "mean_requests": 147.5,
+      "variance": 110.11,
+      "threshold": 221.25,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.020244
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 14,
+      "mean_requests": 151.79,
+      "variance": 203.03,
+      "threshold": 227.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.035249
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 15,
+      "mean_requests": 182.07,
+      "variance": 247.21,
+      "threshold": 273.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.029829
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 16,
+      "mean_requests": 236.57,
+      "variance": 192.67,
+      "threshold": 354.86,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.013771
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 17,
+      "mean_requests": 264.07,
+      "variance": 327.78,
+      "threshold": 396.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.018802
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 18,
+      "mean_requests": 230.71,
+      "variance": 223.78,
+      "threshold": 346.07,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.016816
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 19,
+      "mean_requests": 178.5,
+      "variance": 54.54,
+      "threshold": 267.75,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.006846
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 20,
+      "mean_requests": 109.14,
+      "variance": 50.98,
+      "threshold": 163.71,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 7e-06,
+      "chebyshev_bound": 0.017119
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 21,
+      "mean_requests": 86.5,
+      "variance": 102.82,
+      "threshold": 129.75,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 8.6e-05,
+      "chebyshev_bound": 0.054968
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 22,
+      "mean_requests": 60.57,
+      "variance": 41.96,
+      "threshold": 90.86,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001425,
+      "chebyshev_bound": 0.045746
+    },
+    {
+      "zone": "ENVIGADO",
+      "hour": 23,
+      "mean_requests": 30.79,
+      "variance": 16.6,
+      "threshold": 46.18,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.035759,
+      "chebyshev_bound": 0.070047
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 0,
+      "mean_requests": 29.0,
+      "variance": 20.29,
+      "threshold": 43.5,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.043381,
+      "chebyshev_bound": 0.096484
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 1,
+      "mean_requests": 31.21,
+      "variance": 16.74,
+      "threshold": 46.82,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.034139,
+      "chebyshev_bound": 0.068723
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 2,
+      "mean_requests": 31.79,
+      "variance": 25.6,
+      "threshold": 47.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.032092,
+      "chebyshev_bound": 0.101341
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 3,
+      "mean_requests": 31.57,
+      "variance": 29.1,
+      "threshold": 47.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.032845,
+      "chebyshev_bound": 0.116787
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 4,
+      "mean_requests": 29.36,
+      "variance": 16.66,
+      "threshold": 44.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.041737,
+      "chebyshev_bound": 0.077314
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 5,
+      "mean_requests": 32.43,
+      "variance": 42.67,
+      "threshold": 48.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.029936,
+      "chebyshev_bound": 0.162316
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 6,
+      "mean_requests": 61.43,
+      "variance": 54.39,
+      "threshold": 92.14,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001299,
+      "chebyshev_bound": 0.057653
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 7,
+      "mean_requests": 149.07,
+      "variance": 109.78,
+      "threshold": 223.61,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.01976
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 8,
+      "mean_requests": 152.0,
+      "variance": 130.29,
+      "threshold": 228.0,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.022556
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 9,
+      "mean_requests": 117.86,
+      "variance": 115.98,
+      "threshold": 176.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 3e-06,
+      "chebyshev_bound": 0.033399
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 10,
+      "mean_requests": 115.36,
+      "variance": 71.23,
+      "threshold": 173.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 4e-06,
+      "chebyshev_bound": 0.021411
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 11,
+      "mean_requests": 119.14,
+      "variance": 49.12,
+      "threshold": 178.71,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 3e-06,
+      "chebyshev_bound": 0.013842
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 12,
+      "mean_requests": 151.86,
+      "variance": 54.12,
+      "threshold": 227.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.009388
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 13,
+      "mean_requests": 119.29,
+      "variance": 69.2,
+      "threshold": 178.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 2e-06,
+      "chebyshev_bound": 0.019454
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 14,
+      "mean_requests": 118.43,
+      "variance": 113.1,
+      "threshold": 177.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 3e-06,
+      "chebyshev_bound": 0.032257
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 15,
+      "mean_requests": 151.14,
+      "variance": 134.98,
+      "threshold": 226.71,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.023635
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 16,
+      "mean_requests": 178.86,
+      "variance": 153.55,
+      "threshold": 268.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.0192
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 17,
+      "mean_requests": 214.93,
+      "variance": 152.64,
+      "threshold": 322.39,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.013217
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 18,
+      "mean_requests": 176.93,
+      "variance": 96.21,
+      "threshold": 265.39,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.012294
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 19,
+      "mean_requests": 116.36,
+      "variance": 52.09,
+      "threshold": 174.54,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 3e-06,
+      "chebyshev_bound": 0.015389
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 20,
+      "mean_requests": 91.79,
+      "variance": 54.74,
+      "threshold": 137.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 4.9e-05,
+      "chebyshev_bound": 0.02599
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 21,
+      "mean_requests": 59.79,
+      "variance": 36.88,
+      "threshold": 89.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001551,
+      "chebyshev_bound": 0.041275
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 22,
+      "mean_requests": 30.14,
+      "variance": 26.69,
+      "threshold": 45.21,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.038335,
+      "chebyshev_bound": 0.117518
+    },
+    {
+      "zone": "ITAGUI",
+      "hour": 23,
+      "mean_requests": 28.43,
+      "variance": 46.24,
+      "threshold": 42.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.046148,
+      "chebyshev_bound": 0.228883
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 0,
+      "mean_requests": 59.64,
+      "variance": 69.23,
+      "threshold": 89.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001575,
+      "chebyshev_bound": 0.077846
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 1,
+      "mean_requests": 27.93,
+      "variance": 19.07,
+      "threshold": 41.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.048713,
+      "chebyshev_bound": 0.097775
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 2,
+      "mean_requests": 29.64,
+      "variance": 21.23,
+      "threshold": 44.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.040466,
+      "chebyshev_bound": 0.096641
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 3,
+      "mean_requests": 27.64,
+      "variance": 20.94,
+      "threshold": 41.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.050243,
+      "chebyshev_bound": 0.109636
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 4,
+      "mean_requests": 27.93,
+      "variance": 26.92,
+      "threshold": 41.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.048713,
+      "chebyshev_bound": 0.138068
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 5,
+      "mean_requests": 57.57,
+      "variance": 81.96,
+      "threshold": 86.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001971,
+      "chebyshev_bound": 0.098911
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 6,
+      "mean_requests": 150.86,
+      "variance": 262.27,
+      "threshold": 226.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.046097
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 7,
+      "mean_requests": 268.43,
+      "variance": 127.39,
+      "threshold": 402.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.007072
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 8,
+      "mean_requests": 240.21,
+      "variance": 216.17,
+      "threshold": 360.32,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.014985
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 9,
+      "mean_requests": 179.29,
+      "variance": 145.63,
+      "threshold": 268.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.018123
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 10,
+      "mean_requests": 180.43,
+      "variance": 201.53,
+      "threshold": 270.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.024762
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 11,
+      "mean_requests": 206.43,
+      "variance": 219.39,
+      "threshold": 309.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.020594
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 12,
+      "mean_requests": 243.79,
+      "variance": 289.74,
+      "threshold": 365.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.019501
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 13,
+      "mean_requests": 204.07,
+      "variance": 425.07,
+      "threshold": 306.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.040827
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 14,
+      "mean_requests": 181.93,
+      "variance": 88.64,
+      "threshold": 272.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.010712
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 15,
+      "mean_requests": 210.29,
+      "variance": 118.49,
+      "threshold": 315.43,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.010718
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 16,
+      "mean_requests": 277.71,
+      "variance": 322.63,
+      "threshold": 416.57,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.016733
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 17,
+      "mean_requests": 323.64,
+      "variance": 243.8,
+      "threshold": 485.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.00931
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 18,
+      "mean_requests": 299.5,
+      "variance": 259.11,
+      "threshold": 449.25,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.011554
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 19,
+      "mean_requests": 211.14,
+      "variance": 178.69,
+      "threshold": 316.71,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.016033
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 20,
+      "mean_requests": 149.36,
+      "variance": 116.09,
+      "threshold": 224.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.020816
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 21,
+      "mean_requests": 120.57,
+      "variance": 92.1,
+      "threshold": 180.86,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 2e-06,
+      "chebyshev_bound": 0.025342
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 22,
+      "mean_requests": 92.21,
+      "variance": 62.45,
+      "threshold": 138.32,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 4.6e-05,
+      "chebyshev_bound": 0.029378
+    },
+    {
+      "zone": "LAURELES",
+      "hour": 23,
+      "mean_requests": 58.64,
+      "variance": 32.37,
+      "threshold": 87.96,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001755,
+      "chebyshev_bound": 0.037653
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 0,
+      "mean_requests": 30.14,
+      "variance": 30.84,
+      "threshold": 45.21,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.038335,
+      "chebyshev_bound": 0.135756
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 1,
+      "mean_requests": 28.57,
+      "variance": 18.53,
+      "threshold": 42.86,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.04544,
+      "chebyshev_bound": 0.0908
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 2,
+      "mean_requests": 29.64,
+      "variance": 29.37,
+      "threshold": 44.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.040466,
+      "chebyshev_bound": 0.133709
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 3,
+      "mean_requests": 31.36,
+      "variance": 28.23,
+      "threshold": 47.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.033615,
+      "chebyshev_bound": 0.11484
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 4,
+      "mean_requests": 30.43,
+      "variance": 25.53,
+      "threshold": 45.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.037168,
+      "chebyshev_bound": 0.110296
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 5,
+      "mean_requests": 28.07,
+      "variance": 8.21,
+      "threshold": 42.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.047966,
+      "chebyshev_bound": 0.041671
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 6,
+      "mean_requests": 58.5,
+      "variance": 70.54,
+      "threshold": 87.75,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001783,
+      "chebyshev_bound": 0.082444
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 7,
+      "mean_requests": 148.64,
+      "variance": 112.23,
+      "threshold": 222.96,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.020318
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 8,
+      "mean_requests": 152.86,
+      "variance": 94.12,
+      "threshold": 229.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.016113
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 9,
+      "mean_requests": 119.79,
+      "variance": 94.03,
+      "threshold": 179.68,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 2e-06,
+      "chebyshev_bound": 0.026212
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 10,
+      "mean_requests": 125.64,
+      "variance": 130.23,
+      "threshold": 188.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 1e-06,
+      "chebyshev_bound": 0.032998
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 11,
+      "mean_requests": 147.0,
+      "variance": 245.43,
+      "threshold": 220.5,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.045431
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 12,
+      "mean_requests": 145.43,
+      "variance": 159.82,
+      "threshold": 218.14,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.030226
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 13,
+      "mean_requests": 116.29,
+      "variance": 145.78,
+      "threshold": 174.43,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 3e-06,
+      "chebyshev_bound": 0.043121
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 14,
+      "mean_requests": 121.36,
+      "variance": 109.94,
+      "threshold": 182.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 2e-06,
+      "chebyshev_bound": 0.029861
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 15,
+      "mean_requests": 149.64,
+      "variance": 154.37,
+      "threshold": 224.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.027575
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 16,
+      "mean_requests": 180.29,
+      "variance": 99.06,
+      "threshold": 270.43,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.012191
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 17,
+      "mean_requests": 207.64,
+      "variance": 135.66,
+      "threshold": 311.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.012586
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 18,
+      "mean_requests": 177.93,
+      "variance": 78.21,
+      "threshold": 266.89,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.009882
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 19,
+      "mean_requests": 119.29,
+      "variance": 118.06,
+      "threshold": 178.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 2e-06,
+      "chebyshev_bound": 0.033189
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 20,
+      "mean_requests": 91.07,
+      "variance": 43.21,
+      "threshold": 136.61,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 5.3e-05,
+      "chebyshev_bound": 0.020839
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 21,
+      "mean_requests": 60.86,
+      "variance": 37.69,
+      "threshold": 91.29,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001381,
+      "chebyshev_bound": 0.040711
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 22,
+      "mean_requests": 30.29,
+      "variance": 25.06,
+      "threshold": 45.43,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.037747,
+      "chebyshev_bound": 0.109292
+    },
+    {
+      "zone": "SABANETA",
+      "hour": 23,
+      "mean_requests": 34.0,
+      "variance": 31.43,
+      "threshold": 51.0,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.025255,
+      "chebyshev_bound": 0.108749
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 0,
+      "mean_requests": 30.5,
+      "variance": 28.96,
+      "threshold": 45.75,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.036882,
+      "chebyshev_bound": 0.124544
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 1,
+      "mean_requests": 29.57,
+      "variance": 11.39,
+      "threshold": 44.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.04078,
+      "chebyshev_bound": 0.05209
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 2,
+      "mean_requests": 29.5,
+      "variance": 34.96,
+      "threshold": 44.25,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.041097,
+      "chebyshev_bound": 0.160709
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 3,
+      "mean_requests": 28.57,
+      "variance": 35.39,
+      "threshold": 42.86,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.04544,
+      "chebyshev_bound": 0.1734
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 4,
+      "mean_requests": 27.14,
+      "variance": 17.27,
+      "threshold": 40.71,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.053036,
+      "chebyshev_bound": 0.09374
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 5,
+      "mean_requests": 58.79,
+      "variance": 38.88,
+      "threshold": 88.18,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001729,
+      "chebyshev_bound": 0.045006
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 6,
+      "mean_requests": 177.64,
+      "variance": 182.8,
+      "threshold": 266.46,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.023171
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 7,
+      "mean_requests": 291.86,
+      "variance": 212.98,
+      "threshold": 437.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.010001
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 8,
+      "mean_requests": 270.0,
+      "variance": 187.14,
+      "threshold": 405.0,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.010268
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 9,
+      "mean_requests": 174.43,
+      "variance": 208.53,
+      "threshold": 261.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.027415
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 10,
+      "mean_requests": 151.36,
+      "variance": 140.66,
+      "threshold": 227.04,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.024559
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 11,
+      "mean_requests": 179.71,
+      "variance": 175.35,
+      "threshold": 269.57,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.021717
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 12,
+      "mean_requests": 208.43,
+      "variance": 233.39,
+      "threshold": 312.64,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.021489
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 13,
+      "mean_requests": 177.86,
+      "variance": 171.98,
+      "threshold": 266.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.021747
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 14,
+      "mean_requests": 146.64,
+      "variance": 173.66,
+      "threshold": 219.96,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.032302
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 15,
+      "mean_requests": 209.29,
+      "variance": 273.35,
+      "threshold": 313.93,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.024963
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 16,
+      "mean_requests": 269.21,
+      "variance": 110.45,
+      "threshold": 403.82,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.006096
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 17,
+      "mean_requests": 267.86,
+      "variance": 303.27,
+      "threshold": 401.79,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.016907
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 18,
+      "mean_requests": 204.36,
+      "variance": 199.23,
+      "threshold": 306.54,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.0,
+      "chebyshev_bound": 0.019082
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 19,
+      "mean_requests": 121.57,
+      "variance": 126.24,
+      "threshold": 182.36,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 2e-06,
+      "chebyshev_bound": 0.034167
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 20,
+      "mean_requests": 89.14,
+      "variance": 112.41,
+      "threshold": 133.71,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 6.5e-05,
+      "chebyshev_bound": 0.056583
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 21,
+      "mean_requests": 58.21,
+      "variance": 75.74,
+      "threshold": 87.32,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.001839,
+      "chebyshev_bound": 0.089397
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 22,
+      "mean_requests": 31.71,
+      "variance": 14.63,
+      "threshold": 47.57,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.032341,
+      "chebyshev_bound": 0.058193
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "hour": 23,
+      "mean_requests": 28.07,
+      "variance": 21.78,
+      "threshold": 42.11,
+      "empirical_prob": 0.0,
+      "chernoff_bound": 0.047966,
+      "chebyshev_bound": 0.110561
+    }
+  ]
+}
