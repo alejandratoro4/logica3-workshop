@@ -192,6 +192,82 @@ const T2: TaskDoc = {
   panel: "panelB",
 };
 
+const T3: TaskDoc = {
+  n: 3,
+  slug: "3",
+  title: "El hashing universal no depende de como sean las claves",
+  topic: "UNIVERSAL HASHING",
+  statement:
+    "Implementar una familia de funciones hash universales para mapear driver_id hacia K trabajadores de despacho (dispatch workers) y medir el nivel de colisiones obtenido.",
+  source: "src/task3_hashing.py",
+  standfirst:
+    "Cada driver_id se enruta a un worker con h_{a,b}(x) = ((a*x + b) mod p) mod K, con a y b sorteados al azar. Se compara contra una funcion hash fija e ingenua para mostrar por que la aleatoriedad de a y b es la que da la garantia, no la funcion en si.",
+  lede: (p) => {
+    const t = p.kpis?.task3;
+    if (!t) {
+      return "La familia universal reparte los driver_id entre los trabajadores de despacho garantizando un desbalance acotado, sin importar como esten distribuidas las claves.";
+    }
+    const last = t.K_values.length - 1;
+    const K = t.K_values[last];
+    const uni = t.universal_load_factor[last];
+    const naive = t.naive_load_factor[last];
+    return `Con K=${K} trabajadores de despacho, la familia universal mantiene un desbalance de ${fmt(
+      uni,
+      2
+    )}x sobre la carga media, mientras que un hash ingenuo (suma de codigos ASCII de driver_id) se dispara a ${fmt(
+      naive,
+      2
+    )}x porque todos los driver_id comparten el prefijo "drv_".`;
+  },
+  metrics: (p) => {
+    const t = p.kpis?.task3;
+    if (!t || t.K_values.length === 0) return [];
+    const last = t.K_values.length - 1;
+    const K = t.K_values[last];
+    const out: TaskMetric[] = [
+      {
+        label: `Desbalance universal (K=${K})`,
+        value: `${fmt(t.universal_load_factor[last], 2)}x`,
+        hint: "carga max / carga media del worker mas cargado — ideal 1",
+      },
+      {
+        label: `Desbalance hash ingenuo (K=${K})`,
+        value: `${fmt(t.naive_load_factor[last], 2)}x`,
+        hint: "suma de codigos ASCII de driver_id, sin aleatoriedad",
+      },
+    ];
+    const col = t.universal_collisions;
+    const teo = t.theoretical_collisions;
+    if (col && teo && col.length > last && teo.length > last) {
+      out.push({
+        label: `Colisiones con K=${K}`,
+        value: int(col[last]),
+        hint: `cota C(n,2)/K = ${int(teo[last])}`,
+      });
+    }
+    return out;
+  },
+  sections: [
+    {
+      h: "Que es una familia universal",
+      p: "En vez de fijar una sola funcion hash, se sortea al azar un par (a, b) de una familia h_{a,b}(x) = ((a*x + b) mod p) mod K, con p primo mucho mayor que cualquier clave. La garantia Pr[h(x) = h(y)] <= 1/K vale para CUALQUIER par de claves distintas x != y, sin suponer nada sobre como estan distribuidas: el azar esta en la eleccion de la funcion, no en las claves.",
+    },
+    {
+      h: "Por que el hash ingenuo se ve bien y despues colapsa",
+      p: 'El baseline de contraste suma los codigos ASCII de driver_id ("drv_00734") y toma el modulo K. Como todos los ids comparten el prefijo "drv_0", la suma solo varia por los ultimos digitos: en la practica hay unas 28 sumas distintas posibles, sin importar cuantos buckets K se abran. Con K chico eso no se nota; al subir K la mayoria de los buckets queda vacio y el desbalance se dispara.',
+    },
+    {
+      h: "Aplicacion en despacho de viajes",
+      p: "En un sistema de ride-sharing real, el mismo driver_id debe caer siempre en el mismo worker de despacho (para no perder el estado de sus viajes en curso). Elegir bien la funcion de enrutamiento evita que un worker colapse por sobrecarga mientras otros quedan ociosos.",
+    },
+  ],
+  takeaway:
+    "El hashing universal no promete una funcion perfecta: promete que, en promedio sobre el azar de a y b, ninguna distribucion de claves -- ni siquiera una adversarial -- puede forzar un mal reparto.",
+  panel: "task3",
+};
+
+
+
 const T4: TaskDoc = {
   n: 4,
   slug: "4",
