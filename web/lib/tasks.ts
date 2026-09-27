@@ -346,7 +346,7 @@ const T4: TaskDoc = {
 /** Tasks documentadas por workshop. Un workshop sin entrada aca simplemente no
  *  muestra el indice ni genera paginas: no hay que tocar nada mas. */
 export const TASK_DOCS: Record<string, TaskDoc[]> = {
-  "1": [T1, T2, T4],
+  "1": [T1, T2, T3, T4],
 };
 
 export const getTaskDocs = (slug: string): TaskDoc[] => TASK_DOCS[slug] ?? [];
