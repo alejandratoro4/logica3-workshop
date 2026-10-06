@@ -267,13 +267,63 @@ const T4: TaskDoc = {
   panel: "panelA",
 };
 
+const T5: TaskDoc = {
+  n: 5,
+  slug: "5",
+  title: "Chernoff acota mejor, Chebyshev supone menos",
+  topic: "ANALISIS PROBABILISTICO",
+  statement:
+    "Acotar la probabilidad de que la demanda de una zona en una hora supere en un factor (1 + delta) su media, usando las cotas de Chernoff y de Chebyshev, y comparar ambas contra la frecuencia observada en el dataset.",
+  source: "src/task5_probability_analysis.py",
+  standfirst:
+    "Para cada zona y cada hora del dia se cuentan las solicitudes de cada dia simulado. Con la media y la varianza de esos conteos se calculan dos cotas para la probabilidad de un pico de demanda, y se contrastan con la frecuencia con la que ese pico ocurrio de verdad.",
+  // Sin cifras hasta conectar estos campos con los datos de Panels (ver types.ts).
+  lede: () => "",
+  metrics: () => [],
+  sections: [
+    {
+      h: "Que pregunta responde esta task",
+      p: "La tarifa dinamica se activa cuando una zona recibe bastante mas demanda de la habitual. La pregunta es con que probabilidad pasa eso en cada zona y cada hora: si el umbral es (1 + delta) veces la media, cuantas veces se va a superar. Las cotas de concentracion responden sin simular nada. Dan un techo garantizado para esa probabilidad a partir de unos pocos parametros de la distribucion.",
+    },
+    {
+      h: "Paso 1: de solicitudes sueltas a una variable por zona y hora",
+      p: "Cada solicitud se ubica por zona de recogida, hora del dia y fecha. Para cada par (zona, hora) queda una lista con un conteo por dia simulado: esa lista son las observaciones de la variable aleatoria X, la demanda de esa zona en esa hora. De ahi salen la media mu y la varianza, y el umbral de surge (1 + delta) mu.",
+    },
+    {
+      h: "Paso 2: la cota de Chernoff",
+      p: "Si X es una suma de muchos eventos independientes, como las llegadas de un proceso de Poisson, la cota multiplicativa de Chernoff dice que P(X >= (1 + delta) mu) es a lo sumo (e^delta / (1 + delta)^(1 + delta))^mu. Decae exponencialmente con mu: en una zona con mucha demanda, superar la media en un porcentaje fijo es casi imposible. Su precio es el supuesto de independencia.",
+    },
+    {
+      h: "Paso 3: la cota de Chebyshev",
+      p: "Chebyshev solo usa la varianza: P(X >= mu + k) es a lo sumo varianza / k^2, con k = delta mu. No supone independencia ni ninguna forma de la distribucion, por eso vale siempre. A cambio decae de forma polinomial y no exponencial, y suele ser mucho mas holgada. Si la varianza es cero, la cota no informa nada y se reporta como 1.",
+    },
+    {
+      h: "Paso 4: contrastar con lo que paso",
+      p: "La probabilidad empirica es la fraccion de dias en que el conteo alcanzo el umbral. Una cota correcta nunca queda por debajo de esa frecuencia, salvo por ruido de muestreo. Lo que interesa es la distancia: cuanto mas cerca de lo observado, mas util es la cota para decidir. Se compara zona por zona y hora por hora, porque la ventaja de una sobre otra depende de la escala de la demanda.",
+    },
+    {
+      h: "Por que Chernoff gana y cuando no confiar en ella",
+      p: "Cuando las llegadas se comportan como Poisson, la varianza es del orden de la media y Chernoff queda por debajo de Chebyshev en todas las escalas de demanda; la brecha crece con mu. Pero si los dias no son intercambiables, por ejemplo por un evento que dispara la demanda un dia puntual, la varianza crece por encima de la media y las llegadas dejan de ser independientes. Ahi Chernoff puede subestimar el riesgo y Chebyshev, holgada pero honesta, sigue siendo valida.",
+    },
+    {
+      h: "Limitaciones",
+      p: "La media y la varianza se estiman con los mismos dias contra los que despues se compara, asi que el contraste es dentro de muestra. Con pocos dias simulados, cada estimacion es ruidosa y la frecuencia empirica solo puede tomar unos pocos valores. Las cotas se calculan con parametros estimados, no con los verdaderos, y eso las hace aproximadas aunque la formula sea exacta.",
+    },
+  ],
+  takeaway:
+    "Chernoff convierte la independencia en una garantia exponencial; Chebyshev no supone nada y por eso promete poco. Elegir la cota es decidir que tanto se le cree al modelo de llegadas.",
+  panel: null,
+};
+
 /** Tasks documentadas por workshop. Un workshop sin entrada aca simplemente no
  *  muestra el indice ni genera paginas: no hay que tocar nada mas. */
 export const TASK_DOCS: Record<string, TaskDoc[]> = {
-  "1": [T1, T2, T4],
+  "1": [T1, T2, T4, T5],
 };
 
 export const getTaskDocs = (slug: string): TaskDoc[] => TASK_DOCS[slug] ?? [];
 
 export const getTaskDoc = (slug: string, task: string): TaskDoc | undefined =>
   getTaskDocs(slug).find((t) => t.slug === task);
+
+
