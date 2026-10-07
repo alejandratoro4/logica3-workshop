@@ -6,12 +6,14 @@ import { ALL_ZONES, PRESETS, estimateRows, estimateSeconds, type CityParams } fr
  *  los scripts de Python: mover un deslizador equivale a exportar esa variable
  *  antes de correr el pipeline en la terminal. */
 export default function ParamPanel({
+  slug,
   params,
   onChange,
   onRun,
   running,
   ready,
 }: {
+  slug: string;
   params: CityParams;
   onChange: (p: CityParams) => void;
   onRun: () => void;
@@ -28,7 +30,7 @@ export default function ParamPanel({
   };
 
   const rows = estimateRows(params);
-  const secs = estimateSeconds(params);
+  const secs = estimateSeconds(params, slug);
   const activePreset = PRESETS.find(
     (p) =>
       p.params.scale === params.scale &&
@@ -144,7 +146,7 @@ export default function ParamPanel({
 
       <p className="estimate">
         ~<b>{rows.toLocaleString("es-CO")}</b> viajes · aprox. <b>{secs}s</b> en Pyodide.
-        {params.scale < 10 && (
+        {slug === "1" && params.scale < 10 && (
           <>
             {" "}
             A escala baja la ventana pico del Panel A tiene pocas solicitudes para 16 colas; subi la

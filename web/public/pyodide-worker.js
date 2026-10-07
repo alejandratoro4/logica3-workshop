@@ -2,81 +2,95 @@
 /**
  * pyodide-worker.js
  * -----------------
- * Corre el pipeline real del proyecto (los mismos .py que estan en ../src)
- * dentro de Pyodide, en un Web Worker para no congelar la UI.
+ * Corre el pipeline real del proyecto (los mismos .py de ../src) dentro de
+ * Pyodide, en un Web Worker para no congelar la UI.
  *
  * No hay reimplementacion de los algoritmos: se monta un FS virtual con la
- * misma estructura que el repo (/proj/src, /proj/dashboard) y cada script se
- * ejecuta con runpy bajo run_name="__main__", que es exactamente como corren
- * desde la terminal. Los parametros de ciudad viajan por os.environ.
+ * misma estructura que el repo (/proj/src/wN, /proj/dashboard, /proj/contratos)
+ * y cada script se ejecuta con runpy bajo run_name="__main__", que es
+ * exactamente como corre desde la terminal. Los parametros de ciudad viajan
+ * por os.environ.
  *
- * Que archivos existen NO se asume: se lee de public/py/manifest.json, que
- * escribe scripts/sync-python.mjs con lo que realmente hay en el repo. Una
- * task que todavia no se agrego simplemente no tiene etapa, y su panel queda
- * pendiente en la UI.
+ * Que etapas hay NO se escribe aca: sale de public/py/manifest.json, que
+ * scripts/sync-python.mjs arma con lo que hay en el repo. Para el workshop N:
+ * los datasets de w1 a wN (cada uno parte del anterior) y despues las tasks
+ * de wN en orden. Una task que nadie ha entregado no tiene etapa, y su panel
+ * queda pendiente en la UI.
  */
 
 const PYODIDE_VERSION = "0.28.3";
 importScripts(`https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/pyodide.js`);
 
-// Orden del pipeline. `key` es lo que la UI usa para pedir corridas parciales.
-const STAGES = [
-  { key: "generator", file: "src/data_generator.py", label: "Generando dataset" },
-  { key: "task1", file: "src/task1_bigdata.py", label: "Task 1 · Contexto Big Data" },
-  { key: "task3", file: "src/task3_hashing.py", label: "Task 3 · Hashing universal" },
-  { key: "task4", file: "src/task4_hashtable.py", label: "Task 4 · Tabla hash" },
-  { key: "task5", file: "src/task5_probability.py", label: "Task 5 · Cotas de probabilidad" },
-  // Task 2 va al final a proposito: es el benchmark de QuickSort y se come la
-  // mayor parte del tiempo. Asi los demas paneles ya estan pintados cuando
-  // arranca, en vez de bloquear todo el dashboard.
-  { key: "task2", file: "src/task2_randomized.py", label: "Task 2 · Benchmark QuickSort" },
-];
+// Tasks que van al final de su workshop porque se comen la mayor parte del
+// tiempo: asi los demas paneles ya estan pintados cuando arrancan. La Task 2
+// del W1 es el benchmark de QuickSort.
+const AL_FINAL = { "1": [2] };
+
+// El CSV principal que escribe el dataset de cada workshop: es el que se
+// muestra en la vista Dataset y el que leen sus tasks. Se nombra explicito, no
+// por fecha de modificacion: el W3 escribe ademas edges_despacho.csv en el
+// mismo milisegundo.
+const SALIDA_DATASET = { "1": "rides.csv", "2": "stream.csv", "3": "edges.csv" };
 
 let pyodide = null;
 let ready = false;
-/** Rutas .py efectivamente montadas, segun el manifest. */
-let mounted = new Set();
+let ws = "1";
+let stages = [];
 
 const post = (msg) => self.postMessage(msg);
 
-/** Etapas que se pueden correr: las que tienen su .py en el repo. */
-const activeStages = () => STAGES.filter((s) => mounted.has(s.file));
-
-/** Sube los .py del repo al FS virtual, respetando la estructura de carpetas
- *  (el prologo BASE de cada script deriva las rutas de su propio __file__). */
-async function mountProject(baseUrl) {
-  const res = await fetch(`${baseUrl}py/manifest.json`);
-  if (!res.ok) throw new Error(`No se pudo leer el manifest: HTTP ${res.status}`);
-  const manifest = await res.json();
-
-  pyodide.FS.mkdirTree("/proj/src");
-  pyodide.FS.mkdirTree("/proj/dashboard");
-
-  mounted = new Set();
-  for (const { path: rel } of manifest.files) {
-    const r = await fetch(`${baseUrl}py/${rel}`);
-    if (!r.ok) throw new Error(`No se pudo cargar ${rel}: HTTP ${r.status}`);
-    pyodide.FS.writeFile(`/proj/${rel}`, await r.text(), { encoding: "utf8" });
-    mounted.add(rel);
+function armarEtapas(manifest, w) {
+  const out = [];
+  for (let i = 1; i <= Number(w); i++) {
+    const info = manifest.workshops[String(i)];
+    if (info?.dataset) {
+      out.push({
+        key: `dataset${i}`,
+        file: info.dataset,
+        label: `Dataset · Workshop ${i}`,
+        dataset: true,
+        csv: SALIDA_DATASET[String(i)],
+      });
+    }
   }
+  const tasks = Object.entries(manifest.workshops[w]?.tasks ?? {})
+    .map(([k, file]) => ({ k: Number(k), file }))
+    .sort((a, b) => a.k - b.k);
+  const lentas = AL_FINAL[w] ?? [];
+  const orden = [...tasks.filter((t) => !lentas.includes(t.k)), ...tasks.filter((t) => lentas.includes(t.k))];
+  for (const t of orden) {
+    out.push({ key: `task${t.k}`, file: t.file, label: `Task ${t.k}`, json: `results/w${w}/task${t.k}.json` });
+  }
+  return out;
 }
 
-async function init(baseUrl) {
+async function init(baseUrl, workshop) {
   if (ready) return;
+  ws = String(workshop ?? "1");
   post({ type: "status", message: `Descargando Pyodide ${PYODIDE_VERSION}...` });
   pyodide = await loadPyodide({
     indexURL: `https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/`,
   });
 
   post({ type: "status", message: "Montando el proyecto..." });
-  await mountProject(baseUrl);
+  const res = await fetch(`${baseUrl}py/manifest.json`);
+  if (!res.ok) throw new Error(`No se pudo leer el manifest: HTTP ${res.status}`);
+  const manifest = await res.json();
+  for (const { path: rel } of manifest.files) {
+    const r = await fetch(`${baseUrl}py/${rel}`);
+    if (!r.ok) throw new Error(`No se pudo cargar ${rel}: HTTP ${r.status}`);
+    pyodide.FS.mkdirTree(`/proj/${rel.split("/").slice(0, -1).join("/")}`);
+    pyodide.FS.writeFile(`/proj/${rel}`, await r.text(), { encoding: "utf8" });
+  }
+  stages = armarEtapas(manifest, ws);
 
   // Helpers de orquestacion. Ejecutan los scripts tal cual, capturando stdout
-  // para poder mostrar en la web la misma salida de consola que en la terminal.
+  // para mostrar en la web la misma salida de consola que en la terminal.
   pyodide.runPython(`
 import os, sys, io, json, runpy, contextlib, importlib.util
 
 PROJ = "/proj"
+os.makedirs(os.path.join(PROJ, "data"), exist_ok=True)
 
 def set_params(params):
     for k in list(os.environ):
@@ -86,120 +100,148 @@ def set_params(params):
         if v is not None and v != "":
             os.environ[k] = str(v)
 
+def clear_results(ws):
+    """Borra los results/<ws>/ de la corrida anterior. Sin esto, una task que
+    falla con los parametros nuevos seguiria mostrando los numeros viejos como
+    si fueran de esta corrida, y mientras corre se mezclarian las dos."""
+    import shutil
+    shutil.rmtree(os.path.join(PROJ, "results", ws), ignore_errors=True)
+
+def borrar(rel):
+    """Borra la salida de una task antes de correrla: si falla o no escribe
+    nada, no puede quedar la de una corrida anterior."""
+    p = os.path.join(PROJ, rel)
+    if os.path.exists(p):
+        os.remove(p)
+
+def existe(rel):
+    return os.path.exists(os.path.join(PROJ, rel))
+
 def run_script(rel):
     buf = io.StringIO()
     with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
         runpy.run_path(os.path.join(PROJ, rel), run_name="__main__")
     return buf.getvalue()
 
-def _build_dashboard():
-    """dashboard/build_dashboard.py, cargado por ruta (no esta en sys.path)."""
+def _contrato():
     spec = importlib.util.spec_from_file_location(
-        "build_dashboard", os.path.join(PROJ, "dashboard", "build_dashboard.py"))
+        "contrato", os.path.join(PROJ, "dashboard", "contrato.py"))
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
     return mod
 
-def read_results():
-    """Lee los results/task*.json que los scripts acaban de escribir y los
-    reorganiza con las MISMAS funciones de dashboard/build_dashboard.py, para
-    que la forma {panelA, panelB, panelC, kpis} tenga una sola fuente de verdad.
+def read_results(ws):
+    """Los results/wN/taskK.json que ya existen y cumplen el contrato,
+    recortados a sus claves; y el motivo de los que no cumplen. Se llama
+    despues de cada etapa, asi que los paneles aparecen de a uno."""
+    resultados, errores = _contrato().cargar(ws)
+    return json.dumps({"results": resultados, "errors": errores})
 
-    Cada panel se arma en cuanto SUS resultados existen, no cuando terminan las
-    cinco tasks: asi el dashboard se va pintando por partes, el benchmark de
-    QuickSort (que tarda mas que todo el resto junto) no bloquea lo demas, y una
-    task que ni siquiera esta en el repo simplemente deja su panel sin datos."""
-    bd = _build_dashboard()
-    problemas = {}
-    out = bd.available_results(errors=problemas)
-    panels = bd.build_panels(out, errors=problemas)
-    # panelErrors viaja a la UI para que el hueco diga por que esta vacio:
-    # no es lo mismo "esa task no esta en el repo" que "corrio y su JSON no
-    # trae lo que el panel indexa".
-    return json.dumps({"raw": out, "panels": panels, "panelErrors": problemas})
-
-def dataset_preview(n=8):
-    """Primeras n filas del CSV generado, para mostrar el dataset real en la UI."""
+def dataset_preview(name, n=8):
+    """Primeras n filas de data/<name>, el CSV principal del dataset que
+    acaba de correr."""
     import csv
-    p = os.path.join(PROJ, "data", "rides.csv")
+    p = os.path.join(PROJ, "data", name)
     if not os.path.exists(p):
-        return json.dumps({"rows": [], "total": 0, "bytes": 0})
+        return json.dumps({"name": "", "rows": [], "total": 0, "bytes": 0})
     with open(p, newline="", encoding="utf-8") as f:
         r = csv.DictReader(f)
         rows = []
         total = 0
-        for i, row in enumerate(r):
+        for row in r:
             total += 1
-            if i < n:
+            if total <= n:
                 rows.append(row)
-        for _ in r:
-            total += 1
-    return json.dumps({"rows": rows, "total": total, "bytes": os.path.getsize(p)})
+    return json.dumps({"name": name, "rows": rows, "total": total, "bytes": os.path.getsize(p)})
 `);
 
   ready = true;
-  // La UI arma su lista de etapas con esto: no puede asumir las seis, porque
-  // depende de que tasks esten agregadas al repo.
   post({
     type: "ready",
     pyodideVersion: PYODIDE_VERSION,
-    stages: activeStages().map(({ key, label }) => ({ key, label })),
+    stages: stages.map(({ key, label }) => ({ key, label })),
   });
 }
 
-async function run({ params, stages }) {
-  const wanted = stages && stages.length ? new Set(stages) : null;
-  const toRun = activeStages().filter((s) => !wanted || wanted.has(s.key));
+async function run({ params, stages: wanted, runId }) {
+  // Cada mensaje de la corrida lleva su id: la UI descarta los de una corrida
+  // que ya fue sustituida (por otra o por la canonica).
+  const post = (msg) => self.postMessage({ ...msg, runId });
+  const filtro = wanted && wanted.length ? new Set(wanted) : null;
+  const toRun = stages.filter((s) => !filtro || filtro.has(s.key));
 
   pyodide.globals.get("set_params")(pyodide.toPy(params));
+  // Una corrida parcial (solo algunas etapas) conserva lo demas; una completa
+  // empieza de cero.
+  if (!filtro) pyodide.globals.get("clear_results")(`w${ws}`);
 
+  let fallo = false;
   for (const stage of toRun) {
     post({ type: "stage", key: stage.key, label: stage.label, status: "running" });
     const t0 = performance.now();
+    if (stage.json) pyodide.globals.get("borrar")(stage.json);
+    let output = "";
+    let error = null;
     try {
-      const output = pyodide.globals.get("run_script")(stage.file);
-      const seconds = (performance.now() - t0) / 1000;
-      post({
-        type: "stage",
-        key: stage.key,
-        label: stage.label,
-        status: "done",
-        seconds,
-        output,
-      });
-      // Tras cada etapa publicamos lo que ya se puede pintar, para que los
-      // paneles aparezcan progresivamente en vez de todos al final.
-      post({ type: "partial", payload: JSON.parse(pyodide.globals.get("read_results")()) });
-      if (stage.key === "generator") {
-        post({ type: "dataset", payload: JSON.parse(pyodide.globals.get("dataset_preview")(8)) });
+      output = pyodide.globals.get("run_script")(stage.file);
+      // Una task presente que corre sin entregar su JSON es un fallo, no un
+      // pendiente: pendiente es solo la que no tiene script.
+      if (stage.json && !pyodide.globals.get("existe")(stage.json)) {
+        error = `${output}
+Termino sin escribir ${stage.json}.`;
       }
     } catch (err) {
-      post({
-        type: "stage",
-        key: stage.key,
-        label: stage.label,
-        status: "error",
-        seconds: (performance.now() - t0) / 1000,
-        output: String(err && err.message ? err.message : err),
-      });
-      post({ type: "done", ok: false });
-      return;
+      error = String(err && err.message ? err.message : err);
+    }
+    // Una salida existente tambien debe cumplir el contrato antes de marcar
+    // la task como terminada. Se conserva el payload para publicarlo incluso
+    // si fallo, con el motivo y sin los datos viejos de esa task.
+    let payload = null;
+    if (!stage.dataset) {
+      payload = JSON.parse(pyodide.globals.get("read_results")(`w${ws}`));
+      const problema = payload.errors?.[stage.key];
+      if (error === null && problema) {
+        error = `${output}\n${stage.json} no cumple el contrato: ${problema}`;
+      }
+    }
+    post({
+      type: "stage",
+      key: stage.key,
+      label: stage.label,
+      status: error === null ? "done" : "error",
+      seconds: (performance.now() - t0) / 1000,
+      output: error ?? output,
+    });
+    if (error !== null) fallo = true;
+    if (stage.dataset) {
+      // Sin dataset no hay nada que correr.
+      if (error !== null) {
+        post({ type: "done", ok: false });
+        return;
+      }
+      post({ type: "dataset", payload: JSON.parse(pyodide.globals.get("dataset_preview")(stage.csv, 8)) });
+    } else {
+      // Tras cada task, haya fallado o no, se publica lo que ya se puede
+      // pintar: los paneles aparecen de a uno, y el de una task que fallo deja
+      // de mostrar datos viejos. Una task que falla no detiene a las demas:
+      // cada una es de una persona distinta.
+      post({ type: "partial", payload });
     }
   }
 
-  post({ type: "done", ok: true });
+  post({ type: "done", ok: !fallo });
 }
 
 self.onmessage = async (ev) => {
   const msg = ev.data || {};
   try {
     if (msg.type === "init") {
-      await init(msg.baseUrl);
+      await init(msg.baseUrl, msg.workshop);
     } else if (msg.type === "run") {
-      if (!ready) await init(msg.baseUrl);
+      if (!ready) await init(msg.baseUrl, msg.workshop);
       await run(msg);
     }
   } catch (err) {
-    post({ type: "fatal", message: String(err && err.message ? err.message : err) });
+    post({ type: "fatal", message: String(err && err.message ? err.message : err), runId: msg.runId });
   }
 };

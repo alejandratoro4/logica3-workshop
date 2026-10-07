@@ -1,0 +1,160 @@
+{
+  "k_sigma": 2.0,
+  "zones": [
+    {
+      "zone": "AIRPORT",
+      "slots": 312,
+      "surged": 14,
+      "surge_rate": 0.0449
+    },
+    {
+      "zone": "BELEN",
+      "slots": 312,
+      "surged": 13,
+      "surge_rate": 0.0417
+    },
+    {
+      "zone": "BELLO",
+      "slots": 312,
+      "surged": 10,
+      "surge_rate": 0.0321
+    },
+    {
+      "zone": "DOWNTOWN",
+      "slots": 312,
+      "surged": 9,
+      "surge_rate": 0.0288
+    },
+    {
+      "zone": "EL_POBLADO",
+      "slots": 312,
+      "surged": 10,
+      "surge_rate": 0.0321
+    },
+    {
+      "zone": "ENVIGADO",
+      "slots": 312,
+      "surged": 11,
+      "surge_rate": 0.0353
+    },
+    {
+      "zone": "ITAGUI",
+      "slots": 312,
+      "surged": 6,
+      "surge_rate": 0.0192
+    },
+    {
+      "zone": "LAURELES",
+      "slots": 312,
+      "surged": 13,
+      "surge_rate": 0.0417
+    },
+    {
+      "zone": "SABANETA",
+      "slots": 312,
+      "surged": 6,
+      "surge_rate": 0.0192
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "slots": 312,
+      "surged": 8,
+      "surge_rate": 0.0256
+    }
+  ],
+  "dispatch_scenario": {
+    "beta": 0.85,
+    "zones": [
+      {
+        "zone": "AIRPORT",
+        "pi": 0.1405,
+        "pagerank": 0.1224,
+        "pagerank_rank": 3,
+        "volume_rank": 2,
+        "stay_prob": 0.805,
+        "inflow_mean": 0.1082
+      },
+      {
+        "zone": "BELEN",
+        "pi": 0.0808,
+        "pagerank": 0.0848,
+        "pagerank_rank": 8,
+        "volume_rank": 8,
+        "stay_prob": 0.1254,
+        "inflow_mean": 0.0827
+      },
+      {
+        "zone": "BELLO",
+        "pi": 0.0877,
+        "pagerank": 0.0904,
+        "pagerank_rank": 6,
+        "volume_rank": 6,
+        "stay_prob": 0.3255,
+        "inflow_mean": 0.0888
+      },
+      {
+        "zone": "DOWNTOWN",
+        "pi": 0.131,
+        "pagerank": 0.1274,
+        "pagerank_rank": 2,
+        "volume_rank": 3,
+        "stay_prob": 0.1534,
+        "inflow_mean": 0.1309
+      },
+      {
+        "zone": "EL_POBLADO",
+        "pi": 0.1429,
+        "pagerank": 0.1373,
+        "pagerank_rank": 1,
+        "volume_rank": 1,
+        "stay_prob": 0.1765,
+        "inflow_mean": 0.1445
+      },
+      {
+        "zone": "ENVIGADO",
+        "pi": 0.0837,
+        "pagerank": 0.088,
+        "pagerank_rank": 7,
+        "volume_rank": 7,
+        "stay_prob": 0.1295,
+        "inflow_mean": 0.0913
+      },
+      {
+        "zone": "ITAGUI",
+        "pi": 0.0661,
+        "pagerank": 0.0734,
+        "pagerank_rank": 10,
+        "volume_rank": 10,
+        "stay_prob": 0.1479,
+        "inflow_mean": 0.0756
+      },
+      {
+        "zone": "LAURELES",
+        "pi": 0.1083,
+        "pagerank": 0.1081,
+        "pagerank_rank": 4,
+        "volume_rank": 4,
+        "stay_prob": 0.1435,
+        "inflow_mean": 0.1088
+      },
+      {
+        "zone": "SABANETA",
+        "pi": 0.0668,
+        "pagerank": 0.0741,
+        "pagerank_rank": 9,
+        "volume_rank": 9,
+        "stay_prob": 0.2086,
+        "inflow_mean": 0.0769
+      },
+      {
+        "zone": "UNIV_NORTE",
+        "pi": 0.0922,
+        "pagerank": 0.0942,
+        "pagerank_rank": 5,
+        "volume_rank": 5,
+        "stay_prob": 0.1448,
+        "inflow_mean": 0.0923
+      }
+    ]
+  }
+}

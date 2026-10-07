@@ -7,11 +7,16 @@ import { type CityParams, toEnv } from "@/lib/params";
  *  junto a las variables de entorno equivalentes para reproducirlo en la
  *  terminal. Es el puente entre la app y el proyecto tal como se entrega. */
 export default function DatasetView({
+  slug,
   dataset,
   params,
+  canonical,
 }: {
+  slug: string;
   dataset: DatasetPreview | null;
   params: CityParams;
+  /** Etiqueta de la canonica si es lo que se ve: no trae vista previa del CSV. */
+  canonical: string | null;
 }) {
   const env = toEnv(params);
   const envLine = Object.entries(env)
@@ -23,16 +28,20 @@ export default function DatasetView({
       <section className="panel-box">
         <div className="panel-head">
           <h2 className="panel-title">Dataset generado</h2>
-          <span className="panel-tag">data/rides.csv</span>
+          <span className="panel-tag">data/{dataset?.name || "..."}</span>
         </div>
         <p className="panel-desc">
-          Generado en memoria por data_generator.py dentro de Pyodide. El CSV nunca viaja por la
-          red: el mismo navegador lo produce y las cinco tasks lo leen del sistema de archivos
-          virtual.
+          Generado en memoria por src/w{slug}/dataset.py dentro de Pyodide
+          {slug !== "1" && ", a partir del dataset del workshop anterior"}. El CSV nunca viaja por la
+          red: el mismo navegador lo produce y las tasks lo leen del sistema de archivos virtual.
         </p>
 
         {!dataset ? (
-          <div className="empty">Aun no se ha generado el dataset.</div>
+          <div className="empty">
+            {canonical
+              ? "Los resultados que se ven son la corrida canonica precomputada, que no trae el CSV. Corre el pipeline para generar el dataset aqui."
+              : "Aun no se ha generado el dataset."}
+          </div>
         ) : (
           <>
             <div className="kpi-row">
@@ -104,7 +113,7 @@ export default function DatasetView({
                 </span>
               ))}
               <span className="tok-kw">python</span>
-              <span> run_all.py</span>
+              <span> run_all.py{slug !== "1" ? ` w${slug}` : ""}</span>
             </span>
           </pre>
         </div>

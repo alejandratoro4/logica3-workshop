@@ -263,3 +263,9 @@ body.presenting .topbar{display:none;}
   .task-present .task-head h1{font-size:28px;}
   .task-present .task-lede{font-size:17px;}
 }
+
+/* Workshop 2: subtitulos dentro de un panel con varios graficos, selector
+   compacto y KPI con numeros largos (F2, bytes). */
+.panel-sub{font-size:12.5px; font-weight:600; color:var(--text); margin:18px 0 6px;}
+.select{background:var(--panel); color:var(--text); border:1px solid var(--border); border-radius:6px; font-size:11.5px; padding:4px 6px; font-family:var(--mono);}
+.kpi .value.sm{font-size:15px; padding-top:3px;}

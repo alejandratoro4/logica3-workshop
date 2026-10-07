@@ -1,9 +1,10 @@
 # ---------------------------------------------------------------------------
 # Dataset generado
 # ---------------------------------------------------------------------------
-# rides.csv pesa ~36 MB y es reproducible byte a byte con un solo comando
-# (python src/data_generator.py), porque el generador es determinista para
-# unos parametros y una semilla dados. No tiene sentido versionarlo.
+# rides.csv, stream.csv y edges.csv pesan ~80 MB y son reproducibles byte a
+# byte con un solo comando (python run_all.py todo), porque los generadores de
+# src/wN/dataset.py son deterministas para unos parametros y una semilla
+# dados. No tiene sentido versionarlos.
 data/rides.csv
 data/*.csv
 
@@ -26,7 +27,7 @@ next-env.d.ts
 .vercel/
 *.tsbuildinfo
 
-# Generados por scripts/sync-python.mjs desde ../src — no se editan a mano.
+# Generados por scripts/sync-python.mjs desde ../src y ../contratos — no se editan a mano.
 web/public/py/
 web/lib/generated/
 

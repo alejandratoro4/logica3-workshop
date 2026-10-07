@@ -6,40 +6,19 @@
  * Sirve para dos cosas a la vez, y por eso tiene modo presentacion: leida
  * normal es la explicacion larga; en modo presentacion esconde la prosa y deja
  * titular, cifras y grafico, que es lo que se proyecta. El contenido sale de
- * lib/tasks.ts y los numeros de la corrida cargada en el provider, asi que las
- * dos vistas nunca se contradicen. */
+ * lib/docs/wN/taskK.ts y los numeros de la corrida cargada en el provider, asi
+ * que las dos vistas nunca se contradicen. */
 
 import { useCallback, useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
-import { getTaskDocs, type TaskPanelKey } from "@/lib/tasks";
-import type { Panels } from "@/lib/types";
+import { getTaskDocs } from "@/lib/tasks";
 import { useEnsureRun, useWorkshop } from "./WorkshopProvider";
-import PanelA from "./panels/PanelA";
-import PanelB from "./panels/PanelB";
-import PanelC from "./panels/PanelC";
-import { KpiRow, Task3Panel } from "./panels/Kpis";
+import { TaskPanel } from "./PanelSlots";
 import TaskMetrics from "./TaskMetrics";
 
-function TaskPanel({ which, panels }: { which: TaskPanelKey | null; panels: Panels }) {
-  switch (which) {
-    case "kpis":
-      return panels.kpis ? <KpiRow data={panels.kpis} /> : null;
-    case "task3":
-      return panels.kpis ? <Task3Panel data={panels.kpis} /> : null;
-    case "panelA":
-      return panels.panelA ? <PanelA data={panels.panelA} /> : null;
-    case "panelB":
-      return panels.panelB ? <PanelB data={panels.panelB} /> : null;
-    case "panelC":
-      return panels.panelC ? <PanelC data={panels.panelC} /> : null;
-    default:
-      return null;
-  }
-}
-
 export default function TaskView({ slug, index }: { slug: string; index: number }) {
-  const { params, pipeline, canonical } = useWorkshop();
+  const { ranParams: params, pipeline, canonical } = useWorkshop();
   const { hasPanels } = useEnsureRun();
   const router = useRouter();
   const [presenting, setPresenting] = useState(false);
@@ -92,8 +71,12 @@ export default function TaskView({ slug, index }: { slug: string; index: number 
 
   if (!doc) return null;
 
-  const p = pipeline.panels ?? {};
-  const metrics = hasPanels ? doc.metrics(p) : [];
+  const all = pipeline.results ?? {};
+  // La pagina existe aunque su task no haya corrido (o no cumpla el contrato):
+  // en ese caso se muestra la prosa sin cifras.
+  const r = all[`task${doc.n}`];
+  const conDatos = hasPanels && r !== undefined;
+  const metrics = conDatos ? doc.metrics(r, all) : [];
 
   return (
     <div className={`wrap task-page ${presenting ? "task-present" : ""}`}>
@@ -123,7 +106,7 @@ export default function TaskView({ slug, index }: { slug: string; index: number 
           TASK {doc.n} · {doc.topic}
         </div>
         <h1>{doc.title}</h1>
-        <p className="task-lede">{hasPanels ? doc.lede(p, params) : doc.standfirst}</p>
+        <p className="task-lede">{conDatos ? doc.lede(r, all, params) : doc.standfirst}</p>
       </header>
 
       {!hasPanels && (
@@ -134,12 +117,15 @@ export default function TaskView({ slug, index }: { slug: string; index: number 
 
       <TaskMetrics metrics={metrics} />
 
-      <TaskPanel which={doc.panel} panels={p} />
+      <TaskPanel slug={slug} n={doc.n} results={all} />
 
-      {doc.panel === "panelB" && !p.panelB && hasPanels && (
+      {hasPanels && r === undefined && (
         <div className="empty" style={{ padding: "26px 20px" }}>
-          <span className="spinner" /> El benchmark de QuickSort es la etapa mas larga del pipeline y
-          llega al final de la corrida.
+          {pipeline.errors[`task${doc.n}`]
+            ? `Esta task corrio, pero su JSON no cumple el contrato: ${pipeline.errors[`task${doc.n}`]}`
+            : pipeline.running
+              ? "Esta task todavia no termina en la corrida actual."
+              : "Esta corrida no trae datos de esta task."}
         </div>
       )}
 
@@ -149,7 +135,7 @@ export default function TaskView({ slug, index }: { slug: string; index: number 
             <h2 className="panel-title" style={{ fontSize: 13 }}>
               Lo que pide el enunciado
             </h2>
-            <span className="panel-tag">{doc.source}</span>
+            <span className="panel-tag">{doc.source ?? `src/w${slug}/task${doc.n}_*.py (pendiente)`}</span>
           </div>
           <p className="panel-desc" style={{ margin: 0 }}>
             {doc.statement}

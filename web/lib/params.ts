@@ -63,12 +63,18 @@ export function estimateRows(p: CityParams): number {
   return Math.round(base * p.scale * p.days);
 }
 
-/** Segundos aproximados del pipeline completo en Pyodide, medidos a escala
- *  demo (49.823 filas -> 13,9s) y extrapolados: las tasks son ~lineales y el
- *  benchmark de QuickSort crece como n log n. */
-export function estimateSeconds(p: CityParams): number {
+/** Segundos aproximados del pipeline completo en Pyodide, extrapolados desde
+ *  la escala demo (~50k filas). W1: medido 13,9 s, con las tasks ~lineales y
+ *  el benchmark de QuickSort creciendo como n log n. W2 y W3: datasets
+ *  encadenados mas sus tasks, todo lineal; SEG_POR_DEMO se midio en Pyodide
+ *  con soluciones de referencia sencillas de las seis tasks (2026-10-06), asi
+ *  que las del equipo pueden tardar otra cosa. */
+const SEG_POR_DEMO: Record<string, number> = { "2": 9.5, "3": 6 };
+
+export function estimateSeconds(p: CityParams, slug = "1"): number {
   const n = Math.max(1, estimateRows(p));
   const r = n / 49823;
+  if (slug !== "1") return Math.round((SEG_POR_DEMO[slug] ?? 6) * r);
   const lineal = 4.2 * r;                                  // generator + tasks 1,3,4,5
   const bench = 9.7 * r * (Math.log2(n) / Math.log2(49823)); // task 2
   return Math.round(lineal + bench);

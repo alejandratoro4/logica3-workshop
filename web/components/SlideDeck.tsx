@@ -1,74 +1,60 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
-import type { Panels } from "@/lib/types";
+import type { Results } from "@/lib/types";
 import type { CityParams } from "@/lib/params";
 import { estimateRows } from "@/lib/params";
-import { getTaskDocs, type TaskPanelKey } from "@/lib/tasks";
-import PanelA from "./panels/PanelA";
-import PanelB from "./panels/PanelB";
-import PanelC from "./panels/PanelC";
-import { KpiRow, Task3Panel } from "./panels/Kpis";
+import { getTaskDocs } from "@/lib/tasks";
+import { getWorkshop } from "@/lib/workshops";
+import { TaskPanel } from "./PanelSlots";
 import TaskMetrics from "./TaskMetrics";
 
 /** Modo presentacion continuo: una diapositiva por task, en un overlay.
  *
- * Los titulos y los textos salen de lib/tasks.ts, los mismos que muestra la
+ * Los titulos y los textos salen de lib/docs/, los mismos que muestra la
  * pagina dedicada de cada task — cambiar una frase alla la cambia en los dos
  * lados. Aca se da la pasada rapida; la pagina de la task es la version con la
  * explicacion completa. */
-function panelFor(which: TaskPanelKey | null, p: Panels) {
-  switch (which) {
-    case "kpis":
-      return p.kpis ? <KpiRow data={p.kpis} /> : null;
-    case "task3":
-      return p.kpis ? <Task3Panel data={p.kpis} /> : null;
-    case "panelA":
-      return p.panelA ? <PanelA data={p.panelA} /> : null;
-    case "panelB":
-      return p.panelB ? <PanelB data={p.panelB} /> : null;
-    case "panelC":
-      return p.panelC ? <PanelC data={p.panelC} /> : null;
-    default:
-      return null;
-  }
-}
-
 export default function SlideDeck({
-  panels,
+  results,
   params,
   slug = "1",
   onClose,
 }: {
-  panels: Panels;
+  results: Results;
   params: CityParams;
   slug?: string;
   onClose: () => void;
 }) {
   const [i, setI] = useState(0);
 
+  const ws = getWorkshop(slug);
   const intro = {
     metrics: [],
-    title: "Despacho de viajes y surge pricing",
-    lede: `Una app de ride-sharing empareja pasajeros con conductores y decide en tiempo real cuando activar tarifa dinamica. Esta corrida simula ${params.zones.length} zonas durante ${params.days} dias: ${estimateRows(
+    title: ws?.title ?? "Despacho de viajes y surge pricing",
+    lede: `${ws?.subtitle ?? ""} Esta corrida simula ${params.zones.length} zonas durante ${params.days} dias: ${estimateRows(
       params
     ).toLocaleString("es-CO")} solicitudes generadas con un proceso de Poisson no homogeneo, donde cada zona tiene su propio perfil de demanda por hora.`,
-    body: panels.kpis ? <KpiRow data={panels.kpis} /> : null,
+    // Sin grafico: la diapositiva siguiente es la Task 1 con su panel.
+    body: null,
   };
 
   // Solo se arman las diapositivas cuyos datos ya existen: se puede entrar a
-  // presentar antes de que termine el benchmark de QuickSort.
+  // presentar antes de que termine la task mas lenta.
   const slides = [
     intro,
-    ...getTaskDocs(slug).map((d) => ({
-      title: `Task ${d.n} — ${d.title}`,
-      lede: d.lede(panels, params),
-      metrics: d.metrics(panels),
-      body: panelFor(d.panel, panels),
-    })),
-    // Una task entra si tiene grafico O cifras: la Task 1 no tiene panel
-    // propio (sus KPI son los del dashboard) y aun asi debe estar en el deck.
-  ].filter((s) => s.body || s.metrics.length);
+    ...getTaskDocs(slug)
+      .filter((d) => results[`task${d.n}`] !== undefined)
+      .map((d) => {
+        const r = results[`task${d.n}`];
+        return {
+          title: `Task ${d.n} — ${d.title}`,
+          lede: d.lede(r, results, params),
+          metrics: d.metrics(r, results),
+          body: <TaskPanel slug={slug} n={d.n} results={results} />,
+        };
+      }),
+  ];
 
   const go = useCallback(
     (d: number) => setI((v) => Math.max(0, Math.min(slides.length - 1, v + d))),

@@ -19,6 +19,10 @@ export function niceTicks(max: number, count = 4): number[] {
   const step = (norm <= 1 ? 1 : norm <= 2 ? 2 : norm <= 5 ? 5 : 10) * mag;
   const out: number[] = [];
   for (let v = 0; v <= max + step * 0.001; v += step) out.push(Number(v.toFixed(10)));
+  // La ultima marca es el techo del eje: si queda por debajo del maximo, lo
+  // mas alto del grafico (la barra mas cargada, el pico de la serie) se sale
+  // del area de dibujo. Se agrega una marca mas para que el techo lo cubra.
+  if (out[out.length - 1] < max) out.push(Number((out[out.length - 1] + step).toFixed(10)));
   return out;
 }
 
@@ -33,7 +37,10 @@ export function GroupedBars({
   refLabel,
   refLines,
   xLabel,
+  label,
 }: {
+  /** Descripcion para lectores de pantalla (aria-label del SVG). Opcional. */
+  label?: string;
   series: { name: string; color: string; values: number[] }[];
   height?: number;
   refLine?: number;
@@ -63,7 +70,7 @@ export function GroupedBars({
   const barW = Math.max(1.5, (groupW - 3) / series.length);
 
   return (
-    <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} role="img">
+    <svg viewBox={`0 0 ${W} ${H}`} width="100%" height={H} role="img" aria-label={label}>
       {ticks.map((t) => (
         <g key={t}>
           <line x1={PAD.l} x2={W - PAD.r} y1={y(t)} y2={y(t)} stroke="var(--grid)" strokeWidth="1" />

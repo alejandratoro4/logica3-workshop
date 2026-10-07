@@ -2,12 +2,12 @@
 
 /** Indice de tasks del dashboard: la puerta de entrada a cada pagina dedicada.
  *
- * Lista las cinco del enunciado (lib/workshops.ts), pero solo enlaza las que
- * tienen TaskDoc en lib/tasks.ts. Cual esta implementada no se declara en
- * ningun lado: es exactamente "tiene doc o no", asi que no hay forma de que
- * el indice diga una cosa y el repo tenga otra.
+ * Lista las tasks del enunciado (lib/workshops.ts), pero solo enlaza las que
+ * tienen pagina (lib/docs/wN/taskK.ts). Cual esta documentada no se declara
+ * en ningun lado: es exactamente "existe el archivo o no", asi que no hay
+ * forma de que el indice diga una cosa y el repo tenga otra.
  *
- * Los titulos de las implementadas salen de lib/tasks.ts, asi que la tarjeta
+ * Los titulos de las documentadas salen de su pagina, asi que la tarjeta
  * promete exactamente lo que el usuario va a encontrar al hacer click. */
 
 import Link from "next/link";
@@ -32,13 +32,13 @@ export default function TaskIndex({ slug }: { slug: string }) {
       <div className="panel-head">
         <h2 className="panel-title">Las {items.length} tasks</h2>
         <span className="panel-tag">
-          {hechas} DE {items.length} EN ESTE REPO
+          {hechas} DE {items.length} CON PAGINA
         </span>
       </div>
       <p className="panel-desc">
-        Cada task implementada tiene su pagina con el enunciado, el metodo, el panel en vivo y la
+        Cada task documentada tiene su pagina con el enunciado, el metodo, el panel en vivo y la
         conclusion. Sirven de diapositivas: se navegan con las flechas y la tecla P las proyecta.
-        Las que faltan muestran el enunciado hasta que alguien agregue su script.
+        Las que faltan muestran el enunciado hasta que alguien agregue su pagina.
       </p>
       <div className="task-cards">
         {items.map((t) => {

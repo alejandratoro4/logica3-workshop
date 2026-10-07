@@ -1,10 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
 import { toQuery } from "@/lib/params";
-import { getTaskDocs } from "@/lib/tasks";
-import type { StageKey } from "@/lib/types";
 import { useWorkshop } from "./WorkshopProvider";
 import ParamPanel from "./ParamPanel";
 import RunConsole from "./RunConsole";
@@ -12,75 +9,12 @@ import CodeViewer from "./CodeViewer";
 import SlideDeck from "./SlideDeck";
 import DatasetView from "./DatasetView";
 import TaskIndex from "./TaskIndex";
-import PanelA from "./panels/PanelA";
-import PanelB from "./panels/PanelB";
-import PanelC from "./panels/PanelC";
-import { KpiRow, Task3Panel } from "./panels/Kpis";
+import { Dashboard } from "./PanelSlots";
 
 type View = "dashboard" | "codigo" | "dataset";
 
-/** Encabezado que lleva del panel a la pagina de su task. Es el puente entre
- *  el dashboard (todo junto, para explorar) y la explicacion (una a la vez). */
-function TaskLink({ slug, task }: { slug: string; task: string }) {
-  const doc = getTaskDocs(slug).find((d) => d.slug === task);
-  if (!doc) return null;
-  return (
-    <Link href={`/w/${slug}/t/${doc.slug}/`} className="task-jump">
-      Task {doc.n} — {doc.title} <span>→</span>
-    </Link>
-  );
-}
-
-/** Hueco de un panel cuya task todavia no esta en el repo.
- *
- * Se muestra el espacio que le corresponde en vez de omitirlo en silencio: asi
- * el dashboard refleja el alcance completo del enunciado y dice exactamente
- * que falta, en lugar de parecer que el panel no existe. */
-function PendingPanel({
-  title,
-  tag,
-  script,
-  error,
-}: {
-  title: string;
-  tag: string;
-  script: string;
-  /** Si la task SI corrio pero su JSON no sirvio, se dice eso en vez de
-   *  "falta el script": son dos problemas distintos y se arreglan distinto. */
-  error?: string;
-}) {
-  return (
-    <section className="panel-pending">
-      <div className="panel-head">
-        <h2 className="panel-title">{title}</h2>
-        <span className="panel-tag">
-          {tag} · {error ? "SIN DATOS" : "PENDIENTE"}
-        </span>
-      </div>
-      <div className="hint">
-        {error ? (
-          <>
-            <span style={{ color: "var(--amber)" }}>{error}</span>
-            <span>
-              Las claves que este panel necesita las define la funcion build_* correspondiente en{" "}
-              <code>dashboard/build_dashboard.py</code>.
-            </span>
-          </>
-        ) : (
-          <>
-            <span>
-              Falta <code>{script}</code> en el repo.
-            </span>
-            <span>Al agregarlo, el panel se llena solo en la proxima corrida.</span>
-          </>
-        )}
-      </div>
-    </section>
-  );
-}
-
 export default function WorkshopView() {
-  const { workshop, params, setParams, pipeline, canonical, loadCanonical, claimed, claimRun } =
+  const { workshop, params, setParams, pipeline, ranParams, canonical, loadCanonical, claimed, claimRun } =
     useWorkshop();
   const [view, setView] = useState<View>("dashboard");
   const [presenting, setPresenting] = useState(false);
@@ -133,17 +67,8 @@ export default function WorkshopView() {
     );
   }
 
-  const p = pipeline.panels;
-  const hasAny = Boolean(p && Object.keys(p).length);
-
-  // El worker publica las etapas que pudo montar (ver public/pyodide-worker.js).
-  // Si una task no esta entre ellas, no es que vaya lenta: no esta en el repo.
-  // Solo se puede afirmar eso una vez el runtime arranco y las reporto.
-  const conScript = new Set(pipeline.stages.map((st) => st.key));
-  const falta = (k: StageKey) => pipeline.ready && !conScript.has(k);
-  // Un panel tambien queda vacio si su task corrio pero su JSON no trae lo que
-  // el build_* indexa; el worker lo reporta aparte (ver read_results).
-  const errores = pipeline.panelErrors ?? {};
+  const r = pipeline.results;
+  const hasAny = Boolean(r && Object.keys(r).length);
 
   const share = () => {
     const url = `${location.origin}${location.pathname}?${toQuery(params)}`;
@@ -152,13 +77,14 @@ export default function WorkshopView() {
 
   return (
     <>
-      {presenting && p && (
-        <SlideDeck panels={p} params={params} slug={slug} onClose={() => setPresenting(false)} />
+      {presenting && r && (
+        <SlideDeck results={r} params={ranParams} slug={slug} onClose={() => setPresenting(false)} />
       )}
 
       <div className="wrap layout">
         <aside className="side">
           <ParamPanel
+            slug={slug}
             params={params}
             onChange={setParams}
             onRun={() => {
@@ -183,7 +109,7 @@ export default function WorkshopView() {
             <p className="estimate" style={{ marginTop: 9 }}>
               {canonical
                 ? canonical
-                : "Precomputada a 495k viajes. Carga al instante, sin esperar los ~2 min que tarda el pipeline a esa escala."}
+                : "Precomputada a escala completa (~495k viajes). Carga al instante, sin esperar lo que tarda el pipeline a esa escala."}
             </p>
           </div>
 
@@ -191,7 +117,7 @@ export default function WorkshopView() {
             <h3>Presentacion</h3>
             <button
               className="btn"
-              disabled={!p}
+              disabled={!hasAny}
               onClick={() => setPresenting(true)}
               style={{ marginBottom: 8 }}
             >
@@ -212,6 +138,11 @@ export default function WorkshopView() {
             <p className="muted" style={{ margin: 0, fontSize: 13.5, maxWidth: "76ch" }}>
               {workshop.subtitle}
             </p>
+            {workshop.note && (
+              <p className="muted" style={{ margin: "6px 0 0", fontSize: 12.5, maxWidth: "76ch" }}>
+                {workshop.note}
+              </p>
+            )}
           </header>
 
           <div className="file-tabs" style={{ marginBottom: 16 }}>
@@ -251,99 +182,18 @@ export default function WorkshopView() {
                   )}
                 </div>
               )}
-              {p?.kpis ? (
-                <>
-                  <TaskLink slug={slug} task="1" />
-                  <KpiRow data={p.kpis} />
-                </>
-              ) : (
-                // El KpiRow se arma con task1 Y task3: si falta cualquiera de
-                // las dos no hay panel, asi que el hueco tiene que nombrar la
-                // que realmente falte, no siempre la task 1.
-                (falta("task1") || falta("task3") || errores.kpis) && (
-                  <PendingPanel
-                    error={errores.kpis}
-                    title="Indicadores — solicitudes/seg y almacenamiento"
-                    tag="TASK 1 + TASK 3"
-                    script={[
-                      falta("task1") ? "src/task1_bigdata.py" : null,
-                      falta("task3") ? "src/task3_hashing.py" : null,
-                    ]
-                      .filter(Boolean)
-                      .join(" y ")}
-                  />
-                )
-              )}
-              {p?.panelC ? (
-                <>
-                  <TaskLink slug={slug} task="5" />
-                  <PanelC data={p.panelC} />
-                </>
-              ) : (
-                (falta("task5") || errores.panelC) && (
-                  <PendingPanel
-                    error={errores.panelC}
-                    title="Panel C — Medidor de surge en vivo por zona"
-                    tag="TASK 5 · CHEBYSHEV / CHERNOFF"
-                    script="src/task5_probability.py"
-                  />
-                )
-              )}
-              {p?.panelA ? (
-                <>
-                  <TaskLink slug={slug} task="4" />
-                  <PanelA data={p.panelA} />
-                </>
-              ) : (
-                (falta("task4") || errores.panelA) && (
-                  <PendingPanel
-                    error={errores.panelA}
-                    title="Panel A — Carga de buckets"
-                    tag="TASK 4"
-                    script="src/task4_hashtable.py"
-                  />
-                )
-              )}
-              {p?.kpis ? (
-                <>
-                  <TaskLink slug={slug} task="3" />
-                  <Task3Panel data={p.kpis} />
-                </>
-              ) : (
-                (falta("task3") || errores.kpis) && (
-                  <PendingPanel
-                    error={errores.kpis}
-                    title="Hashing universal vs. hash ingenuo"
-                    tag="TASK 3 · CARTER-WEGMAN"
-                    script="src/task3_hashing.py"
-                  />
-                )
-              )}
-              {p?.panelB ? (
-                <>
-                  <TaskLink slug={slug} task="2" />
-                  <PanelB data={p.panelB} />
-                </>
-              ) : falta("task2") || errores.panelB ? (
-                <PendingPanel
-                  error={errores.panelB}
-                  title="Panel B — Tiempo de ejecucion"
-                  tag="TASK 2"
-                  script="src/task2_randomized.py"
-                />
-              ) : (
-                hasAny && (
-                  <div className="empty" style={{ padding: "26px 20px" }}>
-                    <span className="spinner" /> Panel B — el benchmark de QuickSort es la etapa mas
-                    larga del pipeline y llega al final.
-                  </div>
-                )
-              )}
+              <Dashboard
+                workshop={workshop}
+                results={r ?? {}}
+                errors={pipeline.errors}
+                stages={pipeline.stages}
+                running={pipeline.running || pipeline.booting}
+              />
             </>
           )}
 
-          {view === "codigo" && <CodeViewer />}
-          {view === "dataset" && <DatasetView dataset={pipeline.dataset} params={params} />}
+          {view === "codigo" && <CodeViewer slug={slug} />}
+          {view === "dataset" && <DatasetView slug={slug} dataset={pipeline.dataset} params={ranParams} canonical={canonical} />}
         </main>
       </div>
     </>

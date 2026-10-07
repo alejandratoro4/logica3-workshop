@@ -27,9 +27,9 @@ maxima de bucket y la distribucion completa, bajo ambas estrategias.
 
 import os
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(BASE, "data")
-RESULTS_DIR = os.path.join(BASE, "results")
+RESULTS_DIR = os.path.join(BASE, "results", "w1")
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(RESULTS_DIR, exist_ok=True)
 RIDES_CSV = os.path.join(DATA_DIR, "rides.csv")
@@ -70,14 +70,17 @@ def balls_in_bins_theory(n, B):
     del orden de 100 solicitudes para B = 16 colas, con carga media n/B muy por
     encima de 1.
 
-    En ese regimen cargado la carga maxima es n/B MAS una desviacion:
+    En ese regimen cargado la carga maxima es n/B MAS una desviacion, del
+    orden de:
 
         chaining : n/B + sqrt( 2 (n/B) ln B )
         P2C      : n/B + ln ln B / ln 2
 
-    Aplicar la formula de m = n en este escenario haria parecer que las
-    mediciones violan la cota, cuando lo que pasa es que esa cota es para otro
-    regimen. Con la de aca, lo medido y lo predicho coinciden de cerca.
+    Son aproximaciones del orden de magnitud, sin el termino O(1) ni un nivel
+    de confianza: NO son cotas que cada ventana tenga que respetar (una
+    ventana puede pasarlas por poco, p. ej. P2C mide 8 contra 7.78). Sirven
+    para ver que lo medido es del tamano esperado y que la formula de m = n,
+    aplicada aqui, estaria fuera de su regimen.
 
     La simetrica tambien vale: si se baja la escala de la ciudad, las ventanas
     quedan con n/B < 1 (pocas solicitudes, muchas colas) y entonces es ESTA
@@ -222,13 +225,13 @@ if __name__ == "__main__":
     }
 
     summary["theory_note"] = (
-        "Cotas para el regimen cargado (n/B >> 1): chaining n/B + sqrt(2(n/B)ln B), "
+        "Aproximaciones para el regimen cargado (n/B >> 1), sin el termino O(1): chaining n/B + sqrt(2(n/B)ln B), "
         "P2C n/B + ln ln B / ln 2. Las formulas de clase (3 ln n / ln ln n y "
         "ln ln n / ln 2) suponen m = n y no aplican aqui."
     )
 
     out = {"top_windows": comparisons, "summary": summary}
-    with open(os.path.join(RESULTS_DIR, "task4_results.json"), "w") as f:
+    with open(os.path.join(RESULTS_DIR, "task4.json"), "w") as f:
         json.dump(out, f, indent=2)
 
     print(f"Buckets por zona (B) = {B}")
@@ -247,4 +250,4 @@ if __name__ == "__main__":
     print(f"  Carga maxima promedio (P2C):      {summary['avg_max_load_p2c']}")
     print(f"  Peor caso (chaining): {summary['worst_max_load_chaining']}")
     print(f"  Peor caso (P2C):      {summary['worst_max_load_p2c']}")
-    print("\nResultados guardados en results/task4_results.json")
+    print("\nResultados guardados en results/w1/task4.json")

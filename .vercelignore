@@ -2,13 +2,14 @@
 #
 # Lo que SI necesita el build (no excluir):
 #   web/                          fuente Next.js
-#   src/*.py                      los copia scripts/sync-python.mjs a public/py/
-#   dashboard/build_dashboard.py  idem
-#   web/public/data/canonical-run.json  corrida precomputada (Vercel no tiene Python)
+#   src/wN/*.py                   los copia scripts/sync-python.mjs a public/py/
+#   dashboard/contrato.py         idem
+#   contratos/*.md                idem, y de ahi salen los tipos de lib/generated/
+#   web/public/data/canonical-wN.json  corridas precomputadas (Vercel no tiene Python)
 
-# Dataset generado: 37 MB, se reconstruye con python src/data_generator.py
+# Datasets generados (~80 MB), se reconstruyen con python run_all.py todo
 # La barra inicial ancla a la raiz: sin ella se excluiria web/public/data/,
-# donde vive canonical-run.json.
+# donde viven las corridas canonicas.
 /data/
 
 # Salida del pipeline local. El dashboard no la lee en el build: usa la corrida
