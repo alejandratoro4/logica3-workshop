@@ -17,9 +17,9 @@ Dos algoritmos aleatorizados aplicados al flujo de viajes:
 
 import os
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(BASE, "data")
-RESULTS_DIR = os.path.join(BASE, "results")
+RESULTS_DIR = os.path.join(BASE, "results", "w1")
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(RESULTS_DIR, exist_ok=True)
 RIDES_CSV = os.path.join(DATA_DIR, "rides.csv")
@@ -135,12 +135,15 @@ def bench_quicksort(fares, sizes, adversarial_sizes):
             arr2 = data[:]
             counters2 = {"calls": 0, "comparisons": 0}
             t0 = time.perf_counter()
+            # El cronometro se detiene antes de verificar, igual que en el
+            # aleatorizado: sorted() no es parte de lo que se mide.
             try:
                 deterministic_quicksort(arr2, 0, len(arr2) - 1, counters2)
+                t1 = time.perf_counter()
                 ok = arr2 == sorted(data)
             except RecursionError:
+                t1 = time.perf_counter()
                 ok = False
-            t1 = time.perf_counter()
             results.append({
                 "n": n, "input": label, "algorithm": "deterministic_quicksort",
                 "time_s": t1 - t0, "comparisons": counters2["comparisons"],
@@ -312,7 +315,9 @@ if __name__ == "__main__":
     # Tamanos para el caso adversarial 'sorted_input': el determinista es
     # O(n^2) aqui, asi que se limita a un rango pequeno para que termine
     # en tiempo razonable, mientras se sigue viendo el crecimiento cuadratico.
-    adversarial_sizes = [500, 1000, 2000, 4000, 8000]
+    # Con un dataset chico no se piden mas tarifas de las que hay: fares[:n]
+    # devolveria menos y el JSON reportaria un n que no se ordeno.
+    adversarial_sizes = [s for s in [500, 1000, 2000, 4000, 8000] if s <= n_total]
 
     print(f"Dataset: {n_total} tarifas.")
     print(f"Tamanos (random_input): {sizes}")
@@ -326,7 +331,7 @@ if __name__ == "__main__":
 
     out = {"quicksort": sort_results, "sampling": sample_results,
            "quantiles": quantile_results, "fare_distribution": dist}
-    with open(os.path.join(RESULTS_DIR, "task2_results.json"), "w") as f:
+    with open(os.path.join(RESULTS_DIR, "task2.json"), "w") as f:
         json.dump(out, f, indent=2)
 
     print("\n== QuickSort: aleatorizado vs determinista (peor caso = arreglo ordenado) ==")
@@ -358,4 +363,4 @@ if __name__ == "__main__":
         print(f"  n={r['n']:>6} metodo={r['method']:<26} t={r['time_s']:.6f}s "
               f"memoria={r['memory_items']:>7} items  {errs}")
 
-    print("\nResultados guardados en results/task2_results.json")
+    print("\nResultados guardados en results/w1/task2.json")

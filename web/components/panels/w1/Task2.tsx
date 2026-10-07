@@ -1,7 +1,9 @@
 "use client";
 
-import { LineChart, Legend, fmt, int } from "../charts";
-import type { PanelB as PanelBData } from "@/lib/types";
+import { LineChart, Legend, fmt, int } from "../../charts";
+import type { PanelProps } from "@/lib/types";
+import type { W1Task2 } from "@/lib/generated/contratos";
+import { quicksortSeries } from "@/lib/quicksort";
 
 /** Panel B — tiempo del algoritmo aleatorizado vs. el determinista segun el
  *  tamano de entrada, en los dos escenarios, y el conteo de comparaciones
@@ -9,9 +11,9 @@ import type { PanelB as PanelBData } from "@/lib/types";
  *
  *  El tiempo depende de la maquina; las comparaciones no. Por eso la tercera
  *  grafica es la que se puede contrastar de verdad contra la teoria. */
-export default function PanelB({ data }: { data: PanelBData }) {
-  const r = data.random_input;
-  const s = data.sorted_input_worst_case;
+export default function Task2({ data }: PanelProps<W1Task2>) {
+  const r = quicksortSeries(data, "random_input");
+  const s = quicksortSeries(data, "sorted_input");
   const dist = data.fare_distribution ?? null;
 
   const lastIdx = s.n.length - 1;
@@ -22,8 +24,8 @@ export default function PanelB({ data }: { data: PanelBData }) {
 
   // Se grafica la RAZON y no los conteos crudos: van de diez mil a veintiocho
   // millones, y en un eje lineal los n pequenos quedarian pegados al cero.
-  const medidas = r.randomized_comparisons ?? [];
-  const teoria = r.expected_comparisons ?? [];
+  const medidas = r.randomized_comparisons;
+  const teoria = r.expected_comparisons;
   const hayComparaciones =
     medidas.length > 0 && medidas.length === teoria.length && teoria.every((t) => t > 0);
   const razones = hayComparaciones ? medidas.map((m, i) => m / teoria[i]) : [];
@@ -76,8 +78,9 @@ export default function PanelB({ data }: { data: PanelBData }) {
         <p className="panel-desc" style={{ marginTop: 14, marginBottom: 0 }}>
           Con n = {fmt(s.n[lastIdx], 0)} ya ordenado, el pivote fijo tarda{" "}
           <b style={{ color: "var(--amber)" }}>{fmt(ratio, 0)}x</b> mas. La aleatorizacion no hace
-          nada mas rapido en promedio: elimina el peor caso, porque la aleatoriedad viene del
-          algoritmo y no de los datos.
+          nada mas rapido en promedio: hace que el costo esperado no dependa del orden de la entrada,
+          porque la aleatoriedad viene del algoritmo y no de los datos. El peor caso O(n²) sigue
+          existiendo; solo deja de ser una entrada concreta.
         </p>
       )}
 

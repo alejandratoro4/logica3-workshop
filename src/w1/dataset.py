@@ -1,6 +1,6 @@
 """
-data_generator.py
-------------------
+dataset.py (Workshop 1)
+-----------------------
 Generador sintetico de datos para el escenario "Ride-Sharing Dispatch & Surge Pricing".
 
 Simula una ciudad con varias zonas de recogida (pickup_zone). La tasa de solicitudes
@@ -14,9 +14,9 @@ Salida: data/rides.csv con las columnas del enunciado:
 
 import os
 
-BASE = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 DATA_DIR = os.path.join(BASE, "data")
-RESULTS_DIR = os.path.join(BASE, "results")
+RESULTS_DIR = os.path.join(BASE, "results", "w1")
 os.makedirs(DATA_DIR, exist_ok=True)
 os.makedirs(RESULTS_DIR, exist_ok=True)
 RIDES_CSV = os.path.join(DATA_DIR, "rides.csv")

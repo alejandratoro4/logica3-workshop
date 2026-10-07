@@ -1,16 +1,22 @@
 "use client";
 
-import { GroupedBars, Legend, fmt } from "../charts";
-import type { PanelA as PanelAData } from "@/lib/types";
+import { GroupedBars, Legend, fmt } from "../../charts";
+import type { PanelProps } from "@/lib/types";
+import type { W1Task4 } from "@/lib/generated/contratos";
 
 /** Panel A — distribucion de carga de buckets: chaining vs power of two choices
- *  en la ventana de maxima concurrencia. */
-export default function PanelA({ data }: { data: PanelAData }) {
-  const avg = data.n_requests / data.B_buckets;
-  const maxChain = Math.max(...data.chaining_loads);
-  const maxP2c = Math.max(...data.p2c_loads);
-  const s = data.summary;
-  const t = data.theory ?? null;
+ *  en la ventana de maxima concurrencia (la primera de top_windows). */
+export default function Task4({ data: r }: PanelProps<W1Task4>) {
+  const w = r.top_windows[0];
+  if (!w) return null;
+  const s = r.summary;
+  const B = s.B_buckets;
+  const chaining = w.chaining.loads;
+  const p2c = w.power_of_two_choices.loads;
+  const avg = w.n_requests / B;
+  const maxChain = Math.max(...chaining);
+  const maxP2c = Math.max(...p2c);
+  const t = w.theory ?? null;
 
   return (
     <section className="panel-box">
@@ -19,16 +25,16 @@ export default function PanelA({ data }: { data: PanelAData }) {
         <span className="panel-tag">TASK 4 · CHAINING vs P2C</span>
       </div>
       <p className="panel-desc">
-        Ventana de maxima concurrencia: <b>{data.n_requests}</b> solicitudes de{" "}
-        <b>{data.zone}</b> repartidas en {data.B_buckets} colas de despacho. La linea ambar es la
+        Ventana de maxima concurrencia: <b>{w.n_requests}</b> solicitudes de{" "}
+        <b>{w.zone}</b> repartidas en {B} colas de despacho. La linea ambar es la
         carga media. Lo que importa no es el promedio sino la barra mas alta: esa cola fija la
         latencia del pasajero que peor la pasa.
       </p>
 
       <GroupedBars
         series={[
-          { name: "Chaining", color: "var(--blue)", values: data.chaining_loads },
-          { name: "Power of two choices", color: "var(--green)", values: data.p2c_loads },
+          { name: "Chaining", color: "var(--blue)", values: chaining },
+          { name: "Power of two choices", color: "var(--green)", values: p2c },
         ]}
         refLine={avg}
         refLabel={`media ${fmt(avg, 1)}`}
@@ -37,18 +43,18 @@ export default function PanelA({ data }: { data: PanelAData }) {
             ? [
                 {
                   value: t.chaining_expected_max,
-                  label: `cota chaining ${fmt(t.chaining_expected_max, 1)}`,
+                  label: `ref. chaining ~${fmt(t.chaining_expected_max, 1)}`,
                   color: "var(--blue)",
                 },
                 {
                   value: t.p2c_expected_max,
-                  label: `cota P2C ${fmt(t.p2c_expected_max, 1)}`,
+                  label: `ref. P2C ~${fmt(t.p2c_expected_max, 1)}`,
                   color: "var(--green)",
                 },
               ]
             : undefined
         }
-        xLabel={`${data.B_buckets} colas de despacho`}
+        xLabel={`${B} colas de despacho`}
       />
 
       <Legend
@@ -86,7 +92,7 @@ export default function PanelA({ data }: { data: PanelAData }) {
               ...(t
                 ? [
                     {
-                      label: "Cota teorica para esta ventana",
+                      label: "Referencia teorica (aprox.)",
                       a: t.chaining_expected_max,
                       b: t.p2c_expected_max,
                       d: 1,
@@ -107,13 +113,16 @@ export default function PanelA({ data }: { data: PanelAData }) {
         </table>
       </div>
 
-      {t && (
+      {/* Solo aplica en el regimen cargado: a escala baja la carga media ronda
+          1 y la afirmacion "muy por encima de 1" seria falsa en pantalla. */}
+      {t && t.avg_load >= 2 && (
         <p className="panel-desc" style={{ marginTop: 14, marginBottom: 0 }}>
-          La cota no es la del caso <i>m = n</i> que se ve en clase (una solicitud por cola). Aqui
-          la carga media es <b>{fmt(t.avg_load, 2)}</b> solicitudes por cola, muy por encima de 1,
-          y en ese regimen la carga maxima es la media mas una desviacion. Con la formula
-          correcta, lo medido y lo predicho coinciden; con la de <i>m = n</i> pareceria que las
-          mediciones violan la cota.
+          La referencia no es la del caso <i>m = n</i> que se ve en clase (una solicitud por cola).
+          Aqui la carga media es <b>{fmt(t.avg_load, 2)}</b> solicitudes por cola, muy por encima de
+          1, y en ese regimen la carga maxima es la media mas una desviacion. Las lineas son
+          aproximaciones de ese orden de magnitud, sin el termino O(1): no son un limite que cada
+          ventana tenga que respetar, y una ventana puede pasarlas por poco. Lo que se sostiene sin
+          ellas es la comparacion medida entre chaining y P2C.
         </p>
       )}
     </section>

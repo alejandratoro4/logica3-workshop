@@ -5,49 +5,51 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { CityParams } from "./params";
 import { toEnv } from "./params";
-import type {
-  DatasetPreview,
-  PanelErrors,
-  Panels,
-  RawResults,
-  StageKey,
-  StageState,
-} from "./types";
+import type { DatasetPreview, ResultErrors, Results, StageKey, StageState } from "./types";
 
-/** Las etapas NO se declaran aca.
- *
- *  Cuales existen depende de que tasks esten agregadas al repo, y eso solo lo
- *  sabe el worker despues de leer public/py/manifest.json. Listarlas a mano
- *  aca significaria mostrar etapas que nunca van a correr. Llegan en el
- *  mensaje "ready" y hasta entonces la consola muestra el estado de arranque. */
-const initialStages = (): StageState[] => [];
+/** De donde salen los resultados que se estan mostrando. Es aparte de los
+ *  controles editables: mover un control no cambia lo que ya se corrio. */
+export type Procedencia = {
+  /** Parametros con los que se produjeron los resultados. */
+  params: CityParams;
+  /** Etiqueta si son precomputados (la corrida canonica); null si los corrio Pyodide. */
+  label: string | null;
+};
 
 export type PipelineState = {
   booting: boolean;
   ready: boolean;
   running: boolean;
   error: string | null;
+  /** Las etapas NO se declaran aca: dependen de que tasks esten en el repo, y
+   *  eso lo sabe el worker al leer public/py/manifest.json. Llegan en "ready". */
   stages: StageState[];
-  panels: Panels | null;
-  raw: RawResults | null;
-  /** Paneles que no se pudieron armar pese a que su task corrio. */
-  panelErrors: PanelErrors;
+  /** JSON de cada task que ya corrio y cumple su contrato, por "taskK". */
+  results: Results | null;
+  /** Tasks que corrieron pero cuyo JSON no cumple el contrato, con el motivo. */
+  errors: ResultErrors;
   dataset: DatasetPreview | null;
+  ran: Procedencia | null;
   pyodideVersion: string | null;
   statusMessage: string;
 };
 
-/** @param enabled  Si es false no se crea el worker. Los workshops que todavia
- *  no tienen codigo no deben descargar Pyodide solo por abrirlos. */
-export function usePipeline(enabled = true) {
+/** @param workshop  Cada worker corre un solo workshop.
+ *  @param enabled   Si es false no se crea el worker: un workshop sin codigo
+ *                   no debe descargar Pyodide solo por abrirlo. */
+export function usePipeline(workshop: string, enabled = true) {
   const workerRef = useRef<Worker | null>(null);
-  // Cuando se carga una corrida precomputada, el pipeline que venia corriendo
-  // puede seguir emitiendo resultados y pisarla. Esta bandera los descarta
-  // hasta que el usuario pida una corrida nueva de forma explicita.
-  const supersededRef = useRef(false);
+  // Id de la corrida vigente. El worker lo repite en cada mensaje de una
+  // corrida; los de una corrida sustituida (por otra, o por la canonica
+  // cargada mientras el worker seguia corriendo) se descartan todos: etapas,
+  // resultados, dataset, fin y errores.
+  const runIdRef = useRef(0);
+  // Permite comprobar si una carga asincrona de resultados sigue vigente
+  // cuando termina su descarga, sin sustituir una corrida posterior.
+  const getRunId = useCallback(() => runIdRef.current, []);
   const [state, setState] = useState<PipelineState>({
     booting: false, ready: false, running: false, error: null,
-    stages: initialStages(), panels: null, raw: null, panelErrors: {}, dataset: null,
+    stages: [], results: null, errors: {}, dataset: null, ran: null,
     pyodideVersion: null, statusMessage: "",
   });
 
@@ -58,15 +60,17 @@ export function usePipeline(enabled = true) {
 
     w.onmessage = (ev: MessageEvent) => {
       const m = ev.data || {};
+      // Los mensajes del arranque no traen runId; los de una corrida, si.
+      if (m.runId !== undefined && m.runId !== runIdRef.current) return;
       setState((prev) => {
         switch (m.type) {
           case "status":
             return { ...prev, booting: true, statusMessage: m.message };
           case "ready": {
             // Se puede haber cargado la corrida canonica ANTES de que Pyodide
-            // terminara de arrancar (el boton no espera al worker). En ese caso
-            // las etapas ya quedaron en "done"; pisarlas con "pending" al llegar
-            // el ready mostraria un pipeline sin correr junto a datos cargados.
+            // terminara de arrancar. En ese caso las etapas ya quedaron en
+            // "done"; pisarlas con "pending" mostraria un pipeline sin correr
+            // junto a datos cargados.
             const previas = new Map(prev.stages.map((st) => [st.key, st]));
             return {
               ...prev, booting: false, ready: true, statusMessage: "",
@@ -89,19 +93,11 @@ export function usePipeline(enabled = true) {
             };
           }
           case "partial":
-            if (supersededRef.current) return prev;
-            // Se fusiona en vez de reemplazar: cada mensaje trae los paneles
-            // que ya se pueden armar, y los que faltan llegan mas tarde.
-            return {
-              ...prev,
-              panels: { ...(prev.panels ?? {}), ...(m.payload.panels ?? {}) },
-              raw: m.payload.raw ?? prev.raw,
-              // Se reemplaza, no se fusiona: el reporte es del estado actual,
-              // y un panel que ya se arreglo no debe seguir figurando roto.
-              panelErrors: m.payload.panelErrors ?? {},
-            };
+            // El worker manda el estado completo de results/ cada vez, asi que
+            // se reemplaza: un JSON que se arreglo no debe seguir figurando roto.
+            return { ...prev, results: m.payload.results ?? {}, errors: m.payload.errors ?? {} };
           case "dataset":
-            return supersededRef.current ? prev : { ...prev, dataset: m.payload };
+            return { ...prev, dataset: m.payload };
           case "done":
             return { ...prev, running: false };
           case "fatal":
@@ -116,51 +112,69 @@ export function usePipeline(enabled = true) {
       setState((p) => ({ ...p, booting: false, running: false, error: e.message || "Error en el worker" }));
 
     setState((p) => ({ ...p, booting: true, statusMessage: "Iniciando runtime de Python..." }));
-    w.postMessage({ type: "init", baseUrl: `${location.origin}/` });
+    w.postMessage({ type: "init", baseUrl: `${location.origin}/`, workshop });
 
     return () => w.terminate();
-  }, [enabled]);
+  }, [enabled, workshop]);
 
-  const run = useCallback((params: CityParams, stages?: StageKey[]) => {
-    const w = workerRef.current;
-    if (!w) return;
-    supersededRef.current = false;
-    setState((prev) => ({
-      ...prev,
-      running: true,
-      error: null,
-      panelErrors: {},
-      stages: prev.stages.map((s) =>
-        !stages || stages.includes(s.key)
-          ? { ...s, status: "pending", seconds: undefined, output: undefined }
-          : s
-      ),
-    }));
-    w.postMessage({
-      type: "run",
-      baseUrl: `${location.origin}/`,
-      params: toEnv(params),
-      stages: stages ?? null,
-    });
-  }, []);
+  const run = useCallback(
+    (params: CityParams, stages?: StageKey[]) => {
+      const w = workerRef.current;
+      if (!w) return;
+      const runId = ++runIdRef.current;
+      // Si se corre algun dataset, el que se estaba mostrando deja de ser el
+      // de estos resultados hasta que llegue el nuevo.
+      const rehaceDataset = !stages || stages.some((k) => k.startsWith("dataset"));
+      setState((prev) => ({
+        ...prev,
+        running: true,
+        error: null,
+        ran: { params, label: null },
+        ...(rehaceDataset ? { dataset: null } : {}),
+        // Una corrida completa empieza de cero, igual que en el worker: los
+        // paneles de la corrida anterior no deben quedar como si fueran de esta.
+        ...(stages ? {} : { results: null, errors: {} }),
+        stages: prev.stages.map((s) =>
+          !stages || stages.includes(s.key)
+            ? { ...s, status: "pending", seconds: undefined, output: undefined }
+            : s
+        ),
+      }));
+      w.postMessage({
+        type: "run",
+        baseUrl: `${location.origin}/`,
+        workshop,
+        params: toEnv(params),
+        stages: stages ?? null,
+        runId,
+      });
+    },
+    [workshop]
+  );
 
   /** Inyecta una corrida ya calculada (la canonica precomputada) sin pasar por
-   *  Pyodide: evita esperar ~2 minutos solo para ver los numeros del informe. */
-  const loadPanels = useCallback((panels: Panels, label: string) => {
-    supersededRef.current = true;
+   *  Pyodide: evita esperar minutos solo para ver los numeros del informe. */
+  const loadResults = useCallback((results: Results, label: string, params: CityParams) => {
+    // Sustituye a cualquier corrida en curso: sus mensajes ya no se aplican.
+    runIdRef.current++;
     setState((prev) => ({
       ...prev,
-      panels,
+      results,
+      running: false,
       error: null,
-      panelErrors: {},
+      errors: {},
+      // La canonica no trae vista previa del CSV: mostrar la de una corrida
+      // anterior seria mostrar otro dataset.
+      dataset: null,
+      ran: { params, label },
       stages: prev.stages.map((st) => ({
         ...st,
         status: "done" as const,
         seconds: undefined,
-        output: `Cargado de ${label} (sin recomputar).`,
+        output: `Precomputado (${label}), sin recomputar.`,
       })),
     }));
   }, []);
 
-  return { ...state, run, loadPanels };
+  return { ...state, run, loadResults, getRunId };
 }

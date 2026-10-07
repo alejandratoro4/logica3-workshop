@@ -1,9 +1,16 @@
-/** Registro de workshops.
+/** Registro de workshops: el enunciado de cada uno, nada mas.
  *
- * Agregar un workshop = agregar una entrada aca (y, cuando exista, su codigo
- * bajo w2/src). El shell, las tabs, el ruteo estatico, el runtime de Pyodide,
- * el panel de parametros, el visor de codigo y el modo presentacion ya estan
- * y se heredan sin tocar nada. */
+ * Lo que hay implementado no se declara aca. Se deduce del repo:
+ *   - src/wN/taskK_tema.py        el script de la task (lo corre el worker);
+ *   - contratos/wN.md             que claves lee el dashboard de cada task;
+ *   - components/panels/wN/TaskK.tsx  su panel;
+ *   - lib/docs/wN/taskK.ts        su pagina (opcional).
+ * scripts/sync-python.mjs los encuentra y los registra, asi que agregar una
+ * task no toca este archivo.
+ *
+ * Agregar un workshop = una entrada aca, su src/wN/dataset.py y su
+ * contratos/wN.md. El shell, las tabs, el ruteo, el panel de parametros, el
+ * visor de codigo y el modo presentacion se heredan. */
 
 export type WorkshopStatus = "ready" | "planned";
 
@@ -13,9 +20,11 @@ export type Workshop = {
   title: string;
   subtitle: string;
   status: WorkshopStatus;
-  /** Tareas del enunciado. En los workshops "planned" se listan como hoja de ruta. */
-  tasks?: { n: number; title: string; blurb: string }[];
-  /** Nota que se muestra en el slot mientras status === "planned". */
+  /** Las tasks del enunciado, con su texto y nada mas. */
+  tasks: { n: number; title: string; blurb: string }[];
+  /** Orden de los paneles en el dashboard, si no es el numerico. */
+  order?: number[];
+  /** Nota sobre los datos, debajo del titulo del dashboard. */
   note?: string;
 };
 
@@ -27,9 +36,9 @@ export const WORKSHOPS: Workshop[] = [
     subtitle:
       "Big Data, algoritmos aleatorizados, hashing universal, tablas hash y cotas de concentracion.",
     status: "ready",
-    // Las cinco del enunciado, con el texto del enunciado y nada mas. Cual
-    // esta implementada NO se marca aca: se deduce de si tiene TaskDoc en
-    // lib/tasks.ts, para que no existan dos listas que se puedan contradecir.
+    // El benchmark de QuickSort (Task 2) es lo ultimo que termina: su panel va
+    // al final para que no deje un hueco arriba mientras corre.
+    order: [1, 5, 4, 3, 2],
     tasks: [
       {
         n: 1,
@@ -69,7 +78,10 @@ export const WORKSHOPS: Workshop[] = [
     title: "Streams de solicitudes y resumenes en linea",
     subtitle:
       "El indice de despacho de la Unidad 1 ahora recibe un flujo continuo: las decisiones de surge se toman desde resumenes, no desde el historico almacenado.",
-    status: "planned",
+    status: "ready",
+    // Primero el contexto (T1), despues los tres paneles del enunciado
+    // (A = Bloom, B = distintos, C = surge + F_k) y al final el muestreo.
+    order: [1, 2, 4, 6, 5, 3],
     tasks: [
       {
         n: 1,
@@ -101,18 +113,64 @@ export const WORKSHOPS: Workshop[] = [
         blurb:
           "F0, F1 y F2 exactos sobre pickup_zone. Un F2 alto significa que pocas zonas concentran la demanda: candidatas a surge.",
       },
+      {
+        n: 6,
+        title: "Dashboard: medidor de surge",
+        blurb:
+          "Panel C: medidor de surge en vivo por zona, solicitudes contra la cota de probabilidad de la Unidad 1, junto al resultado de F_k.",
+      },
     ],
     note:
-      "El dataset es el de la Unidad 1 mas dos campos: stream_seq y wait_for_driver_sec. El Panel C reusa la cota de probabilidad de la Task 5 del Workshop 1, asi que el generador y esa task se comparten en vez de duplicarse.",
+      "El dataset es el de la Unidad 1 mas dos campos, stream_seq y wait_for_driver_sec, que agrega src/w2/dataset.py sin tocar rides.csv.",
   },
   {
     slug: "3",
     n: 3,
-    title: "Workshop 3",
-    subtitle: "Sin enunciado todavia.",
-    status: "planned",
+    title: "Cadenas de Markov sobre las reubicaciones de conductores",
+    subtitle:
+      "El stream de la Unidad 2 se agrega en un grafo: para cada conductor, una arista desde la zona de un viaje hasta la de su siguiente viaje.",
+    status: "ready",
+    order: [1, 2, 3, 6, 4, 5],
+    tasks: [
+      {
+        n: 1,
+        title: "DTMC y clasificacion de estados",
+        blurb:
+          "Estados = zonas de recogida. Construir M a partir de reloc_count. Hay alguna zona absorbente, donde los conductores llegan y nunca salen?",
+      },
+      {
+        n: 2,
+        title: "Distribucion estacionaria",
+        blurb:
+          "Interpretar pi: en que zonas pasan mas tiempo los conductores a largo plazo; compararla con el conteo de viajes por zona de la Unidad 1.",
+      },
+      {
+        n: 3,
+        title: "PageRank",
+        blurb:
+          "PageRank estandar para rankear las zonas, contra el ranking por volumen de viajes; explicar una zona que quede mas arriba en PageRank que en volumen.",
+      },
+      {
+        n: 4,
+        title: "Caminata aleatoria",
+        blurb:
+          "Simetrizar el grafo, caminar 50.000 pasos o mas y verificar las visitas empiricas contra pi_i = d_i / (2|E|).",
+      },
+      {
+        n: 5,
+        title: "2-SAT aleatorizado",
+        blurb:
+          "Papadimitriou: 5 restricciones de politica de despacho sobre 8 o mas variables.",
+      },
+      {
+        n: 6,
+        title: "Dashboard: Panel D",
+        blurb:
+          "Ranking de PageRank contra ranking por volumen en cada zona, sobre el medidor de surge de la Unidad 1.",
+      },
+    ],
     note:
-      "Cuando salga el enunciado, se registra aca igual que el Workshop 2 y hereda toda la infraestructura.",
+      "El grafo sale de src/w3/dataset.py, que lee stream.csv del Workshop 2 y escribe data/edges.csv con el driver_id de cada viaje, como pide el enunciado. Tambien escribe data/edges_despacho.csv, un escenario alterno con despacho espacial que solo usa el Panel D.",
   },
 ];
 

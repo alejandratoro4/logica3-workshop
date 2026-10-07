@@ -26,7 +26,13 @@ export default async function WorkshopLayout({
   return (
     <>
       <WorkshopTabs active={slug} />
-      <WorkshopProvider workshop={workshop}>{children}</WorkshopProvider>
+      {/* key: al cambiar de workshop el provider se monta de cero, con su propio
+          worker y sin la corrida del otro. Sin el, la corrida del W1 se veria en
+          el W2 y `claimed` impediria la corrida automatica del W2. Navegar entre
+          las paginas de un mismo workshop no cambia el slug y no reinicia nada. */}
+      <WorkshopProvider key={slug} workshop={workshop}>
+        {children}
+      </WorkshopProvider>
     </>
   );
 }

@@ -11,7 +11,7 @@
 import { createContext, useCallback, useContext, useEffect, useMemo, useRef, useState } from "react";
 import { DEMO, FULL, fromQuery, type CityParams } from "@/lib/params";
 import { usePipeline, type PipelineState } from "@/lib/usePipeline";
-import type { Panels, StageKey } from "@/lib/types";
+import type { Results, StageKey } from "@/lib/types";
 import type { Workshop } from "@/lib/workshops";
 
 type Ctx = {
@@ -20,9 +20,14 @@ type Ctx = {
   setParams: (p: CityParams) => void;
   pipeline: PipelineState & {
     run: (p: CityParams, stages?: StageKey[]) => void;
-    loadPanels: (p: Panels, label: string) => void;
+    loadResults: (r: Results, label: string, p: CityParams) => void;
+    getRunId: () => number;
   };
-  /** Etiqueta de la corrida canonica cuando esta cargada. */
+  /** Parametros con los que se produjeron los resultados que se ven. Son los
+   *  que describen los numeros; `params` son los controles, que se pueden
+   *  editar sin haber corrido. */
+  ranParams: CityParams;
+  /** Etiqueta de la corrida canonica cuando lo que se ve es la canonica. */
   canonical: string | null;
   loadCanonical: () => Promise<void>;
   /** Marca que ya hay (o va a haber) datos, para no pisarlos con la corrida
@@ -48,9 +53,10 @@ export default function WorkshopProvider({
 }) {
   const ready = workshop.status === "ready";
   const [params, setParams] = useState<CityParams>(DEMO);
-  const [canonical, setCanonical] = useState<string | null>(null);
+  const [canonicalFallo, setCanonicalFallo] = useState(false);
   const [claimed, setClaimed] = useState(false);
-  const pipeline = usePipeline(ready);
+  const canonicalRequestRef = useRef(0);
+  const pipeline = usePipeline(workshop.slug, ready);
 
   // Configuracion inicial desde la URL, para poder compartir una ciudad por link.
   useEffect(() => {
@@ -62,30 +68,44 @@ export default function WorkshopProvider({
   const claimRun = useCallback(() => setClaimed(true), []);
 
   /** Corrida canonica a escala completa, precomputada y servida como JSON
-   *  estatico: son los mismos numeros del informe, al instante. */
+   *  estatico (web/scripts/export_canonical.py): son los mismos numeros del
+   *  informe, al instante. */
   const loadCanonical = useCallback(async () => {
     setClaimed(true); // evita que la corrida automatica la reemplace
+    const requestId = ++canonicalRequestRef.current;
+    const runId = pipeline.getRunId();
+    const vigente = () =>
+      requestId === canonicalRequestRef.current && runId === pipeline.getRunId();
     try {
-      const res = await fetch("/data/canonical-run.json");
+      const res = await fetch(`/data/canonical-w${workshop.slug}.json`);
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const data = await res.json();
-      pipeline.loadPanels(data.panels, "la corrida canonica");
-      // El sidebar debe reflejar lo que se esta viendo, no la config anterior.
-      setParams(FULL);
-      // rows sale de la Task 1, o se deduce de la Task 2 (ver export_canonical.py).
-      // Sin ninguna de las dos no hay conteo que mostrar, y tampoco es grave.
+      // Una nueva corrida o una carga mas reciente tiene prioridad sobre
+      // esta respuesta, incluso si la descarga antigua termina despues.
+      if (!vigente()) return;
+      // Filas del dataset del workshop, contadas al exportar.
       const rows: number | null = data.params?.rows ?? null;
-      setCanonical(
-        rows ? `${rows.toLocaleString("es-CO")} viajes · escala completa` : "escala completa"
-      );
+      const label = rows
+        ? `${rows.toLocaleString("es-CO")} ${data.params?.unit ?? "filas"} · escala completa`
+        : "escala completa";
+      pipeline.loadResults(data.results, label, FULL);
+      // El sidebar arranca con la config de lo que se esta viendo, para que
+      // "Correr" la reproduzca.
+      setParams(FULL);
+      setCanonicalFallo(false);
     } catch {
-      setCanonical("no disponible");
+      if (vigente()) setCanonicalFallo(true);
     }
-  }, [pipeline]);
+  }, [pipeline, workshop.slug]);
+
+  // La etiqueta sale de la procedencia de los resultados: una corrida nueva
+  // la borra sola, sin que nadie tenga que acordarse de limpiarla.
+  const canonical = pipeline.ran ? pipeline.ran.label : (canonicalFallo ? "no disponible" : null);
+  const ranParams = pipeline.ran?.params ?? params;
 
   const value = useMemo(
-    () => ({ workshop, params, setParams, pipeline, canonical, loadCanonical, claimRun, claimed }),
-    [workshop, params, pipeline, canonical, loadCanonical, claimRun, claimed]
+    () => ({ workshop, params, setParams, pipeline, ranParams, canonical, loadCanonical, claimRun, claimed }),
+    [workshop, params, pipeline, ranParams, canonical, loadCanonical, claimRun, claimed]
   );
 
   return <WorkshopCtx.Provider value={value}>{children}</WorkshopCtx.Provider>;
@@ -100,7 +120,7 @@ export default function WorkshopProvider({
 export function useEnsureRun() {
   const { pipeline, canonical, loadCanonical, claimed, claimRun } = useWorkshop();
   const asked = useRef(false);
-  const hasPanels = Boolean(pipeline.panels && Object.keys(pipeline.panels).length);
+  const hasPanels = Boolean(pipeline.results && Object.keys(pipeline.results).length);
 
   useEffect(() => {
     if (asked.current || hasPanels || claimed) return;

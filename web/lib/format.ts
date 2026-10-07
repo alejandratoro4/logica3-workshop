@@ -22,3 +22,13 @@ export const fmt = (v: number | undefined | null, d = 2) => {
 /** Entero con separador de miles, para conteos grandes (viajes, ventanas). */
 export const int = (v: number | undefined | null) =>
   v === undefined || v === null || !Number.isFinite(v) ? "—" : Math.round(v).toLocaleString("es-CO");
+
+/** Porcentaje legible de una proporcion (0.0321 -> "3.21%"), con notacion
+ *  cientifica para lo diminuto (tasas de falso positivo de 1e-6). */
+export const pct = (v: number | undefined | null, d = 2) => {
+  if (v === null || v === undefined || !Number.isFinite(v)) return "—";
+  if (v === 0) return "0%";
+  const p = v * 100;
+  if (Math.abs(p) < 0.001) return `${p.toExponential(1)}%`;
+  return `${fmt(p, Math.abs(p) < 0.1 ? 4 : d)}%`;
+};
