@@ -1,0 +1,56 @@
+{
+  "method": "potencias",
+  "iterations": 8,
+  "zones": [
+    {
+      "zone": "AIRPORT",
+      "pi": 0.141107,
+      "ride_count": 70004
+    },
+    {
+      "zone": "BELEN",
+      "pi": 0.080877,
+      "ride_count": 40056
+    },
+    {
+      "zone": "BELLO",
+      "pi": 0.087797,
+      "ride_count": 43483
+    },
+    {
+      "zone": "DOWNTOWN",
+      "pi": 0.13071,
+      "ride_count": 64727
+    },
+    {
+      "zone": "EL_POBLADO",
+      "pi": 0.142701,
+      "ride_count": 70702
+    },
+    {
+      "zone": "ENVIGADO",
+      "pi": 0.083616,
+      "ride_count": 41429
+    },
+    {
+      "zone": "ITAGUI",
+      "pi": 0.066028,
+      "ride_count": 32734
+    },
+    {
+      "zone": "LAURELES",
+      "pi": 0.108198,
+      "ride_count": 53604
+    },
+    {
+      "zone": "SABANETA",
+      "pi": 0.066777,
+      "ride_count": 33106
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "pi": 0.092189,
+      "ride_count": 45660
+    }
+  ]
+}

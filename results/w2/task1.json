@@ -1,0 +1,5388 @@
+{
+  "n_events": 495505,
+  "window_n": 500,
+  "window_scope": "por zona",
+  "checkpoints": [
+    {
+      "timestamp": "2026-09-01T00:00:03",
+      "rolling_avg_wait": {
+        "AIRPORT": 74.0
+      },
+      "distinct_riders_last_hour": 1
+    },
+    {
+      "timestamp": "2026-09-01T01:00:05",
+      "rolling_avg_wait": {
+        "AIRPORT": 57.915454545454544,
+        "BELEN": 44.74347826086956,
+        "UNIV_NORTE": 46.894444444444446,
+        "EL_POBLADO": 58.486999999999995,
+        "SABANETA": 49.332432432432434,
+        "ITAGUI": 51.45428571428572,
+        "DOWNTOWN": 48.688,
+        "LAURELES": 47.26065573770492,
+        "ENVIGADO": 49.41315789473684,
+        "BELLO": 45.14074074074074
+      },
+      "distinct_riders_last_hour": 509
+    },
+    {
+      "timestamp": "2026-09-01T02:00:14",
+      "rolling_avg_wait": {
+        "AIRPORT": 54.43280423280423,
+        "BELEN": 47.533962264150944,
+        "UNIV_NORTE": 45.608823529411765,
+        "EL_POBLADO": 56.3937106918239,
+        "SABANETA": 47.387692307692305,
+        "ITAGUI": 48.89714285714286,
+        "DOWNTOWN": 47.56744186046512,
+        "LAURELES": 45.392941176470586,
+        "ENVIGADO": 47.19275362318841,
+        "BELLO": 46.04736842105263
+      },
+      "distinct_riders_last_hour": 376
+    },
+    {
+      "timestamp": "2026-09-01T03:01:52",
+      "rolling_avg_wait": {
+        "AIRPORT": 53.54595588235294,
+        "BELEN": 45.902325581395345,
+        "UNIV_NORTE": 44.55747126436781,
+        "EL_POBLADO": 54.96492146596858,
+        "SABANETA": 46.3191011235955,
+        "ITAGUI": 46.682653061224485,
+        "DOWNTOWN": 47.697272727272725,
+        "LAURELES": 44.395614035087725,
+        "ENVIGADO": 44.86796116504854,
+        "BELLO": 44.35057471264368
+      },
+      "distinct_riders_last_hour": 333
+    },
+    {
+      "timestamp": "2026-09-01T04:02:40",
+      "rolling_avg_wait": {
+        "AIRPORT": 54.3023598820059,
+        "BELEN": 43.864705882352936,
+        "UNIV_NORTE": 44.72719298245614,
+        "EL_POBLADO": 54.54052863436124,
+        "SABANETA": 47.27109375,
+        "ITAGUI": 46.39044117647059,
+        "DOWNTOWN": 49.015,
+        "LAURELES": 45.62101449275362,
+        "ENVIGADO": 47.28391608391609,
+        "BELLO": 45.94016393442623
+      },
+      "distinct_riders_last_hour": 366
+    },
+    {
+      "timestamp": "2026-09-01T05:03:07",
+      "rolling_avg_wait": {
+        "AIRPORT": 56.75022026431718,
+        "BELEN": 43.73660130718954,
+        "UNIV_NORTE": 45.24013605442177,
+        "EL_POBLADO": 53.41685823754789,
+        "SABANETA": 48.02530864197531,
+        "ITAGUI": 46.45679012345679,
+        "DOWNTOWN": 49.5,
+        "LAURELES": 46.40689655172414,
+        "ENVIGADO": 46.595151515151514,
+        "BELLO": 46.994904458598725
+      },
+      "distinct_riders_last_hour": 399
+    },
+    {
+      "timestamp": "2026-09-01T06:03:18",
+      "rolling_avg_wait": {
+        "AIRPORT": 62.396,
+        "BELEN": 46.0,
+        "UNIV_NORTE": 49.83165137614679,
+        "EL_POBLADO": 51.863076923076925,
+        "SABANETA": 48.10582010582011,
+        "ITAGUI": 46.399468085106385,
+        "DOWNTOWN": 51.41440329218107,
+        "LAURELES": 46.985416666666666,
+        "ENVIGADO": 46.33917525773195,
+        "BELLO": 48.761160714285715
+      },
+      "distinct_riders_last_hour": 628
+    },
+    {
+      "timestamp": "2026-09-01T07:03:18",
+      "rolling_avg_wait": {
+        "AIRPORT": 73.0288,
+        "BELEN": 49.64119718309859,
+        "UNIV_NORTE": 60.76271604938272,
+        "EL_POBLADO": 55.19847161572053,
+        "SABANETA": 47.479268292682924,
+        "ITAGUI": 47.16269841269841,
+        "DOWNTOWN": 56.59184210526316,
+        "LAURELES": 55.87350649350649,
+        "ENVIGADO": 49.06857142857143,
+        "BELLO": 52.44604105571847
+      },
+      "distinct_riders_last_hour": 1223
+    },
+    {
+      "timestamp": "2026-09-01T08:03:24",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.93719999999999,
+        "BELEN": 56.18627906976744,
+        "UNIV_NORTE": 82.2056,
+        "EL_POBLADO": 66.5944,
+        "SABANETA": 54.8551637279597,
+        "ITAGUI": 54.31670886075949,
+        "DOWNTOWN": 101.5836,
+        "LAURELES": 75.5718,
+        "ENVIGADO": 55.130044843049326,
+        "BELLO": 68.826
+      },
+      "distinct_riders_last_hour": 2183
+    },
+    {
+      "timestamp": "2026-09-01T09:03:43",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.88860000000001,
+        "BELEN": 64.5266,
+        "UNIV_NORTE": 91.6094,
+        "EL_POBLADO": 89.09939999999999,
+        "SABANETA": 59.5658,
+        "ITAGUI": 59.861,
+        "DOWNTOWN": 124.99860000000001,
+        "LAURELES": 82.9426,
+        "ENVIGADO": 65.94619999999999,
+        "BELLO": 78.8126
+      },
+      "distinct_riders_last_hour": 2259
+    },
+    {
+      "timestamp": "2026-09-01T10:03:50",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.03160000000001,
+        "BELEN": 67.28139999999999,
+        "UNIV_NORTE": 79.1604,
+        "EL_POBLADO": 88.7038,
+        "SABANETA": 63.397400000000005,
+        "ITAGUI": 64.918,
+        "DOWNTOWN": 105.9858,
+        "LAURELES": 74.71560000000001,
+        "ENVIGADO": 69.4256,
+        "BELLO": 77.8002
+      },
+      "distinct_riders_last_hour": 1616
+    },
+    {
+      "timestamp": "2026-09-01T11:03:50",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.7824,
+        "BELEN": 66.0488,
+        "UNIV_NORTE": 76.385,
+        "EL_POBLADO": 77.08139999999999,
+        "SABANETA": 67.4832,
+        "ITAGUI": 66.2856,
+        "DOWNTOWN": 80.7188,
+        "LAURELES": 74.3618,
+        "ENVIGADO": 70.63860000000001,
+        "BELLO": 72.0018
+      },
+      "distinct_riders_last_hour": 1599
+    },
+    {
+      "timestamp": "2026-09-01T12:03:59",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.714,
+        "BELEN": 64.8312,
+        "UNIV_NORTE": 68.005,
+        "EL_POBLADO": 80.741,
+        "SABANETA": 68.94139999999999,
+        "ITAGUI": 66.21560000000001,
+        "DOWNTOWN": 77.0446,
+        "LAURELES": 74.14439999999999,
+        "ENVIGADO": 70.6496,
+        "BELLO": 68.884
+      },
+      "distinct_riders_last_hour": 1728
+    },
+    {
+      "timestamp": "2026-09-01T13:04:02",
+      "rolling_avg_wait": {
+        "AIRPORT": 84.405,
+        "BELEN": 71.88080000000001,
+        "UNIV_NORTE": 71.9164,
+        "EL_POBLADO": 89.2718,
+        "SABANETA": 67.548,
+        "ITAGUI": 65.27459999999999,
+        "DOWNTOWN": 75.5318,
+        "LAURELES": 77.81,
+        "ENVIGADO": 74.7368,
+        "BELLO": 67.965
+      },
+      "distinct_riders_last_hour": 1884
+    },
+    {
+      "timestamp": "2026-09-01T14:04:16",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.384,
+        "BELEN": 72.12819999999999,
+        "UNIV_NORTE": 71.0562,
+        "EL_POBLADO": 89.667,
+        "SABANETA": 68.62819999999999,
+        "ITAGUI": 64.016,
+        "DOWNTOWN": 75.45739999999999,
+        "LAURELES": 78.377,
+        "ENVIGADO": 74.9528,
+        "BELLO": 67.81660000000001
+      },
+      "distinct_riders_last_hour": 1692
+    },
+    {
+      "timestamp": "2026-09-01T15:04:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.707,
+        "BELEN": 72.5842,
+        "UNIV_NORTE": 69.6868,
+        "EL_POBLADO": 87.761,
+        "SABANETA": 67.63539999999999,
+        "ITAGUI": 63.8886,
+        "DOWNTOWN": 73.2736,
+        "LAURELES": 76.8528,
+        "ENVIGADO": 69.2972,
+        "BELLO": 68.31639999999999
+      },
+      "distinct_riders_last_hour": 1581
+    },
+    {
+      "timestamp": "2026-09-01T16:04:24",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.2644,
+        "BELEN": 66.5352,
+        "UNIV_NORTE": 72.722,
+        "EL_POBLADO": 88.6574,
+        "SABANETA": 64.7896,
+        "ITAGUI": 66.8574,
+        "DOWNTOWN": 79.1378,
+        "LAURELES": 78.398,
+        "ENVIGADO": 69.5276,
+        "BELLO": 74.0782
+      },
+      "distinct_riders_last_hour": 1894
+    },
+    {
+      "timestamp": "2026-09-01T17:04:25",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.332,
+        "BELEN": 73.63,
+        "UNIV_NORTE": 89.5158,
+        "EL_POBLADO": 99.1318,
+        "SABANETA": 68.3652,
+        "ITAGUI": 68.6412,
+        "DOWNTOWN": 91.1016,
+        "LAURELES": 80.40780000000001,
+        "ENVIGADO": 75.9676,
+        "BELLO": 83.2018
+      },
+      "distinct_riders_last_hour": 2382
+    },
+    {
+      "timestamp": "2026-09-01T18:04:37",
+      "rolling_avg_wait": {
+        "AIRPORT": 88.4974,
+        "BELEN": 79.3544,
+        "UNIV_NORTE": 90.0858,
+        "EL_POBLADO": 120.755,
+        "SABANETA": 75.4158,
+        "ITAGUI": 79.1214,
+        "DOWNTOWN": 126.9646,
+        "LAURELES": 95.15480000000001,
+        "ENVIGADO": 85.9718,
+        "BELLO": 90.0162
+      },
+      "distinct_riders_last_hour": 2831
+    },
+    {
+      "timestamp": "2026-09-01T19:04:53",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.5992,
+        "BELEN": 79.6292,
+        "UNIV_NORTE": 79.4546,
+        "EL_POBLADO": 139.8856,
+        "SABANETA": 77.5928,
+        "ITAGUI": 80.4344,
+        "DOWNTOWN": 125.3176,
+        "LAURELES": 96.9616,
+        "ENVIGADO": 85.23939999999999,
+        "BELLO": 84.8336
+      },
+      "distinct_riders_last_hour": 2640
+    },
+    {
+      "timestamp": "2026-09-01T20:04:59",
+      "rolling_avg_wait": {
+        "AIRPORT": 94.0432,
+        "BELEN": 75.6754,
+        "UNIV_NORTE": 77.628,
+        "EL_POBLADO": 101.5398,
+        "SABANETA": 75.66,
+        "ITAGUI": 77.5654,
+        "DOWNTOWN": 108.3252,
+        "LAURELES": 88.7138,
+        "ENVIGADO": 79.8032,
+        "BELLO": 75.82260000000001
+      },
+      "distinct_riders_last_hour": 1836
+    },
+    {
+      "timestamp": "2026-09-01T21:05:05",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.391,
+        "BELEN": 69.8738,
+        "UNIV_NORTE": 71.9782,
+        "EL_POBLADO": 95.491,
+        "SABANETA": 70.6494,
+        "ITAGUI": 71.1328,
+        "DOWNTOWN": 84.70960000000001,
+        "LAURELES": 81.215,
+        "ENVIGADO": 77.1332,
+        "BELLO": 71.20339999999999
+      },
+      "distinct_riders_last_hour": 1448
+    },
+    {
+      "timestamp": "2026-09-01T22:06:05",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.1432,
+        "BELEN": 68.0004,
+        "UNIV_NORTE": 67.91860000000001,
+        "EL_POBLADO": 88.57,
+        "SABANETA": 65.35640000000001,
+        "ITAGUI": 66.1908,
+        "DOWNTOWN": 79.072,
+        "LAURELES": 75.5562,
+        "ENVIGADO": 71.5424,
+        "BELLO": 67.9342
+      },
+      "distinct_riders_last_hour": 1079
+    },
+    {
+      "timestamp": "2026-09-01T23:06:34",
+      "rolling_avg_wait": {
+        "AIRPORT": 74.9674,
+        "BELEN": 62.6328,
+        "UNIV_NORTE": 67.7734,
+        "EL_POBLADO": 76.0454,
+        "SABANETA": 64.4834,
+        "ITAGUI": 62.7872,
+        "DOWNTOWN": 67.7374,
+        "LAURELES": 72.5422,
+        "ENVIGADO": 65.8036,
+        "BELLO": 62.5698
+      },
+      "distinct_riders_last_hour": 825
+    },
+    {
+      "timestamp": "2026-09-02T00:06:39",
+      "rolling_avg_wait": {
+        "AIRPORT": 75.62039999999999,
+        "BELEN": 60.332800000000006,
+        "UNIV_NORTE": 66.6336,
+        "EL_POBLADO": 70.8074,
+        "SABANETA": 64.284,
+        "ITAGUI": 63.0556,
+        "DOWNTOWN": 62.5562,
+        "LAURELES": 66.5042,
+        "ENVIGADO": 64.8,
+        "BELLO": 61.1466
+      },
+      "distinct_riders_last_hour": 543
+    },
+    {
+      "timestamp": "2026-09-02T01:06:48",
+      "rolling_avg_wait": {
+        "AIRPORT": 70.951,
+        "BELEN": 59.3336,
+        "UNIV_NORTE": 62.4444,
+        "EL_POBLADO": 67.315,
+        "SABANETA": 62.93,
+        "ITAGUI": 61.182,
+        "DOWNTOWN": 61.8624,
+        "LAURELES": 64.7476,
+        "ENVIGADO": 65.2636,
+        "BELLO": 59.701
+      },
+      "distinct_riders_last_hour": 482
+    },
+    {
+      "timestamp": "2026-09-02T02:07:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 69.0432,
+        "BELEN": 58.0042,
+        "UNIV_NORTE": 61.0434,
+        "EL_POBLADO": 63.4814,
+        "SABANETA": 61.0092,
+        "ITAGUI": 59.4086,
+        "DOWNTOWN": 60.3194,
+        "LAURELES": 64.2552,
+        "ENVIGADO": 63.984199999999994,
+        "BELLO": 58.832
+      },
+      "distinct_riders_last_hour": 394
+    },
+    {
+      "timestamp": "2026-09-02T03:07:32",
+      "rolling_avg_wait": {
+        "AIRPORT": 65.19919999999999,
+        "BELEN": 57.01,
+        "UNIV_NORTE": 59.0874,
+        "EL_POBLADO": 61.9572,
+        "SABANETA": 58.2796,
+        "ITAGUI": 56.865,
+        "DOWNTOWN": 58.277,
+        "LAURELES": 61.6836,
+        "ENVIGADO": 61.9264,
+        "BELLO": 57.581
+      },
+      "distinct_riders_last_hour": 329
+    },
+    {
+      "timestamp": "2026-09-02T04:07:40",
+      "rolling_avg_wait": {
+        "AIRPORT": 61.184,
+        "BELEN": 55.4908,
+        "UNIV_NORTE": 55.831,
+        "EL_POBLADO": 60.9456,
+        "SABANETA": 56.652800000000006,
+        "ITAGUI": 55.1682,
+        "DOWNTOWN": 56.5152,
+        "LAURELES": 59.002,
+        "ENVIGADO": 59.418,
+        "BELLO": 55.5484
+      },
+      "distinct_riders_last_hour": 356
+    },
+    {
+      "timestamp": "2026-09-02T05:07:48",
+      "rolling_avg_wait": {
+        "AIRPORT": 59.3844,
+        "BELEN": 54.2382,
+        "UNIV_NORTE": 54.0644,
+        "EL_POBLADO": 59.5342,
+        "SABANETA": 55.306,
+        "ITAGUI": 53.3984,
+        "DOWNTOWN": 54.4536,
+        "LAURELES": 57.2906,
+        "ENVIGADO": 58.044599999999996,
+        "BELLO": 53.0484
+      },
+      "distinct_riders_last_hour": 409
+    },
+    {
+      "timestamp": "2026-09-02T06:07:49",
+      "rolling_avg_wait": {
+        "AIRPORT": 63.431,
+        "BELEN": 53.8172,
+        "UNIV_NORTE": 54.281,
+        "EL_POBLADO": 55.7422,
+        "SABANETA": 54.4632,
+        "ITAGUI": 53.468599999999995,
+        "DOWNTOWN": 53.8396,
+        "LAURELES": 55.6428,
+        "ENVIGADO": 56.4086,
+        "BELLO": 51.442800000000005
+      },
+      "distinct_riders_last_hour": 614
+    },
+    {
+      "timestamp": "2026-09-02T07:07:49",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.3996,
+        "BELEN": 50.782599999999995,
+        "UNIV_NORTE": 56.8644,
+        "EL_POBLADO": 56.294599999999996,
+        "SABANETA": 51.2,
+        "ITAGUI": 51.5716,
+        "DOWNTOWN": 55.2942,
+        "LAURELES": 54.4762,
+        "ENVIGADO": 53.279,
+        "BELLO": 53.6412
+      },
+      "distinct_riders_last_hour": 1273
+    },
+    {
+      "timestamp": "2026-09-02T08:08:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.43939999999999,
+        "BELEN": 54.900800000000004,
+        "UNIV_NORTE": 84.9358,
+        "EL_POBLADO": 64.6552,
+        "SABANETA": 55.0892,
+        "ITAGUI": 54.3048,
+        "DOWNTOWN": 112.7496,
+        "LAURELES": 74.81280000000001,
+        "ENVIGADO": 59.7896,
+        "BELLO": 69.13239999999999
+      },
+      "distinct_riders_last_hour": 2248
+    },
+    {
+      "timestamp": "2026-09-02T09:08:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.271,
+        "BELEN": 66.7446,
+        "UNIV_NORTE": 93.19239999999999,
+        "EL_POBLADO": 84.0988,
+        "SABANETA": 63.8604,
+        "ITAGUI": 59.8004,
+        "DOWNTOWN": 117.6454,
+        "LAURELES": 87.2398,
+        "ENVIGADO": 66.763,
+        "BELLO": 78.2368
+      },
+      "distinct_riders_last_hour": 2206
+    },
+    {
+      "timestamp": "2026-09-02T10:08:12",
+      "rolling_avg_wait": {
+        "AIRPORT": 84.2866,
+        "BELEN": 70.636,
+        "UNIV_NORTE": 79.2464,
+        "EL_POBLADO": 86.3536,
+        "SABANETA": 65.88,
+        "ITAGUI": 63.268,
+        "DOWNTOWN": 104.1066,
+        "LAURELES": 79.9752,
+        "ENVIGADO": 70.6462,
+        "BELLO": 76.2554
+      },
+      "distinct_riders_last_hour": 1648
+    },
+    {
+      "timestamp": "2026-09-02T11:08:13",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.07539999999999,
+        "BELEN": 68.4802,
+        "UNIV_NORTE": 74.9162,
+        "EL_POBLADO": 79.3178,
+        "SABANETA": 66.4016,
+        "ITAGUI": 64.1068,
+        "DOWNTOWN": 81.733,
+        "LAURELES": 77.6382,
+        "ENVIGADO": 66.8746,
+        "BELLO": 72.524
+      },
+      "distinct_riders_last_hour": 1625
+    },
+    {
+      "timestamp": "2026-09-02T12:08:16",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.4898,
+        "BELEN": 66.7312,
+        "UNIV_NORTE": 71.2822,
+        "EL_POBLADO": 84.138,
+        "SABANETA": 66.3806,
+        "ITAGUI": 64.0454,
+        "DOWNTOWN": 77.978,
+        "LAURELES": 73.36019999999999,
+        "ENVIGADO": 68.956,
+        "BELLO": 69.7524
+      },
+      "distinct_riders_last_hour": 1829
+    },
+    {
+      "timestamp": "2026-09-02T13:08:21",
+      "rolling_avg_wait": {
+        "AIRPORT": 86.6438,
+        "BELEN": 69.92,
+        "UNIV_NORTE": 74.1586,
+        "EL_POBLADO": 90.1066,
+        "SABANETA": 65.3864,
+        "ITAGUI": 66.78580000000001,
+        "DOWNTOWN": 73.9252,
+        "LAURELES": 75.9204,
+        "ENVIGADO": 74.65780000000001,
+        "BELLO": 71.8532
+      },
+      "distinct_riders_last_hour": 1918
+    },
+    {
+      "timestamp": "2026-09-02T14:08:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.93480000000001,
+        "BELEN": 69.0836,
+        "UNIV_NORTE": 74.1722,
+        "EL_POBLADO": 87.8094,
+        "SABANETA": 65.80080000000001,
+        "ITAGUI": 67.05680000000001,
+        "DOWNTOWN": 73.11880000000001,
+        "LAURELES": 80.03739999999999,
+        "ENVIGADO": 72.68960000000001,
+        "BELLO": 68.8334
+      },
+      "distinct_riders_last_hour": 1651
+    },
+    {
+      "timestamp": "2026-09-02T15:08:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.31039999999999,
+        "BELEN": 65.52080000000001,
+        "UNIV_NORTE": 72.9298,
+        "EL_POBLADO": 88.4202,
+        "SABANETA": 64.7792,
+        "ITAGUI": 68.29360000000001,
+        "DOWNTOWN": 72.45939999999999,
+        "LAURELES": 76.6272,
+        "ENVIGADO": 67.7058,
+        "BELLO": 66.9992
+      },
+      "distinct_riders_last_hour": 1588
+    },
+    {
+      "timestamp": "2026-09-02T16:08:36",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.6096,
+        "BELEN": 65.6752,
+        "UNIV_NORTE": 73.5282,
+        "EL_POBLADO": 91.948,
+        "SABANETA": 64.9678,
+        "ITAGUI": 69.3698,
+        "DOWNTOWN": 77.3022,
+        "LAURELES": 76.228,
+        "ENVIGADO": 70.211,
+        "BELLO": 69.0868
+      },
+      "distinct_riders_last_hour": 2005
+    },
+    {
+      "timestamp": "2026-09-02T17:08:36",
+      "rolling_avg_wait": {
+        "AIRPORT": 91.991,
+        "BELEN": 69.7702,
+        "UNIV_NORTE": 84.883,
+        "EL_POBLADO": 93.12180000000001,
+        "SABANETA": 68.0758,
+        "ITAGUI": 72.9786,
+        "DOWNTOWN": 88.7838,
+        "LAURELES": 80.68560000000001,
+        "ENVIGADO": 83.7316,
+        "BELLO": 80.9966
+      },
+      "distinct_riders_last_hour": 2320
+    },
+    {
+      "timestamp": "2026-09-02T18:08:37",
+      "rolling_avg_wait": {
+        "AIRPORT": 92.925,
+        "BELEN": 78.58460000000001,
+        "UNIV_NORTE": 92.80680000000001,
+        "EL_POBLADO": 117.04060000000001,
+        "SABANETA": 73.75619999999999,
+        "ITAGUI": 79.72619999999999,
+        "DOWNTOWN": 125.9634,
+        "LAURELES": 96.3206,
+        "ENVIGADO": 89.4946,
+        "BELLO": 89.766
+      },
+      "distinct_riders_last_hour": 2839
+    },
+    {
+      "timestamp": "2026-09-02T19:08:41",
+      "rolling_avg_wait": {
+        "AIRPORT": 94.6362,
+        "BELEN": 79.86739999999999,
+        "UNIV_NORTE": 81.59960000000001,
+        "EL_POBLADO": 137.53379999999999,
+        "SABANETA": 75.237,
+        "ITAGUI": 75.016,
+        "DOWNTOWN": 105.40039999999999,
+        "LAURELES": 99.1798,
+        "ENVIGADO": 84.4134,
+        "BELLO": 86.48
+      },
+      "distinct_riders_last_hour": 2599
+    },
+    {
+      "timestamp": "2026-09-02T20:08:48",
+      "rolling_avg_wait": {
+        "AIRPORT": 98.5958,
+        "BELEN": 80.2218,
+        "UNIV_NORTE": 78.1302,
+        "EL_POBLADO": 108.274,
+        "SABANETA": 74.81819999999999,
+        "ITAGUI": 73.09660000000001,
+        "DOWNTOWN": 99.99980000000001,
+        "LAURELES": 86.99980000000001,
+        "ENVIGADO": 76.44460000000001,
+        "BELLO": 79.2122
+      },
+      "distinct_riders_last_hour": 1932
+    },
+    {
+      "timestamp": "2026-09-02T21:09:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 93.6828,
+        "BELEN": 70.1582,
+        "UNIV_NORTE": 68.16380000000001,
+        "EL_POBLADO": 99.95939999999999,
+        "SABANETA": 69.3568,
+        "ITAGUI": 66.09639999999999,
+        "DOWNTOWN": 82.761,
+        "LAURELES": 77.49239999999999,
+        "ENVIGADO": 74.4316,
+        "BELLO": 75.51639999999999
+      },
+      "distinct_riders_last_hour": 1423
+    },
+    {
+      "timestamp": "2026-09-02T22:09:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.69919999999999,
+        "BELEN": 68.56639999999999,
+        "UNIV_NORTE": 67.366,
+        "EL_POBLADO": 86.34939999999999,
+        "SABANETA": 65.3858,
+        "ITAGUI": 62.508,
+        "DOWNTOWN": 78.6138,
+        "LAURELES": 69.8012,
+        "ENVIGADO": 68.57039999999999,
+        "BELLO": 70.3032
+      },
+      "distinct_riders_last_hour": 1095
+    },
+    {
+      "timestamp": "2026-09-02T23:09:39",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.67880000000001,
+        "BELEN": 64.033,
+        "UNIV_NORTE": 66.4698,
+        "EL_POBLADO": 77.641,
+        "SABANETA": 64.6546,
+        "ITAGUI": 61.710800000000006,
+        "DOWNTOWN": 68.09519999999999,
+        "LAURELES": 67.5384,
+        "ENVIGADO": 65.0444,
+        "BELLO": 62.7134
+      },
+      "distinct_riders_last_hour": 748
+    },
+    {
+      "timestamp": "2026-09-03T00:09:46",
+      "rolling_avg_wait": {
+        "AIRPORT": 70.754,
+        "BELEN": 61.4792,
+        "UNIV_NORTE": 64.4152,
+        "EL_POBLADO": 70.95439999999999,
+        "SABANETA": 63.6314,
+        "ITAGUI": 61.1924,
+        "DOWNTOWN": 62.0576,
+        "LAURELES": 61.732800000000005,
+        "ENVIGADO": 63.469199999999994,
+        "BELLO": 61.0534
+      },
+      "distinct_riders_last_hour": 581
+    },
+    {
+      "timestamp": "2026-09-03T01:09:52",
+      "rolling_avg_wait": {
+        "AIRPORT": 65.7464,
+        "BELEN": 58.7528,
+        "UNIV_NORTE": 63.0698,
+        "EL_POBLADO": 66.481,
+        "SABANETA": 62.1954,
+        "ITAGUI": 60.132,
+        "DOWNTOWN": 61.848800000000004,
+        "LAURELES": 58.9854,
+        "ENVIGADO": 62.0762,
+        "BELLO": 59.9186
+      },
+      "distinct_riders_last_hour": 469
+    },
+    {
+      "timestamp": "2026-09-03T02:10:03",
+      "rolling_avg_wait": {
+        "AIRPORT": 63.4388,
+        "BELEN": 58.1042,
+        "UNIV_NORTE": 60.0742,
+        "EL_POBLADO": 61.4818,
+        "SABANETA": 60.2624,
+        "ITAGUI": 57.8002,
+        "DOWNTOWN": 61.025400000000005,
+        "LAURELES": 59.1066,
+        "ENVIGADO": 60.4302,
+        "BELLO": 59.783
+      },
+      "distinct_riders_last_hour": 372
+    },
+    {
+      "timestamp": "2026-09-03T03:10:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 58.6342,
+        "BELEN": 57.6428,
+        "UNIV_NORTE": 57.596199999999996,
+        "EL_POBLADO": 59.095,
+        "SABANETA": 58.4026,
+        "ITAGUI": 55.4564,
+        "DOWNTOWN": 59.338,
+        "LAURELES": 57.710800000000006,
+        "ENVIGADO": 57.9444,
+        "BELLO": 57.627
+      },
+      "distinct_riders_last_hour": 382
+    },
+    {
+      "timestamp": "2026-09-03T04:10:07",
+      "rolling_avg_wait": {
+        "AIRPORT": 58.562599999999996,
+        "BELEN": 55.7506,
+        "UNIV_NORTE": 56.0606,
+        "EL_POBLADO": 58.917199999999994,
+        "SABANETA": 56.175,
+        "ITAGUI": 52.872,
+        "DOWNTOWN": 57.5746,
+        "LAURELES": 55.9662,
+        "ENVIGADO": 55.6768,
+        "BELLO": 56.0556
+      },
+      "distinct_riders_last_hour": 364
+    },
+    {
+      "timestamp": "2026-09-03T05:10:14",
+      "rolling_avg_wait": {
+        "AIRPORT": 56.7204,
+        "BELEN": 52.3544,
+        "UNIV_NORTE": 55.7828,
+        "EL_POBLADO": 58.0404,
+        "SABANETA": 54.252,
+        "ITAGUI": 52.083400000000005,
+        "DOWNTOWN": 55.8246,
+        "LAURELES": 54.1068,
+        "ENVIGADO": 53.2158,
+        "BELLO": 53.3454
+      },
+      "distinct_riders_last_hour": 377
+    },
+    {
+      "timestamp": "2026-09-03T06:10:37",
+      "rolling_avg_wait": {
+        "AIRPORT": 64.6324,
+        "BELEN": 51.4632,
+        "UNIV_NORTE": 54.4144,
+        "EL_POBLADO": 55.6084,
+        "SABANETA": 53.973,
+        "ITAGUI": 52.4862,
+        "DOWNTOWN": 54.6978,
+        "LAURELES": 53.3422,
+        "ENVIGADO": 51.6036,
+        "BELLO": 52.255199999999995
+      },
+      "distinct_riders_last_hour": 612
+    },
+    {
+      "timestamp": "2026-09-03T07:10:37",
+      "rolling_avg_wait": {
+        "AIRPORT": 75.63719999999999,
+        "BELEN": 52.5166,
+        "UNIV_NORTE": 59.0846,
+        "EL_POBLADO": 54.3176,
+        "SABANETA": 53.019,
+        "ITAGUI": 51.0696,
+        "DOWNTOWN": 56.7824,
+        "LAURELES": 55.285199999999996,
+        "ENVIGADO": 50.96,
+        "BELLO": 52.3696
+      },
+      "distinct_riders_last_hour": 1298
+    },
+    {
+      "timestamp": "2026-09-03T08:10:43",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.75,
+        "BELEN": 61.018,
+        "UNIV_NORTE": 84.07,
+        "EL_POBLADO": 68.63539999999999,
+        "SABANETA": 55.55,
+        "ITAGUI": 56.0324,
+        "DOWNTOWN": 103.00460000000001,
+        "LAURELES": 78.8296,
+        "ENVIGADO": 58.788199999999996,
+        "BELLO": 65.6028
+      },
+      "distinct_riders_last_hour": 2214
+    },
+    {
+      "timestamp": "2026-09-03T09:10:43",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.509,
+        "BELEN": 71.74,
+        "UNIV_NORTE": 96.983,
+        "EL_POBLADO": 84.0246,
+        "SABANETA": 62.526199999999996,
+        "ITAGUI": 61.484,
+        "DOWNTOWN": 138.055,
+        "LAURELES": 90.776,
+        "ENVIGADO": 68.61,
+        "BELLO": 75.724
+      },
+      "distinct_riders_last_hour": 2274
+    },
+    {
+      "timestamp": "2026-09-03T10:10:43",
+      "rolling_avg_wait": {
+        "AIRPORT": 84.0312,
+        "BELEN": 72.4614,
+        "UNIV_NORTE": 82.2824,
+        "EL_POBLADO": 76.8216,
+        "SABANETA": 65.7928,
+        "ITAGUI": 64.0482,
+        "DOWNTOWN": 105.9024,
+        "LAURELES": 78.541,
+        "ENVIGADO": 71.73519999999999,
+        "BELLO": 72.16980000000001
+      },
+      "distinct_riders_last_hour": 1602
+    },
+    {
+      "timestamp": "2026-09-03T11:10:43",
+      "rolling_avg_wait": {
+        "AIRPORT": 78.6006,
+        "BELEN": 65.2876,
+        "UNIV_NORTE": 77.467,
+        "EL_POBLADO": 77.2312,
+        "SABANETA": 65.7192,
+        "ITAGUI": 66.116,
+        "DOWNTOWN": 84.3012,
+        "LAURELES": 74.1614,
+        "ENVIGADO": 70.146,
+        "BELLO": 68.998
+      },
+      "distinct_riders_last_hour": 1503
+    },
+    {
+      "timestamp": "2026-09-03T12:10:43",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.084,
+        "BELEN": 63.0582,
+        "UNIV_NORTE": 70.0114,
+        "EL_POBLADO": 79.2446,
+        "SABANETA": 66.25919999999999,
+        "ITAGUI": 62.03,
+        "DOWNTOWN": 76.7758,
+        "LAURELES": 72.9588,
+        "ENVIGADO": 72.4272,
+        "BELLO": 66.6918
+      },
+      "distinct_riders_last_hour": 1778
+    },
+    {
+      "timestamp": "2026-09-03T13:10:57",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.165,
+        "BELEN": 66.028,
+        "UNIV_NORTE": 77.2834,
+        "EL_POBLADO": 82.3386,
+        "SABANETA": 65.9072,
+        "ITAGUI": 61.4732,
+        "DOWNTOWN": 75.70939999999999,
+        "LAURELES": 76.66080000000001,
+        "ENVIGADO": 74.39760000000001,
+        "BELLO": 68.166
+      },
+      "distinct_riders_last_hour": 1898
+    },
+    {
+      "timestamp": "2026-09-03T14:10:59",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.308,
+        "BELEN": 68.5352,
+        "UNIV_NORTE": 76.38380000000001,
+        "EL_POBLADO": 86.12819999999999,
+        "SABANETA": 68.13,
+        "ITAGUI": 61.7972,
+        "DOWNTOWN": 74.3034,
+        "LAURELES": 76.8338,
+        "ENVIGADO": 72.48060000000001,
+        "BELLO": 69.4974
+      },
+      "distinct_riders_last_hour": 1602
+    },
+    {
+      "timestamp": "2026-09-03T15:11:02",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.7374,
+        "BELEN": 69.47460000000001,
+        "UNIV_NORTE": 73.6478,
+        "EL_POBLADO": 82.7258,
+        "SABANETA": 67.645,
+        "ITAGUI": 61.665800000000004,
+        "DOWNTOWN": 72.6524,
+        "LAURELES": 76.2526,
+        "ENVIGADO": 67.5898,
+        "BELLO": 67.1078
+      },
+      "distinct_riders_last_hour": 1583
+    },
+    {
+      "timestamp": "2026-09-03T16:11:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.09660000000001,
+        "BELEN": 70.69319999999999,
+        "UNIV_NORTE": 71.1378,
+        "EL_POBLADO": 84.8504,
+        "SABANETA": 67.64880000000001,
+        "ITAGUI": 63.6956,
+        "DOWNTOWN": 73.7422,
+        "LAURELES": 75.1852,
+        "ENVIGADO": 69.58319999999999,
+        "BELLO": 71.2698
+      },
+      "distinct_riders_last_hour": 1955
+    },
+    {
+      "timestamp": "2026-09-03T17:11:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.4922,
+        "BELEN": 77.5672,
+        "UNIV_NORTE": 84.0518,
+        "EL_POBLADO": 94.08160000000001,
+        "SABANETA": 68.98939999999999,
+        "ITAGUI": 66.248,
+        "DOWNTOWN": 89.4812,
+        "LAURELES": 80.685,
+        "ENVIGADO": 77.46,
+        "BELLO": 77.79960000000001
+      },
+      "distinct_riders_last_hour": 2373
+    },
+    {
+      "timestamp": "2026-09-03T18:11:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 95.9904,
+        "BELEN": 79.1004,
+        "UNIV_NORTE": 95.9016,
+        "EL_POBLADO": 115.111,
+        "SABANETA": 75.7688,
+        "ITAGUI": 72.0782,
+        "DOWNTOWN": 122.94439999999999,
+        "LAURELES": 92.3394,
+        "ENVIGADO": 87.5176,
+        "BELLO": 85.6198
+      },
+      "distinct_riders_last_hour": 2846
+    },
+    {
+      "timestamp": "2026-09-03T19:11:06",
+      "rolling_avg_wait": {
+        "AIRPORT": 99.114,
+        "BELEN": 75.998,
+        "UNIV_NORTE": 91.2772,
+        "EL_POBLADO": 130.703,
+        "SABANETA": 76.9558,
+        "ITAGUI": 72.15939999999999,
+        "DOWNTOWN": 115.6048,
+        "LAURELES": 92.99680000000001,
+        "ENVIGADO": 88.304,
+        "BELLO": 87.84939999999999
+      },
+      "distinct_riders_last_hour": 2597
+    },
+    {
+      "timestamp": "2026-09-03T20:11:07",
+      "rolling_avg_wait": {
+        "AIRPORT": 97.64739999999999,
+        "BELEN": 74.1168,
+        "UNIV_NORTE": 83.6038,
+        "EL_POBLADO": 110.00880000000001,
+        "SABANETA": 74.092,
+        "ITAGUI": 70.3936,
+        "DOWNTOWN": 104.4818,
+        "LAURELES": 82.0782,
+        "ENVIGADO": 77.99719999999999,
+        "BELLO": 79.59060000000001
+      },
+      "distinct_riders_last_hour": 1888
+    },
+    {
+      "timestamp": "2026-09-03T21:11:09",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.3274,
+        "BELEN": 67.574,
+        "UNIV_NORTE": 71.6242,
+        "EL_POBLADO": 100.065,
+        "SABANETA": 69.6494,
+        "ITAGUI": 67.2162,
+        "DOWNTOWN": 80.8982,
+        "LAURELES": 81.08139999999999,
+        "ENVIGADO": 73.8948,
+        "BELLO": 77.13860000000001
+      },
+      "distinct_riders_last_hour": 1389
+    },
+    {
+      "timestamp": "2026-09-03T22:11:13",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.3318,
+        "BELEN": 66.264,
+        "UNIV_NORTE": 65.84,
+        "EL_POBLADO": 90.07860000000001,
+        "SABANETA": 62.948800000000006,
+        "ITAGUI": 62.9996,
+        "DOWNTOWN": 76.2852,
+        "LAURELES": 73.7278,
+        "ENVIGADO": 66.4528,
+        "BELLO": 69.6068
+      },
+      "distinct_riders_last_hour": 1085
+    },
+    {
+      "timestamp": "2026-09-03T23:11:37",
+      "rolling_avg_wait": {
+        "AIRPORT": 72.8298,
+        "BELEN": 63.5428,
+        "UNIV_NORTE": 64.9386,
+        "EL_POBLADO": 80.298,
+        "SABANETA": 61.2904,
+        "ITAGUI": 61.061,
+        "DOWNTOWN": 68.43,
+        "LAURELES": 70.3682,
+        "ENVIGADO": 60.546800000000005,
+        "BELLO": 64.4796
+      },
+      "distinct_riders_last_hour": 769
+    },
+    {
+      "timestamp": "2026-09-04T00:11:48",
+      "rolling_avg_wait": {
+        "AIRPORT": 75.2552,
+        "BELEN": 59.8356,
+        "UNIV_NORTE": 63.742,
+        "EL_POBLADO": 74.4662,
+        "SABANETA": 61.314,
+        "ITAGUI": 61.420199999999994,
+        "DOWNTOWN": 64.3368,
+        "LAURELES": 66.376,
+        "ENVIGADO": 59.751,
+        "BELLO": 61.7136
+      },
+      "distinct_riders_last_hour": 581
+    },
+    {
+      "timestamp": "2026-09-04T01:12:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 69.01060000000001,
+        "BELEN": 57.812599999999996,
+        "UNIV_NORTE": 61.4182,
+        "EL_POBLADO": 70.5558,
+        "SABANETA": 60.1686,
+        "ITAGUI": 60.048,
+        "DOWNTOWN": 61.5126,
+        "LAURELES": 62.327,
+        "ENVIGADO": 59.5116,
+        "BELLO": 61.743199999999995
+      },
+      "distinct_riders_last_hour": 502
+    },
+    {
+      "timestamp": "2026-09-04T02:12:45",
+      "rolling_avg_wait": {
+        "AIRPORT": 67.562,
+        "BELEN": 55.8412,
+        "UNIV_NORTE": 58.6746,
+        "EL_POBLADO": 65.9324,
+        "SABANETA": 56.6518,
+        "ITAGUI": 58.3446,
+        "DOWNTOWN": 60.6334,
+        "LAURELES": 61.112,
+        "ENVIGADO": 58.469800000000006,
+        "BELLO": 61.3478
+      },
+      "distinct_riders_last_hour": 353
+    },
+    {
+      "timestamp": "2026-09-04T03:12:57",
+      "rolling_avg_wait": {
+        "AIRPORT": 65.2424,
+        "BELEN": 55.0066,
+        "UNIV_NORTE": 57.410599999999995,
+        "EL_POBLADO": 63.94,
+        "SABANETA": 54.14,
+        "ITAGUI": 56.1268,
+        "DOWNTOWN": 57.873599999999996,
+        "LAURELES": 60.4876,
+        "ENVIGADO": 57.8516,
+        "BELLO": 59.497
+      },
+      "distinct_riders_last_hour": 352
+    },
+    {
+      "timestamp": "2026-09-04T04:13:07",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.831,
+        "BELEN": 54.8014,
+        "UNIV_NORTE": 54.055,
+        "EL_POBLADO": 62.298199999999994,
+        "SABANETA": 52.4786,
+        "ITAGUI": 54.2542,
+        "DOWNTOWN": 56.335800000000006,
+        "LAURELES": 58.7196,
+        "ENVIGADO": 57.5534,
+        "BELLO": 57.945800000000006
+      },
+      "distinct_riders_last_hour": 357
+    },
+    {
+      "timestamp": "2026-09-04T05:13:09",
+      "rolling_avg_wait": {
+        "AIRPORT": 58.2158,
+        "BELEN": 53.0554,
+        "UNIV_NORTE": 53.1966,
+        "EL_POBLADO": 62.363,
+        "SABANETA": 52.1426,
+        "ITAGUI": 54.2674,
+        "DOWNTOWN": 54.7308,
+        "LAURELES": 56.965199999999996,
+        "ENVIGADO": 55.1962,
+        "BELLO": 55.7496
+      },
+      "distinct_riders_last_hour": 378
+    },
+    {
+      "timestamp": "2026-09-04T06:13:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 62.9942,
+        "BELEN": 49.9602,
+        "UNIV_NORTE": 52.4838,
+        "EL_POBLADO": 60.245,
+        "SABANETA": 51.374199999999995,
+        "ITAGUI": 53.306,
+        "DOWNTOWN": 53.5636,
+        "LAURELES": 53.490199999999994,
+        "ENVIGADO": 53.2044,
+        "BELLO": 52.3194
+      },
+      "distinct_riders_last_hour": 662
+    },
+    {
+      "timestamp": "2026-09-04T07:13:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.8066,
+        "BELEN": 50.135400000000004,
+        "UNIV_NORTE": 60.8112,
+        "EL_POBLADO": 57.4654,
+        "SABANETA": 48.9366,
+        "ITAGUI": 52.166,
+        "DOWNTOWN": 56.4766,
+        "LAURELES": 55.121,
+        "ENVIGADO": 52.2044,
+        "BELLO": 53.324
+      },
+      "distinct_riders_last_hour": 1339
+    },
+    {
+      "timestamp": "2026-09-04T08:13:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 93.3846,
+        "BELEN": 57.754,
+        "UNIV_NORTE": 88.7714,
+        "EL_POBLADO": 65.9644,
+        "SABANETA": 54.0456,
+        "ITAGUI": 55.633,
+        "DOWNTOWN": 96.2258,
+        "LAURELES": 80.7358,
+        "ENVIGADO": 61.104,
+        "BELLO": 64.3132
+      },
+      "distinct_riders_last_hour": 2236
+    },
+    {
+      "timestamp": "2026-09-04T09:13:24",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.9618,
+        "BELEN": 66.9782,
+        "UNIV_NORTE": 94.61880000000001,
+        "EL_POBLADO": 82.49380000000001,
+        "SABANETA": 59.581199999999995,
+        "ITAGUI": 62.406,
+        "DOWNTOWN": 120.7594,
+        "LAURELES": 91.94539999999999,
+        "ENVIGADO": 67.7732,
+        "BELLO": 76.3108
+      },
+      "distinct_riders_last_hour": 2163
+    },
+    {
+      "timestamp": "2026-09-04T10:13:25",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.5462,
+        "BELEN": 73.2448,
+        "UNIV_NORTE": 80.7038,
+        "EL_POBLADO": 77.754,
+        "SABANETA": 63.8346,
+        "ITAGUI": 64.7238,
+        "DOWNTOWN": 101.3978,
+        "LAURELES": 78.0888,
+        "ENVIGADO": 70.16539999999999,
+        "BELLO": 74.0446
+      },
+      "distinct_riders_last_hour": 1656
+    },
+    {
+      "timestamp": "2026-09-04T11:13:26",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.752,
+        "BELEN": 69.9286,
+        "UNIV_NORTE": 79.0928,
+        "EL_POBLADO": 72.52260000000001,
+        "SABANETA": 64.0548,
+        "ITAGUI": 66.9964,
+        "DOWNTOWN": 77.43839999999999,
+        "LAURELES": 76.65039999999999,
+        "ENVIGADO": 64.753,
+        "BELLO": 72.23660000000001
+      },
+      "distinct_riders_last_hour": 1556
+    },
+    {
+      "timestamp": "2026-09-04T12:13:26",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.29860000000001,
+        "BELEN": 68.347,
+        "UNIV_NORTE": 72.48360000000001,
+        "EL_POBLADO": 74.3962,
+        "SABANETA": 64.344,
+        "ITAGUI": 65.4216,
+        "DOWNTOWN": 74.75280000000001,
+        "LAURELES": 74.62339999999999,
+        "ENVIGADO": 65.625,
+        "BELLO": 68.6432
+      },
+      "distinct_riders_last_hour": 1736
+    },
+    {
+      "timestamp": "2026-09-04T13:13:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.8222,
+        "BELEN": 67.627,
+        "UNIV_NORTE": 73.11580000000001,
+        "EL_POBLADO": 80.4024,
+        "SABANETA": 65.253,
+        "ITAGUI": 65.3994,
+        "DOWNTOWN": 75.4532,
+        "LAURELES": 77.2702,
+        "ENVIGADO": 68.732,
+        "BELLO": 73.3774
+      },
+      "distinct_riders_last_hour": 1874
+    },
+    {
+      "timestamp": "2026-09-04T14:13:33",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.0198,
+        "BELEN": 65.96719999999999,
+        "UNIV_NORTE": 73.4828,
+        "EL_POBLADO": 80.312,
+        "SABANETA": 64.5408,
+        "ITAGUI": 65.132,
+        "DOWNTOWN": 74.30539999999999,
+        "LAURELES": 77.89139999999999,
+        "ENVIGADO": 68.2474,
+        "BELLO": 72.7308
+      },
+      "distinct_riders_last_hour": 1533
+    },
+    {
+      "timestamp": "2026-09-04T15:13:38",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.868,
+        "BELEN": 68.7586,
+        "UNIV_NORTE": 68.676,
+        "EL_POBLADO": 79.9448,
+        "SABANETA": 65.69460000000001,
+        "ITAGUI": 64.6254,
+        "DOWNTOWN": 76.15360000000001,
+        "LAURELES": 79.2206,
+        "ENVIGADO": 67.1516,
+        "BELLO": 70.3518
+      },
+      "distinct_riders_last_hour": 1613
+    },
+    {
+      "timestamp": "2026-09-04T16:13:41",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.32560000000001,
+        "BELEN": 72.223,
+        "UNIV_NORTE": 74.38839999999999,
+        "EL_POBLADO": 84.0744,
+        "SABANETA": 63.4972,
+        "ITAGUI": 63.262800000000006,
+        "DOWNTOWN": 76.2788,
+        "LAURELES": 75.4112,
+        "ENVIGADO": 69.02860000000001,
+        "BELLO": 67.99380000000001
+      },
+      "distinct_riders_last_hour": 1965
+    },
+    {
+      "timestamp": "2026-09-04T17:13:41",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.6182,
+        "BELEN": 77.7076,
+        "UNIV_NORTE": 84.86760000000001,
+        "EL_POBLADO": 92.4278,
+        "SABANETA": 66.79960000000001,
+        "ITAGUI": 67.1302,
+        "DOWNTOWN": 88.1964,
+        "LAURELES": 82.668,
+        "ENVIGADO": 75.7504,
+        "BELLO": 73.2218
+      },
+      "distinct_riders_last_hour": 2366
+    },
+    {
+      "timestamp": "2026-09-04T18:13:41",
+      "rolling_avg_wait": {
+        "AIRPORT": 89.8732,
+        "BELEN": 79.653,
+        "UNIV_NORTE": 86.81219999999999,
+        "EL_POBLADO": 128.5522,
+        "SABANETA": 70.5458,
+        "ITAGUI": 74.9906,
+        "DOWNTOWN": 112.2908,
+        "LAURELES": 94.10839999999999,
+        "ENVIGADO": 82.7536,
+        "BELLO": 77.5228
+      },
+      "distinct_riders_last_hour": 2724
+    },
+    {
+      "timestamp": "2026-09-04T19:13:48",
+      "rolling_avg_wait": {
+        "AIRPORT": 97.3876,
+        "BELEN": 78.6948,
+        "UNIV_NORTE": 78.66239999999999,
+        "EL_POBLADO": 142.2866,
+        "SABANETA": 70.8216,
+        "ITAGUI": 78.5008,
+        "DOWNTOWN": 112.823,
+        "LAURELES": 92.9376,
+        "ENVIGADO": 88.158,
+        "BELLO": 82.47160000000001
+      },
+      "distinct_riders_last_hour": 2641
+    },
+    {
+      "timestamp": "2026-09-04T20:13:51",
+      "rolling_avg_wait": {
+        "AIRPORT": 93.37060000000001,
+        "BELEN": 75.63560000000001,
+        "UNIV_NORTE": 76.2026,
+        "EL_POBLADO": 109.475,
+        "SABANETA": 68.455,
+        "ITAGUI": 76.4226,
+        "DOWNTOWN": 99.2504,
+        "LAURELES": 90.3934,
+        "ENVIGADO": 80.0244,
+        "BELLO": 77.5702
+      },
+      "distinct_riders_last_hour": 1911
+    },
+    {
+      "timestamp": "2026-09-04T21:13:51",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.9608,
+        "BELEN": 69.7102,
+        "UNIV_NORTE": 67.9914,
+        "EL_POBLADO": 101.7652,
+        "SABANETA": 67.17160000000001,
+        "ITAGUI": 70.22319999999999,
+        "DOWNTOWN": 79.4194,
+        "LAURELES": 75.492,
+        "ENVIGADO": 77.74119999999999,
+        "BELLO": 74.8132
+      },
+      "distinct_riders_last_hour": 1489
+    },
+    {
+      "timestamp": "2026-09-04T22:13:51",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.1346,
+        "BELEN": 67.2206,
+        "UNIV_NORTE": 63.764199999999995,
+        "EL_POBLADO": 88.7656,
+        "SABANETA": 64.6302,
+        "ITAGUI": 65.5048,
+        "DOWNTOWN": 74.62039999999999,
+        "LAURELES": 70.7318,
+        "ENVIGADO": 71.63719999999999,
+        "BELLO": 67.73060000000001
+      },
+      "distinct_riders_last_hour": 1058
+    },
+    {
+      "timestamp": "2026-09-04T23:14:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 72.4088,
+        "BELEN": 62.9254,
+        "UNIV_NORTE": 62.3806,
+        "EL_POBLADO": 79.20139999999999,
+        "SABANETA": 63.0144,
+        "ITAGUI": 64.3042,
+        "DOWNTOWN": 67.6704,
+        "LAURELES": 67.04860000000001,
+        "ENVIGADO": 64.235,
+        "BELLO": 65.1404
+      },
+      "distinct_riders_last_hour": 721
+    },
+    {
+      "timestamp": "2026-09-05T00:14:08",
+      "rolling_avg_wait": {
+        "AIRPORT": 69.9058,
+        "BELEN": 59.9976,
+        "UNIV_NORTE": 61.905800000000006,
+        "EL_POBLADO": 66.794,
+        "SABANETA": 62.421800000000005,
+        "ITAGUI": 63.6728,
+        "DOWNTOWN": 63.772,
+        "LAURELES": 61.180800000000005,
+        "ENVIGADO": 62.1068,
+        "BELLO": 64.66
+      },
+      "distinct_riders_last_hour": 573
+    },
+    {
+      "timestamp": "2026-09-05T01:14:13",
+      "rolling_avg_wait": {
+        "AIRPORT": 65.0812,
+        "BELEN": 59.336400000000005,
+        "UNIV_NORTE": 60.2304,
+        "EL_POBLADO": 65.0074,
+        "SABANETA": 60.835800000000006,
+        "ITAGUI": 63.0706,
+        "DOWNTOWN": 62.413,
+        "LAURELES": 60.0374,
+        "ENVIGADO": 60.6454,
+        "BELLO": 62.7966
+      },
+      "distinct_riders_last_hour": 492
+    },
+    {
+      "timestamp": "2026-09-05T02:14:24",
+      "rolling_avg_wait": {
+        "AIRPORT": 63.481199999999994,
+        "BELEN": 57.102,
+        "UNIV_NORTE": 58.0078,
+        "EL_POBLADO": 62.2596,
+        "SABANETA": 59.624,
+        "ITAGUI": 60.817,
+        "DOWNTOWN": 60.406800000000004,
+        "LAURELES": 58.6404,
+        "ENVIGADO": 60.0818,
+        "BELLO": 60.8856
+      },
+      "distinct_riders_last_hour": 367
+    },
+    {
+      "timestamp": "2026-09-05T03:14:38",
+      "rolling_avg_wait": {
+        "AIRPORT": 59.7616,
+        "BELEN": 56.075,
+        "UNIV_NORTE": 55.431599999999996,
+        "EL_POBLADO": 60.237,
+        "SABANETA": 57.767199999999995,
+        "ITAGUI": 57.0264,
+        "DOWNTOWN": 58.5878,
+        "LAURELES": 57.642,
+        "ENVIGADO": 58.687,
+        "BELLO": 57.516400000000004
+      },
+      "distinct_riders_last_hour": 376
+    },
+    {
+      "timestamp": "2026-09-05T04:14:40",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.503800000000005,
+        "BELEN": 54.4934,
+        "UNIV_NORTE": 53.218199999999996,
+        "EL_POBLADO": 57.696,
+        "SABANETA": 55.688,
+        "ITAGUI": 53.0968,
+        "DOWNTOWN": 56.4906,
+        "LAURELES": 56.5622,
+        "ENVIGADO": 56.849199999999996,
+        "BELLO": 55.0754
+      },
+      "distinct_riders_last_hour": 397
+    },
+    {
+      "timestamp": "2026-09-05T05:14:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 61.467400000000005,
+        "BELEN": 53.4922,
+        "UNIV_NORTE": 51.9606,
+        "EL_POBLADO": 56.361,
+        "SABANETA": 55.0974,
+        "ITAGUI": 51.7532,
+        "DOWNTOWN": 54.962199999999996,
+        "LAURELES": 54.607,
+        "ENVIGADO": 53.8654,
+        "BELLO": 54.3584
+      },
+      "distinct_riders_last_hour": 398
+    },
+    {
+      "timestamp": "2026-09-05T06:14:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 67.5758,
+        "BELEN": 52.936800000000005,
+        "UNIV_NORTE": 51.6284,
+        "EL_POBLADO": 55.3164,
+        "SABANETA": 54.660599999999995,
+        "ITAGUI": 52.230199999999996,
+        "DOWNTOWN": 54.672,
+        "LAURELES": 54.7376,
+        "ENVIGADO": 50.437,
+        "BELLO": 53.309
+      },
+      "distinct_riders_last_hour": 661
+    },
+    {
+      "timestamp": "2026-09-05T07:14:46",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.4888,
+        "BELEN": 50.046800000000005,
+        "UNIV_NORTE": 56.9878,
+        "EL_POBLADO": 54.3768,
+        "SABANETA": 52.866,
+        "ITAGUI": 50.647400000000005,
+        "DOWNTOWN": 58.9628,
+        "LAURELES": 57.6394,
+        "ENVIGADO": 48.894800000000004,
+        "BELLO": 55.9364
+      },
+      "distinct_riders_last_hour": 1296
+    },
+    {
+      "timestamp": "2026-09-05T08:14:46",
+      "rolling_avg_wait": {
+        "AIRPORT": 89.14439999999999,
+        "BELEN": 55.1454,
+        "UNIV_NORTE": 81.2328,
+        "EL_POBLADO": 69.0398,
+        "SABANETA": 55.7834,
+        "ITAGUI": 53.2866,
+        "DOWNTOWN": 104.9802,
+        "LAURELES": 77.6452,
+        "ENVIGADO": 55.5964,
+        "BELLO": 63.9362
+      },
+      "distinct_riders_last_hour": 2170
+    },
+    {
+      "timestamp": "2026-09-05T09:14:52",
+      "rolling_avg_wait": {
+        "AIRPORT": 86.2048,
+        "BELEN": 65.56219999999999,
+        "UNIV_NORTE": 87.8562,
+        "EL_POBLADO": 82.5778,
+        "SABANETA": 58.062,
+        "ITAGUI": 58.2624,
+        "DOWNTOWN": 124.2354,
+        "LAURELES": 89.13560000000001,
+        "ENVIGADO": 65.67439999999999,
+        "BELLO": 72.3878
+      },
+      "distinct_riders_last_hour": 2190
+    },
+    {
+      "timestamp": "2026-09-05T10:14:57",
+      "rolling_avg_wait": {
+        "AIRPORT": 78.2916,
+        "BELEN": 71.99980000000001,
+        "UNIV_NORTE": 82.3608,
+        "EL_POBLADO": 74.839,
+        "SABANETA": 60.367599999999996,
+        "ITAGUI": 62.062400000000004,
+        "DOWNTOWN": 103.753,
+        "LAURELES": 83.05080000000001,
+        "ENVIGADO": 74.0204,
+        "BELLO": 71.2702
+      },
+      "distinct_riders_last_hour": 1631
+    },
+    {
+      "timestamp": "2026-09-05T11:14:58",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.724,
+        "BELEN": 70.6636,
+        "UNIV_NORTE": 76.5808,
+        "EL_POBLADO": 73.4868,
+        "SABANETA": 62.959199999999996,
+        "ITAGUI": 63.7422,
+        "DOWNTOWN": 74.2734,
+        "LAURELES": 76.8052,
+        "ENVIGADO": 72.22739999999999,
+        "BELLO": 69.4178
+      },
+      "distinct_riders_last_hour": 1591
+    },
+    {
+      "timestamp": "2026-09-05T12:15:00",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.18560000000001,
+        "BELEN": 67.5006,
+        "UNIV_NORTE": 73.86760000000001,
+        "EL_POBLADO": 77.7614,
+        "SABANETA": 62.9282,
+        "ITAGUI": 60.6316,
+        "DOWNTOWN": 72.175,
+        "LAURELES": 75.70360000000001,
+        "ENVIGADO": 71.7196,
+        "BELLO": 70.4516
+      },
+      "distinct_riders_last_hour": 1782
+    },
+    {
+      "timestamp": "2026-09-05T13:15:00",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.207,
+        "BELEN": 67.79939999999999,
+        "UNIV_NORTE": 71.4958,
+        "EL_POBLADO": 89.2272,
+        "SABANETA": 64.2196,
+        "ITAGUI": 63.1314,
+        "DOWNTOWN": 72.12819999999999,
+        "LAURELES": 81.899,
+        "ENVIGADO": 71.1182,
+        "BELLO": 70.94019999999999
+      },
+      "distinct_riders_last_hour": 1834
+    },
+    {
+      "timestamp": "2026-09-05T14:15:02",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.304,
+        "BELEN": 66.8334,
+        "UNIV_NORTE": 72.3036,
+        "EL_POBLADO": 87.27239999999999,
+        "SABANETA": 65.949,
+        "ITAGUI": 62.6464,
+        "DOWNTOWN": 71.4008,
+        "LAURELES": 81.9826,
+        "ENVIGADO": 70.218,
+        "BELLO": 69.9652
+      },
+      "distinct_riders_last_hour": 1631
+    },
+    {
+      "timestamp": "2026-09-05T15:15:03",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.0296,
+        "BELEN": 70.60419999999999,
+        "UNIV_NORTE": 73.0676,
+        "EL_POBLADO": 80.68939999999999,
+        "SABANETA": 65.3874,
+        "ITAGUI": 61.208400000000005,
+        "DOWNTOWN": 69.967,
+        "LAURELES": 73.145,
+        "ENVIGADO": 69.4062,
+        "BELLO": 64.381
+      },
+      "distinct_riders_last_hour": 1664
+    },
+    {
+      "timestamp": "2026-09-05T16:15:06",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.44439999999999,
+        "BELEN": 69.3488,
+        "UNIV_NORTE": 72.9542,
+        "EL_POBLADO": 86.4218,
+        "SABANETA": 67.274,
+        "ITAGUI": 64.82419999999999,
+        "DOWNTOWN": 74.4362,
+        "LAURELES": 74.13119999999999,
+        "ENVIGADO": 71.25619999999999,
+        "BELLO": 69.88
+      },
+      "distinct_riders_last_hour": 1988
+    },
+    {
+      "timestamp": "2026-09-05T17:15:09",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.2834,
+        "BELEN": 76.5656,
+        "UNIV_NORTE": 80.2218,
+        "EL_POBLADO": 91.1134,
+        "SABANETA": 71.4982,
+        "ITAGUI": 66.80839999999999,
+        "DOWNTOWN": 91.627,
+        "LAURELES": 88.59339999999999,
+        "ENVIGADO": 76.4434,
+        "BELLO": 82.8502
+      },
+      "distinct_riders_last_hour": 2423
+    },
+    {
+      "timestamp": "2026-09-05T18:15:09",
+      "rolling_avg_wait": {
+        "AIRPORT": 96.59639999999999,
+        "BELEN": 80.648,
+        "UNIV_NORTE": 91.31519999999999,
+        "EL_POBLADO": 126.0528,
+        "SABANETA": 74.1664,
+        "ITAGUI": 77.795,
+        "DOWNTOWN": 123.516,
+        "LAURELES": 95.7882,
+        "ENVIGADO": 87.5382,
+        "BELLO": 87.7526
+      },
+      "distinct_riders_last_hour": 2858
+    },
+    {
+      "timestamp": "2026-09-05T19:15:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 99.994,
+        "BELEN": 79.9122,
+        "UNIV_NORTE": 85.166,
+        "EL_POBLADO": 120.3762,
+        "SABANETA": 72.1432,
+        "ITAGUI": 77.4556,
+        "DOWNTOWN": 110.1046,
+        "LAURELES": 93.9192,
+        "ENVIGADO": 87.3094,
+        "BELLO": 83.8292
+      },
+      "distinct_riders_last_hour": 2531
+    },
+    {
+      "timestamp": "2026-09-05T20:15:13",
+      "rolling_avg_wait": {
+        "AIRPORT": 98.712,
+        "BELEN": 78.69619999999999,
+        "UNIV_NORTE": 78.9982,
+        "EL_POBLADO": 99.21560000000001,
+        "SABANETA": 69.93780000000001,
+        "ITAGUI": 75.8004,
+        "DOWNTOWN": 100.4376,
+        "LAURELES": 85.75280000000001,
+        "ENVIGADO": 79.842,
+        "BELLO": 77.83319999999999
+      },
+      "distinct_riders_last_hour": 1826
+    },
+    {
+      "timestamp": "2026-09-05T21:15:15",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.7642,
+        "BELEN": 71.834,
+        "UNIV_NORTE": 70.2266,
+        "EL_POBLADO": 99.8474,
+        "SABANETA": 66.80239999999999,
+        "ITAGUI": 69.72619999999999,
+        "DOWNTOWN": 79.31280000000001,
+        "LAURELES": 75.59339999999999,
+        "ENVIGADO": 76.24080000000001,
+        "BELLO": 75.168
+      },
+      "distinct_riders_last_hour": 1400
+    },
+    {
+      "timestamp": "2026-09-05T22:15:25",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.2054,
+        "BELEN": 70.81439999999999,
+        "UNIV_NORTE": 65.3706,
+        "EL_POBLADO": 92.01480000000001,
+        "SABANETA": 64.0996,
+        "ITAGUI": 65.1558,
+        "DOWNTOWN": 76.55980000000001,
+        "LAURELES": 65.9152,
+        "ENVIGADO": 71.67739999999999,
+        "BELLO": 70.68660000000001
+      },
+      "distinct_riders_last_hour": 1004
+    },
+    {
+      "timestamp": "2026-09-05T23:15:34",
+      "rolling_avg_wait": {
+        "AIRPORT": 75.00919999999999,
+        "BELEN": 66.95439999999999,
+        "UNIV_NORTE": 65.4246,
+        "EL_POBLADO": 78.512,
+        "SABANETA": 63.9724,
+        "ITAGUI": 63.339,
+        "DOWNTOWN": 70.0782,
+        "LAURELES": 64.9524,
+        "ENVIGADO": 64.9772,
+        "BELLO": 64.7696
+      },
+      "distinct_riders_last_hour": 752
+    },
+    {
+      "timestamp": "2026-09-06T00:15:35",
+      "rolling_avg_wait": {
+        "AIRPORT": 74.6674,
+        "BELEN": 63.5806,
+        "UNIV_NORTE": 64.5966,
+        "EL_POBLADO": 69.8478,
+        "SABANETA": 63.2224,
+        "ITAGUI": 63.472,
+        "DOWNTOWN": 64.7398,
+        "LAURELES": 61.619,
+        "ENVIGADO": 61.8478,
+        "BELLO": 63.916
+      },
+      "distinct_riders_last_hour": 526
+    },
+    {
+      "timestamp": "2026-09-06T01:15:41",
+      "rolling_avg_wait": {
+        "AIRPORT": 68.58619999999999,
+        "BELEN": 61.9946,
+        "UNIV_NORTE": 63.8612,
+        "EL_POBLADO": 69.114,
+        "SABANETA": 61.453199999999995,
+        "ITAGUI": 62.2928,
+        "DOWNTOWN": 62.924,
+        "LAURELES": 57.107,
+        "ENVIGADO": 60.557,
+        "BELLO": 63.208400000000005
+      },
+      "distinct_riders_last_hour": 454
+    },
+    {
+      "timestamp": "2026-09-06T02:15:54",
+      "rolling_avg_wait": {
+        "AIRPORT": 66.0548,
+        "BELEN": 60.1476,
+        "UNIV_NORTE": 60.714400000000005,
+        "EL_POBLADO": 64.775,
+        "SABANETA": 59.284,
+        "ITAGUI": 60.6946,
+        "DOWNTOWN": 63.0442,
+        "LAURELES": 55.9672,
+        "ENVIGADO": 60.0728,
+        "BELLO": 61.193
+      },
+      "distinct_riders_last_hour": 374
+    },
+    {
+      "timestamp": "2026-09-06T03:16:00",
+      "rolling_avg_wait": {
+        "AIRPORT": 61.891400000000004,
+        "BELEN": 60.093599999999995,
+        "UNIV_NORTE": 58.0832,
+        "EL_POBLADO": 63.3856,
+        "SABANETA": 58.1532,
+        "ITAGUI": 58.1998,
+        "DOWNTOWN": 61.7626,
+        "LAURELES": 56.0862,
+        "ENVIGADO": 58.854800000000004,
+        "BELLO": 59.8748
+      },
+      "distinct_riders_last_hour": 335
+    },
+    {
+      "timestamp": "2026-09-06T04:16:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.838800000000006,
+        "BELEN": 58.749199999999995,
+        "UNIV_NORTE": 54.8624,
+        "EL_POBLADO": 62.061800000000005,
+        "SABANETA": 57.2504,
+        "ITAGUI": 55.4224,
+        "DOWNTOWN": 59.8056,
+        "LAURELES": 55.6652,
+        "ENVIGADO": 56.950199999999995,
+        "BELLO": 57.147800000000004
+      },
+      "distinct_riders_last_hour": 351
+    },
+    {
+      "timestamp": "2026-09-06T05:16:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 59.712199999999996,
+        "BELEN": 56.6562,
+        "UNIV_NORTE": 52.1124,
+        "EL_POBLADO": 59.5664,
+        "SABANETA": 55.7966,
+        "ITAGUI": 54.4526,
+        "DOWNTOWN": 57.135400000000004,
+        "LAURELES": 54.9272,
+        "ENVIGADO": 54.389199999999995,
+        "BELLO": 54.994
+      },
+      "distinct_riders_last_hour": 431
+    },
+    {
+      "timestamp": "2026-09-06T06:16:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 68.5474,
+        "BELEN": 53.963,
+        "UNIV_NORTE": 51.031400000000005,
+        "EL_POBLADO": 58.9758,
+        "SABANETA": 55.7106,
+        "ITAGUI": 53.8888,
+        "DOWNTOWN": 55.149,
+        "LAURELES": 52.1432,
+        "ENVIGADO": 50.9778,
+        "BELLO": 53.108
+      },
+      "distinct_riders_last_hour": 677
+    },
+    {
+      "timestamp": "2026-09-06T07:16:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.2952,
+        "BELEN": 52.2558,
+        "UNIV_NORTE": 61.8024,
+        "EL_POBLADO": 57.2498,
+        "SABANETA": 53.7786,
+        "ITAGUI": 51.707,
+        "DOWNTOWN": 58.0472,
+        "LAURELES": 54.475,
+        "ENVIGADO": 50.434,
+        "BELLO": 52.999199999999995
+      },
+      "distinct_riders_last_hour": 1355
+    },
+    {
+      "timestamp": "2026-09-06T08:16:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 84.67360000000001,
+        "BELEN": 56.3786,
+        "UNIV_NORTE": 87.7982,
+        "EL_POBLADO": 73.1572,
+        "SABANETA": 57.4298,
+        "ITAGUI": 53.249,
+        "DOWNTOWN": 108.2032,
+        "LAURELES": 72.598,
+        "ENVIGADO": 62.684,
+        "BELLO": 60.1286
+      },
+      "distinct_riders_last_hour": 2170
+    },
+    {
+      "timestamp": "2026-09-06T09:16:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 86.21719999999999,
+        "BELEN": 68.70139999999999,
+        "UNIV_NORTE": 85.9278,
+        "EL_POBLADO": 87.4946,
+        "SABANETA": 63.836,
+        "ITAGUI": 58.1276,
+        "DOWNTOWN": 119.28760000000001,
+        "LAURELES": 80.753,
+        "ENVIGADO": 68.404,
+        "BELLO": 73.199
+      },
+      "distinct_riders_last_hour": 2102
+    },
+    {
+      "timestamp": "2026-09-06T10:16:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.217,
+        "BELEN": 71.162,
+        "UNIV_NORTE": 74.281,
+        "EL_POBLADO": 80.7658,
+        "SABANETA": 68.37360000000001,
+        "ITAGUI": 60.7096,
+        "DOWNTOWN": 105.9116,
+        "LAURELES": 70.5552,
+        "ENVIGADO": 69.808,
+        "BELLO": 75.1134
+      },
+      "distinct_riders_last_hour": 1608
+    },
+    {
+      "timestamp": "2026-09-06T11:16:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 75.17880000000001,
+        "BELEN": 70.08160000000001,
+        "UNIV_NORTE": 73.523,
+        "EL_POBLADO": 77.5536,
+        "SABANETA": 66.9088,
+        "ITAGUI": 62.8314,
+        "DOWNTOWN": 77.1186,
+        "LAURELES": 69.3926,
+        "ENVIGADO": 63.7368,
+        "BELLO": 74.641
+      },
+      "distinct_riders_last_hour": 1613
+    },
+    {
+      "timestamp": "2026-09-06T12:16:06",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.6088,
+        "BELEN": 65.617,
+        "UNIV_NORTE": 71.216,
+        "EL_POBLADO": 80.426,
+        "SABANETA": 64.0678,
+        "ITAGUI": 62.8236,
+        "DOWNTOWN": 72.5574,
+        "LAURELES": 73.5566,
+        "ENVIGADO": 70.43660000000001,
+        "BELLO": 71.2008
+      },
+      "distinct_riders_last_hour": 1807
+    },
+    {
+      "timestamp": "2026-09-06T13:16:06",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.1724,
+        "BELEN": 67.5654,
+        "UNIV_NORTE": 73.91080000000001,
+        "EL_POBLADO": 85.29260000000001,
+        "SABANETA": 61.657199999999996,
+        "ITAGUI": 64.3942,
+        "DOWNTOWN": 74.0132,
+        "LAURELES": 82.51780000000001,
+        "ENVIGADO": 71.0462,
+        "BELLO": 74.30539999999999
+      },
+      "distinct_riders_last_hour": 1863
+    },
+    {
+      "timestamp": "2026-09-06T14:16:12",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.9346,
+        "BELEN": 71.8446,
+        "UNIV_NORTE": 73.452,
+        "EL_POBLADO": 82.1002,
+        "SABANETA": 60.970800000000004,
+        "ITAGUI": 65.2634,
+        "DOWNTOWN": 72.7646,
+        "LAURELES": 81.37639999999999,
+        "ENVIGADO": 67.9936,
+        "BELLO": 72.85839999999999
+      },
+      "distinct_riders_last_hour": 1620
+    },
+    {
+      "timestamp": "2026-09-06T15:16:18",
+      "rolling_avg_wait": {
+        "AIRPORT": 78.4442,
+        "BELEN": 71.238,
+        "UNIV_NORTE": 71.4074,
+        "EL_POBLADO": 80.1194,
+        "SABANETA": 60.494800000000005,
+        "ITAGUI": 66.1514,
+        "DOWNTOWN": 68.6906,
+        "LAURELES": 76.793,
+        "ENVIGADO": 65.6586,
+        "BELLO": 71.092
+      },
+      "distinct_riders_last_hour": 1609
+    },
+    {
+      "timestamp": "2026-09-06T16:16:18",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.3126,
+        "BELEN": 71.5998,
+        "UNIV_NORTE": 70.778,
+        "EL_POBLADO": 81.3608,
+        "SABANETA": 62.548199999999994,
+        "ITAGUI": 65.871,
+        "DOWNTOWN": 75.07560000000001,
+        "LAURELES": 75.134,
+        "ENVIGADO": 68.828,
+        "BELLO": 73.08139999999999
+      },
+      "distinct_riders_last_hour": 1894
+    },
+    {
+      "timestamp": "2026-09-06T17:16:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 84.8296,
+        "BELEN": 73.0176,
+        "UNIV_NORTE": 83.0658,
+        "EL_POBLADO": 87.7252,
+        "SABANETA": 67.4132,
+        "ITAGUI": 71.101,
+        "DOWNTOWN": 93.532,
+        "LAURELES": 89.30239999999999,
+        "ENVIGADO": 76.0834,
+        "BELLO": 79.502
+      },
+      "distinct_riders_last_hour": 2455
+    },
+    {
+      "timestamp": "2026-09-06T18:16:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.951,
+        "BELEN": 74.696,
+        "UNIV_NORTE": 89.3296,
+        "EL_POBLADO": 112.3462,
+        "SABANETA": 72.7428,
+        "ITAGUI": 79.89439999999999,
+        "DOWNTOWN": 119.51480000000001,
+        "LAURELES": 100.51360000000001,
+        "ENVIGADO": 84.2942,
+        "BELLO": 91.4634
+      },
+      "distinct_riders_last_hour": 2689
+    },
+    {
+      "timestamp": "2026-09-06T19:16:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 92.783,
+        "BELEN": 72.56039999999999,
+        "UNIV_NORTE": 83.54860000000001,
+        "EL_POBLADO": 141.42620000000002,
+        "SABANETA": 76.0702,
+        "ITAGUI": 78.245,
+        "DOWNTOWN": 111.4966,
+        "LAURELES": 95.1622,
+        "ENVIGADO": 84.4562,
+        "BELLO": 94.4188
+      },
+      "distinct_riders_last_hour": 2586
+    },
+    {
+      "timestamp": "2026-09-06T20:16:21",
+      "rolling_avg_wait": {
+        "AIRPORT": 94.7056,
+        "BELEN": 73.61580000000001,
+        "UNIV_NORTE": 79.32939999999999,
+        "EL_POBLADO": 112.321,
+        "SABANETA": 69.3004,
+        "ITAGUI": 75.4958,
+        "DOWNTOWN": 103.4824,
+        "LAURELES": 90.9768,
+        "ENVIGADO": 76.0186,
+        "BELLO": 82.219
+      },
+      "distinct_riders_last_hour": 1850
+    },
+    {
+      "timestamp": "2026-09-06T21:16:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 89.9174,
+        "BELEN": 67.48639999999999,
+        "UNIV_NORTE": 71.1876,
+        "EL_POBLADO": 97.29180000000001,
+        "SABANETA": 67.57339999999999,
+        "ITAGUI": 70.936,
+        "DOWNTOWN": 82.9044,
+        "LAURELES": 80.7692,
+        "ENVIGADO": 73.8784,
+        "BELLO": 79.642
+      },
+      "distinct_riders_last_hour": 1359
+    },
+    {
+      "timestamp": "2026-09-06T22:16:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 84.0,
+        "BELEN": 66.5476,
+        "UNIV_NORTE": 67.43939999999999,
+        "EL_POBLADO": 93.5804,
+        "SABANETA": 62.742599999999996,
+        "ITAGUI": 64.9276,
+        "DOWNTOWN": 79.0924,
+        "LAURELES": 72.37219999999999,
+        "ENVIGADO": 69.24,
+        "BELLO": 71.567
+      },
+      "distinct_riders_last_hour": 1033
+    },
+    {
+      "timestamp": "2026-09-06T23:16:24",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.1852,
+        "BELEN": 64.1544,
+        "UNIV_NORTE": 66.53580000000001,
+        "EL_POBLADO": 79.4898,
+        "SABANETA": 60.9184,
+        "ITAGUI": 62.866800000000005,
+        "DOWNTOWN": 71.9978,
+        "LAURELES": 70.8498,
+        "ENVIGADO": 65.5074,
+        "BELLO": 66.7624
+      },
+      "distinct_riders_last_hour": 752
+    },
+    {
+      "timestamp": "2026-09-07T00:16:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 72.52680000000001,
+        "BELEN": 61.471,
+        "UNIV_NORTE": 66.86919999999999,
+        "EL_POBLADO": 71.68180000000001,
+        "SABANETA": 60.315,
+        "ITAGUI": 61.7678,
+        "DOWNTOWN": 65.23740000000001,
+        "LAURELES": 65.257,
+        "ENVIGADO": 62.8926,
+        "BELLO": 63.6282
+      },
+      "distinct_riders_last_hour": 567
+    },
+    {
+      "timestamp": "2026-09-07T01:16:30",
+      "rolling_avg_wait": {
+        "AIRPORT": 66.3358,
+        "BELEN": 59.9734,
+        "UNIV_NORTE": 63.9626,
+        "EL_POBLADO": 66.545,
+        "SABANETA": 59.0906,
+        "ITAGUI": 60.849,
+        "DOWNTOWN": 63.019800000000004,
+        "LAURELES": 60.9348,
+        "ENVIGADO": 62.3246,
+        "BELLO": 63.131
+      },
+      "distinct_riders_last_hour": 512
+    },
+    {
+      "timestamp": "2026-09-07T02:16:31",
+      "rolling_avg_wait": {
+        "AIRPORT": 64.77080000000001,
+        "BELEN": 60.4006,
+        "UNIV_NORTE": 61.020199999999996,
+        "EL_POBLADO": 58.693400000000004,
+        "SABANETA": 57.27,
+        "ITAGUI": 59.0474,
+        "DOWNTOWN": 62.3438,
+        "LAURELES": 60.4796,
+        "ENVIGADO": 60.654,
+        "BELLO": 63.129400000000004
+      },
+      "distinct_riders_last_hour": 383
+    },
+    {
+      "timestamp": "2026-09-07T03:16:55",
+      "rolling_avg_wait": {
+        "AIRPORT": 61.0324,
+        "BELEN": 60.004,
+        "UNIV_NORTE": 57.6044,
+        "EL_POBLADO": 56.5394,
+        "SABANETA": 55.157199999999996,
+        "ITAGUI": 57.3076,
+        "DOWNTOWN": 61.275800000000004,
+        "LAURELES": 59.5604,
+        "ENVIGADO": 59.5478,
+        "BELLO": 62.583800000000004
+      },
+      "distinct_riders_last_hour": 357
+    },
+    {
+      "timestamp": "2026-09-07T04:17:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.0018,
+        "BELEN": 58.812599999999996,
+        "UNIV_NORTE": 54.592,
+        "EL_POBLADO": 55.1692,
+        "SABANETA": 53.881800000000005,
+        "ITAGUI": 54.9892,
+        "DOWNTOWN": 58.1008,
+        "LAURELES": 58.555,
+        "ENVIGADO": 57.0978,
+        "BELLO": 60.2376
+      },
+      "distinct_riders_last_hour": 347
+    },
+    {
+      "timestamp": "2026-09-07T05:17:02",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.536199999999994,
+        "BELEN": 56.2576,
+        "UNIV_NORTE": 52.0088,
+        "EL_POBLADO": 55.1004,
+        "SABANETA": 52.321,
+        "ITAGUI": 53.8408,
+        "DOWNTOWN": 54.9478,
+        "LAURELES": 56.224199999999996,
+        "ENVIGADO": 55.2564,
+        "BELLO": 56.4062
+      },
+      "distinct_riders_last_hour": 423
+    },
+    {
+      "timestamp": "2026-09-07T06:17:02",
+      "rolling_avg_wait": {
+        "AIRPORT": 64.1716,
+        "BELEN": 54.632400000000004,
+        "UNIV_NORTE": 51.174,
+        "EL_POBLADO": 53.682,
+        "SABANETA": 51.7026,
+        "ITAGUI": 53.6766,
+        "DOWNTOWN": 53.7326,
+        "LAURELES": 55.6222,
+        "ENVIGADO": 53.2906,
+        "BELLO": 53.9624
+      },
+      "distinct_riders_last_hour": 650
+    },
+    {
+      "timestamp": "2026-09-07T07:17:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 72.9232,
+        "BELEN": 53.6836,
+        "UNIV_NORTE": 57.564,
+        "EL_POBLADO": 54.4486,
+        "SABANETA": 51.791599999999995,
+        "ITAGUI": 52.157199999999996,
+        "DOWNTOWN": 60.3258,
+        "LAURELES": 59.0366,
+        "ENVIGADO": 53.4332,
+        "BELLO": 53.301
+      },
+      "distinct_riders_last_hour": 1396
+    },
+    {
+      "timestamp": "2026-09-07T08:17:05",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.1764,
+        "BELEN": 60.0208,
+        "UNIV_NORTE": 81.19619999999999,
+        "EL_POBLADO": 71.4392,
+        "SABANETA": 53.8918,
+        "ITAGUI": 53.5002,
+        "DOWNTOWN": 114.9132,
+        "LAURELES": 81.651,
+        "ENVIGADO": 58.1596,
+        "BELLO": 64.3768
+      },
+      "distinct_riders_last_hour": 2273
+    },
+    {
+      "timestamp": "2026-09-07T09:17:05",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.042,
+        "BELEN": 67.8142,
+        "UNIV_NORTE": 89.4368,
+        "EL_POBLADO": 88.243,
+        "SABANETA": 59.954,
+        "ITAGUI": 59.1716,
+        "DOWNTOWN": 118.3368,
+        "LAURELES": 88.511,
+        "ENVIGADO": 69.0894,
+        "BELLO": 72.2404
+      },
+      "distinct_riders_last_hour": 2111
+    },
+    {
+      "timestamp": "2026-09-07T10:17:05",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.3754,
+        "BELEN": 72.2464,
+        "UNIV_NORTE": 80.6868,
+        "EL_POBLADO": 84.75880000000001,
+        "SABANETA": 61.9108,
+        "ITAGUI": 63.2692,
+        "DOWNTOWN": 105.36139999999999,
+        "LAURELES": 76.235,
+        "ENVIGADO": 73.7538,
+        "BELLO": 71.3064
+      },
+      "distinct_riders_last_hour": 1639
+    },
+    {
+      "timestamp": "2026-09-07T11:17:07",
+      "rolling_avg_wait": {
+        "AIRPORT": 74.0424,
+        "BELEN": 69.2674,
+        "UNIV_NORTE": 77.8962,
+        "EL_POBLADO": 76.5834,
+        "SABANETA": 63.6804,
+        "ITAGUI": 64.5084,
+        "DOWNTOWN": 79.6734,
+        "LAURELES": 73.8504,
+        "ENVIGADO": 71.912,
+        "BELLO": 65.914
+      },
+      "distinct_riders_last_hour": 1582
+    },
+    {
+      "timestamp": "2026-09-07T12:17:08",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.0998,
+        "BELEN": 65.93060000000001,
+        "UNIV_NORTE": 70.59519999999999,
+        "EL_POBLADO": 76.4102,
+        "SABANETA": 64.3456,
+        "ITAGUI": 64.7396,
+        "DOWNTOWN": 77.149,
+        "LAURELES": 73.66,
+        "ENVIGADO": 73.4562,
+        "BELLO": 62.805
+      },
+      "distinct_riders_last_hour": 1728
+    },
+    {
+      "timestamp": "2026-09-07T13:17:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.58460000000001,
+        "BELEN": 67.38560000000001,
+        "UNIV_NORTE": 73.2346,
+        "EL_POBLADO": 82.5424,
+        "SABANETA": 65.8138,
+        "ITAGUI": 65.427,
+        "DOWNTOWN": 74.7296,
+        "LAURELES": 74.3112,
+        "ENVIGADO": 72.4678,
+        "BELLO": 66.9668
+      },
+      "distinct_riders_last_hour": 1825
+    },
+    {
+      "timestamp": "2026-09-07T14:17:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.802,
+        "BELEN": 66.4344,
+        "UNIV_NORTE": 73.0272,
+        "EL_POBLADO": 89.843,
+        "SABANETA": 67.61880000000001,
+        "ITAGUI": 65.565,
+        "DOWNTOWN": 74.8878,
+        "LAURELES": 72.91860000000001,
+        "ENVIGADO": 71.2138,
+        "BELLO": 68.503
+      },
+      "distinct_riders_last_hour": 1595
+    },
+    {
+      "timestamp": "2026-09-07T15:17:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 73.14160000000001,
+        "BELEN": 70.4202,
+        "UNIV_NORTE": 72.6772,
+        "EL_POBLADO": 84.6334,
+        "SABANETA": 68.0888,
+        "ITAGUI": 64.0394,
+        "DOWNTOWN": 74.38839999999999,
+        "LAURELES": 71.6486,
+        "ENVIGADO": 66.6344,
+        "BELLO": 67.52
+      },
+      "distinct_riders_last_hour": 1678
+    },
+    {
+      "timestamp": "2026-09-07T16:17:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.24260000000001,
+        "BELEN": 70.6216,
+        "UNIV_NORTE": 69.92139999999999,
+        "EL_POBLADO": 83.7982,
+        "SABANETA": 66.89739999999999,
+        "ITAGUI": 64.2212,
+        "DOWNTOWN": 80.3502,
+        "LAURELES": 69.476,
+        "ENVIGADO": 69.00880000000001,
+        "BELLO": 68.974
+      },
+      "distinct_riders_last_hour": 2016
+    },
+    {
+      "timestamp": "2026-09-07T17:17:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.782,
+        "BELEN": 73.484,
+        "UNIV_NORTE": 79.1988,
+        "EL_POBLADO": 97.4844,
+        "SABANETA": 68.79339999999999,
+        "ITAGUI": 68.1094,
+        "DOWNTOWN": 89.90180000000001,
+        "LAURELES": 81.4784,
+        "ENVIGADO": 75.4758,
+        "BELLO": 78.1316
+      },
+      "distinct_riders_last_hour": 2411
+    },
+    {
+      "timestamp": "2026-09-07T18:17:11",
+      "rolling_avg_wait": {
+        "AIRPORT": 91.0872,
+        "BELEN": 80.9902,
+        "UNIV_NORTE": 85.06819999999999,
+        "EL_POBLADO": 119.9646,
+        "SABANETA": 72.1436,
+        "ITAGUI": 73.8206,
+        "DOWNTOWN": 127.0536,
+        "LAURELES": 91.45639999999999,
+        "ENVIGADO": 81.2032,
+        "BELLO": 85.82039999999999
+      },
+      "distinct_riders_last_hour": 2768
+    },
+    {
+      "timestamp": "2026-09-07T19:17:12",
+      "rolling_avg_wait": {
+        "AIRPORT": 92.44460000000001,
+        "BELEN": 80.75580000000001,
+        "UNIV_NORTE": 84.4128,
+        "EL_POBLADO": 133.118,
+        "SABANETA": 73.98360000000001,
+        "ITAGUI": 76.36280000000001,
+        "DOWNTOWN": 108.34039999999999,
+        "LAURELES": 95.22139999999999,
+        "ENVIGADO": 81.14580000000001,
+        "BELLO": 87.3634
+      },
+      "distinct_riders_last_hour": 2552
+    },
+    {
+      "timestamp": "2026-09-07T20:17:13",
+      "rolling_avg_wait": {
+        "AIRPORT": 94.2794,
+        "BELEN": 73.8828,
+        "UNIV_NORTE": 77.829,
+        "EL_POBLADO": 106.6396,
+        "SABANETA": 70.68939999999999,
+        "ITAGUI": 73.766,
+        "DOWNTOWN": 95.365,
+        "LAURELES": 93.45939999999999,
+        "ENVIGADO": 75.80460000000001,
+        "BELLO": 81.4116
+      },
+      "distinct_riders_last_hour": 1869
+    },
+    {
+      "timestamp": "2026-09-07T21:17:13",
+      "rolling_avg_wait": {
+        "AIRPORT": 91.865,
+        "BELEN": 69.0132,
+        "UNIV_NORTE": 69.9268,
+        "EL_POBLADO": 103.6584,
+        "SABANETA": 68.9868,
+        "ITAGUI": 71.1906,
+        "DOWNTOWN": 77.3636,
+        "LAURELES": 82.5202,
+        "ENVIGADO": 75.06360000000001,
+        "BELLO": 80.2314
+      },
+      "distinct_riders_last_hour": 1371
+    },
+    {
+      "timestamp": "2026-09-07T22:17:13",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.3488,
+        "BELEN": 66.2824,
+        "UNIV_NORTE": 68.3724,
+        "EL_POBLADO": 91.82419999999999,
+        "SABANETA": 65.668,
+        "ITAGUI": 67.841,
+        "DOWNTOWN": 73.2422,
+        "LAURELES": 75.153,
+        "ENVIGADO": 69.97,
+        "BELLO": 71.1966
+      },
+      "distinct_riders_last_hour": 1048
+    },
+    {
+      "timestamp": "2026-09-07T23:17:15",
+      "rolling_avg_wait": {
+        "AIRPORT": 74.4014,
+        "BELEN": 60.8636,
+        "UNIV_NORTE": 68.4218,
+        "EL_POBLADO": 78.1986,
+        "SABANETA": 64.11919999999999,
+        "ITAGUI": 66.224,
+        "DOWNTOWN": 64.2034,
+        "LAURELES": 69.88239999999999,
+        "ENVIGADO": 65.8296,
+        "BELLO": 65.6284
+      },
+      "distinct_riders_last_hour": 736
+    },
+    {
+      "timestamp": "2026-09-08T00:17:17",
+      "rolling_avg_wait": {
+        "AIRPORT": 72.0048,
+        "BELEN": 60.036199999999994,
+        "UNIV_NORTE": 64.639,
+        "EL_POBLADO": 67.3522,
+        "SABANETA": 63.9944,
+        "ITAGUI": 65.2076,
+        "DOWNTOWN": 59.584199999999996,
+        "LAURELES": 63.3444,
+        "ENVIGADO": 62.776,
+        "BELLO": 64.2854
+      },
+      "distinct_riders_last_hour": 573
+    },
+    {
+      "timestamp": "2026-09-08T01:17:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 68.266,
+        "BELEN": 59.74,
+        "UNIV_NORTE": 61.4484,
+        "EL_POBLADO": 68.683,
+        "SABANETA": 63.587199999999996,
+        "ITAGUI": 64.2086,
+        "DOWNTOWN": 58.317800000000005,
+        "LAURELES": 59.4422,
+        "ENVIGADO": 60.271800000000006,
+        "BELLO": 64.4802
+      },
+      "distinct_riders_last_hour": 473
+    },
+    {
+      "timestamp": "2026-09-08T02:17:31",
+      "rolling_avg_wait": {
+        "AIRPORT": 65.9098,
+        "BELEN": 59.339800000000004,
+        "UNIV_NORTE": 58.9356,
+        "EL_POBLADO": 64.6032,
+        "SABANETA": 60.7136,
+        "ITAGUI": 62.12,
+        "DOWNTOWN": 57.25,
+        "LAURELES": 58.2364,
+        "ENVIGADO": 60.3474,
+        "BELLO": 62.7384
+      },
+      "distinct_riders_last_hour": 356
+    },
+    {
+      "timestamp": "2026-09-08T03:17:31",
+      "rolling_avg_wait": {
+        "AIRPORT": 61.5484,
+        "BELEN": 57.422,
+        "UNIV_NORTE": 56.4116,
+        "EL_POBLADO": 61.3474,
+        "SABANETA": 58.4834,
+        "ITAGUI": 58.4612,
+        "DOWNTOWN": 56.5108,
+        "LAURELES": 58.3396,
+        "ENVIGADO": 58.6548,
+        "BELLO": 60.2596
+      },
+      "distinct_riders_last_hour": 356
+    },
+    {
+      "timestamp": "2026-09-08T04:17:42",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.853,
+        "BELEN": 55.315599999999996,
+        "UNIV_NORTE": 53.664199999999994,
+        "EL_POBLADO": 59.467400000000005,
+        "SABANETA": 55.8888,
+        "ITAGUI": 57.096599999999995,
+        "DOWNTOWN": 55.369,
+        "LAURELES": 56.3202,
+        "ENVIGADO": 57.0808,
+        "BELLO": 56.7678
+      },
+      "distinct_riders_last_hour": 336
+    },
+    {
+      "timestamp": "2026-09-08T05:17:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.6946,
+        "BELEN": 54.1752,
+        "UNIV_NORTE": 52.3654,
+        "EL_POBLADO": 56.599,
+        "SABANETA": 53.8822,
+        "ITAGUI": 55.233,
+        "DOWNTOWN": 53.851800000000004,
+        "LAURELES": 54.597199999999994,
+        "ENVIGADO": 55.6006,
+        "BELLO": 54.2016
+      },
+      "distinct_riders_last_hour": 396
+    },
+    {
+      "timestamp": "2026-09-08T06:17:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 63.441,
+        "BELEN": 53.8958,
+        "UNIV_NORTE": 51.0576,
+        "EL_POBLADO": 55.5688,
+        "SABANETA": 53.827400000000004,
+        "ITAGUI": 53.8632,
+        "DOWNTOWN": 54.0976,
+        "LAURELES": 52.6722,
+        "ENVIGADO": 52.261199999999995,
+        "BELLO": 53.1202
+      },
+      "distinct_riders_last_hour": 679
+    },
+    {
+      "timestamp": "2026-09-08T07:17:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 75.2118,
+        "BELEN": 52.5342,
+        "UNIV_NORTE": 58.5808,
+        "EL_POBLADO": 55.943,
+        "SABANETA": 52.102199999999996,
+        "ITAGUI": 53.048,
+        "DOWNTOWN": 56.7936,
+        "LAURELES": 55.719800000000006,
+        "ENVIGADO": 50.8446,
+        "BELLO": 53.7308
+      },
+      "distinct_riders_last_hour": 1380
+    },
+    {
+      "timestamp": "2026-09-08T08:17:47",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.8896,
+        "BELEN": 62.5034,
+        "UNIV_NORTE": 87.4966,
+        "EL_POBLADO": 69.49260000000001,
+        "SABANETA": 56.7094,
+        "ITAGUI": 53.703199999999995,
+        "DOWNTOWN": 115.4362,
+        "LAURELES": 74.2962,
+        "ENVIGADO": 56.8852,
+        "BELLO": 68.1926
+      },
+      "distinct_riders_last_hour": 2236
+    },
+    {
+      "timestamp": "2026-09-08T09:17:49",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.4618,
+        "BELEN": 72.78580000000001,
+        "UNIV_NORTE": 96.2614,
+        "EL_POBLADO": 83.6874,
+        "SABANETA": 64.4224,
+        "ITAGUI": 59.069,
+        "DOWNTOWN": 127.96860000000001,
+        "LAURELES": 81.76660000000001,
+        "ENVIGADO": 68.4164,
+        "BELLO": 74.64460000000001
+      },
+      "distinct_riders_last_hour": 2185
+    },
+    {
+      "timestamp": "2026-09-08T10:17:49",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.1634,
+        "BELEN": 73.1904,
+        "UNIV_NORTE": 85.0898,
+        "EL_POBLADO": 74.772,
+        "SABANETA": 67.195,
+        "ITAGUI": 61.906800000000004,
+        "DOWNTOWN": 101.9368,
+        "LAURELES": 74.9406,
+        "ENVIGADO": 71.97460000000001,
+        "BELLO": 74.3342
+      },
+      "distinct_riders_last_hour": 1675
+    },
+    {
+      "timestamp": "2026-09-08T11:17:49",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.46539999999999,
+        "BELEN": 72.83460000000001,
+        "UNIV_NORTE": 74.8446,
+        "EL_POBLADO": 72.2794,
+        "SABANETA": 67.927,
+        "ITAGUI": 62.9552,
+        "DOWNTOWN": 80.907,
+        "LAURELES": 70.354,
+        "ENVIGADO": 71.0294,
+        "BELLO": 69.2594
+      },
+      "distinct_riders_last_hour": 1608
+    },
+    {
+      "timestamp": "2026-09-08T12:17:51",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.501,
+        "BELEN": 69.6938,
+        "UNIV_NORTE": 72.392,
+        "EL_POBLADO": 78.49380000000001,
+        "SABANETA": 65.9996,
+        "ITAGUI": 61.614,
+        "DOWNTOWN": 75.48960000000001,
+        "LAURELES": 70.5836,
+        "ENVIGADO": 73.2972,
+        "BELLO": 70.04
+      },
+      "distinct_riders_last_hour": 1793
+    },
+    {
+      "timestamp": "2026-09-08T13:17:52",
+      "rolling_avg_wait": {
+        "AIRPORT": 88.75439999999999,
+        "BELEN": 69.16839999999999,
+        "UNIV_NORTE": 78.0532,
+        "EL_POBLADO": 90.0656,
+        "SABANETA": 64.367,
+        "ITAGUI": 61.6686,
+        "DOWNTOWN": 73.21260000000001,
+        "LAURELES": 75.2018,
+        "ENVIGADO": 74.48780000000001,
+        "BELLO": 71.33760000000001
+      },
+      "distinct_riders_last_hour": 1887
+    },
+    {
+      "timestamp": "2026-09-08T14:17:55",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.69439999999999,
+        "BELEN": 67.3252,
+        "UNIV_NORTE": 79.6014,
+        "EL_POBLADO": 87.36319999999999,
+        "SABANETA": 63.906800000000004,
+        "ITAGUI": 62.370400000000004,
+        "DOWNTOWN": 72.5716,
+        "LAURELES": 79.325,
+        "ENVIGADO": 70.3186,
+        "BELLO": 71.06739999999999
+      },
+      "distinct_riders_last_hour": 1680
+    },
+    {
+      "timestamp": "2026-09-08T15:17:56",
+      "rolling_avg_wait": {
+        "AIRPORT": 78.8942,
+        "BELEN": 67.94760000000001,
+        "UNIV_NORTE": 77.9786,
+        "EL_POBLADO": 84.097,
+        "SABANETA": 64.2624,
+        "ITAGUI": 62.127,
+        "DOWNTOWN": 72.0052,
+        "LAURELES": 73.5202,
+        "ENVIGADO": 66.8574,
+        "BELLO": 67.4408
+      },
+      "distinct_riders_last_hour": 1688
+    },
+    {
+      "timestamp": "2026-09-08T16:17:59",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.16760000000001,
+        "BELEN": 72.8634,
+        "UNIV_NORTE": 71.6448,
+        "EL_POBLADO": 93.85260000000001,
+        "SABANETA": 64.2034,
+        "ITAGUI": 65.07719999999999,
+        "DOWNTOWN": 86.182,
+        "LAURELES": 74.42580000000001,
+        "ENVIGADO": 67.73660000000001,
+        "BELLO": 68.265
+      },
+      "distinct_riders_last_hour": 2021
+    },
+    {
+      "timestamp": "2026-09-08T17:17:59",
+      "rolling_avg_wait": {
+        "AIRPORT": 89.4584,
+        "BELEN": 77.0342,
+        "UNIV_NORTE": 79.5158,
+        "EL_POBLADO": 96.4358,
+        "SABANETA": 68.8636,
+        "ITAGUI": 67.919,
+        "DOWNTOWN": 95.24260000000001,
+        "LAURELES": 88.831,
+        "ENVIGADO": 76.99380000000001,
+        "BELLO": 72.8414
+      },
+      "distinct_riders_last_hour": 2420
+    },
+    {
+      "timestamp": "2026-09-08T18:17:59",
+      "rolling_avg_wait": {
+        "AIRPORT": 93.1172,
+        "BELEN": 81.0912,
+        "UNIV_NORTE": 86.58919999999999,
+        "EL_POBLADO": 117.4152,
+        "SABANETA": 73.90960000000001,
+        "ITAGUI": 73.92360000000001,
+        "DOWNTOWN": 125.3558,
+        "LAURELES": 96.95060000000001,
+        "ENVIGADO": 83.7166,
+        "BELLO": 85.8006
+      },
+      "distinct_riders_last_hour": 2781
+    },
+    {
+      "timestamp": "2026-09-08T19:18:00",
+      "rolling_avg_wait": {
+        "AIRPORT": 96.174,
+        "BELEN": 79.5228,
+        "UNIV_NORTE": 81.7452,
+        "EL_POBLADO": 124.5918,
+        "SABANETA": 75.5578,
+        "ITAGUI": 73.5292,
+        "DOWNTOWN": 105.3188,
+        "LAURELES": 94.7628,
+        "ENVIGADO": 78.7432,
+        "BELLO": 87.17580000000001
+      },
+      "distinct_riders_last_hour": 2441
+    },
+    {
+      "timestamp": "2026-09-08T20:18:03",
+      "rolling_avg_wait": {
+        "AIRPORT": 95.408,
+        "BELEN": 74.2908,
+        "UNIV_NORTE": 73.06939999999999,
+        "EL_POBLADO": 104.20819999999999,
+        "SABANETA": 75.832,
+        "ITAGUI": 70.7804,
+        "DOWNTOWN": 98.29480000000001,
+        "LAURELES": 89.71260000000001,
+        "ENVIGADO": 76.608,
+        "BELLO": 76.1304
+      },
+      "distinct_riders_last_hour": 1939
+    },
+    {
+      "timestamp": "2026-09-08T21:18:05",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.74380000000001,
+        "BELEN": 66.677,
+        "UNIV_NORTE": 66.7782,
+        "EL_POBLADO": 95.07039999999999,
+        "SABANETA": 69.9734,
+        "ITAGUI": 68.1074,
+        "DOWNTOWN": 80.9838,
+        "LAURELES": 77.593,
+        "ENVIGADO": 74.58319999999999,
+        "BELLO": 76.884
+      },
+      "distinct_riders_last_hour": 1376
+    },
+    {
+      "timestamp": "2026-09-08T22:18:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.536,
+        "BELEN": 64.0956,
+        "UNIV_NORTE": 64.8274,
+        "EL_POBLADO": 83.0416,
+        "SABANETA": 65.734,
+        "ITAGUI": 64.0144,
+        "DOWNTOWN": 77.6286,
+        "LAURELES": 74.5662,
+        "ENVIGADO": 71.2608,
+        "BELLO": 69.9888
+      },
+      "distinct_riders_last_hour": 1048
+    },
+    {
+      "timestamp": "2026-09-08T23:18:12",
+      "rolling_avg_wait": {
+        "AIRPORT": 78.339,
+        "BELEN": 60.1424,
+        "UNIV_NORTE": 64.6864,
+        "EL_POBLADO": 75.113,
+        "SABANETA": 63.4078,
+        "ITAGUI": 63.532599999999995,
+        "DOWNTOWN": 70.667,
+        "LAURELES": 70.5054,
+        "ENVIGADO": 67.9562,
+        "BELLO": 65.25319999999999
+      },
+      "distinct_riders_last_hour": 746
+    },
+    {
+      "timestamp": "2026-09-09T00:18:12",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.2962,
+        "BELEN": 57.816,
+        "UNIV_NORTE": 62.8422,
+        "EL_POBLADO": 70.91860000000001,
+        "SABANETA": 63.5916,
+        "ITAGUI": 62.8716,
+        "DOWNTOWN": 65.8938,
+        "LAURELES": 65.2208,
+        "ENVIGADO": 65.2114,
+        "BELLO": 64.2756
+      },
+      "distinct_riders_last_hour": 543
+    },
+    {
+      "timestamp": "2026-09-09T01:18:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 68.10419999999999,
+        "BELEN": 56.0474,
+        "UNIV_NORTE": 59.7566,
+        "EL_POBLADO": 69.0354,
+        "SABANETA": 62.7812,
+        "ITAGUI": 60.9096,
+        "DOWNTOWN": 61.863,
+        "LAURELES": 61.006,
+        "ENVIGADO": 64.043,
+        "BELLO": 63.888400000000004
+      },
+      "distinct_riders_last_hour": 440
+    },
+    {
+      "timestamp": "2026-09-09T02:18:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 67.45519999999999,
+        "BELEN": 54.6566,
+        "UNIV_NORTE": 57.1192,
+        "EL_POBLADO": 63.6014,
+        "SABANETA": 61.0718,
+        "ITAGUI": 59.1518,
+        "DOWNTOWN": 59.9116,
+        "LAURELES": 60.0002,
+        "ENVIGADO": 63.7166,
+        "BELLO": 61.900800000000004
+      },
+      "distinct_riders_last_hour": 409
+    },
+    {
+      "timestamp": "2026-09-09T03:18:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 61.388400000000004,
+        "BELEN": 53.157599999999995,
+        "UNIV_NORTE": 54.568599999999996,
+        "EL_POBLADO": 61.9936,
+        "SABANETA": 57.9848,
+        "ITAGUI": 56.036,
+        "DOWNTOWN": 59.507400000000004,
+        "LAURELES": 59.203,
+        "ENVIGADO": 63.6336,
+        "BELLO": 59.3618
+      },
+      "distinct_riders_last_hour": 360
+    },
+    {
+      "timestamp": "2026-09-09T04:18:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 61.1472,
+        "BELEN": 52.2526,
+        "UNIV_NORTE": 53.6282,
+        "EL_POBLADO": 61.9756,
+        "SABANETA": 54.9616,
+        "ITAGUI": 55.481199999999994,
+        "DOWNTOWN": 57.9432,
+        "LAURELES": 58.121,
+        "ENVIGADO": 61.1278,
+        "BELLO": 56.9788
+      },
+      "distinct_riders_last_hour": 341
+    },
+    {
+      "timestamp": "2026-09-09T05:18:29",
+      "rolling_avg_wait": {
+        "AIRPORT": 61.524,
+        "BELEN": 51.967400000000005,
+        "UNIV_NORTE": 53.4958,
+        "EL_POBLADO": 60.225199999999994,
+        "SABANETA": 53.1794,
+        "ITAGUI": 55.0166,
+        "DOWNTOWN": 54.442800000000005,
+        "LAURELES": 55.677,
+        "ENVIGADO": 57.1196,
+        "BELLO": 55.038
+      },
+      "distinct_riders_last_hour": 399
+    },
+    {
+      "timestamp": "2026-09-09T06:18:29",
+      "rolling_avg_wait": {
+        "AIRPORT": 66.3006,
+        "BELEN": 51.369800000000005,
+        "UNIV_NORTE": 53.3512,
+        "EL_POBLADO": 57.279,
+        "SABANETA": 52.566,
+        "ITAGUI": 53.959,
+        "DOWNTOWN": 52.778400000000005,
+        "LAURELES": 53.993,
+        "ENVIGADO": 53.306,
+        "BELLO": 53.54
+      },
+      "distinct_riders_last_hour": 692
+    },
+    {
+      "timestamp": "2026-09-09T07:18:32",
+      "rolling_avg_wait": {
+        "AIRPORT": 74.5262,
+        "BELEN": 52.804199999999994,
+        "UNIV_NORTE": 59.7026,
+        "EL_POBLADO": 57.727,
+        "SABANETA": 49.8204,
+        "ITAGUI": 52.2344,
+        "DOWNTOWN": 58.221199999999996,
+        "LAURELES": 55.5776,
+        "ENVIGADO": 52.674800000000005,
+        "BELLO": 51.357
+      },
+      "distinct_riders_last_hour": 1409
+    },
+    {
+      "timestamp": "2026-09-09T08:18:32",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.91239999999999,
+        "BELEN": 59.478199999999994,
+        "UNIV_NORTE": 86.993,
+        "EL_POBLADO": 72.42460000000001,
+        "SABANETA": 52.7158,
+        "ITAGUI": 55.5866,
+        "DOWNTOWN": 102.5356,
+        "LAURELES": 78.45819999999999,
+        "ENVIGADO": 61.9422,
+        "BELLO": 65.063
+      },
+      "distinct_riders_last_hour": 2194
+    },
+    {
+      "timestamp": "2026-09-09T09:18:32",
+      "rolling_avg_wait": {
+        "AIRPORT": 86.3244,
+        "BELEN": 69.5852,
+        "UNIV_NORTE": 94.0866,
+        "EL_POBLADO": 89.6412,
+        "SABANETA": 59.0002,
+        "ITAGUI": 62.9144,
+        "DOWNTOWN": 115.787,
+        "LAURELES": 90.2826,
+        "ENVIGADO": 73.6124,
+        "BELLO": 77.2772
+      },
+      "distinct_riders_last_hour": 2176
+    },
+    {
+      "timestamp": "2026-09-09T10:18:32",
+      "rolling_avg_wait": {
+        "AIRPORT": 78.7642,
+        "BELEN": 72.45060000000001,
+        "UNIV_NORTE": 80.4182,
+        "EL_POBLADO": 88.086,
+        "SABANETA": 62.5584,
+        "ITAGUI": 66.2764,
+        "DOWNTOWN": 100.0578,
+        "LAURELES": 79.55380000000001,
+        "ENVIGADO": 76.7054,
+        "BELLO": 76.82239999999999
+      },
+      "distinct_riders_last_hour": 1644
+    },
+    {
+      "timestamp": "2026-09-09T11:18:36",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.1586,
+        "BELEN": 71.1588,
+        "UNIV_NORTE": 73.54639999999999,
+        "EL_POBLADO": 77.8178,
+        "SABANETA": 64.6122,
+        "ITAGUI": 64.7636,
+        "DOWNTOWN": 80.7406,
+        "LAURELES": 79.288,
+        "ENVIGADO": 73.0918,
+        "BELLO": 73.3558
+      },
+      "distinct_riders_last_hour": 1576
+    },
+    {
+      "timestamp": "2026-09-09T12:18:36",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.30839999999999,
+        "BELEN": 67.76960000000001,
+        "UNIV_NORTE": 67.2224,
+        "EL_POBLADO": 82.9148,
+        "SABANETA": 65.4712,
+        "ITAGUI": 63.0238,
+        "DOWNTOWN": 76.679,
+        "LAURELES": 77.04039999999999,
+        "ENVIGADO": 71.314,
+        "BELLO": 67.7402
+      },
+      "distinct_riders_last_hour": 1819
+    },
+    {
+      "timestamp": "2026-09-09T13:18:43",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.8654,
+        "BELEN": 67.9588,
+        "UNIV_NORTE": 70.9572,
+        "EL_POBLADO": 88.048,
+        "SABANETA": 67.4694,
+        "ITAGUI": 60.175599999999996,
+        "DOWNTOWN": 76.3058,
+        "LAURELES": 78.4118,
+        "ENVIGADO": 70.9884,
+        "BELLO": 68.0488
+      },
+      "distinct_riders_last_hour": 1819
+    },
+    {
+      "timestamp": "2026-09-09T14:18:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.20139999999999,
+        "BELEN": 68.1522,
+        "UNIV_NORTE": 72.3534,
+        "EL_POBLADO": 83.45519999999999,
+        "SABANETA": 66.75160000000001,
+        "ITAGUI": 60.7262,
+        "DOWNTOWN": 77.0368,
+        "LAURELES": 75.8668,
+        "ENVIGADO": 71.5686,
+        "BELLO": 69.6198
+      },
+      "distinct_riders_last_hour": 1621
+    },
+    {
+      "timestamp": "2026-09-09T15:18:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.7256,
+        "BELEN": 70.6936,
+        "UNIV_NORTE": 71.1286,
+        "EL_POBLADO": 77.238,
+        "SABANETA": 65.311,
+        "ITAGUI": 62.3612,
+        "DOWNTOWN": 75.041,
+        "LAURELES": 70.1292,
+        "ENVIGADO": 70.9458,
+        "BELLO": 67.6468
+      },
+      "distinct_riders_last_hour": 1604
+    },
+    {
+      "timestamp": "2026-09-09T16:18:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.664,
+        "BELEN": 72.5864,
+        "UNIV_NORTE": 70.8848,
+        "EL_POBLADO": 81.2392,
+        "SABANETA": 62.2334,
+        "ITAGUI": 63.315400000000004,
+        "DOWNTOWN": 76.0868,
+        "LAURELES": 71.96119999999999,
+        "ENVIGADO": 72.6868,
+        "BELLO": 71.0252
+      },
+      "distinct_riders_last_hour": 2004
+    },
+    {
+      "timestamp": "2026-09-09T17:18:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.826,
+        "BELEN": 77.2266,
+        "UNIV_NORTE": 85.6632,
+        "EL_POBLADO": 92.3908,
+        "SABANETA": 64.8856,
+        "ITAGUI": 68.5222,
+        "DOWNTOWN": 98.22919999999999,
+        "LAURELES": 85.1396,
+        "ENVIGADO": 74.8228,
+        "BELLO": 78.2822
+      },
+      "distinct_riders_last_hour": 2488
+    },
+    {
+      "timestamp": "2026-09-09T18:18:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 93.3384,
+        "BELEN": 81.455,
+        "UNIV_NORTE": 89.1058,
+        "EL_POBLADO": 115.3118,
+        "SABANETA": 71.2012,
+        "ITAGUI": 74.68839999999999,
+        "DOWNTOWN": 127.064,
+        "LAURELES": 90.91839999999999,
+        "ENVIGADO": 79.2554,
+        "BELLO": 86.3312
+      },
+      "distinct_riders_last_hour": 2748
+    },
+    {
+      "timestamp": "2026-09-09T19:18:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.206,
+        "BELEN": 77.6196,
+        "UNIV_NORTE": 77.95060000000001,
+        "EL_POBLADO": 120.4024,
+        "SABANETA": 74.6876,
+        "ITAGUI": 76.2058,
+        "DOWNTOWN": 113.8786,
+        "LAURELES": 94.827,
+        "ENVIGADO": 85.1346,
+        "BELLO": 83.2882
+      },
+      "distinct_riders_last_hour": 2477
+    },
+    {
+      "timestamp": "2026-09-09T20:18:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 89.6082,
+        "BELEN": 68.52980000000001,
+        "UNIV_NORTE": 77.3696,
+        "EL_POBLADO": 101.7542,
+        "SABANETA": 72.1318,
+        "ITAGUI": 73.42660000000001,
+        "DOWNTOWN": 96.286,
+        "LAURELES": 87.05380000000001,
+        "ENVIGADO": 79.45,
+        "BELLO": 71.3724
+      },
+      "distinct_riders_last_hour": 1805
+    },
+    {
+      "timestamp": "2026-09-09T21:18:53",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.86160000000001,
+        "BELEN": 66.2152,
+        "UNIV_NORTE": 70.20739999999999,
+        "EL_POBLADO": 94.2158,
+        "SABANETA": 68.65339999999999,
+        "ITAGUI": 69.156,
+        "DOWNTOWN": 78.3546,
+        "LAURELES": 75.6284,
+        "ENVIGADO": 79.684,
+        "BELLO": 71.66839999999999
+      },
+      "distinct_riders_last_hour": 1396
+    },
+    {
+      "timestamp": "2026-09-09T22:18:56",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.63839999999999,
+        "BELEN": 64.4996,
+        "UNIV_NORTE": 64.803,
+        "EL_POBLADO": 90.0452,
+        "SABANETA": 64.5698,
+        "ITAGUI": 65.8908,
+        "DOWNTOWN": 75.98819999999999,
+        "LAURELES": 74.7642,
+        "ENVIGADO": 69.8882,
+        "BELLO": 69.119
+      },
+      "distinct_riders_last_hour": 1000
+    },
+    {
+      "timestamp": "2026-09-09T23:19:04",
+      "rolling_avg_wait": {
+        "AIRPORT": 73.0378,
+        "BELEN": 60.525400000000005,
+        "UNIV_NORTE": 63.284,
+        "EL_POBLADO": 74.7134,
+        "SABANETA": 62.292,
+        "ITAGUI": 64.466,
+        "DOWNTOWN": 69.2272,
+        "LAURELES": 69.443,
+        "ENVIGADO": 63.207800000000006,
+        "BELLO": 65.2512
+      },
+      "distinct_riders_last_hour": 722
+    },
+    {
+      "timestamp": "2026-09-10T00:19:15",
+      "rolling_avg_wait": {
+        "AIRPORT": 72.5184,
+        "BELEN": 58.688,
+        "UNIV_NORTE": 62.503,
+        "EL_POBLADO": 65.8096,
+        "SABANETA": 61.927800000000005,
+        "ITAGUI": 64.8538,
+        "DOWNTOWN": 64.3962,
+        "LAURELES": 64.145,
+        "ENVIGADO": 61.1374,
+        "BELLO": 62.9326
+      },
+      "distinct_riders_last_hour": 537
+    },
+    {
+      "timestamp": "2026-09-10T01:19:17",
+      "rolling_avg_wait": {
+        "AIRPORT": 66.154,
+        "BELEN": 56.579,
+        "UNIV_NORTE": 62.2646,
+        "EL_POBLADO": 65.9362,
+        "SABANETA": 60.135,
+        "ITAGUI": 62.5792,
+        "DOWNTOWN": 62.3276,
+        "LAURELES": 63.681,
+        "ENVIGADO": 61.1728,
+        "BELLO": 62.3686
+      },
+      "distinct_riders_last_hour": 530
+    },
+    {
+      "timestamp": "2026-09-10T02:19:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 64.717,
+        "BELEN": 56.526,
+        "UNIV_NORTE": 61.3756,
+        "EL_POBLADO": 62.76,
+        "SABANETA": 58.6872,
+        "ITAGUI": 60.8516,
+        "DOWNTOWN": 60.8966,
+        "LAURELES": 62.129,
+        "ENVIGADO": 59.5598,
+        "BELLO": 61.785199999999996
+      },
+      "distinct_riders_last_hour": 356
+    },
+    {
+      "timestamp": "2026-09-10T03:19:21",
+      "rolling_avg_wait": {
+        "AIRPORT": 62.587,
+        "BELEN": 55.4264,
+        "UNIV_NORTE": 59.610800000000005,
+        "EL_POBLADO": 60.8054,
+        "SABANETA": 56.234,
+        "ITAGUI": 58.775,
+        "DOWNTOWN": 59.8524,
+        "LAURELES": 61.204,
+        "ENVIGADO": 57.024800000000006,
+        "BELLO": 60.027
+      },
+      "distinct_riders_last_hour": 339
+    },
+    {
+      "timestamp": "2026-09-10T04:19:23",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.661199999999994,
+        "BELEN": 54.534,
+        "UNIV_NORTE": 56.0108,
+        "EL_POBLADO": 59.769,
+        "SABANETA": 53.486599999999996,
+        "ITAGUI": 56.07,
+        "DOWNTOWN": 58.7926,
+        "LAURELES": 59.968599999999995,
+        "ENVIGADO": 55.207800000000006,
+        "BELLO": 57.5796
+      },
+      "distinct_riders_last_hour": 332
+    },
+    {
+      "timestamp": "2026-09-10T05:19:29",
+      "rolling_avg_wait": {
+        "AIRPORT": 58.9748,
+        "BELEN": 52.913,
+        "UNIV_NORTE": 54.1924,
+        "EL_POBLADO": 59.131,
+        "SABANETA": 51.913199999999996,
+        "ITAGUI": 54.599199999999996,
+        "DOWNTOWN": 55.994800000000005,
+        "LAURELES": 59.1216,
+        "ENVIGADO": 53.4496,
+        "BELLO": 54.672599999999996
+      },
+      "distinct_riders_last_hour": 410
+    },
+    {
+      "timestamp": "2026-09-10T06:19:29",
+      "rolling_avg_wait": {
+        "AIRPORT": 64.588,
+        "BELEN": 51.978,
+        "UNIV_NORTE": 53.3444,
+        "EL_POBLADO": 55.2752,
+        "SABANETA": 51.481,
+        "ITAGUI": 53.3136,
+        "DOWNTOWN": 55.237199999999994,
+        "LAURELES": 57.4438,
+        "ENVIGADO": 52.152,
+        "BELLO": 53.703
+      },
+      "distinct_riders_last_hour": 701
+    },
+    {
+      "timestamp": "2026-09-10T07:19:29",
+      "rolling_avg_wait": {
+        "AIRPORT": 78.74539999999999,
+        "BELEN": 51.4236,
+        "UNIV_NORTE": 61.039199999999994,
+        "EL_POBLADO": 56.3838,
+        "SABANETA": 48.7624,
+        "ITAGUI": 52.037,
+        "DOWNTOWN": 64.0266,
+        "LAURELES": 57.6692,
+        "ENVIGADO": 52.186800000000005,
+        "BELLO": 55.0238
+      },
+      "distinct_riders_last_hour": 1359
+    },
+    {
+      "timestamp": "2026-09-10T08:19:29",
+      "rolling_avg_wait": {
+        "AIRPORT": 91.56960000000001,
+        "BELEN": 57.037800000000004,
+        "UNIV_NORTE": 89.69460000000001,
+        "EL_POBLADO": 72.0422,
+        "SABANETA": 51.0652,
+        "ITAGUI": 54.980199999999996,
+        "DOWNTOWN": 116.8942,
+        "LAURELES": 74.7628,
+        "ENVIGADO": 61.1222,
+        "BELLO": 67.5746
+      },
+      "distinct_riders_last_hour": 2339
+    },
+    {
+      "timestamp": "2026-09-10T09:19:30",
+      "rolling_avg_wait": {
+        "AIRPORT": 88.7188,
+        "BELEN": 65.1702,
+        "UNIV_NORTE": 90.17060000000001,
+        "EL_POBLADO": 85.54560000000001,
+        "SABANETA": 57.7196,
+        "ITAGUI": 59.107800000000005,
+        "DOWNTOWN": 127.0318,
+        "LAURELES": 80.7194,
+        "ENVIGADO": 69.41380000000001,
+        "BELLO": 83.49860000000001
+      },
+      "distinct_riders_last_hour": 2117
+    },
+    {
+      "timestamp": "2026-09-10T10:19:31",
+      "rolling_avg_wait": {
+        "AIRPORT": 78.1586,
+        "BELEN": 68.4072,
+        "UNIV_NORTE": 81.04260000000001,
+        "EL_POBLADO": 82.7354,
+        "SABANETA": 61.3678,
+        "ITAGUI": 62.837,
+        "DOWNTOWN": 98.7248,
+        "LAURELES": 73.65360000000001,
+        "ENVIGADO": 69.93339999999999,
+        "BELLO": 77.7086
+      },
+      "distinct_riders_last_hour": 1576
+    },
+    {
+      "timestamp": "2026-09-10T11:19:32",
+      "rolling_avg_wait": {
+        "AIRPORT": 74.43260000000001,
+        "BELEN": 67.3,
+        "UNIV_NORTE": 75.4056,
+        "EL_POBLADO": 76.41539999999999,
+        "SABANETA": 65.5596,
+        "ITAGUI": 63.138400000000004,
+        "DOWNTOWN": 77.62960000000001,
+        "LAURELES": 72.1816,
+        "ENVIGADO": 68.68780000000001,
+        "BELLO": 73.1336
+      },
+      "distinct_riders_last_hour": 1554
+    },
+    {
+      "timestamp": "2026-09-10T12:19:33",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.9548,
+        "BELEN": 68.57,
+        "UNIV_NORTE": 71.2376,
+        "EL_POBLADO": 76.39439999999999,
+        "SABANETA": 66.8382,
+        "ITAGUI": 60.935199999999995,
+        "DOWNTOWN": 72.6568,
+        "LAURELES": 70.9996,
+        "ENVIGADO": 66.782,
+        "BELLO": 67.4646
+      },
+      "distinct_riders_last_hour": 1786
+    },
+    {
+      "timestamp": "2026-09-10T13:19:33",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.57539999999999,
+        "BELEN": 71.309,
+        "UNIV_NORTE": 72.313,
+        "EL_POBLADO": 79.33239999999999,
+        "SABANETA": 67.04360000000001,
+        "ITAGUI": 62.5004,
+        "DOWNTOWN": 68.92160000000001,
+        "LAURELES": 82.61019999999999,
+        "ENVIGADO": 75.2308,
+        "BELLO": 72.6078
+      },
+      "distinct_riders_last_hour": 1903
+    },
+    {
+      "timestamp": "2026-09-10T14:19:35",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.252,
+        "BELEN": 71.12519999999999,
+        "UNIV_NORTE": 72.679,
+        "EL_POBLADO": 84.58739999999999,
+        "SABANETA": 64.8,
+        "ITAGUI": 63.2424,
+        "DOWNTOWN": 70.6182,
+        "LAURELES": 81.5894,
+        "ENVIGADO": 73.06439999999999,
+        "BELLO": 73.086
+      },
+      "distinct_riders_last_hour": 1626
+    },
+    {
+      "timestamp": "2026-09-10T15:19:36",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.2758,
+        "BELEN": 68.6918,
+        "UNIV_NORTE": 70.9528,
+        "EL_POBLADO": 81.4486,
+        "SABANETA": 65.2824,
+        "ITAGUI": 63.5494,
+        "DOWNTOWN": 72.7568,
+        "LAURELES": 73.50880000000001,
+        "ENVIGADO": 72.6362,
+        "BELLO": 70.9826
+      },
+      "distinct_riders_last_hour": 1650
+    },
+    {
+      "timestamp": "2026-09-10T16:19:37",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.387,
+        "BELEN": 69.0938,
+        "UNIV_NORTE": 73.819,
+        "EL_POBLADO": 84.803,
+        "SABANETA": 64.0018,
+        "ITAGUI": 66.13239999999999,
+        "DOWNTOWN": 76.591,
+        "LAURELES": 76.72019999999999,
+        "ENVIGADO": 74.1244,
+        "BELLO": 70.1798
+      },
+      "distinct_riders_last_hour": 2063
+    },
+    {
+      "timestamp": "2026-09-10T17:19:38",
+      "rolling_avg_wait": {
+        "AIRPORT": 94.31,
+        "BELEN": 68.298,
+        "UNIV_NORTE": 85.1526,
+        "EL_POBLADO": 96.0656,
+        "SABANETA": 65.84360000000001,
+        "ITAGUI": 68.9558,
+        "DOWNTOWN": 86.326,
+        "LAURELES": 84.694,
+        "ENVIGADO": 77.931,
+        "BELLO": 74.66260000000001
+      },
+      "distinct_riders_last_hour": 2367
+    },
+    {
+      "timestamp": "2026-09-10T18:19:38",
+      "rolling_avg_wait": {
+        "AIRPORT": 89.272,
+        "BELEN": 77.4854,
+        "UNIV_NORTE": 90.31360000000001,
+        "EL_POBLADO": 112.6678,
+        "SABANETA": 71.9142,
+        "ITAGUI": 72.698,
+        "DOWNTOWN": 121.75160000000001,
+        "LAURELES": 88.6802,
+        "ENVIGADO": 83.10539999999999,
+        "BELLO": 83.52839999999999
+      },
+      "distinct_riders_last_hour": 2726
+    },
+    {
+      "timestamp": "2026-09-10T19:19:38",
+      "rolling_avg_wait": {
+        "AIRPORT": 97.13860000000001,
+        "BELEN": 78.8274,
+        "UNIV_NORTE": 87.5102,
+        "EL_POBLADO": 131.4522,
+        "SABANETA": 72.5522,
+        "ITAGUI": 72.1076,
+        "DOWNTOWN": 113.6772,
+        "LAURELES": 91.856,
+        "ENVIGADO": 87.4038,
+        "BELLO": 85.852
+      },
+      "distinct_riders_last_hour": 2547
+    },
+    {
+      "timestamp": "2026-09-10T20:19:40",
+      "rolling_avg_wait": {
+        "AIRPORT": 97.5948,
+        "BELEN": 76.7152,
+        "UNIV_NORTE": 83.838,
+        "EL_POBLADO": 100.1802,
+        "SABANETA": 72.80239999999999,
+        "ITAGUI": 71.2386,
+        "DOWNTOWN": 93.9648,
+        "LAURELES": 91.2836,
+        "ENVIGADO": 77.6898,
+        "BELLO": 78.84039999999999
+      },
+      "distinct_riders_last_hour": 1869
+    },
+    {
+      "timestamp": "2026-09-10T21:19:40",
+      "rolling_avg_wait": {
+        "AIRPORT": 89.443,
+        "BELEN": 68.7802,
+        "UNIV_NORTE": 75.1364,
+        "EL_POBLADO": 94.738,
+        "SABANETA": 68.3444,
+        "ITAGUI": 67.37060000000001,
+        "DOWNTOWN": 85.67439999999999,
+        "LAURELES": 76.1968,
+        "ENVIGADO": 75.87219999999999,
+        "BELLO": 77.743
+      },
+      "distinct_riders_last_hour": 1323
+    },
+    {
+      "timestamp": "2026-09-10T22:19:44",
+      "rolling_avg_wait": {
+        "AIRPORT": 75.61139999999999,
+        "BELEN": 67.77,
+        "UNIV_NORTE": 69.9046,
+        "EL_POBLADO": 87.4284,
+        "SABANETA": 64.41380000000001,
+        "ITAGUI": 62.664,
+        "DOWNTOWN": 81.4902,
+        "LAURELES": 71.4104,
+        "ENVIGADO": 68.339,
+        "BELLO": 71.42439999999999
+      },
+      "distinct_riders_last_hour": 1029
+    },
+    {
+      "timestamp": "2026-09-10T23:19:46",
+      "rolling_avg_wait": {
+        "AIRPORT": 72.4802,
+        "BELEN": 63.727,
+        "UNIV_NORTE": 69.61019999999999,
+        "EL_POBLADO": 73.016,
+        "SABANETA": 63.3786,
+        "ITAGUI": 61.476,
+        "DOWNTOWN": 73.2016,
+        "LAURELES": 66.8606,
+        "ENVIGADO": 63.2934,
+        "BELLO": 67.25319999999999
+      },
+      "distinct_riders_last_hour": 739
+    },
+    {
+      "timestamp": "2026-09-11T00:19:50",
+      "rolling_avg_wait": {
+        "AIRPORT": 69.00619999999999,
+        "BELEN": 61.6128,
+        "UNIV_NORTE": 69.044,
+        "EL_POBLADO": 68.8866,
+        "SABANETA": 63.219199999999994,
+        "ITAGUI": 61.178,
+        "DOWNTOWN": 67.965,
+        "LAURELES": 62.004400000000004,
+        "ENVIGADO": 60.7806,
+        "BELLO": 64.6232
+      },
+      "distinct_riders_last_hour": 522
+    },
+    {
+      "timestamp": "2026-09-11T01:19:53",
+      "rolling_avg_wait": {
+        "AIRPORT": 63.6976,
+        "BELEN": 59.6088,
+        "UNIV_NORTE": 67.021,
+        "EL_POBLADO": 65.3274,
+        "SABANETA": 61.6224,
+        "ITAGUI": 59.560199999999995,
+        "DOWNTOWN": 66.24980000000001,
+        "LAURELES": 60.659800000000004,
+        "ENVIGADO": 60.831,
+        "BELLO": 63.9304
+      },
+      "distinct_riders_last_hour": 498
+    },
+    {
+      "timestamp": "2026-09-11T02:19:54",
+      "rolling_avg_wait": {
+        "AIRPORT": 63.2904,
+        "BELEN": 59.9432,
+        "UNIV_NORTE": 64.3412,
+        "EL_POBLADO": 60.6566,
+        "SABANETA": 59.2752,
+        "ITAGUI": 57.8598,
+        "DOWNTOWN": 64.8136,
+        "LAURELES": 58.746,
+        "ENVIGADO": 59.3544,
+        "BELLO": 63.593199999999996
+      },
+      "distinct_riders_last_hour": 403
+    },
+    {
+      "timestamp": "2026-09-11T03:20:11",
+      "rolling_avg_wait": {
+        "AIRPORT": 58.650800000000004,
+        "BELEN": 58.1148,
+        "UNIV_NORTE": 60.2974,
+        "EL_POBLADO": 59.166199999999996,
+        "SABANETA": 57.8684,
+        "ITAGUI": 55.848,
+        "DOWNTOWN": 61.8194,
+        "LAURELES": 57.0006,
+        "ENVIGADO": 57.2378,
+        "BELLO": 61.0388
+      },
+      "distinct_riders_last_hour": 347
+    },
+    {
+      "timestamp": "2026-09-11T04:20:13",
+      "rolling_avg_wait": {
+        "AIRPORT": 58.713,
+        "BELEN": 56.3092,
+        "UNIV_NORTE": 58.253800000000005,
+        "EL_POBLADO": 57.7668,
+        "SABANETA": 56.2288,
+        "ITAGUI": 54.5568,
+        "DOWNTOWN": 58.7556,
+        "LAURELES": 54.4756,
+        "ENVIGADO": 55.479800000000004,
+        "BELLO": 57.736599999999996
+      },
+      "distinct_riders_last_hour": 373
+    },
+    {
+      "timestamp": "2026-09-11T05:20:15",
+      "rolling_avg_wait": {
+        "AIRPORT": 58.8326,
+        "BELEN": 54.4496,
+        "UNIV_NORTE": 55.6772,
+        "EL_POBLADO": 57.358599999999996,
+        "SABANETA": 55.6044,
+        "ITAGUI": 52.9274,
+        "DOWNTOWN": 56.1328,
+        "LAURELES": 53.282,
+        "ENVIGADO": 52.206,
+        "BELLO": 55.742
+      },
+      "distinct_riders_last_hour": 475
+    },
+    {
+      "timestamp": "2026-09-11T06:20:18",
+      "rolling_avg_wait": {
+        "AIRPORT": 67.1948,
+        "BELEN": 53.111,
+        "UNIV_NORTE": 53.0518,
+        "EL_POBLADO": 54.9714,
+        "SABANETA": 55.1308,
+        "ITAGUI": 52.852,
+        "DOWNTOWN": 55.6966,
+        "LAURELES": 53.1496,
+        "ENVIGADO": 51.5252,
+        "BELLO": 52.8266
+      },
+      "distinct_riders_last_hour": 709
+    },
+    {
+      "timestamp": "2026-09-11T07:20:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 78.1122,
+        "BELEN": 54.245400000000004,
+        "UNIV_NORTE": 57.454,
+        "EL_POBLADO": 54.7086,
+        "SABANETA": 51.647400000000005,
+        "ITAGUI": 50.551,
+        "DOWNTOWN": 60.414199999999994,
+        "LAURELES": 59.0316,
+        "ENVIGADO": 51.607800000000005,
+        "BELLO": 53.7184
+      },
+      "distinct_riders_last_hour": 1405
+    },
+    {
+      "timestamp": "2026-09-11T08:20:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.829,
+        "BELEN": 64.248,
+        "UNIV_NORTE": 84.5266,
+        "EL_POBLADO": 70.19539999999999,
+        "SABANETA": 55.8846,
+        "ITAGUI": 55.883,
+        "DOWNTOWN": 114.9398,
+        "LAURELES": 82.5642,
+        "ENVIGADO": 58.957,
+        "BELLO": 62.1952
+      },
+      "distinct_riders_last_hour": 2276
+    },
+    {
+      "timestamp": "2026-09-11T09:20:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.232,
+        "BELEN": 75.67760000000001,
+        "UNIV_NORTE": 94.2788,
+        "EL_POBLADO": 82.6876,
+        "SABANETA": 61.446,
+        "ITAGUI": 60.860800000000005,
+        "DOWNTOWN": 121.1558,
+        "LAURELES": 88.44160000000001,
+        "ENVIGADO": 66.0472,
+        "BELLO": 76.2286
+      },
+      "distinct_riders_last_hour": 2088
+    },
+    {
+      "timestamp": "2026-09-11T10:20:21",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.7824,
+        "BELEN": 75.8786,
+        "UNIV_NORTE": 85.36919999999999,
+        "EL_POBLADO": 81.55539999999999,
+        "SABANETA": 65.17,
+        "ITAGUI": 64.598,
+        "DOWNTOWN": 99.1232,
+        "LAURELES": 75.51180000000001,
+        "ENVIGADO": 69.72,
+        "BELLO": 76.8112
+      },
+      "distinct_riders_last_hour": 1617
+    },
+    {
+      "timestamp": "2026-09-11T11:20:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.6328,
+        "BELEN": 71.9824,
+        "UNIV_NORTE": 74.0472,
+        "EL_POBLADO": 77.8102,
+        "SABANETA": 64.3282,
+        "ITAGUI": 65.7328,
+        "DOWNTOWN": 74.61460000000001,
+        "LAURELES": 73.2174,
+        "ENVIGADO": 69.3648,
+        "BELLO": 73.45819999999999
+      },
+      "distinct_riders_last_hour": 1639
+    },
+    {
+      "timestamp": "2026-09-11T12:20:23",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.38260000000001,
+        "BELEN": 71.1964,
+        "UNIV_NORTE": 72.87660000000001,
+        "EL_POBLADO": 81.9062,
+        "SABANETA": 63.405800000000006,
+        "ITAGUI": 64.4574,
+        "DOWNTOWN": 72.2288,
+        "LAURELES": 73.2638,
+        "ENVIGADO": 70.6532,
+        "BELLO": 67.563
+      },
+      "distinct_riders_last_hour": 1779
+    },
+    {
+      "timestamp": "2026-09-11T13:20:25",
+      "rolling_avg_wait": {
+        "AIRPORT": 86.57,
+        "BELEN": 72.5082,
+        "UNIV_NORTE": 76.06460000000001,
+        "EL_POBLADO": 85.4738,
+        "SABANETA": 63.2622,
+        "ITAGUI": 64.1816,
+        "DOWNTOWN": 75.0214,
+        "LAURELES": 80.4352,
+        "ENVIGADO": 72.94919999999999,
+        "BELLO": 70.7356
+      },
+      "distinct_riders_last_hour": 1910
+    },
+    {
+      "timestamp": "2026-09-11T14:20:27",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.177,
+        "BELEN": 71.1778,
+        "UNIV_NORTE": 76.6508,
+        "EL_POBLADO": 82.9826,
+        "SABANETA": 63.022,
+        "ITAGUI": 63.901199999999996,
+        "DOWNTOWN": 77.8994,
+        "LAURELES": 79.53880000000001,
+        "ENVIGADO": 71.788,
+        "BELLO": 70.2494
+      },
+      "distinct_riders_last_hour": 1566
+    },
+    {
+      "timestamp": "2026-09-11T15:20:27",
+      "rolling_avg_wait": {
+        "AIRPORT": 73.4268,
+        "BELEN": 69.299,
+        "UNIV_NORTE": 74.7418,
+        "EL_POBLADO": 77.76,
+        "SABANETA": 62.623,
+        "ITAGUI": 65.1254,
+        "DOWNTOWN": 73.8318,
+        "LAURELES": 74.3118,
+        "ENVIGADO": 71.192,
+        "BELLO": 66.5096
+      },
+      "distinct_riders_last_hour": 1613
+    },
+    {
+      "timestamp": "2026-09-11T16:20:27",
+      "rolling_avg_wait": {
+        "AIRPORT": 74.2058,
+        "BELEN": 68.6768,
+        "UNIV_NORTE": 71.72919999999999,
+        "EL_POBLADO": 82.32039999999999,
+        "SABANETA": 66.0384,
+        "ITAGUI": 64.4958,
+        "DOWNTOWN": 79.166,
+        "LAURELES": 76.019,
+        "ENVIGADO": 67.876,
+        "BELLO": 69.79
+      },
+      "distinct_riders_last_hour": 1959
+    },
+    {
+      "timestamp": "2026-09-11T17:20:27",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.15060000000001,
+        "BELEN": 75.1874,
+        "UNIV_NORTE": 77.311,
+        "EL_POBLADO": 93.9112,
+        "SABANETA": 68.6644,
+        "ITAGUI": 65.75439999999999,
+        "DOWNTOWN": 93.0006,
+        "LAURELES": 86.8022,
+        "ENVIGADO": 73.6966,
+        "BELLO": 77.3532
+      },
+      "distinct_riders_last_hour": 2428
+    },
+    {
+      "timestamp": "2026-09-11T18:20:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 86.2356,
+        "BELEN": 80.4532,
+        "UNIV_NORTE": 84.4322,
+        "EL_POBLADO": 123.88260000000001,
+        "SABANETA": 77.664,
+        "ITAGUI": 73.74980000000001,
+        "DOWNTOWN": 133.9398,
+        "LAURELES": 86.4838,
+        "ENVIGADO": 83.8402,
+        "BELLO": 86.7596
+      },
+      "distinct_riders_last_hour": 2803
+    },
+    {
+      "timestamp": "2026-09-11T19:20:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.625,
+        "BELEN": 73.7256,
+        "UNIV_NORTE": 87.7338,
+        "EL_POBLADO": 124.5438,
+        "SABANETA": 77.1452,
+        "ITAGUI": 75.042,
+        "DOWNTOWN": 112.1438,
+        "LAURELES": 92.20439999999999,
+        "ENVIGADO": 86.12960000000001,
+        "BELLO": 86.87480000000001
+      },
+      "distinct_riders_last_hour": 2460
+    },
+    {
+      "timestamp": "2026-09-11T20:20:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 93.59660000000001,
+        "BELEN": 72.8352,
+        "UNIV_NORTE": 79.3192,
+        "EL_POBLADO": 96.1692,
+        "SABANETA": 77.3536,
+        "ITAGUI": 74.291,
+        "DOWNTOWN": 93.7698,
+        "LAURELES": 89.8664,
+        "ENVIGADO": 83.113,
+        "BELLO": 78.307
+      },
+      "distinct_riders_last_hour": 1881
+    },
+    {
+      "timestamp": "2026-09-11T21:20:30",
+      "rolling_avg_wait": {
+        "AIRPORT": 88.3608,
+        "BELEN": 68.2254,
+        "UNIV_NORTE": 73.508,
+        "EL_POBLADO": 91.297,
+        "SABANETA": 73.5324,
+        "ITAGUI": 70.6692,
+        "DOWNTOWN": 78.095,
+        "LAURELES": 78.9172,
+        "ENVIGADO": 81.2146,
+        "BELLO": 73.6754
+      },
+      "distinct_riders_last_hour": 1271
+    },
+    {
+      "timestamp": "2026-09-11T22:20:36",
+      "rolling_avg_wait": {
+        "AIRPORT": 75.646,
+        "BELEN": 65.6982,
+        "UNIV_NORTE": 71.207,
+        "EL_POBLADO": 82.6118,
+        "SABANETA": 67.4848,
+        "ITAGUI": 66.322,
+        "DOWNTOWN": 74.0036,
+        "LAURELES": 69.9208,
+        "ENVIGADO": 74.35560000000001,
+        "BELLO": 68.10860000000001
+      },
+      "distinct_riders_last_hour": 994
+    },
+    {
+      "timestamp": "2026-09-11T23:20:38",
+      "rolling_avg_wait": {
+        "AIRPORT": 73.3964,
+        "BELEN": 61.9542,
+        "UNIV_NORTE": 70.8834,
+        "EL_POBLADO": 75.2524,
+        "SABANETA": 64.6752,
+        "ITAGUI": 63.4194,
+        "DOWNTOWN": 66.902,
+        "LAURELES": 65.8876,
+        "ENVIGADO": 70.09519999999999,
+        "BELLO": 63.728199999999994
+      },
+      "distinct_riders_last_hour": 698
+    },
+    {
+      "timestamp": "2026-09-12T00:20:40",
+      "rolling_avg_wait": {
+        "AIRPORT": 71.8228,
+        "BELEN": 60.6804,
+        "UNIV_NORTE": 69.7882,
+        "EL_POBLADO": 68.5968,
+        "SABANETA": 64.1494,
+        "ITAGUI": 61.4388,
+        "DOWNTOWN": 61.403,
+        "LAURELES": 61.181400000000004,
+        "ENVIGADO": 64.53880000000001,
+        "BELLO": 60.4342
+      },
+      "distinct_riders_last_hour": 516
+    },
+    {
+      "timestamp": "2026-09-12T01:20:40",
+      "rolling_avg_wait": {
+        "AIRPORT": 67.1412,
+        "BELEN": 60.1074,
+        "UNIV_NORTE": 64.3956,
+        "EL_POBLADO": 69.698,
+        "SABANETA": 62.599199999999996,
+        "ITAGUI": 60.2442,
+        "DOWNTOWN": 59.9336,
+        "LAURELES": 57.442800000000005,
+        "ENVIGADO": 62.839800000000004,
+        "BELLO": 58.797
+      },
+      "distinct_riders_last_hour": 493
+    },
+    {
+      "timestamp": "2026-09-12T02:21:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 65.4734,
+        "BELEN": 59.572,
+        "UNIV_NORTE": 60.3416,
+        "EL_POBLADO": 66.7272,
+        "SABANETA": 60.8082,
+        "ITAGUI": 60.0208,
+        "DOWNTOWN": 59.548,
+        "LAURELES": 56.908199999999994,
+        "ENVIGADO": 62.1992,
+        "BELLO": 57.7844
+      },
+      "distinct_riders_last_hour": 386
+    },
+    {
+      "timestamp": "2026-09-12T03:21:14",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.86,
+        "BELEN": 58.32,
+        "UNIV_NORTE": 57.105,
+        "EL_POBLADO": 63.2806,
+        "SABANETA": 57.1654,
+        "ITAGUI": 58.585,
+        "DOWNTOWN": 57.9184,
+        "LAURELES": 55.9654,
+        "ENVIGADO": 61.211400000000005,
+        "BELLO": 55.918
+      },
+      "distinct_riders_last_hour": 359
+    },
+    {
+      "timestamp": "2026-09-12T04:21:15",
+      "rolling_avg_wait": {
+        "AIRPORT": 59.8138,
+        "BELEN": 56.185199999999995,
+        "UNIV_NORTE": 55.2864,
+        "EL_POBLADO": 61.4272,
+        "SABANETA": 55.6042,
+        "ITAGUI": 55.8648,
+        "DOWNTOWN": 55.7288,
+        "LAURELES": 55.014,
+        "ENVIGADO": 59.709199999999996,
+        "BELLO": 54.1614
+      },
+      "distinct_riders_last_hour": 316
+    },
+    {
+      "timestamp": "2026-09-12T05:21:16",
+      "rolling_avg_wait": {
+        "AIRPORT": 56.8628,
+        "BELEN": 54.3662,
+        "UNIV_NORTE": 54.25,
+        "EL_POBLADO": 60.491,
+        "SABANETA": 53.9634,
+        "ITAGUI": 54.6974,
+        "DOWNTOWN": 53.8804,
+        "LAURELES": 52.6614,
+        "ENVIGADO": 55.3886,
+        "BELLO": 51.1316
+      },
+      "distinct_riders_last_hour": 437
+    },
+    {
+      "timestamp": "2026-09-12T06:21:16",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.5264,
+        "BELEN": 53.5276,
+        "UNIV_NORTE": 51.9598,
+        "EL_POBLADO": 57.9972,
+        "SABANETA": 53.346599999999995,
+        "ITAGUI": 53.2476,
+        "DOWNTOWN": 53.799800000000005,
+        "LAURELES": 52.806400000000004,
+        "ENVIGADO": 51.708,
+        "BELLO": 51.0518
+      },
+      "distinct_riders_last_hour": 775
+    },
+    {
+      "timestamp": "2026-09-12T07:21:17",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.3804,
+        "BELEN": 52.777800000000006,
+        "UNIV_NORTE": 60.471199999999996,
+        "EL_POBLADO": 59.1208,
+        "SABANETA": 49.8232,
+        "ITAGUI": 50.382400000000004,
+        "DOWNTOWN": 65.9002,
+        "LAURELES": 59.127,
+        "ENVIGADO": 52.4018,
+        "BELLO": 53.307
+      },
+      "distinct_riders_last_hour": 1489
+    },
+    {
+      "timestamp": "2026-09-12T08:21:17",
+      "rolling_avg_wait": {
+        "AIRPORT": 95.1598,
+        "BELEN": 58.0806,
+        "UNIV_NORTE": 79.9644,
+        "EL_POBLADO": 73.524,
+        "SABANETA": 55.419,
+        "ITAGUI": 56.4114,
+        "DOWNTOWN": 105.1614,
+        "LAURELES": 78.7764,
+        "ENVIGADO": 58.275,
+        "BELLO": 65.4002
+      },
+      "distinct_riders_last_hour": 2188
+    },
+    {
+      "timestamp": "2026-09-12T09:21:17",
+      "rolling_avg_wait": {
+        "AIRPORT": 88.3158,
+        "BELEN": 66.98939999999999,
+        "UNIV_NORTE": 86.97319999999999,
+        "EL_POBLADO": 87.42880000000001,
+        "SABANETA": 60.1922,
+        "ITAGUI": 65.7886,
+        "DOWNTOWN": 121.7556,
+        "LAURELES": 83.6674,
+        "ENVIGADO": 63.6058,
+        "BELLO": 75.511
+      },
+      "distinct_riders_last_hour": 2038
+    },
+    {
+      "timestamp": "2026-09-12T10:21:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.0304,
+        "BELEN": 72.247,
+        "UNIV_NORTE": 79.926,
+        "EL_POBLADO": 86.88119999999999,
+        "SABANETA": 64.605,
+        "ITAGUI": 69.3454,
+        "DOWNTOWN": 101.6182,
+        "LAURELES": 73.3844,
+        "ENVIGADO": 67.2684,
+        "BELLO": 73.8358
+      },
+      "distinct_riders_last_hour": 1668
+    },
+    {
+      "timestamp": "2026-09-12T11:21:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.37960000000001,
+        "BELEN": 71.9572,
+        "UNIV_NORTE": 72.05560000000001,
+        "EL_POBLADO": 77.17880000000001,
+        "SABANETA": 64.331,
+        "ITAGUI": 67.26780000000001,
+        "DOWNTOWN": 77.9032,
+        "LAURELES": 72.8414,
+        "ENVIGADO": 65.6882,
+        "BELLO": 69.7148
+      },
+      "distinct_riders_last_hour": 1552
+    },
+    {
+      "timestamp": "2026-09-12T12:21:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.4256,
+        "BELEN": 67.2248,
+        "UNIV_NORTE": 72.4728,
+        "EL_POBLADO": 77.2706,
+        "SABANETA": 63.658199999999994,
+        "ITAGUI": 64.7844,
+        "DOWNTOWN": 74.2194,
+        "LAURELES": 73.8788,
+        "ENVIGADO": 66.246,
+        "BELLO": 68.4678
+      },
+      "distinct_riders_last_hour": 1775
+    },
+    {
+      "timestamp": "2026-09-12T13:21:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.63980000000001,
+        "BELEN": 67.2218,
+        "UNIV_NORTE": 77.4838,
+        "EL_POBLADO": 84.3702,
+        "SABANETA": 65.889,
+        "ITAGUI": 61.764199999999995,
+        "DOWNTOWN": 74.399,
+        "LAURELES": 82.7374,
+        "ENVIGADO": 67.7882,
+        "BELLO": 69.5594
+      },
+      "distinct_riders_last_hour": 1810
+    },
+    {
+      "timestamp": "2026-09-12T14:21:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.8424,
+        "BELEN": 68.24260000000001,
+        "UNIV_NORTE": 75.89160000000001,
+        "EL_POBLADO": 85.21539999999999,
+        "SABANETA": 67.77080000000001,
+        "ITAGUI": 62.1776,
+        "DOWNTOWN": 73.012,
+        "LAURELES": 87.15660000000001,
+        "ENVIGADO": 69.00439999999999,
+        "BELLO": 71.6364
+      },
+      "distinct_riders_last_hour": 1612
+    },
+    {
+      "timestamp": "2026-09-12T15:21:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.37339999999999,
+        "BELEN": 67.64439999999999,
+        "UNIV_NORTE": 74.2612,
+        "EL_POBLADO": 84.6016,
+        "SABANETA": 65.353,
+        "ITAGUI": 66.314,
+        "DOWNTOWN": 67.8426,
+        "LAURELES": 79.8984,
+        "ENVIGADO": 69.3334,
+        "BELLO": 68.4948
+      },
+      "distinct_riders_last_hour": 1692
+    },
+    {
+      "timestamp": "2026-09-12T16:21:20",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.5534,
+        "BELEN": 72.396,
+        "UNIV_NORTE": 72.4554,
+        "EL_POBLADO": 87.2714,
+        "SABANETA": 63.253800000000005,
+        "ITAGUI": 65.88080000000001,
+        "DOWNTOWN": 72.8202,
+        "LAURELES": 76.71,
+        "ENVIGADO": 71.544,
+        "BELLO": 71.0566
+      },
+      "distinct_riders_last_hour": 1981
+    },
+    {
+      "timestamp": "2026-09-12T17:21:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.681,
+        "BELEN": 77.00460000000001,
+        "UNIV_NORTE": 84.929,
+        "EL_POBLADO": 97.5302,
+        "SABANETA": 66.5612,
+        "ITAGUI": 68.3992,
+        "DOWNTOWN": 94.13539999999999,
+        "LAURELES": 87.5534,
+        "ENVIGADO": 79.088,
+        "BELLO": 77.028
+      },
+      "distinct_riders_last_hour": 2475
+    },
+    {
+      "timestamp": "2026-09-12T18:21:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 92.5552,
+        "BELEN": 84.43260000000001,
+        "UNIV_NORTE": 88.958,
+        "EL_POBLADO": 128.0324,
+        "SABANETA": 75.6752,
+        "ITAGUI": 74.2114,
+        "DOWNTOWN": 126.791,
+        "LAURELES": 86.1004,
+        "ENVIGADO": 85.76039999999999,
+        "BELLO": 84.295
+      },
+      "distinct_riders_last_hour": 2779
+    },
+    {
+      "timestamp": "2026-09-12T19:21:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 91.9308,
+        "BELEN": 85.8176,
+        "UNIV_NORTE": 79.60839999999999,
+        "EL_POBLADO": 127.6526,
+        "SABANETA": 72.6122,
+        "ITAGUI": 76.4188,
+        "DOWNTOWN": 113.3956,
+        "LAURELES": 88.24080000000001,
+        "ENVIGADO": 82.1288,
+        "BELLO": 83.2776
+      },
+      "distinct_riders_last_hour": 2462
+    },
+    {
+      "timestamp": "2026-09-12T20:21:27",
+      "rolling_avg_wait": {
+        "AIRPORT": 91.54339999999999,
+        "BELEN": 77.2198,
+        "UNIV_NORTE": 76.8058,
+        "EL_POBLADO": 105.8186,
+        "SABANETA": 70.798,
+        "ITAGUI": 74.39160000000001,
+        "DOWNTOWN": 99.39460000000001,
+        "LAURELES": 88.44439999999999,
+        "ENVIGADO": 72.7684,
+        "BELLO": 78.3216
+      },
+      "distinct_riders_last_hour": 1882
+    },
+    {
+      "timestamp": "2026-09-12T21:21:27",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.6238,
+        "BELEN": 72.92,
+        "UNIV_NORTE": 69.56,
+        "EL_POBLADO": 95.31360000000001,
+        "SABANETA": 65.27680000000001,
+        "ITAGUI": 69.56660000000001,
+        "DOWNTOWN": 81.3238,
+        "LAURELES": 77.43839999999999,
+        "ENVIGADO": 72.29180000000001,
+        "BELLO": 74.7072
+      },
+      "distinct_riders_last_hour": 1333
+    },
+    {
+      "timestamp": "2026-09-12T22:21:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.46260000000001,
+        "BELEN": 67.5902,
+        "UNIV_NORTE": 65.8846,
+        "EL_POBLADO": 87.54939999999999,
+        "SABANETA": 62.1858,
+        "ITAGUI": 65.3328,
+        "DOWNTOWN": 78.1238,
+        "LAURELES": 72.001,
+        "ENVIGADO": 65.5548,
+        "BELLO": 68.1258
+      },
+      "distinct_riders_last_hour": 997
+    },
+    {
+      "timestamp": "2026-09-12T23:21:28",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.5414,
+        "BELEN": 63.727,
+        "UNIV_NORTE": 63.774800000000006,
+        "EL_POBLADO": 78.346,
+        "SABANETA": 60.666,
+        "ITAGUI": 62.944,
+        "DOWNTOWN": 69.4652,
+        "LAURELES": 67.6632,
+        "ENVIGADO": 62.7744,
+        "BELLO": 66.6374
+      },
+      "distinct_riders_last_hour": 710
+    },
+    {
+      "timestamp": "2026-09-13T00:21:32",
+      "rolling_avg_wait": {
+        "AIRPORT": 73.78880000000001,
+        "BELEN": 61.306400000000004,
+        "UNIV_NORTE": 63.2056,
+        "EL_POBLADO": 74.169,
+        "SABANETA": 59.948,
+        "ITAGUI": 61.5136,
+        "DOWNTOWN": 61.0974,
+        "LAURELES": 62.9506,
+        "ENVIGADO": 61.917,
+        "BELLO": 66.453
+      },
+      "distinct_riders_last_hour": 552
+    },
+    {
+      "timestamp": "2026-09-13T01:21:52",
+      "rolling_avg_wait": {
+        "AIRPORT": 66.7256,
+        "BELEN": 60.102599999999995,
+        "UNIV_NORTE": 61.9598,
+        "EL_POBLADO": 70.59339999999999,
+        "SABANETA": 58.7228,
+        "ITAGUI": 61.012,
+        "DOWNTOWN": 58.9176,
+        "LAURELES": 61.504400000000004,
+        "ENVIGADO": 60.7016,
+        "BELLO": 64.8356
+      },
+      "distinct_riders_last_hour": 484
+    },
+    {
+      "timestamp": "2026-09-13T02:21:52",
+      "rolling_avg_wait": {
+        "AIRPORT": 66.6632,
+        "BELEN": 59.77,
+        "UNIV_NORTE": 59.2838,
+        "EL_POBLADO": 64.3758,
+        "SABANETA": 56.8068,
+        "ITAGUI": 60.1102,
+        "DOWNTOWN": 58.2158,
+        "LAURELES": 60.7006,
+        "ENVIGADO": 59.1652,
+        "BELLO": 62.631800000000005
+      },
+      "distinct_riders_last_hour": 379
+    },
+    {
+      "timestamp": "2026-09-13T03:21:52",
+      "rolling_avg_wait": {
+        "AIRPORT": 60.240199999999994,
+        "BELEN": 59.1088,
+        "UNIV_NORTE": 56.851,
+        "EL_POBLADO": 62.4814,
+        "SABANETA": 54.1224,
+        "ITAGUI": 56.257400000000004,
+        "DOWNTOWN": 56.9312,
+        "LAURELES": 59.9094,
+        "ENVIGADO": 58.0156,
+        "BELLO": 60.2106
+      },
+      "distinct_riders_last_hour": 349
+    },
+    {
+      "timestamp": "2026-09-13T04:21:52",
+      "rolling_avg_wait": {
+        "AIRPORT": 58.719800000000006,
+        "BELEN": 58.017,
+        "UNIV_NORTE": 55.221,
+        "EL_POBLADO": 61.5102,
+        "SABANETA": 53.114599999999996,
+        "ITAGUI": 53.965199999999996,
+        "DOWNTOWN": 54.7394,
+        "LAURELES": 57.9206,
+        "ENVIGADO": 55.762,
+        "BELLO": 57.912800000000004
+      },
+      "distinct_riders_last_hour": 339
+    },
+    {
+      "timestamp": "2026-09-13T05:21:53",
+      "rolling_avg_wait": {
+        "AIRPORT": 56.8838,
+        "BELEN": 55.6744,
+        "UNIV_NORTE": 52.8692,
+        "EL_POBLADO": 59.857800000000005,
+        "SABANETA": 53.432,
+        "ITAGUI": 53.075,
+        "DOWNTOWN": 52.2344,
+        "LAURELES": 55.0562,
+        "ENVIGADO": 53.8098,
+        "BELLO": 54.0442
+      },
+      "distinct_riders_last_hour": 431
+    },
+    {
+      "timestamp": "2026-09-13T06:21:54",
+      "rolling_avg_wait": {
+        "AIRPORT": 62.5792,
+        "BELEN": 53.961400000000005,
+        "UNIV_NORTE": 52.3874,
+        "EL_POBLADO": 55.6806,
+        "SABANETA": 52.8384,
+        "ITAGUI": 52.1006,
+        "DOWNTOWN": 51.8898,
+        "LAURELES": 53.389,
+        "ENVIGADO": 52.1682,
+        "BELLO": 52.7338
+      },
+      "distinct_riders_last_hour": 782
+    },
+    {
+      "timestamp": "2026-09-13T07:21:56",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.5878,
+        "BELEN": 53.642,
+        "UNIV_NORTE": 60.075199999999995,
+        "EL_POBLADO": 56.498599999999996,
+        "SABANETA": 51.1282,
+        "ITAGUI": 50.4924,
+        "DOWNTOWN": 67.7832,
+        "LAURELES": 60.733599999999996,
+        "ENVIGADO": 51.4246,
+        "BELLO": 53.4864
+      },
+      "distinct_riders_last_hour": 1456
+    },
+    {
+      "timestamp": "2026-09-13T08:21:56",
+      "rolling_avg_wait": {
+        "AIRPORT": 88.17280000000001,
+        "BELEN": 58.3272,
+        "UNIV_NORTE": 88.699,
+        "EL_POBLADO": 75.53460000000001,
+        "SABANETA": 55.631800000000005,
+        "ITAGUI": 52.7364,
+        "DOWNTOWN": 117.237,
+        "LAURELES": 80.7392,
+        "ENVIGADO": 58.5048,
+        "BELLO": 65.0716
+      },
+      "distinct_riders_last_hour": 2294
+    },
+    {
+      "timestamp": "2026-09-13T09:21:57",
+      "rolling_avg_wait": {
+        "AIRPORT": 89.7404,
+        "BELEN": 67.9382,
+        "UNIV_NORTE": 89.3642,
+        "EL_POBLADO": 88.4622,
+        "SABANETA": 60.678599999999996,
+        "ITAGUI": 59.2764,
+        "DOWNTOWN": 117.0582,
+        "LAURELES": 88.91080000000001,
+        "ENVIGADO": 65.2924,
+        "BELLO": 72.9106
+      },
+      "distinct_riders_last_hour": 2106
+    },
+    {
+      "timestamp": "2026-09-13T10:21:58",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.2908,
+        "BELEN": 71.015,
+        "UNIV_NORTE": 81.2422,
+        "EL_POBLADO": 82.45660000000001,
+        "SABANETA": 65.17880000000001,
+        "ITAGUI": 63.148,
+        "DOWNTOWN": 94.4072,
+        "LAURELES": 79.0234,
+        "ENVIGADO": 72.2542,
+        "BELLO": 72.7024
+      },
+      "distinct_riders_last_hour": 1593
+    },
+    {
+      "timestamp": "2026-09-13T11:21:58",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.6928,
+        "BELEN": 70.9032,
+        "UNIV_NORTE": 76.62360000000001,
+        "EL_POBLADO": 75.97760000000001,
+        "SABANETA": 65.4046,
+        "ITAGUI": 63.2354,
+        "DOWNTOWN": 72.51480000000001,
+        "LAURELES": 77.31060000000001,
+        "ENVIGADO": 69.599,
+        "BELLO": 70.3936
+      },
+      "distinct_riders_last_hour": 1575
+    },
+    {
+      "timestamp": "2026-09-13T12:21:58",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.00439999999999,
+        "BELEN": 69.1586,
+        "UNIV_NORTE": 72.3576,
+        "EL_POBLADO": 84.07119999999999,
+        "SABANETA": 63.890800000000006,
+        "ITAGUI": 61.0676,
+        "DOWNTOWN": 67.8222,
+        "LAURELES": 76.039,
+        "ENVIGADO": 68.18039999999999,
+        "BELLO": 67.9814
+      },
+      "distinct_riders_last_hour": 1787
+    },
+    {
+      "timestamp": "2026-09-13T13:21:59",
+      "rolling_avg_wait": {
+        "AIRPORT": 84.48339999999999,
+        "BELEN": 71.28760000000001,
+        "UNIV_NORTE": 74.41839999999999,
+        "EL_POBLADO": 86.19019999999999,
+        "SABANETA": 64.2996,
+        "ITAGUI": 61.3864,
+        "DOWNTOWN": 69.91680000000001,
+        "LAURELES": 80.3318,
+        "ENVIGADO": 67.7024,
+        "BELLO": 69.3446
+      },
+      "distinct_riders_last_hour": 1810
+    },
+    {
+      "timestamp": "2026-09-13T14:21:59",
+      "rolling_avg_wait": {
+        "AIRPORT": 82.5768,
+        "BELEN": 72.70819999999999,
+        "UNIV_NORTE": 75.7898,
+        "EL_POBLADO": 79.9556,
+        "SABANETA": 63.0306,
+        "ITAGUI": 61.319199999999995,
+        "DOWNTOWN": 73.1196,
+        "LAURELES": 79.4148,
+        "ENVIGADO": 69.2466,
+        "BELLO": 70.4114
+      },
+      "distinct_riders_last_hour": 1581
+    },
+    {
+      "timestamp": "2026-09-13T15:21:59",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.43660000000001,
+        "BELEN": 74.632,
+        "UNIV_NORTE": 72.8862,
+        "EL_POBLADO": 81.713,
+        "SABANETA": 62.252199999999995,
+        "ITAGUI": 61.1494,
+        "DOWNTOWN": 77.7732,
+        "LAURELES": 75.14160000000001,
+        "ENVIGADO": 69.95060000000001,
+        "BELLO": 69.89760000000001
+      },
+      "distinct_riders_last_hour": 1662
+    },
+    {
+      "timestamp": "2026-09-13T16:22:00",
+      "rolling_avg_wait": {
+        "AIRPORT": 83.8358,
+        "BELEN": 77.1318,
+        "UNIV_NORTE": 74.028,
+        "EL_POBLADO": 89.804,
+        "SABANETA": 61.526,
+        "ITAGUI": 63.1524,
+        "DOWNTOWN": 81.8218,
+        "LAURELES": 72.5054,
+        "ENVIGADO": 72.23060000000001,
+        "BELLO": 70.6344
+      },
+      "distinct_riders_last_hour": 2042
+    },
+    {
+      "timestamp": "2026-09-13T17:22:00",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.0026,
+        "BELEN": 74.62039999999999,
+        "UNIV_NORTE": 83.26219999999999,
+        "EL_POBLADO": 97.99260000000001,
+        "SABANETA": 64.084,
+        "ITAGUI": 66.5362,
+        "DOWNTOWN": 90.267,
+        "LAURELES": 84.6526,
+        "ENVIGADO": 79.1376,
+        "BELLO": 76.2038
+      },
+      "distinct_riders_last_hour": 2424
+    },
+    {
+      "timestamp": "2026-09-13T18:22:00",
+      "rolling_avg_wait": {
+        "AIRPORT": 88.811,
+        "BELEN": 75.6212,
+        "UNIV_NORTE": 83.5788,
+        "EL_POBLADO": 124.2164,
+        "SABANETA": 72.5454,
+        "ITAGUI": 72.69319999999999,
+        "DOWNTOWN": 124.7114,
+        "LAURELES": 91.831,
+        "ENVIGADO": 83.3864,
+        "BELLO": 86.3018
+      },
+      "distinct_riders_last_hour": 2752
+    },
+    {
+      "timestamp": "2026-09-13T19:22:00",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.4828,
+        "BELEN": 75.3912,
+        "UNIV_NORTE": 82.732,
+        "EL_POBLADO": 134.633,
+        "SABANETA": 76.20819999999999,
+        "ITAGUI": 72.2988,
+        "DOWNTOWN": 112.397,
+        "LAURELES": 89.03960000000001,
+        "ENVIGADO": 84.68539999999999,
+        "BELLO": 87.42660000000001
+      },
+      "distinct_riders_last_hour": 2453
+    },
+    {
+      "timestamp": "2026-09-13T20:22:00",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.46119999999999,
+        "BELEN": 73.259,
+        "UNIV_NORTE": 76.5356,
+        "EL_POBLADO": 115.7418,
+        "SABANETA": 75.7492,
+        "ITAGUI": 70.1456,
+        "DOWNTOWN": 99.6232,
+        "LAURELES": 84.5162,
+        "ENVIGADO": 79.1582,
+        "BELLO": 77.2404
+      },
+      "distinct_riders_last_hour": 1855
+    },
+    {
+      "timestamp": "2026-09-13T21:22:01",
+      "rolling_avg_wait": {
+        "AIRPORT": 90.2188,
+        "BELEN": 69.974,
+        "UNIV_NORTE": 70.3484,
+        "EL_POBLADO": 92.4252,
+        "SABANETA": 69.2372,
+        "ITAGUI": 65.5018,
+        "DOWNTOWN": 84.6442,
+        "LAURELES": 73.1194,
+        "ENVIGADO": 75.4588,
+        "BELLO": 75.7916
+      },
+      "distinct_riders_last_hour": 1356
+    },
+    {
+      "timestamp": "2026-09-13T22:22:06",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.0958,
+        "BELEN": 67.8516,
+        "UNIV_NORTE": 67.7868,
+        "EL_POBLADO": 83.8318,
+        "SABANETA": 64.8926,
+        "ITAGUI": 62.5922,
+        "DOWNTOWN": 81.3652,
+        "LAURELES": 67.18539999999999,
+        "ENVIGADO": 71.6498,
+        "BELLO": 68.46239999999999
+      },
+      "distinct_riders_last_hour": 969
+    },
+    {
+      "timestamp": "2026-09-13T23:22:10",
+      "rolling_avg_wait": {
+        "AIRPORT": 71.81739999999999,
+        "BELEN": 64.3492,
+        "UNIV_NORTE": 66.8892,
+        "EL_POBLADO": 74.1388,
+        "SABANETA": 64.0514,
+        "ITAGUI": 61.6298,
+        "DOWNTOWN": 69.3062,
+        "LAURELES": 65.97160000000001,
+        "ENVIGADO": 65.6374,
+        "BELLO": 66.12
+      },
+      "distinct_riders_last_hour": 690
+    },
+    {
+      "timestamp": "2026-09-14T00:22:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 70.13680000000001,
+        "BELEN": 62.1858,
+        "UNIV_NORTE": 66.503,
+        "EL_POBLADO": 67.0826,
+        "SABANETA": 62.9384,
+        "ITAGUI": 61.5454,
+        "DOWNTOWN": 63.2894,
+        "LAURELES": 61.237199999999994,
+        "ENVIGADO": 63.3538,
+        "BELLO": 65.7
+      },
+      "distinct_riders_last_hour": 489
+    },
+    {
+      "timestamp": "2026-09-14T01:22:45",
+      "rolling_avg_wait": {
+        "AIRPORT": 65.91,
+        "BELEN": 60.132400000000004,
+        "UNIV_NORTE": 65.70660000000001,
+        "EL_POBLADO": 66.8624,
+        "SABANETA": 61.393,
+        "ITAGUI": 59.973800000000004,
+        "DOWNTOWN": 61.5892,
+        "LAURELES": 59.32,
+        "ENVIGADO": 61.3686,
+        "BELLO": 63.374
+      },
+      "distinct_riders_last_hour": 438
+    },
+    {
+      "timestamp": "2026-09-14T02:23:31",
+      "rolling_avg_wait": {
+        "AIRPORT": 64.2512,
+        "BELEN": 59.2256,
+        "UNIV_NORTE": 63.225199999999994,
+        "EL_POBLADO": 63.3516,
+        "SABANETA": 59.194,
+        "ITAGUI": 58.134800000000006,
+        "DOWNTOWN": 60.8724,
+        "LAURELES": 58.7044,
+        "ENVIGADO": 60.5282,
+        "BELLO": 60.7378
+      },
+      "distinct_riders_last_hour": 366
+    },
+    {
+      "timestamp": "2026-09-14T03:24:08",
+      "rolling_avg_wait": {
+        "AIRPORT": 61.248400000000004,
+        "BELEN": 57.875,
+        "UNIV_NORTE": 59.584,
+        "EL_POBLADO": 60.505,
+        "SABANETA": 55.8318,
+        "ITAGUI": 56.625800000000005,
+        "DOWNTOWN": 58.4908,
+        "LAURELES": 57.675599999999996,
+        "ENVIGADO": 58.896,
+        "BELLO": 58.275400000000005
+      },
+      "distinct_riders_last_hour": 356
+    },
+    {
+      "timestamp": "2026-09-14T04:24:15",
+      "rolling_avg_wait": {
+        "AIRPORT": 59.1214,
+        "BELEN": 56.1278,
+        "UNIV_NORTE": 57.7898,
+        "EL_POBLADO": 58.2436,
+        "SABANETA": 52.2262,
+        "ITAGUI": 55.546,
+        "DOWNTOWN": 55.6428,
+        "LAURELES": 56.503800000000005,
+        "ENVIGADO": 56.8224,
+        "BELLO": 55.894800000000004
+      },
+      "distinct_riders_last_hour": 354
+    },
+    {
+      "timestamp": "2026-09-14T05:24:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 63.0952,
+        "BELEN": 55.0166,
+        "UNIV_NORTE": 55.2842,
+        "EL_POBLADO": 55.7232,
+        "SABANETA": 52.8294,
+        "ITAGUI": 54.868,
+        "DOWNTOWN": 53.6784,
+        "LAURELES": 55.4826,
+        "ENVIGADO": 54.9296,
+        "BELLO": 54.9174
+      },
+      "distinct_riders_last_hour": 451
+    },
+    {
+      "timestamp": "2026-09-14T06:24:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 67.6148,
+        "BELEN": 54.2594,
+        "UNIV_NORTE": 54.8544,
+        "EL_POBLADO": 54.61,
+        "SABANETA": 52.4676,
+        "ITAGUI": 54.109,
+        "DOWNTOWN": 54.083800000000004,
+        "LAURELES": 56.977199999999996,
+        "ENVIGADO": 52.3868,
+        "BELLO": 52.7576
+      },
+      "distinct_riders_last_hour": 773
+    },
+    {
+      "timestamp": "2026-09-14T07:24:19",
+      "rolling_avg_wait": {
+        "AIRPORT": 84.735,
+        "BELEN": 53.1604,
+        "UNIV_NORTE": 64.956,
+        "EL_POBLADO": 58.2842,
+        "SABANETA": 51.059,
+        "ITAGUI": 54.6004,
+        "DOWNTOWN": 69.5378,
+        "LAURELES": 63.582,
+        "ENVIGADO": 54.124,
+        "BELLO": 54.9916
+      },
+      "distinct_riders_last_hour": 1584
+    },
+    {
+      "timestamp": "2026-09-14T08:24:21",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.8292,
+        "BELEN": 58.121199999999995,
+        "UNIV_NORTE": 90.792,
+        "EL_POBLADO": 79.2206,
+        "SABANETA": 54.8612,
+        "ITAGUI": 58.015,
+        "DOWNTOWN": 120.8108,
+        "LAURELES": 86.112,
+        "ENVIGADO": 59.3806,
+        "BELLO": 67.2778
+      },
+      "distinct_riders_last_hour": 2247
+    },
+    {
+      "timestamp": "2026-09-14T09:24:21",
+      "rolling_avg_wait": {
+        "AIRPORT": 81.91539999999999,
+        "BELEN": 71.9856,
+        "UNIV_NORTE": 89.447,
+        "EL_POBLADO": 87.1118,
+        "SABANETA": 61.1346,
+        "ITAGUI": 62.6768,
+        "DOWNTOWN": 137.0096,
+        "LAURELES": 87.7028,
+        "ENVIGADO": 67.151,
+        "BELLO": 75.383
+      },
+      "distinct_riders_last_hour": 1999
+    },
+    {
+      "timestamp": "2026-09-14T10:24:21",
+      "rolling_avg_wait": {
+        "AIRPORT": 75.9934,
+        "BELEN": 72.7116,
+        "UNIV_NORTE": 74.6938,
+        "EL_POBLADO": 84.27860000000001,
+        "SABANETA": 65.8262,
+        "ITAGUI": 64.1814,
+        "DOWNTOWN": 100.6682,
+        "LAURELES": 78.8096,
+        "ENVIGADO": 68.1996,
+        "BELLO": 76.7284
+      },
+      "distinct_riders_last_hour": 1569
+    },
+    {
+      "timestamp": "2026-09-14T11:24:21",
+      "rolling_avg_wait": {
+        "AIRPORT": 76.20039999999999,
+        "BELEN": 70.6454,
+        "UNIV_NORTE": 73.20819999999999,
+        "EL_POBLADO": 82.7526,
+        "SABANETA": 67.0322,
+        "ITAGUI": 63.1194,
+        "DOWNTOWN": 75.8994,
+        "LAURELES": 74.24080000000001,
+        "ENVIGADO": 69.26219999999999,
+        "BELLO": 72.6254
+      },
+      "distinct_riders_last_hour": 1578
+    },
+    {
+      "timestamp": "2026-09-14T12:24:21",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.8664,
+        "BELEN": 63.892,
+        "UNIV_NORTE": 69.8878,
+        "EL_POBLADO": 83.7406,
+        "SABANETA": 65.0218,
+        "ITAGUI": 63.2414,
+        "DOWNTOWN": 72.8142,
+        "LAURELES": 77.24860000000001,
+        "ENVIGADO": 67.4554,
+        "BELLO": 70.04
+      },
+      "distinct_riders_last_hour": 1746
+    },
+    {
+      "timestamp": "2026-09-14T13:24:22",
+      "rolling_avg_wait": {
+        "AIRPORT": 79.9374,
+        "BELEN": 69.3486,
+        "UNIV_NORTE": 72.066,
+        "EL_POBLADO": 84.2344,
+        "SABANETA": 65.1768,
+        "ITAGUI": 65.953,
+        "DOWNTOWN": 74.1456,
+        "LAURELES": 76.1034,
+        "ENVIGADO": 65.72139999999999,
+        "BELLO": 69.6752
+      },
+      "distinct_riders_last_hour": 1831
+    },
+    {
+      "timestamp": "2026-09-14T14:24:23",
+      "rolling_avg_wait": {
+        "AIRPORT": 77.6828,
+        "BELEN": 72.0364,
+        "UNIV_NORTE": 71.784,
+        "EL_POBLADO": 86.579,
+        "SABANETA": 62.5674,
+        "ITAGUI": 66.1394,
+        "DOWNTOWN": 75.9238,
+        "LAURELES": 73.188,
+        "ENVIGADO": 66.3652,
+        "BELLO": 71.1238
+      },
+      "distinct_riders_last_hour": 1652
+    },
+    {
+      "timestamp": "2026-09-14T15:24:23",
+      "rolling_avg_wait": {
+        "AIRPORT": 74.4844,
+        "BELEN": 71.2624,
+        "UNIV_NORTE": 71.1912,
+        "EL_POBLADO": 83.9728,
+        "SABANETA": 61.7288,
+        "ITAGUI": 65.724,
+        "DOWNTOWN": 75.0476,
+        "LAURELES": 71.39280000000001,
+        "ENVIGADO": 66.04639999999999,
+        "BELLO": 68.0612
+      },
+      "distinct_riders_last_hour": 1577
+    },
+    {
+      "timestamp": "2026-09-14T16:24:23",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.869,
+        "BELEN": 73.94760000000001,
+        "UNIV_NORTE": 76.78,
+        "EL_POBLADO": 89.38080000000001,
+        "SABANETA": 63.1724,
+        "ITAGUI": 63.788599999999995,
+        "DOWNTOWN": 77.5438,
+        "LAURELES": 75.8486,
+        "ENVIGADO": 71.94019999999999,
+        "BELLO": 69.92739999999999
+      },
+      "distinct_riders_last_hour": 2103
+    },
+    {
+      "timestamp": "2026-09-14T17:24:24",
+      "rolling_avg_wait": {
+        "AIRPORT": 84.6134,
+        "BELEN": 78.63560000000001,
+        "UNIV_NORTE": 85.07539999999999,
+        "EL_POBLADO": 95.7314,
+        "SABANETA": 67.625,
+        "ITAGUI": 66.2166,
+        "DOWNTOWN": 98.0986,
+        "LAURELES": 86.7258,
+        "ENVIGADO": 82.3656,
+        "BELLO": 80.5954
+      },
+      "distinct_riders_last_hour": 2460
+    },
+    {
+      "timestamp": "2026-09-14T18:24:24",
+      "rolling_avg_wait": {
+        "AIRPORT": 91.3042,
+        "BELEN": 83.82719999999999,
+        "UNIV_NORTE": 83.11760000000001,
+        "EL_POBLADO": 119.1964,
+        "SABANETA": 76.66680000000001,
+        "ITAGUI": 70.4468,
+        "DOWNTOWN": 127.421,
+        "LAURELES": 94.0512,
+        "ENVIGADO": 86.0252,
+        "BELLO": 83.709
+      },
+      "distinct_riders_last_hour": 2697
+    },
+    {
+      "timestamp": "2026-09-14T19:24:24",
+      "rolling_avg_wait": {
+        "AIRPORT": 91.3668,
+        "BELEN": 82.391,
+        "UNIV_NORTE": 79.143,
+        "EL_POBLADO": 128.15460000000002,
+        "SABANETA": 75.6486,
+        "ITAGUI": 72.0068,
+        "DOWNTOWN": 114.10239999999999,
+        "LAURELES": 92.05860000000001,
+        "ENVIGADO": 77.7174,
+        "BELLO": 83.6874
+      },
+      "distinct_riders_last_hour": 2388
+    },
+    {
+      "timestamp": "2026-09-14T20:24:27",
+      "rolling_avg_wait": {
+        "AIRPORT": 85.449,
+        "BELEN": 78.971,
+        "UNIV_NORTE": 74.32260000000001,
+        "EL_POBLADO": 95.17160000000001,
+        "SABANETA": 73.5594,
+        "ITAGUI": 69.43860000000001,
+        "DOWNTOWN": 95.7772,
+        "LAURELES": 84.93039999999999,
+        "ENVIGADO": 74.2736,
+        "BELLO": 81.05980000000001
+      },
+      "distinct_riders_last_hour": 1779
+    },
+    {
+      "timestamp": "2026-09-14T21:24:32",
+      "rolling_avg_wait": {
+        "AIRPORT": 87.15480000000001,
+        "BELEN": 75.72460000000001,
+        "UNIV_NORTE": 66.7586,
+        "EL_POBLADO": 91.668,
+        "SABANETA": 69.2222,
+        "ITAGUI": 65.7488,
+        "DOWNTOWN": 86.25580000000001,
+        "LAURELES": 76.00880000000001,
+        "ENVIGADO": 73.2838,
+        "BELLO": 77.55239999999999
+      },
+      "distinct_riders_last_hour": 1378
+    },
+    {
+      "timestamp": "2026-09-14T22:24:32",
+      "rolling_avg_wait": {
+        "AIRPORT": 80.7856,
+        "BELEN": 69.68660000000001,
+        "UNIV_NORTE": 64.6984,
+        "EL_POBLADO": 87.98039999999999,
+        "SABANETA": 65.051,
+        "ITAGUI": 63.637,
+        "DOWNTOWN": 79.241,
+        "LAURELES": 72.54480000000001,
+        "ENVIGADO": 69.3334,
+        "BELLO": 69.51060000000001
+      },
+      "distinct_riders_last_hour": 997
+    },
+    {
+      "timestamp": "2026-09-14T23:24:45",
+      "rolling_avg_wait": {
+        "AIRPORT": 68.737,
+        "BELEN": 65.459,
+        "UNIV_NORTE": 64.013,
+        "EL_POBLADO": 73.9192,
+        "SABANETA": 63.046,
+        "ITAGUI": 61.474,
+        "DOWNTOWN": 70.2658,
+        "LAURELES": 69.6994,
+        "ENVIGADO": 65.34219999999999,
+        "BELLO": 65.52080000000001
+      },
+      "distinct_riders_last_hour": 708
+    }
+  ],
+  "budget": {
+    "limit_bytes": 10485760,
+    "items": [
+      {
+        "name": "ventana de 500 esperas por zona",
+        "bytes": 40000
+      },
+      {
+        "name": "pasajeros de la última hora",
+        "bytes": 1280000
+      }
+    ],
+    "total_bytes": 1320000
+  }
+}
