@@ -1,0 +1,1801 @@
+{
+  "n_hashes": 16,
+  "true_distinct": 20000,
+  "estimate": 16384.0,
+  "combine": "mediana",
+  "per_hash": [
+    262144,
+    16384,
+    8192,
+    65536,
+    131072,
+    16384,
+    16384,
+    32768,
+    8192,
+    16384,
+    32768,
+    16384,
+    8192,
+    8192,
+    16384,
+    16777216
+  ],
+  "running": [
+    {
+      "timestamp": "2026-09-01T00:59:53",
+      "true_distinct": 509,
+      "estimate": 768.0
+    },
+    {
+      "timestamp": "2026-09-01T01:59:17",
+      "true_distinct": 868,
+      "estimate": 1024.0
+    },
+    {
+      "timestamp": "2026-09-01T02:59:56",
+      "true_distinct": 1185,
+      "estimate": 1024.0
+    },
+    {
+      "timestamp": "2026-09-01T03:59:36",
+      "true_distinct": 1526,
+      "estimate": 1024.0
+    },
+    {
+      "timestamp": "2026-09-01T04:59:15",
+      "true_distinct": 1891,
+      "estimate": 3072.0
+    },
+    {
+      "timestamp": "2026-09-01T05:59:42",
+      "true_distinct": 2454,
+      "estimate": 4096.0
+    },
+    {
+      "timestamp": "2026-09-01T06:59:58",
+      "true_distinct": 3534,
+      "estimate": 4096.0
+    },
+    {
+      "timestamp": "2026-09-01T07:59:56",
+      "true_distinct": 5353,
+      "estimate": 6144.0
+    },
+    {
+      "timestamp": "2026-09-01T08:59:58",
+      "true_distinct": 7020,
+      "estimate": 8192.0
+    },
+    {
+      "timestamp": "2026-09-01T09:59:59",
+      "true_distinct": 8098,
+      "estimate": 8192.0
+    },
+    {
+      "timestamp": "2026-09-01T10:59:53",
+      "true_distinct": 9066,
+      "estimate": 8192.0
+    },
+    {
+      "timestamp": "2026-09-01T11:59:54",
+      "true_distinct": 10033,
+      "estimate": 8192.0
+    },
+    {
+      "timestamp": "2026-09-01T12:59:57",
+      "true_distinct": 10982,
+      "estimate": 8192.0
+    },
+    {
+      "timestamp": "2026-09-01T13:59:57",
+      "true_distinct": 11755,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T14:59:57",
+      "true_distinct": 12422,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T15:59:52",
+      "true_distinct": 13147,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T16:59:57",
+      "true_distinct": 13952,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T17:59:57",
+      "true_distinct": 14796,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T18:59:59",
+      "true_distinct": 15480,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T19:59:58",
+      "true_distinct": 15909,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T20:59:59",
+      "true_distinct": 16200,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T21:59:59",
+      "true_distinct": 16396,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T22:59:38",
+      "true_distinct": 16528,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-01T23:59:56",
+      "true_distinct": 16618,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T00:59:59",
+      "true_distinct": 16695,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T01:58:23",
+      "true_distinct": 16751,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T02:59:58",
+      "true_distinct": 16810,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T03:59:24",
+      "true_distinct": 16863,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T04:59:55",
+      "true_distinct": 16934,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T05:59:58",
+      "true_distinct": 17033,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T06:59:58",
+      "true_distinct": 17218,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T07:59:55",
+      "true_distinct": 17548,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T08:59:57",
+      "true_distinct": 17822,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T09:59:56",
+      "true_distinct": 18006,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T10:59:55",
+      "true_distinct": 18165,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T11:59:59",
+      "true_distinct": 18322,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T12:59:56",
+      "true_distinct": 18479,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T13:59:57",
+      "true_distinct": 18611,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T14:59:59",
+      "true_distinct": 18716,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T15:59:56",
+      "true_distinct": 18839,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T16:59:59",
+      "true_distinct": 18975,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T17:59:59",
+      "true_distinct": 19097,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T18:59:59",
+      "true_distinct": 19212,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T19:59:57",
+      "true_distinct": 19295,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T20:59:59",
+      "true_distinct": 19335,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T21:59:56",
+      "true_distinct": 19365,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T22:59:54",
+      "true_distinct": 19385,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-02T23:59:47",
+      "true_distinct": 19407,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T00:59:20",
+      "true_distinct": 19423,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T01:59:51",
+      "true_distinct": 19432,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T02:57:34",
+      "true_distinct": 19439,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T03:59:57",
+      "true_distinct": 19450,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T04:59:53",
+      "true_distinct": 19461,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T05:59:29",
+      "true_distinct": 19486,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T06:59:58",
+      "true_distinct": 19526,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T07:59:57",
+      "true_distinct": 19582,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T08:59:57",
+      "true_distinct": 19627,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T09:59:57",
+      "true_distinct": 19650,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T10:59:56",
+      "true_distinct": 19680,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T11:59:56",
+      "true_distinct": 19710,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T12:59:58",
+      "true_distinct": 19742,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T13:59:58",
+      "true_distinct": 19761,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T14:59:51",
+      "true_distinct": 19776,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T15:59:58",
+      "true_distinct": 19797,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T16:59:56",
+      "true_distinct": 19819,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T17:59:58",
+      "true_distinct": 19840,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T18:59:57",
+      "true_distinct": 19858,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T19:59:59",
+      "true_distinct": 19873,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T20:59:58",
+      "true_distinct": 19880,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T21:59:54",
+      "true_distinct": 19888,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T22:59:47",
+      "true_distinct": 19895,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-03T23:59:59",
+      "true_distinct": 19900,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T00:59:46",
+      "true_distinct": 19903,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T01:59:19",
+      "true_distinct": 19904,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T02:59:23",
+      "true_distinct": 19906,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T03:59:38",
+      "true_distinct": 19907,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T04:59:50",
+      "true_distinct": 19907,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T05:59:53",
+      "true_distinct": 19911,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T06:59:56",
+      "true_distinct": 19918,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T07:59:50",
+      "true_distinct": 19929,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T08:59:55",
+      "true_distinct": 19936,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T09:59:56",
+      "true_distinct": 19938,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T10:59:58",
+      "true_distinct": 19940,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T11:59:55",
+      "true_distinct": 19948,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T12:59:54",
+      "true_distinct": 19952,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T13:59:47",
+      "true_distinct": 19955,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T14:59:44",
+      "true_distinct": 19962,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T15:59:55",
+      "true_distinct": 19966,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T16:59:55",
+      "true_distinct": 19973,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T17:59:57",
+      "true_distinct": 19975,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T18:59:55",
+      "true_distinct": 19977,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T19:59:49",
+      "true_distinct": 19982,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T20:59:58",
+      "true_distinct": 19985,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T21:59:42",
+      "true_distinct": 19985,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T22:59:50",
+      "true_distinct": 19986,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-04T23:59:52",
+      "true_distinct": 19989,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T00:59:54",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T01:59:49",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T02:59:40",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T03:59:56",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T04:59:58",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T05:59:57",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T06:59:49",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T07:59:55",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T08:59:56",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T09:59:59",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T10:59:55",
+      "true_distinct": 19990,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T11:59:55",
+      "true_distinct": 19991,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T12:59:49",
+      "true_distinct": 19993,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T13:59:59",
+      "true_distinct": 19994,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T14:59:59",
+      "true_distinct": 19994,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T15:59:59",
+      "true_distinct": 19996,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T16:59:55",
+      "true_distinct": 19996,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T17:59:58",
+      "true_distinct": 19997,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T18:59:54",
+      "true_distinct": 19997,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T19:59:59",
+      "true_distinct": 19997,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T20:59:59",
+      "true_distinct": 19997,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T21:59:57",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T22:59:48",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-05T23:59:57",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T00:59:49",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T01:59:55",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T02:59:46",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T03:59:55",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T04:59:50",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T05:59:37",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T06:59:55",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T07:59:59",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T08:59:56",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T09:59:57",
+      "true_distinct": 19998,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T10:59:47",
+      "true_distinct": 19999,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T11:59:58",
+      "true_distinct": 19999,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T12:59:58",
+      "true_distinct": 19999,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T13:59:58",
+      "true_distinct": 19999,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T14:59:58",
+      "true_distinct": 19999,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T15:59:57",
+      "true_distinct": 19999,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T16:59:48",
+      "true_distinct": 19999,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T17:59:59",
+      "true_distinct": 19999,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T18:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T19:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T20:59:46",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T21:59:51",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T22:59:46",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-06T23:59:44",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T00:59:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T01:59:38",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T02:59:45",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T03:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T04:56:15",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T05:59:50",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T06:59:48",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T07:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T08:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T09:59:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T10:59:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T11:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T12:59:43",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T13:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T14:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T15:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T16:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T17:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T18:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T19:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T20:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T21:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T22:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-07T23:59:48",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T00:59:12",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T01:59:20",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T02:59:49",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T03:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T04:59:32",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T05:59:44",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T06:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T07:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T08:59:50",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T09:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T10:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T11:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T12:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T13:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T14:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T15:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T16:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T17:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T18:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T19:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T20:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T21:59:51",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T22:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-08T23:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T00:59:41",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T01:59:42",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T02:59:47",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T03:59:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T04:59:25",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T05:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T06:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T07:59:45",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T08:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T09:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T10:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T11:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T12:59:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T13:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T14:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T15:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T16:59:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T17:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T18:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T19:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T20:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T21:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T22:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-09T23:59:37",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T00:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T01:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T02:59:35",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T03:59:44",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T04:57:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T05:59:33",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T06:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T07:59:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T08:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T09:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T10:59:48",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T11:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T12:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T13:59:49",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T14:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T15:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T16:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T17:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T18:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T19:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T20:59:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T21:59:48",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T22:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-10T23:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T00:59:50",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T01:59:30",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T02:58:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T03:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T04:59:34",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T05:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T06:59:48",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T07:59:48",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T08:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T09:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T10:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T11:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T12:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T13:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T14:59:51",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T15:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T16:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T17:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T18:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T19:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T20:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T21:59:38",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T22:59:51",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-11T23:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T00:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T01:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T02:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T03:58:16",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T04:59:53",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T05:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T06:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T07:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T08:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T09:59:46",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T10:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T11:59:47",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T12:59:47",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T13:59:49",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T14:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T15:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T16:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T17:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T18:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T19:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T20:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T21:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T22:59:51",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-12T23:59:42",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T00:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T01:59:51",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T02:59:33",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T03:59:48",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T04:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T05:59:49",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T06:59:29",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T07:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T08:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T09:59:50",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T10:59:45",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T11:59:49",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T12:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T13:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T14:59:47",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T15:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T16:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T17:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T18:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T19:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T20:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T21:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T22:59:49",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-13T23:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T00:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T01:59:32",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T02:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T03:59:23",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T04:59:51",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T05:59:29",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T06:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T07:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T08:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T09:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T10:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T11:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T12:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T13:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T14:59:57",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T15:59:42",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T16:59:59",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T17:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T18:59:56",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T19:59:55",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T20:59:52",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T21:59:58",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T22:59:54",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    },
+    {
+      "timestamp": "2026-09-14T23:59:51",
+      "true_distinct": 20000,
+      "estimate": 16384.0
+    }
+  ],
+  "n_events": 495505,
+  "max_tail_per_hash": [
+    18,
+    14,
+    13,
+    16,
+    17,
+    14,
+    14,
+    15,
+    13,
+    14,
+    15,
+    14,
+    13,
+    13,
+    14,
+    24
+  ],
+  "rel_error_pct": -18.08,
+  "mean_of_estimates": 1089536.0,
+  "tail_distribution": [
+    {
+      "R": 13,
+      "estimate": 8192,
+      "hash_functions": 4,
+      "theoretical_probability": 0.208
+    },
+    {
+      "R": 14,
+      "estimate": 16384,
+      "hash_functions": 6,
+      "theoretical_probability": 0.2481
+    },
+    {
+      "R": 15,
+      "estimate": 32768,
+      "hash_functions": 2,
+      "theoretical_probability": 0.1938
+    },
+    {
+      "R": 16,
+      "estimate": 65536,
+      "hash_functions": 1,
+      "theoretical_probability": 0.1215
+    },
+    {
+      "R": 17,
+      "estimate": 131072,
+      "hash_functions": 1,
+      "theoretical_probability": 0.0681
+    },
+    {
+      "R": 18,
+      "estimate": 262144,
+      "hash_functions": 1,
+      "theoretical_probability": 0.036
+    },
+    {
+      "R": 19,
+      "estimate": 524288,
+      "hash_functions": 0,
+      "theoretical_probability": 0.0185
+    },
+    {
+      "R": 20,
+      "estimate": 1048576,
+      "hash_functions": 0,
+      "theoretical_probability": 0.0094
+    },
+    {
+      "R": 21,
+      "estimate": 2097152,
+      "hash_functions": 0,
+      "theoretical_probability": 0.0047
+    },
+    {
+      "R": 22,
+      "estimate": 4194304,
+      "hash_functions": 0,
+      "theoretical_probability": 0.0024
+    },
+    {
+      "R": 23,
+      "estimate": 8388608,
+      "hash_functions": 0,
+      "theoretical_probability": 0.0012
+    },
+    {
+      "R": 24,
+      "estimate": 16777216,
+      "hash_functions": 1,
+      "theoretical_probability": 0.0006
+    }
+  ]
+}
