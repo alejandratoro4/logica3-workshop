@@ -1,0 +1,494 @@
+{
+  "steps": 100000,
+  "n_edges": 494305,
+  "zones": [
+    {
+      "zone": "AIRPORT",
+      "degree": 139474,
+      "pi_theory": 0.141081,
+      "pi_empirical": 0.1427,
+      "visits": 14270,
+      "self_loops": 10719
+    },
+    {
+      "zone": "BELEN",
+      "degree": 79939,
+      "pi_theory": 0.08086,
+      "pi_empirical": 0.08031,
+      "visits": 8031,
+      "self_loops": 3185
+    },
+    {
+      "zone": "BELLO",
+      "degree": 86803,
+      "pi_theory": 0.087803,
+      "pi_empirical": 0.08641,
+      "visits": 8641,
+      "self_loops": 3830
+    },
+    {
+      "zone": "DOWNTOWN",
+      "degree": 129223,
+      "pi_theory": 0.130712,
+      "pi_empirical": 0.13078,
+      "visits": 13078,
+      "self_loops": 8790
+    },
+    {
+      "zone": "EL_POBLADO",
+      "degree": 141010,
+      "pi_theory": 0.142635,
+      "pi_empirical": 0.14172,
+      "visits": 14172,
+      "self_loops": 10602
+    },
+    {
+      "zone": "ENVIGADO",
+      "degree": 82668,
+      "pi_theory": 0.08362,
+      "pi_empirical": 0.08448,
+      "visits": 8448,
+      "self_loops": 3449
+    },
+    {
+      "zone": "ITAGUI",
+      "degree": 65319,
+      "pi_theory": 0.066072,
+      "pi_empirical": 0.06529,
+      "visits": 6529,
+      "self_loops": 2199
+    },
+    {
+      "zone": "LAURELES",
+      "degree": 106946,
+      "pi_theory": 0.108178,
+      "pi_empirical": 0.1097,
+      "visits": 10970,
+      "self_loops": 5826
+    },
+    {
+      "zone": "SABANETA",
+      "degree": 66059,
+      "pi_theory": 0.06682,
+      "pi_empirical": 0.06527,
+      "visits": 6527,
+      "self_loops": 2182
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "degree": 91169,
+      "pi_theory": 0.092219,
+      "pi_empirical": 0.09334,
+      "visits": 9334,
+      "self_loops": 4445
+    }
+  ],
+  "convergence": [
+    {
+      "step": 1000,
+      "tv_distance": 0.040831
+    },
+    {
+      "step": 2000,
+      "tv_distance": 0.023372
+    },
+    {
+      "step": 3000,
+      "tv_distance": 0.01819
+    },
+    {
+      "step": 4000,
+      "tv_distance": 0.01487
+    },
+    {
+      "step": 5000,
+      "tv_distance": 0.01807
+    },
+    {
+      "step": 6000,
+      "tv_distance": 0.017289
+    },
+    {
+      "step": 7000,
+      "tv_distance": 0.015361
+    },
+    {
+      "step": 8000,
+      "tv_distance": 0.013217
+    },
+    {
+      "step": 9000,
+      "tv_distance": 0.012049
+    },
+    {
+      "step": 10000,
+      "tv_distance": 0.010227
+    },
+    {
+      "step": 11000,
+      "tv_distance": 0.009776
+    },
+    {
+      "step": 12000,
+      "tv_distance": 0.007587
+    },
+    {
+      "step": 13000,
+      "tv_distance": 0.006506
+    },
+    {
+      "step": 14000,
+      "tv_distance": 0.005475
+    },
+    {
+      "step": 15000,
+      "tv_distance": 0.006189
+    },
+    {
+      "step": 16000,
+      "tv_distance": 0.006541
+    },
+    {
+      "step": 17000,
+      "tv_distance": 0.007431
+    },
+    {
+      "step": 18000,
+      "tv_distance": 0.007081
+    },
+    {
+      "step": 19000,
+      "tv_distance": 0.007094
+    },
+    {
+      "step": 20000,
+      "tv_distance": 0.008441
+    },
+    {
+      "step": 21000,
+      "tv_distance": 0.008898
+    },
+    {
+      "step": 22000,
+      "tv_distance": 0.009041
+    },
+    {
+      "step": 23000,
+      "tv_distance": 0.009954
+    },
+    {
+      "step": 24000,
+      "tv_distance": 0.008583
+    },
+    {
+      "step": 25000,
+      "tv_distance": 0.008161
+    },
+    {
+      "step": 26000,
+      "tv_distance": 0.007887
+    },
+    {
+      "step": 27000,
+      "tv_distance": 0.00656
+    },
+    {
+      "step": 28000,
+      "tv_distance": 0.00647
+    },
+    {
+      "step": 29000,
+      "tv_distance": 0.005627
+    },
+    {
+      "step": 30000,
+      "tv_distance": 0.005274
+    },
+    {
+      "step": 31000,
+      "tv_distance": 0.005539
+    },
+    {
+      "step": 32000,
+      "tv_distance": 0.005799
+    },
+    {
+      "step": 33000,
+      "tv_distance": 0.005935
+    },
+    {
+      "step": 34000,
+      "tv_distance": 0.005402
+    },
+    {
+      "step": 35000,
+      "tv_distance": 0.005492
+    },
+    {
+      "step": 36000,
+      "tv_distance": 0.005243
+    },
+    {
+      "step": 37000,
+      "tv_distance": 0.005386
+    },
+    {
+      "step": 38000,
+      "tv_distance": 0.005305
+    },
+    {
+      "step": 39000,
+      "tv_distance": 0.005398
+    },
+    {
+      "step": 40000,
+      "tv_distance": 0.00562
+    },
+    {
+      "step": 41000,
+      "tv_distance": 0.005514
+    },
+    {
+      "step": 42000,
+      "tv_distance": 0.005151
+    },
+    {
+      "step": 43000,
+      "tv_distance": 0.005306
+    },
+    {
+      "step": 44000,
+      "tv_distance": 0.004894
+    },
+    {
+      "step": 45000,
+      "tv_distance": 0.004812
+    },
+    {
+      "step": 46000,
+      "tv_distance": 0.005255
+    },
+    {
+      "step": 47000,
+      "tv_distance": 0.006019
+    },
+    {
+      "step": 48000,
+      "tv_distance": 0.005668
+    },
+    {
+      "step": 49000,
+      "tv_distance": 0.005919
+    },
+    {
+      "step": 50000,
+      "tv_distance": 0.006349
+    },
+    {
+      "step": 51000,
+      "tv_distance": 0.006369
+    },
+    {
+      "step": 52000,
+      "tv_distance": 0.006862
+    },
+    {
+      "step": 53000,
+      "tv_distance": 0.006755
+    },
+    {
+      "step": 54000,
+      "tv_distance": 0.006689
+    },
+    {
+      "step": 55000,
+      "tv_distance": 0.00648
+    },
+    {
+      "step": 56000,
+      "tv_distance": 0.006546
+    },
+    {
+      "step": 57000,
+      "tv_distance": 0.006523
+    },
+    {
+      "step": 58000,
+      "tv_distance": 0.00631
+    },
+    {
+      "step": 59000,
+      "tv_distance": 0.006325
+    },
+    {
+      "step": 60000,
+      "tv_distance": 0.006489
+    },
+    {
+      "step": 61000,
+      "tv_distance": 0.006566
+    },
+    {
+      "step": 62000,
+      "tv_distance": 0.006447
+    },
+    {
+      "step": 63000,
+      "tv_distance": 0.006888
+    },
+    {
+      "step": 64000,
+      "tv_distance": 0.007158
+    },
+    {
+      "step": 65000,
+      "tv_distance": 0.006835
+    },
+    {
+      "step": 66000,
+      "tv_distance": 0.006629
+    },
+    {
+      "step": 67000,
+      "tv_distance": 0.006562
+    },
+    {
+      "step": 68000,
+      "tv_distance": 0.006395
+    },
+    {
+      "step": 69000,
+      "tv_distance": 0.006726
+    },
+    {
+      "step": 70000,
+      "tv_distance": 0.006689
+    },
+    {
+      "step": 71000,
+      "tv_distance": 0.006992
+    },
+    {
+      "step": 72000,
+      "tv_distance": 0.006689
+    },
+    {
+      "step": 73000,
+      "tv_distance": 0.006902
+    },
+    {
+      "step": 74000,
+      "tv_distance": 0.007068
+    },
+    {
+      "step": 75000,
+      "tv_distance": 0.007283
+    },
+    {
+      "step": 76000,
+      "tv_distance": 0.006768
+    },
+    {
+      "step": 77000,
+      "tv_distance": 0.006683
+    },
+    {
+      "step": 78000,
+      "tv_distance": 0.006676
+    },
+    {
+      "step": 79000,
+      "tv_distance": 0.006686
+    },
+    {
+      "step": 80000,
+      "tv_distance": 0.006764
+    },
+    {
+      "step": 81000,
+      "tv_distance": 0.006765
+    },
+    {
+      "step": 82000,
+      "tv_distance": 0.006535
+    },
+    {
+      "step": 83000,
+      "tv_distance": 0.006431
+    },
+    {
+      "step": 84000,
+      "tv_distance": 0.006211
+    },
+    {
+      "step": 85000,
+      "tv_distance": 0.006195
+    },
+    {
+      "step": 86000,
+      "tv_distance": 0.006087
+    },
+    {
+      "step": 87000,
+      "tv_distance": 0.006326
+    },
+    {
+      "step": 88000,
+      "tv_distance": 0.00611
+    },
+    {
+      "step": 89000,
+      "tv_distance": 0.006088
+    },
+    {
+      "step": 90000,
+      "tv_distance": 0.006167
+    },
+    {
+      "step": 91000,
+      "tv_distance": 0.005747
+    },
+    {
+      "step": 92000,
+      "tv_distance": 0.005591
+    },
+    {
+      "step": 93000,
+      "tv_distance": 0.00534
+    },
+    {
+      "step": 94000,
+      "tv_distance": 0.00553
+    },
+    {
+      "step": 95000,
+      "tv_distance": 0.005631
+    },
+    {
+      "step": 96000,
+      "tv_distance": 0.005481
+    },
+    {
+      "step": 97000,
+      "tv_distance": 0.005416
+    },
+    {
+      "step": 98000,
+      "tv_distance": 0.005404
+    },
+    {
+      "step": 99000,
+      "tv_distance": 0.00522
+    },
+    {
+      "step": 100000,
+      "tv_distance": 0.005189
+    }
+  ],
+  "graph": "multigrafo: una arista no dirigida por reubicacion; un lazo suma 2 al grado",
+  "tv_distance_final": 0.005189,
+  "max_abs_difference": 0.001619,
+  "stationarity_residual": 1.3877787807814457e-17,
+  "connected": true,
+  "has_self_loops": true
+}
