@@ -1,0 +1,333 @@
+{
+  "sizes": [
+    100,
+    300,
+    500
+  ],
+  "zones": [
+    {
+      "zone": "AIRPORT",
+      "n_requests": 70004,
+      "true_avg_fare": 10174.6,
+      "true_avg_wait": 81.97,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 10881.13,
+          "est_avg_wait": 86.29,
+          "rel_error_fare_pct": 6.944,
+          "rel_error_wait_pct": 5.274
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 10783.16,
+          "est_avg_wait": 83.97,
+          "rel_error_fare_pct": 5.981,
+          "rel_error_wait_pct": 2.442
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 10400.69,
+          "est_avg_wait": 82.28,
+          "rel_error_fare_pct": 2.222,
+          "rel_error_wait_pct": 0.381
+        }
+      ]
+    },
+    {
+      "zone": "BELEN",
+      "n_requests": 40056,
+      "true_avg_fare": 10207.57,
+      "true_avg_wait": 69.41,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 10783.95,
+          "est_avg_wait": 64.25,
+          "rel_error_fare_pct": 5.647,
+          "rel_error_wait_pct": 7.445
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 10318.91,
+          "est_avg_wait": 65.69,
+          "rel_error_fare_pct": 1.091,
+          "rel_error_wait_pct": 5.366
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 10228.27,
+          "est_avg_wait": 67.65,
+          "rel_error_fare_pct": 0.203,
+          "rel_error_wait_pct": 2.546
+        }
+      ]
+    },
+    {
+      "zone": "BELLO",
+      "n_requests": 43483,
+      "true_avg_fare": 10235.9,
+      "true_avg_wait": 72.15,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 10503.9,
+          "est_avg_wait": 71.33,
+          "rel_error_fare_pct": 2.618,
+          "rel_error_wait_pct": 1.136
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 10423.48,
+          "est_avg_wait": 72.58,
+          "rel_error_fare_pct": 1.833,
+          "rel_error_wait_pct": 0.59
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 10322.42,
+          "est_avg_wait": 72.76,
+          "rel_error_fare_pct": 0.845,
+          "rel_error_wait_pct": 0.848
+        }
+      ]
+    },
+    {
+      "zone": "DOWNTOWN",
+      "n_requests": 64727,
+      "true_avg_fare": 10156.87,
+      "true_avg_wait": 93.67,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 10241.37,
+          "est_avg_wait": 85.7,
+          "rel_error_fare_pct": 0.832,
+          "rel_error_wait_pct": 8.504
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 9794.07,
+          "est_avg_wait": 85.54,
+          "rel_error_fare_pct": 3.572,
+          "rel_error_wait_pct": 8.672
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 9965.59,
+          "est_avg_wait": 88.83,
+          "rel_error_fare_pct": 1.883,
+          "rel_error_wait_pct": 5.159
+        }
+      ]
+    },
+    {
+      "zone": "EL_POBLADO",
+      "n_requests": 70702,
+      "true_avg_fare": 10149.85,
+      "true_avg_wait": 92.44,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 10393.93,
+          "est_avg_wait": 91.94,
+          "rel_error_fare_pct": 2.405,
+          "rel_error_wait_pct": 0.541
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 10332.53,
+          "est_avg_wait": 92.18,
+          "rel_error_fare_pct": 1.8,
+          "rel_error_wait_pct": 0.287
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 10129.27,
+          "est_avg_wait": 94.61,
+          "rel_error_fare_pct": 0.203,
+          "rel_error_wait_pct": 2.352
+        }
+      ]
+    },
+    {
+      "zone": "ENVIGADO",
+      "n_requests": 41429,
+      "true_avg_fare": 10208.48,
+      "true_avg_wait": 71.2,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 9803.11,
+          "est_avg_wait": 74.44,
+          "rel_error_fare_pct": 3.971,
+          "rel_error_wait_pct": 4.552
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 9837.03,
+          "est_avg_wait": 70.71,
+          "rel_error_fare_pct": 3.639,
+          "rel_error_wait_pct": 0.68
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 10094.36,
+          "est_avg_wait": 70.92,
+          "rel_error_fare_pct": 1.118,
+          "rel_error_wait_pct": 0.389
+        }
+      ]
+    },
+    {
+      "zone": "ITAGUI",
+      "n_requests": 32734,
+      "true_avg_fare": 10219.84,
+      "true_avg_wait": 64.83,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 9148.93,
+          "est_avg_wait": 66.53,
+          "rel_error_fare_pct": 10.479,
+          "rel_error_wait_pct": 2.624
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 9996.97,
+          "est_avg_wait": 66.26,
+          "rel_error_fare_pct": 2.181,
+          "rel_error_wait_pct": 2.211
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 10357.66,
+          "est_avg_wait": 64.2,
+          "rel_error_fare_pct": 1.349,
+          "rel_error_wait_pct": 0.97
+        }
+      ]
+    },
+    {
+      "zone": "LAURELES",
+      "n_requests": 53604,
+      "true_avg_fare": 10182.95,
+      "true_avg_wait": 78.86,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 10818.09,
+          "est_avg_wait": 82.37,
+          "rel_error_fare_pct": 6.237,
+          "rel_error_wait_pct": 4.453
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 10670.03,
+          "est_avg_wait": 80.03,
+          "rel_error_fare_pct": 4.783,
+          "rel_error_wait_pct": 1.481
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 10352.45,
+          "est_avg_wait": 78.71,
+          "rel_error_fare_pct": 1.664,
+          "rel_error_wait_pct": 0.188
+        }
+      ]
+    },
+    {
+      "zone": "SABANETA",
+      "n_requests": 33106,
+      "true_avg_fare": 10214.55,
+      "true_avg_wait": 65.06,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 10556.98,
+          "est_avg_wait": 61.93,
+          "rel_error_fare_pct": 3.352,
+          "rel_error_wait_pct": 4.806
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 10141.13,
+          "est_avg_wait": 65.01,
+          "rel_error_fare_pct": 0.719,
+          "rel_error_wait_pct": 0.065
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 10209.9,
+          "est_avg_wait": 63.55,
+          "rel_error_fare_pct": 0.045,
+          "rel_error_wait_pct": 2.32
+        }
+      ]
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "n_requests": 45660,
+      "true_avg_fare": 10171.01,
+      "true_avg_wait": 76.04,
+      "by_size": [
+        {
+          "size": 100,
+          "est_avg_fare": 10955.67,
+          "est_avg_wait": 81.83,
+          "rel_error_fare_pct": 7.715,
+          "rel_error_wait_pct": 7.611
+        },
+        {
+          "size": 300,
+          "est_avg_fare": 10698.29,
+          "est_avg_wait": 78.53,
+          "rel_error_fare_pct": 5.184,
+          "rel_error_wait_pct": 3.277
+        },
+        {
+          "size": 500,
+          "est_avg_fare": 10537.68,
+          "est_avg_wait": 77.68,
+          "rel_error_fare_pct": 3.605,
+          "rel_error_wait_pct": 2.147
+        }
+      ]
+    }
+  ],
+  "n_events": 495505,
+  "repetitions": 10,
+  "summary": [
+    {
+      "size": 100,
+      "avg_rel_error_fare_pct": 5.02,
+      "avg_rel_error_wait_pct": 4.695,
+      "avg_rel_error_fare_pct_repetitions": 4.013,
+      "avg_rel_error_wait_pct_repetitions": 5.248,
+      "rmse_over_standard_error": 1.023,
+      "items_in_memory": 1000,
+      "pct_of_stream_in_memory": 0.2018
+    },
+    {
+      "size": 300,
+      "avg_rel_error_fare_pct": 3.078,
+      "avg_rel_error_wait_pct": 2.507,
+      "avg_rel_error_fare_pct_repetitions": 2.431,
+      "avg_rel_error_wait_pct_repetitions": 2.512,
+      "rmse_over_standard_error": 1.01,
+      "items_in_memory": 3000,
+      "pct_of_stream_in_memory": 0.6054
+    },
+    {
+      "size": 500,
+      "avg_rel_error_fare_pct": 1.314,
+      "avg_rel_error_wait_pct": 1.73,
+      "avg_rel_error_fare_pct_repetitions": 1.897,
+      "avg_rel_error_wait_pct_repetitions": 1.969,
+      "rmse_over_standard_error": 1.019,
+      "items_in_memory": 5000,
+      "pct_of_stream_in_memory": 1.0091
+    }
+  ]
+}

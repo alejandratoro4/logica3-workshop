@@ -1,0 +1,100 @@
+{
+  "beta": 0.85,
+  "iterations": 6,
+  "zones": [
+    {
+      "zone": "EL_POBLADO",
+      "pagerank": 0.136228,
+      "pagerank_rank": 1,
+      "ride_volume": 70702,
+      "volume_rank": 1,
+      "volume_share": 0.142687,
+      "pi": 0.142701
+    },
+    {
+      "zone": "AIRPORT",
+      "pagerank": 0.134853,
+      "pagerank_rank": 2,
+      "ride_volume": 70004,
+      "volume_rank": 2,
+      "volume_share": 0.141278,
+      "pi": 0.141107
+    },
+    {
+      "zone": "DOWNTOWN",
+      "pagerank": 0.126097,
+      "pagerank_rank": 3,
+      "ride_volume": 64727,
+      "volume_rank": 3,
+      "volume_share": 0.130628,
+      "pi": 0.13071
+    },
+    {
+      "zone": "LAURELES",
+      "pagerank": 0.106971,
+      "pagerank_rank": 4,
+      "ride_volume": 53604,
+      "volume_rank": 4,
+      "volume_share": 0.108181,
+      "pi": 0.108198
+    },
+    {
+      "zone": "UNIV_NORTE",
+      "pagerank": 0.093396,
+      "pagerank_rank": 5,
+      "ride_volume": 45660,
+      "volume_rank": 5,
+      "volume_share": 0.092148,
+      "pi": 0.092189
+    },
+    {
+      "zone": "BELLO",
+      "pagerank": 0.089665,
+      "pagerank_rank": 6,
+      "ride_volume": 43483,
+      "volume_rank": 6,
+      "volume_share": 0.087755,
+      "pi": 0.087797
+    },
+    {
+      "zone": "ENVIGADO",
+      "pagerank": 0.08609,
+      "pagerank_rank": 7,
+      "ride_volume": 41429,
+      "volume_rank": 7,
+      "volume_share": 0.08361,
+      "pi": 0.083616
+    },
+    {
+      "zone": "BELEN",
+      "pagerank": 0.08377,
+      "pagerank_rank": 8,
+      "ride_volume": 40056,
+      "volume_rank": 8,
+      "volume_share": 0.080839,
+      "pi": 0.080877
+    },
+    {
+      "zone": "SABANETA",
+      "pagerank": 0.071773,
+      "pagerank_rank": 9,
+      "ride_volume": 33106,
+      "volume_rank": 9,
+      "volume_share": 0.066813,
+      "pi": 0.066777
+    },
+    {
+      "zone": "ITAGUI",
+      "pagerank": 0.071157,
+      "pagerank_rank": 10,
+      "ride_volume": 32734,
+      "volume_rank": 10,
+      "volume_share": 0.066062,
+      "pi": 0.066028
+    }
+  ],
+  "explanation": "El ranking por PageRank coincide con el de volumen. Las filas de M difieren entre si en a lo sumo 0.020: la zona del siguiente viaje de un conductor casi no depende de la zona actual. Con filas iguales, v M es la misma distribucion pi para cualquier v y PageRank = beta * pi + (1 - beta) / n, con beta = 0.85 y n = 10. Esa transformacion es creciente en pi, y pi difiere de la participacion de cada zona en los viajes en a lo sumo 0.0002, asi que el orden no cambia.",
+  "row_spread_max": 0.020212,
+  "total_relocations": 494305,
+  "n_zones": 10
+}
