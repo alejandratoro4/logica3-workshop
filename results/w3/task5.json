@@ -1,0 +1,145 @@
+{
+  "task": "W3 Task 5 - 2-SAT aleatorizado (Papadimitriou)",
+  "variables": [
+    {
+      "name": "x1",
+      "meaning": "surge activo en EL_POBLADO"
+    },
+    {
+      "name": "x2",
+      "meaning": "conductores extra enviados a EL_POBLADO"
+    },
+    {
+      "name": "x3",
+      "meaning": "surge activo en AIRPORT"
+    },
+    {
+      "name": "x4",
+      "meaning": "conductores extra enviados a AIRPORT"
+    },
+    {
+      "name": "x5",
+      "meaning": "surge activo en DOWNTOWN"
+    },
+    {
+      "name": "x6",
+      "meaning": "conductores extra enviados a DOWNTOWN"
+    },
+    {
+      "name": "x7",
+      "meaning": "se reubican conductores desde ITAGUI (pi mas baja)"
+    },
+    {
+      "name": "x8",
+      "meaning": "surge activo en ITAGUI"
+    }
+  ],
+  "constraints": [
+    {
+      "text": "si pi(EL_POBLADO) es alta, surge en EL_POBLADO o conductores extra a EL_POBLADO",
+      "condition": "pi(EL_POBLADO) = 0.1427 > 1/10 = 0.1000",
+      "applies": true,
+      "clauses": [
+        [
+          "x1",
+          "x2"
+        ]
+      ]
+    },
+    {
+      "text": "si pi(AIRPORT) es alta, surge en AIRPORT o conductores extra a AIRPORT",
+      "condition": "pi(AIRPORT) = 0.1411 > 1/10 = 0.1000",
+      "applies": true,
+      "clauses": [
+        [
+          "x3",
+          "x4"
+        ]
+      ]
+    },
+    {
+      "text": "si pi(DOWNTOWN) es alta, surge en DOWNTOWN o conductores extra a DOWNTOWN",
+      "condition": "pi(DOWNTOWN) = 0.1307 > 1/10 = 0.1000",
+      "applies": true,
+      "clauses": [
+        [
+          "x5",
+          "x6"
+        ]
+      ]
+    },
+    {
+      "text": "flota de refuerzo limitada: no se envian extra a EL_POBLADO y AIRPORT a la vez, ni a AIRPORT y DOWNTOWN a la vez",
+      "condition": "siempre aplica",
+      "applies": true,
+      "clauses": [
+        [
+          "-x2",
+          "-x4"
+        ],
+        [
+          "-x4",
+          "-x6"
+        ]
+      ]
+    },
+    {
+      "text": "los conductores extra salen de ITAGUI: enviar extra a EL_POBLADO, AIRPORT o DOWNTOWN exige reubicar desde ITAGUI, y si ITAGUI cede conductores se activa surge en ITAGUI",
+      "condition": "pi(ITAGUI) = 0.0660 < 1/10 = 0.1000",
+      "applies": true,
+      "clauses": [
+        [
+          "-x2",
+          "x7"
+        ],
+        [
+          "-x4",
+          "x7"
+        ],
+        [
+          "-x6",
+          "x7"
+        ],
+        [
+          "-x7",
+          "x8"
+        ]
+      ]
+    }
+  ],
+  "satisfiable": true,
+  "assignment": {
+    "x1": true,
+    "x2": false,
+    "x3": true,
+    "x4": false,
+    "x5": true,
+    "x6": false,
+    "x7": false,
+    "x8": true
+  },
+  "flips": 4,
+  "max_flips": 1280,
+  "trace": [
+    4,
+    2,
+    1,
+    1,
+    0
+  ],
+  "b_repeats": 10,
+  "seed": 42,
+  "pi": {
+    "AIRPORT": 0.141107,
+    "BELEN": 0.080877,
+    "BELLO": 0.087797,
+    "DOWNTOWN": 0.13071,
+    "EL_POBLADO": 0.142701,
+    "ENVIGADO": 0.083616,
+    "ITAGUI": 0.066028,
+    "LAURELES": 0.108198,
+    "SABANETA": 0.066777,
+    "UNIV_NORTE": 0.092189
+  },
+  "brute_force_solutions": 13
+}

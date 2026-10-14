@@ -1,0 +1,26 @@
+{
+  "task": "W2 Task 5 - Momentos de frecuencia",
+  "F0": 10,
+  "F1": 495505,
+  "F2": 26426280223,
+  "counts": {
+    "EL_POBLADO": 70702,
+    "AIRPORT": 70004,
+    "DOWNTOWN": 64727,
+    "LAURELES": 53604,
+    "UNIV_NORTE": 45660,
+    "BELLO": 43483,
+    "ENVIGADO": 41429,
+    "BELEN": 40056,
+    "SABANETA": 33106,
+    "ITAGUI": 32734
+  },
+  "F2_uniform": 24552520502.5,
+  "concentration": 1.076316,
+  "surge_candidates": [
+    "EL_POBLADO",
+    "AIRPORT",
+    "DOWNTOWN",
+    "LAURELES"
+  ]
+}
