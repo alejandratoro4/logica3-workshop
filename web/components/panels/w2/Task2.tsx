@@ -69,7 +69,7 @@ export default function Task2({ data: t }: PanelProps<W2Task2>) {
       <p className="panel-desc" style={{ marginTop: 8, marginBottom: 0 }}>
         La formula supone el filtro con sus m elementos. Si en la mayoria de los minutos entran menos
         pasajeros que m, el filtro esta mas vacio de lo que supone el diseno y lo medido queda por
-        debajo de la teorica; en los minutos pico se acercan.
+        debajo de la teorica. Solo un minuto con cerca de m pasajeros distintos la alcanzaria.
       </p>
     </section>
   );

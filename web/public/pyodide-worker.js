@@ -23,14 +23,15 @@ importScripts(`https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/pyodide
 
 // Tasks que van al final de su workshop porque se comen la mayor parte del
 // tiempo: asi los demas paneles ya estan pintados cuando arrancan. La Task 2
-// del W1 es el benchmark de QuickSort.
-const AL_FINAL = { "1": [2] };
+// del W1 es el benchmark de QuickSort; la 3 y la 5 del W4 corren el pipeline
+// de MapReduce varias veces (a 1x, 2x y 4x, y con 1 a 8 workers).
+const AL_FINAL = { "1": [2], "4": [3, 5] };
 
 // El CSV principal que escribe el dataset de cada workshop: es el que se
 // muestra en la vista Dataset y el que leen sus tasks. Se nombra explicito, no
 // por fecha de modificacion: el W3 escribe ademas edges_despacho.csv en el
-// mismo milisegundo.
-const SALIDA_DATASET = { "1": "rides.csv", "2": "stream.csv", "3": "edges.csv" };
+// mismo milisegundo, y el W4 sus fragmentos en data/w4/.
+const SALIDA_DATASET = { "1": "rides.csv", "2": "stream.csv", "3": "edges.csv", "4": "nodes.csv" };
 
 let pyodide = null;
 let ready = false;

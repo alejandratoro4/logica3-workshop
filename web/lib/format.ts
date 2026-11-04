@@ -23,6 +23,26 @@ export const fmt = (v: number | undefined | null, d = 2) => {
 export const int = (v: number | undefined | null) =>
   v === undefined || v === null || !Number.isFinite(v) ? "—" : Math.round(v).toLocaleString("es-CO");
 
+/** Tamano en bytes con su unidad (17733 -> "17.3 KB"), para el shuffle del W4.
+ *  Punto decimal, como `fmt`, para que no se mezcle con los segundos de al lado. */
+export const bytes = (v: number | undefined | null) => {
+  if (v === undefined || v === null || !Number.isFinite(v)) return "—";
+  const unidades = ["B", "KB", "MB", "GB"];
+  let x = v;
+  let i = 0;
+  while (Math.abs(x) >= 1024 && i < unidades.length - 1) {
+    x /= 1024;
+    i++;
+  }
+  // toFixed y no fmt: fmt pone separador de miles desde 1000, y 1010 KB
+  // saldria "1.010 KB", que se lee como un decimal.
+  return `${i ? x.toFixed(1).replace(/\.0$/, "") : Math.round(x)} ${unidades[i]}`;
+};
+
+/** Notacion cientifica corta para diferencias diminutas (2.17e-9). */
+export const sci = (v: number | undefined | null, d = 1) =>
+  v === undefined || v === null || !Number.isFinite(v) ? "—" : v === 0 ? "0" : v.toExponential(d);
+
 /** Porcentaje legible de una proporcion (0.0321 -> "3.21%"), con notacion
  *  cientifica para lo diminuto (tasas de falso positivo de 1e-6). */
 export const pct = (v: number | undefined | null, d = 2) => {

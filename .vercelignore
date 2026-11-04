@@ -33,3 +33,5 @@ web/lib/generated/
 # Credenciales
 .env
 .env*.local
+
+.claude

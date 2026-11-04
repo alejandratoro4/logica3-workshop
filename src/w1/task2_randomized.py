@@ -178,6 +178,23 @@ def exact_mean(stream):
     return total / n
 
 
+def expected_rel_error_pct(data, k):
+    """Error relativo medio que la teoria espera de la media de una muestra
+    uniforme de k elementos (sin reemplazo) de data, en porcentaje.
+
+    La media muestral tiene desviacion sigma/sqrt(k), corregida por poblacion
+    finita (raiz de (n-k)/(n-1)): con k = n la muestra es todo y el error es 0.
+    Por el teorema del limite central es casi normal, y para una normal
+    E|X - mu| = sqrt(2/pi) * desviacion. Depende de k, no de n."""
+    n = len(data)
+    if n <= k:
+        return 0.0
+    mu = sum(data) / n
+    sigma = math.sqrt(sum((x - mu) ** 2 for x in data) / (n - 1))
+    fpc = math.sqrt((n - k) / (n - 1))
+    return math.sqrt(2 / math.pi) * sigma / math.sqrt(k) * fpc / mu * 100
+
+
 def bench_sampling(fares, sizes, k=500, trials=5):
     results = []
     for n in sizes:
@@ -205,6 +222,7 @@ def bench_sampling(fares, sizes, k=500, trials=5):
             "time_s": avg_time / trials,
             "estimate": None, "true_mean": true_mean,
             "rel_error_pct": sum(errs) / len(errs),
+            "expected_rel_error_pct": expected_rel_error_pct(data, k),
         })
     return results
 
@@ -270,7 +288,8 @@ def bench_quantiles(fares, sizes, k=2000, trials=8, qs=(0.5, 0.95)):
         results.append({
             "n": n, "method": f"reservoir_quantiles_k{k}",
             "time_s": times / trials,
-            "memory_items": k,
+            # Con n < k el reservorio se queda con todo el arreglo: guarda n.
+            "memory_items": min(n, k),
             "errors_pct": {q: round(sum(v) / len(v), 3) for q, v in errs.items()},
         })
     return results
@@ -354,8 +373,10 @@ if __name__ == "__main__":
 
     print("\n== Reservoir Sampling vs promedio exacto ==")
     for r in sample_results:
+        teo = r.get("expected_rel_error_pct")
         print(f"  n={r['n']:>6} metodo={r['method']:<22} t={r['time_s']:.6f}s "
-              f"error_rel={r['rel_error_pct']:.3f}%")
+              f"error_rel={r['rel_error_pct']:.3f}%"
+              + (f"  (teoria {teo:.3f}%)" if teo is not None else ""))
 
     print("\n== Cuantiles: reservoir sampling vs exacto (aqui SI gana el muestreo) ==")
     for r in quantile_results:

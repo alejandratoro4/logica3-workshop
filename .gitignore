@@ -7,6 +7,8 @@
 # dados. No tiene sentido versionarlos.
 data/rides.csv
 data/*.csv
+# Los fragmentos del W4 (src/w4/dataset.py), igual de reproducibles.
+data/w4/
 
 # ---------------------------------------------------------------------------
 # Python
@@ -50,3 +52,4 @@ Desktop.ini
 !.vscode/settings.json
 
 .vercel
+.env*

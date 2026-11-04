@@ -32,10 +32,13 @@ export default function CodeViewer({ slug }: { slug: string }) {
       .then((m) => {
         if (cancelled) return;
         const n = Number(slug);
+        // Los modulos (el runner de MapReduce del W4) se muestran en su
+        // workshop y en los siguientes, igual que los datasets.
         const fs: PyFile[] = (m.files ?? []).filter((f: PyFile) =>
-          f.kind === "dataset" ? Number(f.ws) <= n : f.kind === "task" && f.ws === slug
+          f.kind === "dataset" || f.kind === "modulo" ? Number(f.ws) <= n : f.kind === "task" && f.ws === slug
         );
-        const orden = (f: PyFile) => (f.kind === "dataset" ? Number(f.ws) : 100 + (f.task ?? 0));
+        const orden = (f: PyFile) =>
+          f.kind === "dataset" ? Number(f.ws) : f.kind === "modulo" ? 50 + Number(f.ws) : 100 + (f.task ?? 0);
         fs.sort((a, b) => orden(a) - orden(b));
         setFiles(fs);
         // Tasks del enunciado sin script: las del contrato que no estan.
@@ -120,6 +123,7 @@ export default function CodeViewer({ slug }: { slug: string }) {
         <div className="code-bar">
           <span style={{ color: "var(--text)" }}>{active ?? "—"}</span>
           {meta?.kind === "dataset" && <span>· dataset del Workshop {meta.ws}</span>}
+          {meta?.kind === "modulo" && <span>· modulo del Workshop {meta.ws}, lo importan sus tasks</span>}
           <span style={{ marginLeft: "auto" }}>
             {loading ? "cargando..." : `${lines.length} lineas`}
           </span>

@@ -68,8 +68,10 @@ export function estimateRows(p: CityParams): number {
  *  el benchmark de QuickSort creciendo como n log n. W2 y W3: datasets
  *  encadenados mas sus tasks, todo lineal; SEG_POR_DEMO se midio en Pyodide
  *  con soluciones de referencia sencillas de las seis tasks (2026-10-06), asi
- *  que las del equipo pueden tardar otra cosa. */
-const SEG_POR_DEMO: Record<string, number> = { "2": 9.5, "3": 6 };
+ *  que las del equipo pueden tardar otra cosa. W4: igual (2026-11-03, con la
+ *  Task 5 en reducers=8 como pide el contrato); las Tasks 3 y 5 corren el
+ *  pipeline de MapReduce varias veces y se llevan la mayor parte. */
+const SEG_POR_DEMO: Record<string, number> = { "2": 9.5, "3": 6, "4": 37 };
 
 export function estimateSeconds(p: CityParams, slug = "1"): number {
   const n = Math.max(1, estimateRows(p));
