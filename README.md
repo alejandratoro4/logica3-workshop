@@ -1,6 +1,6 @@
 # Ride-Sharing Dispatch & Surge Pricing
 
-Proyecto de **Lógica y Representación III**, en tres workshops sobre el mismo
+Proyecto de **Lógica y Representación III**, en varios workshops sobre el mismo
 escenario: el sistema de despacho de una app de ride-sharing.
 
 | Workshop | Tema | Carpeta |
@@ -8,6 +8,7 @@ escenario: el sistema de despacho de una app de ride-sharing.
 | 1 | Big Data, algoritmos aleatorizados, hashing universal, tablas hash, cotas de concentración | `src/w1/` |
 | 2 | Streams: filtro de Bloom, muestreo, Flajolet-Martin, momentos de frecuencia | `src/w2/` |
 | 3 | Cadenas de Markov: DTMC, distribución estacionaria, PageRank, caminatas aleatorias, 2-SAT | `src/w3/` |
+| 4 | MapReduce: el grafo de la Unidad 3 como jobs, PageRank matriz-vector, costo de comunicación, tamaño de reducer, speedup | `src/w4/` |
 
 ---
 
@@ -19,6 +20,8 @@ contrato de su workshop:
 - [`contratos/w1.md`](contratos/w1.md)
 - [`contratos/w2.md`](contratos/w2.md)
 - [`contratos/w3.md`](contratos/w3.md)
+- [`contratos/w4.md`](contratos/w4.md) (sus tasks corren los jobs con el runner
+  [`src/w4/mapreduce.py`](src/w4/mapreduce.py); conviene pasárselo también a la IA)
 
 Cada contrato se puede pegar completo en una IA, sin mostrarle el resto del
 repo. Trae las reglas, el bloque con el que empieza el script, las columnas
@@ -56,7 +59,8 @@ librería de Python: todo es biblioteca estándar. **Nunca se corre
 python run_all.py            # Workshop 1
 python run_all.py w2         # Workshop 2
 python run_all.py w3         # Workshop 3
-python run_all.py todo       # los tres
+python run_all.py w4         # Workshop 4
+python run_all.py todo       # todos
 
 # 2. levantar el dashboard
 cd web
@@ -95,9 +99,10 @@ modificarlo:
 | `src/w1/dataset.py` | `data/rides.csv` | ~495.000 solicitudes de viaje, 10 zonas, 14 días |
 | `src/w2/dataset.py` | `data/stream.csv` | las mismas filas en orden de llegada, más `stream_seq` y `wait_for_driver_sec` |
 | `src/w3/dataset.py` | `data/edges.csv` | el grafo de reubicaciones: para cada conductor, una arista de la zona de un viaje a la de su siguiente viaje. Escribe también `data/edges_despacho.csv`, un escenario alterno con despacho espacial que solo usa el Panel D |
+| `src/w4/dataset.py` | `data/nodes.csv`, `data/w4/part-*.csv` | el resumen por zona del enunciado (reubicaciones que salen, que llegan y `net_flow`), y el stream partido en 8 fragmentos para los jobs de MapReduce |
 
-Los tres son **deterministas**: los mismos parámetros dan los mismos bytes, así
-que los CSV no se versionan (pesan ~80 MB).
+Todos son **deterministas**: los mismos parámetros dan los mismos bytes, así
+que los CSV no se versionan (pesan ~100 MB).
 
 `rides.csv` se genera con un **proceso de Poisson no homogéneo**: cada zona
 tiene su propio perfil de intensidad por hora del día, replicado sobre 14 días
@@ -157,6 +162,12 @@ escribió, con las claves de su contrato. Los paneles que pide cada enunciado:
   - Panel B: distintos estimados contra verdaderos (Task 4).
   - Panel C: medidor de surge en vivo (Task 6), con el resultado de F_k de la Task 5.
 - **W3:** Panel D, PageRank contra volumen sobre el medidor de surge (Tasks 3 y 6).
+- **W4:**
+  - Panel E: speedup y eficiencia contra workers (Task 5) y shuffle con y sin combiner (Task 3).
+  - Panel F: zonas por `net_flow` junto al medidor de surge (Task 6).
+
+  En el navegador no hay procesos: el pipeline del W4 corre en secuencia y el
+  speedup solo se mide en la terminal.
 
 Además:
 
@@ -179,11 +190,12 @@ Para construir el sitio estático: `npm run build` (queda en `web/out/`).
 ├── src/
 │   ├── w1/  dataset.py, task1_bigdata.py, task2_randomized.py, ...
 │   ├── w2/  dataset.py, task6_surge.py, ...
-│   └── w3/  dataset.py, task6_surge.py, ...
-├── contratos/  w1.md  w2.md  w3.md       # lo que el dashboard lee de cada task
+│   ├── w3/  dataset.py, task6_surge.py, ...
+│   └── w4/  dataset.py, mapreduce.py (el runner que importan sus tasks), task6_surge.py, ...
+├── contratos/  w1.md ... w4.md           # lo que el dashboard lee de cada task
 ├── dashboard/contrato.py       # valida results/ contra contratos/ (lo usan run_all, el worker y el exportador)
-├── data/                       # rides.csv, stream.csv, edges.csv (ignorados por git)
-├── results/  w1/  w2/  w3/     # taskK.json de cada task
+├── data/                       # rides.csv, stream.csv, edges.csv, nodes.csv, w4/ (ignorados por git)
+├── results/  w1/ ... w4/       # taskK.json de cada task
 └── web/                        # el dashboard (Next.js + Pyodide)
     ├── components/panels/wN/TaskK.tsx    # el panel de cada task
     ├── lib/docs/wN/taskK.ts              # la página de cada task
@@ -192,7 +204,9 @@ Para construir el sitio estático: `npm run build` (queda en `web/out/`).
 ```
 
 No hay listas de tasks que mantener. `sync-python.mjs` encuentra los scripts,
-los paneles y las páginas por su nombre. Además, genera los tipos de
+los paneles y las páginas por su nombre. Un `.py` de `src/wN/` que no empieza
+por `task` es un módulo que importan las tasks (hoy solo `src/w4/mapreduce.py`):
+se copia al navegador pero no se corre. Además, genera los tipos de
 TypeScript a partir de los ejemplos de los contratos, así que el panel, la
 página y el validador leen el mismo contrato.
 

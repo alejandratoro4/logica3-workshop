@@ -57,7 +57,7 @@ def contar_viajes():
 
 def main():
     if len(sys.argv) < 2 or not re.fullmatch(r"w\d+", sys.argv[1]):
-        print("Uso: python web/scripts/export_canonical.py w1|w2|w3", file=sys.stderr)
+        print("Uso: python web/scripts/export_canonical.py wN  (p. ej. w4)", file=sys.stderr)
         return 2
     ws = sys.argv[1]
     contrato = load_contrato()

@@ -49,6 +49,31 @@ const doc: TaskDoc<W1Task2> = {
         hint: `${int(medidas)} medidas contra ${int(teoria)} previstas`,
       });
     }
+    // Reservoir sampling, a escala completa (el n mas grande). Son claves
+    // opcionales del contrato: sin ellas no se muestra nada.
+    const res = (r.sampling ?? []).filter((s) => s.method.startsWith("reservoir")).sort((x, y) => x.n - y.n);
+    const media = res[res.length - 1];
+    if (media) {
+      out.push({
+        label: `Error de la media con reservorio (n=${int(media.n)})`,
+        value: `${fmt(media.rel_error_pct, 2)} %`,
+        hint:
+          media.expected_rel_error_pct !== undefined
+            ? `teoria ${fmt(media.expected_rel_error_pct, 2)} %, k = ${media.method.split("_k")[1] ?? "?"}`
+            : `k = ${media.method.split("_k")[1] ?? "?"}`,
+      });
+    }
+    const cuantil = (r.quantiles ?? [])
+      .filter((q) => q.method.startsWith("reservoir"))
+      .sort((x, y) => x.n - y.n)
+      .pop();
+    if (cuantil) {
+      out.push({
+        label: `Mediana y p95 con reservorio (n=${int(cuantil.n)})`,
+        value: `${fmt(cuantil.errors_pct["0.5"], 2)} % y ${fmt(cuantil.errors_pct["0.95"], 2)} %`,
+        hint: `error, guardando ${int(cuantil.memory_items)} valores`,
+      });
+    }
     return out;
   },
   sections: [
@@ -62,7 +87,7 @@ const doc: TaskDoc<W1Task2> = {
     },
     {
       h: "El muestreo pierde en tiempo y gana en memoria",
-      p: "Para la media, reservoir sampling es mas lento que sumar y dividir: ambos recorren el stream una vez con memoria constante, pero el muestreo paga generar un aleatorio por elemento. Esa comparacion esta puesta a proposito, porque muestra que muestrear no es un atajo de velocidad. Donde si gana es en los cuantiles: calcularlos exactos exige tener los n elementos en memoria, mientras el reservorio trabaja con k fijo y da un error de decimas de punto porcentual.",
+      p: "Para la media, reservoir sampling es mas lento que sumar y dividir: ambos recorren el stream una vez con memoria constante, pero el muestreo paga generar un aleatorio por elemento. Esa comparacion esta puesta a proposito, porque muestra que muestrear no es un atajo de velocidad. Su error relativo medio es el que predice la teoria, raiz(2/pi) · sigma / raiz(k) con la correccion por poblacion finita, y no baja al crecer n: depende de cuantos se guardan, no de cuantos pasan. Cada fila promedia pocas repeticiones, asi que lo medido oscila alrededor de la curva teorica. Donde si gana es en los cuantiles, y solo en memoria: calcularlos exactos exige guardar y ordenar los n elementos, mientras el reservorio trabaja con k fijo. En tiempo sigue perdiendo, porque el ordenamiento de Python esta escrito en C y el reservorio sortea un numero por elemento. Las cifras de error estan arriba, en las metricas.",
     },
     {
       h: "Por que importa en este dominio",

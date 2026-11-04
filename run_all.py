@@ -7,7 +7,8 @@ los datasets que necesita y despues sus tasks, en orden.
     python run_all.py            Workshop 1
     python run_all.py w2         Workshop 2
     python run_all.py w3         Workshop 3
-    python run_all.py todo       los tres
+    python run_all.py w4         Workshop 4
+    python run_all.py todo       todos
 
 No hay lista de tasks que mantener: se corre lo que haya en src/wN/ con el
 patron taskK_tema.py, en orden de K. Una task que nadie ha entregado
@@ -59,7 +60,10 @@ def tasks_de(ws):
             continue
         m = PATRON_TASK.match(nombre)
         if not m:
-            avisos.append(f"src/{ws}/{nombre} no sigue el patron taskK_tema.py: no se corre.")
+            # Lo que no empieza por "task" es un modulo que importan las tasks
+            # (src/w4/mapreduce.py): no se corre, y no es un error.
+            if nombre.startswith("task"):
+                avisos.append(f"src/{ws}/{nombre} no sigue el patron taskK_tema.py: no se corre.")
             continue
         k = int(m.group(1))
         if k in tasks:

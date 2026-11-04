@@ -19,6 +19,8 @@
  * Convenciones (las mismas de run_all.py):
  *   src/wN/dataset.py          el dataset del workshop N
  *   src/wN/taskK_tema.py       la task K; escribe results/wN/taskK.json
+ *   src/wN/<otro>.py           un modulo que importan las tasks (p. ej. el
+ *                              runner de MapReduce, src/w4/mapreduce.py)
  *
  * Es la unica fuente de verdad: nada de lo generado se edita a mano.
  */
@@ -50,7 +52,7 @@ for (const d of await ls(join(REPO, "src"))) {
     continue;
   }
   const ws = m[1];
-  const info = { dataset: null, tasks: {} };
+  const info = { dataset: null, tasks: {}, modulos: [] };
   for (const f of await ls(join(REPO, "src", d))) {
     if (!f.endsWith(".py")) continue;
     if (f === "dataset.py") {
@@ -59,7 +61,11 @@ for (const d of await ls(join(REPO, "src"))) {
     }
     const t = f.match(PATRON_TASK);
     if (!t) {
-      avisos.push(`src/${d}/${f} no sigue el patron taskK_tema.py: no se usa.`);
+      // Un .py que no empieza por "task" es un modulo que importan las tasks
+      // (el runner de MapReduce del W4): se copia, no se corre. Uno que empieza
+      // por "task" con otro formato es una task mal nombrada.
+      if (f.startsWith("task")) avisos.push(`src/${d}/${f} no sigue el patron taskK_tema.py: no se usa.`);
+      else info.modulos.push(`src/${d}/${f}`);
       continue;
     }
     const k = Number(t[1]);
@@ -95,6 +101,7 @@ async function publicar(rel, extra) {
 
 for (const [ws, info] of Object.entries(workshops)) {
   if (info.dataset) await publicar(info.dataset, { ws, kind: "dataset" });
+  for (const rel of info.modulos) await publicar(rel, { ws, kind: "modulo" });
   for (const [k, rel] of Object.entries(info.tasks)) await publicar(rel, { ws, kind: "task", task: Number(k) });
 }
 await publicar("dashboard/contrato.py", { kind: "infra" });

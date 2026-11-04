@@ -172,6 +172,57 @@ export const WORKSHOPS: Workshop[] = [
     note:
       "El grafo sale de src/w3/dataset.py, que lee stream.csv del Workshop 2 y escribe data/edges.csv con el driver_id de cada viaje, como pide el enunciado. Tambien escribe data/edges_despacho.csv, un escenario alterno con despacho espacial que solo usa el Panel D.",
   },
+  {
+    slug: "4",
+    n: 4,
+    title: "El grafo de reubicaciones como jobs de MapReduce",
+    subtitle:
+      "Con mas de 100.000 solicitudes, el grafo de la Unidad 3 se construye con jobs de MapReduce y el PageRank de las zonas se calcula con rondas de Map/Reduce.",
+    status: "ready",
+    // Las Tasks 3 y 5 corren el pipeline varias veces y terminan al final; el
+    // Panel E lee de ellas, asi que el dashboard va despues.
+    order: [1, 2, 4, 3, 5, 6],
+    tasks: [
+      {
+        n: 1,
+        title: "Pipeline MapReduce",
+        blurb:
+          "Job 1: agrupar los viajes por driver_id, ordenarlos por stream_seq y contar las reubicaciones entre zonas. Job 2: el resumen por zona. Map en paralelo sobre 8 fragmentos con 2 o mas workers, validado contra la Unidad 3.",
+      },
+      {
+        n: 2,
+        title: "PageRank como producto matriz-vector",
+        blurb:
+          "Una ronda de MapReduce = una multiplicacion: el map emite (j, p(i,j) v_i) y el reduce suma por j. Iterar hasta ||v(t+1) - v(t)||_1 < 1e-6 y coincidir con la Unidad 3 a 1e-4.",
+      },
+      {
+        n: 3,
+        title: "Analisis de costo",
+        blurb:
+          "Tamano del shuffle del Job 1 con y sin combiner, a 1x, 2x y 4x datos: crece lineal y se extrapola a 10x. Mas el costo de PageRank: pares por iteracion por iteraciones.",
+      },
+      {
+        n: 4,
+        title: "Tamano de reducer y tasa de replicacion",
+        blurb:
+          "La clave caliente es el conductor con mas viajes, y q su numero de viajes. r y q de cada job, y el Job 1 con R = 1, 2, 4, 8 reduce tasks.",
+      },
+      {
+        n: 5,
+        title: "Eficiencia paralela",
+        blurb:
+          "El pipeline completo con P = 1, 2, 4, 8 workers en dos tamanos de datos: speedup T_1 / T_P, eficiencia S_P / P y donde cae.",
+      },
+      {
+        n: 6,
+        title: "Dashboard: Paneles E y F",
+        blurb:
+          "Panel E: speedup y eficiencia contra workers, y shuffle con y sin combiner. Panel F: las zonas ordenadas por net_flow junto al medidor de surge de la Unidad 1.",
+      },
+    ],
+    note:
+      "src/w4/dataset.py parte stream.csv en 8 fragmentos (data/w4/) y escribe data/nodes.csv, el resumen por zona del enunciado. Las tasks corren sus jobs con el runner compartido src/w4/mapreduce.py; en el navegador no hay procesos, asi que ahi todo corre en secuencia. Los Paneles A a D siguen en los dashboards del W2 y el W3.",
+  },
 ];
 
 export const getWorkshop = (slug: string) => WORKSHOPS.find((w) => w.slug === slug);

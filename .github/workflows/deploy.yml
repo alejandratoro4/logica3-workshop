@@ -1,0 +1,69 @@
+# Deploy automatico a Vercel.
+#
+#   push a main          -> produccion
+#   pull request a main  -> preview (la URL queda en el resumen del job)
+#   a mano (Actions)     -> produccion si se corre sobre main, preview si no
+#
+# Construye en el runner con la misma configuracion que el deploy a mano
+# (vercel.json de la raiz: cd web && npm install && npm run build -> web/out)
+# y sube el resultado ya construido. No necesita Python: las corridas
+# canonicas (web/public/data/canonical-wN.json) estan commiteadas.
+#
+# Necesita tres secrets en el repo (Settings > Secrets and variables >
+# Actions), que solo puede crear quien administra el repo:
+#   VERCEL_TOKEN       token de la cuenta de Vercel duena del proyecto
+#   VERCEL_ORG_ID      "orgId" de .vercel/project.json
+#   VERCEL_PROJECT_ID  "projectId" de .vercel/project.json
+name: Deploy a Vercel
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+# Un deploy nuevo de la misma rama cancela el que siga corriendo.
+concurrency:
+  group: vercel-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+  VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+  ES_PRODUCCION: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/main' }}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    # Un PR desde un fork no recibe los secrets: sin token no hay preview.
+    if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar la CLI de Vercel
+        run: npm install --global vercel@latest
+
+      - name: Traer la configuracion del proyecto
+        run: |
+          if [ "$ES_PRODUCCION" = "true" ]; then ENTORNO=production; else ENTORNO=preview; fi
+          vercel pull --yes --environment=$ENTORNO --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Construir
+        run: |
+          if [ "$ES_PRODUCCION" = "true" ]; then PROD=--prod; else PROD=; fi
+          vercel build $PROD --token=${{ secrets.VERCEL_TOKEN }}
+
+      - name: Desplegar
+        run: |
+          if [ "$ES_PRODUCCION" = "true" ]; then PROD=--prod; else PROD=; fi
+          URL=$(vercel deploy --prebuilt $PROD --token=${{ secrets.VERCEL_TOKEN }})
+          echo "Desplegado en $URL"
+          echo "**Deploy ($([ "$ES_PRODUCCION" = "true" ] && echo produccion || echo preview)):** $URL" >> "$GITHUB_STEP_SUMMARY"
