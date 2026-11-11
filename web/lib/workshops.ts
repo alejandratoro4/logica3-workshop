@@ -223,6 +223,55 @@ export const WORKSHOPS: Workshop[] = [
     note:
       "src/w4/dataset.py parte stream.csv en 8 fragmentos (data/w4/) y escribe data/nodes.csv, el resumen por zona del enunciado. Las tasks corren sus jobs con el runner compartido src/w4/mapreduce.py; en el navegador no hay procesos, asi que ahi todo corre en secuencia. Los Paneles A a D siguen en los dashboards del W2 y el W3.",
   },
+  {
+    slug: "5",
+    n: 5,
+    title: "Conductores parecidos: shingles, MinHash y LSH",
+    subtitle:
+      "Comparar con programacion dinamica las secuencias de zonas de cada par de conductores no escala: los conductores pasan a ser conjuntos de shingles y vectores, y sus vecinos se buscan con LSH.",
+    status: "ready",
+    order: [1, 3, 2, 4, 5, 6],
+    tasks: [
+      {
+        n: 1,
+        title: "Medidas de distancia",
+        blurb:
+          "Shingles de k = 3 zonas y un vector de ocupacion por zona mas dos metricas z-normalizadas para 1.000 o mas conductores. Jaccard, coseno, L1 y L2 en 5.000 pares, su correlacion con la similitud LCS de la Unidad 5 y la concentracion de distancias.",
+      },
+      {
+        n: 2,
+        title: "LSH para el coseno con hiperplanos aleatorios",
+        blurb:
+          "Firmas de n = 16, 32, 64 y 128 hiperplanos: los bits que coinciden contra 1 - theta/180 en 1.000 pares, y el recall@5 de las bandas contra el top-5 exacto, con la fraccion de comparaciones ahorradas.",
+      },
+      {
+        n: 3,
+        title: "Shingling",
+        blurb:
+          "Shingles de k = 2, 3 y 4: tamano medio, posibles contra observados, y cuanto se separan los grupos plantados (Jaccard dentro contra entre grupos). Elegir el mejor k.",
+      },
+      {
+        n: 4,
+        title: "MinHash y bandas",
+        blurb:
+          "MinHash con 100 funciones de la familia de la Unidad 1, como map en el runner de la Unidad 4 y las bandas en el reduce. (b, r) = (20, 5), (10, 10) y (50, 2): la curva S teorica contra la tasa empirica de candidatos.",
+      },
+      {
+        n: 5,
+        title: "Vecinos con tres metodos",
+        blurb:
+          "Top-5 vecinos de 20 o mas conductores por MinHash/LSH, por coseno con LSH y por LCS sobre los candidatos; overlap@5 entre metodos y el outcome test de avg_fare, que no entra en ninguna representacion.",
+      },
+      {
+        n: 6,
+        title: "Dashboard: Paneles I y J",
+        blurb:
+          "Panel I: elegir un conductor y ver sus 5 vecinos con cada metodo, con puntajes, candidatos examinados y zonas compartidas. Panel J: la curva S, el recall contra las comparaciones ahorradas y el outcome test.",
+      },
+    ],
+    note:
+      "src/w5/dataset.py escribe data/similarity.jsonl, un conductor por linea. Los grupos que pide el enunciado no existen en stream.csv (el W1 sortea el conductor de cada viaje), asi que el dataset reparte los mismos viajes entre conductores de 8 territorios de 4 a 6 zonas: un escenario propio del W5, como el de despacho del W3. La similitud LCS de la Unidad 5 esta en src/w5/lcs.py, y la Task 4 corre en el runner del W4. Los Paneles A a F siguen en los dashboards del W2 al W4; G y H serian de la Unidad 5, que no tuvo workshop.",
+  },
 ];
 
 export const getWorkshop = (slug: string) => WORKSHOPS.find((w) => w.slug === slug);

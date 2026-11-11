@@ -32,7 +32,7 @@ export default function CodeViewer({ slug }: { slug: string }) {
       .then((m) => {
         if (cancelled) return;
         const n = Number(slug);
-        // Los modulos (el runner de MapReduce del W4) se muestran en su
+        // Los modulos (el runner de MapReduce del W4, la LCS del W5) se muestran en su
         // workshop y en los siguientes, igual que los datasets.
         const fs: PyFile[] = (m.files ?? []).filter((f: PyFile) =>
           f.kind === "dataset" || f.kind === "modulo" ? Number(f.ws) <= n : f.kind === "task" && f.ws === slug
@@ -123,7 +123,12 @@ export default function CodeViewer({ slug }: { slug: string }) {
         <div className="code-bar">
           <span style={{ color: "var(--text)" }}>{active ?? "—"}</span>
           {meta?.kind === "dataset" && <span>· dataset del Workshop {meta.ws}</span>}
-          {meta?.kind === "modulo" && <span>· modulo del Workshop {meta.ws}, lo importan sus tasks</span>}
+          {meta?.kind === "modulo" && (
+            <span>
+              · modulo del Workshop {meta.ws},{" "}
+              {meta.ws === slug ? "lo importan sus tasks" : "lo pueden importar las tasks de este workshop"}
+            </span>
+          )}
           <span style={{ marginLeft: "auto" }}>
             {loading ? "cargando..." : `${lines.length} lineas`}
           </span>

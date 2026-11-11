@@ -15,7 +15,7 @@ export default function DatasetView({
   slug: string;
   dataset: DatasetPreview | null;
   params: CityParams;
-  /** Etiqueta de la canonica si es lo que se ve: no trae vista previa del CSV. */
+  /** Etiqueta de la canonica si es lo que se ve: no trae vista previa del archivo. */
   canonical: string | null;
 }) {
   const env = toEnv(params);
@@ -32,14 +32,14 @@ export default function DatasetView({
         </div>
         <p className="panel-desc">
           Generado en memoria por src/w{slug}/dataset.py dentro de Pyodide
-          {slug !== "1" && ", a partir del dataset del workshop anterior"}. El CSV nunca viaja por la
-          red: el mismo navegador lo produce y las tasks lo leen del sistema de archivos virtual.
+          {slug !== "1" && ", a partir del dataset del workshop anterior"}. El archivo nunca viaja por
+          la red: el mismo navegador lo produce y las tasks lo leen del sistema de archivos virtual.
         </p>
 
         {!dataset ? (
           <div className="empty">
             {canonical
-              ? "Los resultados que se ven son la corrida canonica precomputada, que no trae el CSV. Corre el pipeline para generar el dataset aqui."
+              ? "Los resultados que se ven son la corrida canonica precomputada, que no trae el archivo de datos. Corre el pipeline para generar el dataset aqui."
               : "Aun no se ha generado el dataset."}
           </div>
         ) : (
@@ -94,7 +94,7 @@ export default function DatasetView({
         </div>
         <p className="panel-desc">
           El generador es determinista: con la misma semilla y los mismos parametros produce el
-          CSV identico byte a byte. Estas variables reproducen esta ciudad exacta en local.
+          archivo identico byte a byte. Estas variables reproducen esta ciudad exacta en local.
         </p>
         <div className="code-wrap">
           <div className="code-bar">
