@@ -1,0 +1,7257 @@
+{
+  "drivers": 1200,
+  "zones": [
+    "AIRPORT",
+    "BELEN",
+    "BELLO",
+    "DOWNTOWN",
+    "EL_POBLADO",
+    "ENVIGADO",
+    "ITAGUI",
+    "LAURELES",
+    "SABANETA",
+    "UNIV_NORTE"
+  ],
+  "lsh_config": {
+    "bands": 20,
+    "rows": 5,
+    "threshold": 0.5493
+  },
+  "cosine_config": {
+    "bits": 64,
+    "bands": 8,
+    "rows": 8
+  },
+  "clusters": [
+    {
+      "cluster": 0,
+      "territory": [
+        "DOWNTOWN",
+        "EL_POBLADO",
+        "ENVIGADO",
+        "LAURELES",
+        "UNIV_NORTE"
+      ],
+      "drivers": 150
+    },
+    {
+      "cluster": 1,
+      "territory": [
+        "AIRPORT",
+        "DOWNTOWN",
+        "ENVIGADO",
+        "LAURELES"
+      ],
+      "drivers": 150
+    },
+    {
+      "cluster": 2,
+      "territory": [
+        "BELLO",
+        "DOWNTOWN",
+        "LAURELES",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "drivers": 150
+    },
+    {
+      "cluster": 3,
+      "territory": [
+        "BELLO",
+        "DOWNTOWN",
+        "ENVIGADO",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "drivers": 150
+    },
+    {
+      "cluster": 4,
+      "territory": [
+        "AIRPORT",
+        "BELLO",
+        "ENVIGADO",
+        "ITAGUI",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "drivers": 150
+    },
+    {
+      "cluster": 5,
+      "territory": [
+        "DOWNTOWN",
+        "EL_POBLADO",
+        "ENVIGADO",
+        "ITAGUI"
+      ],
+      "drivers": 150
+    },
+    {
+      "cluster": 6,
+      "territory": [
+        "AIRPORT",
+        "BELEN",
+        "LAURELES",
+        "UNIV_NORTE"
+      ],
+      "drivers": 150
+    },
+    {
+      "cluster": 7,
+      "territory": [
+        "AIRPORT",
+        "BELLO",
+        "ITAGUI",
+        "LAURELES",
+        "SABANETA"
+      ],
+      "drivers": 150
+    }
+  ],
+  "queries": [
+    {
+      "driver_id": "drv_00000",
+      "cluster": 0,
+      "seq_length": 678,
+      "avg_fare": 10054.07,
+      "main_zones": [
+        "DOWNTOWN",
+        "EL_POBLADO",
+        "ENVIGADO",
+        "LAURELES",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_01144",
+              "score": 0.6129,
+              "cluster": 0,
+              "avg_fare": 10366.98,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00032",
+              "score": 0.6019,
+              "cluster": 0,
+              "avg_fare": 10326.56,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00216",
+              "score": 0.5894,
+              "cluster": 0,
+              "avg_fare": 10316.94,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00272",
+              "score": 0.5871,
+              "cluster": 0,
+              "avg_fare": 10196.04,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00120",
+              "score": 0.5825,
+              "cluster": 0,
+              "avg_fare": 10431.86,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 107,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_01144",
+              "score": 0.63,
+              "cluster": 0,
+              "avg_fare": 10366.98,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00600",
+              "score": 0.59,
+              "cluster": 0,
+              "avg_fare": 10450.65,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00648",
+              "score": 0.59,
+              "cluster": 0,
+              "avg_fare": 9978.44,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00680",
+              "score": 0.59,
+              "cluster": 0,
+              "avg_fare": 10320.08,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00688",
+              "score": 0.59,
+              "cluster": 0,
+              "avg_fare": 10470.46,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 258,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_01056",
+              "score": 0.9999,
+              "cluster": 0,
+              "avg_fare": 10292.5,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00920",
+              "score": 0.9998,
+              "cluster": 0,
+              "avg_fare": 10374.15,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00968",
+              "score": 0.9997,
+              "cluster": 0,
+              "avg_fare": 10425.16,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00552",
+              "score": 0.9997,
+              "cluster": 0,
+              "avg_fare": 10349.8,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00304",
+              "score": 0.9996,
+              "cluster": 0,
+              "avg_fare": 10151.92,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 107,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00144",
+              "score": 0.6251,
+              "cluster": 0,
+              "avg_fare": 10364.79,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01168",
+              "score": 0.6249,
+              "cluster": 0,
+              "avg_fare": 10403.08,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00912",
+              "score": 0.6226,
+              "cluster": 0,
+              "avg_fare": 10318.64,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00760",
+              "score": 0.6211,
+              "cluster": 0,
+              "avg_fare": 10622.79,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00312",
+              "score": 0.6203,
+              "cluster": 0,
+              "avg_fare": 10660.91,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00001",
+      "cluster": 1,
+      "seq_length": 345,
+      "avg_fare": 10799.87,
+      "main_zones": [
+        "AIRPORT",
+        "DOWNTOWN",
+        "ENVIGADO",
+        "LAURELES"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_01049",
+              "score": 0.4967,
+              "cluster": 1,
+              "avg_fare": 10352.54,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00289",
+              "score": 0.473,
+              "cluster": 1,
+              "avg_fare": 11153.13,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00865",
+              "score": 0.4589,
+              "cluster": 1,
+              "avg_fare": 10692.72,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00913",
+              "score": 0.4583,
+              "cluster": 1,
+              "avg_fare": 10434.35,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00649",
+              "score": 0.457,
+              "cluster": 1,
+              "avg_fare": 10264.38,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 42,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_01049",
+              "score": 0.56,
+              "cluster": 1,
+              "avg_fare": 10352.54,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00865",
+              "score": 0.51,
+              "cluster": 1,
+              "avg_fare": 10692.72,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00289",
+              "score": 0.5,
+              "cluster": 1,
+              "avg_fare": 11153.13,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00953",
+              "score": 0.49,
+              "cluster": 1,
+              "avg_fare": 10396.98,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00825",
+              "score": 0.48,
+              "cluster": 1,
+              "avg_fare": 10692.15,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 341,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_01177",
+              "score": 0.9971,
+              "cluster": 1,
+              "avg_fare": 10412.3,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00969",
+              "score": 0.9971,
+              "cluster": 1,
+              "avg_fare": 10152.68,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00889",
+              "score": 0.9963,
+              "cluster": 1,
+              "avg_fare": 10031.12,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00609",
+              "score": 0.9962,
+              "cluster": 1,
+              "avg_fare": 10495.25,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00841",
+              "score": 0.9945,
+              "cluster": 1,
+              "avg_fare": 9998.32,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 42,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00297",
+              "score": 0.6329,
+              "cluster": 1,
+              "avg_fare": 10428.19,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00585",
+              "score": 0.6313,
+              "cluster": 1,
+              "avg_fare": 10140.94,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_01049",
+              "score": 0.6277,
+              "cluster": 1,
+              "avg_fare": 10352.54,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00289",
+              "score": 0.6271,
+              "cluster": 1,
+              "avg_fare": 11153.13,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00889",
+              "score": 0.6267,
+              "cluster": 1,
+              "avg_fare": 10031.12,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00002",
+      "cluster": 2,
+      "seq_length": 377,
+      "avg_fare": 10423.81,
+      "main_zones": [
+        "BELLO",
+        "DOWNTOWN",
+        "LAURELES",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00738",
+              "score": 0.5635,
+              "cluster": 2,
+              "avg_fare": 10472.77,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00138",
+              "score": 0.551,
+              "cluster": 2,
+              "avg_fare": 10545.82,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00202",
+              "score": 0.5507,
+              "cluster": 2,
+              "avg_fare": 10466.34,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00266",
+              "score": 0.5423,
+              "cluster": 2,
+              "avg_fare": 10575.47,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01138",
+              "score": 0.5415,
+              "cluster": 2,
+              "avg_fare": 10549.86,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 82,
+          "exact_in_candidates": 4,
+          "neighbors": [
+            {
+              "driver_id": "drv_01050",
+              "score": 0.58,
+              "cluster": 2,
+              "avg_fare": 10508.86,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01138",
+              "score": 0.57,
+              "cluster": 2,
+              "avg_fare": 10549.86,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00578",
+              "score": 0.55,
+              "cluster": 2,
+              "avg_fare": 10599.51,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00874",
+              "score": 0.55,
+              "cluster": 2,
+              "avg_fare": 10421.69,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01058",
+              "score": 0.55,
+              "cluster": 2,
+              "avg_fare": 10110.61,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 310,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00026",
+              "score": 0.9958,
+              "cluster": 2,
+              "avg_fare": 9916.92,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00514",
+              "score": 0.9944,
+              "cluster": 2,
+              "avg_fare": 10399.15,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00434",
+              "score": 0.9904,
+              "cluster": 2,
+              "avg_fare": 10524.68,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00354",
+              "score": 0.9888,
+              "cluster": 2,
+              "avg_fare": 10389.72,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00250",
+              "score": 0.9865,
+              "cluster": 2,
+              "avg_fare": 10717.7,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 82,
+          "exact_in_candidates": 4,
+          "neighbors": [
+            {
+              "driver_id": "drv_00682",
+              "score": 0.5941,
+              "cluster": 2,
+              "avg_fare": 10463.15,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00826",
+              "score": 0.5936,
+              "cluster": 2,
+              "avg_fare": 10694.34,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01066",
+              "score": 0.5934,
+              "cluster": 2,
+              "avg_fare": 10536.24,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01050",
+              "score": 0.5909,
+              "cluster": 2,
+              "avg_fare": 10508.86,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00818",
+              "score": 0.5899,
+              "cluster": 2,
+              "avg_fare": 10767.42,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00003",
+      "cluster": 3,
+      "seq_length": 379,
+      "avg_fare": 10385.57,
+      "main_zones": [
+        "BELLO",
+        "DOWNTOWN",
+        "ENVIGADO",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00475",
+              "score": 0.5787,
+              "cluster": 3,
+              "avg_fare": 10817.09,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01131",
+              "score": 0.5685,
+              "cluster": 3,
+              "avg_fare": 10361.73,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00619",
+              "score": 0.5676,
+              "cluster": 3,
+              "avg_fare": 10721.89,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00651",
+              "score": 0.5674,
+              "cluster": 3,
+              "avg_fare": 11225.64,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00747",
+              "score": 0.5556,
+              "cluster": 3,
+              "avg_fare": 10418.63,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 51,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_01131",
+              "score": 0.63,
+              "cluster": 3,
+              "avg_fare": 10361.73,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00619",
+              "score": 0.6,
+              "cluster": 3,
+              "avg_fare": 10721.89,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00267",
+              "score": 0.59,
+              "cluster": 3,
+              "avg_fare": 11194.67,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00155",
+              "score": 0.56,
+              "cluster": 3,
+              "avg_fare": 10450.0,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00259",
+              "score": 0.56,
+              "cluster": 3,
+              "avg_fare": 10519.43,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 390,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_01051",
+              "score": 0.9972,
+              "cluster": 3,
+              "avg_fare": 10478.94,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00043",
+              "score": 0.993,
+              "cluster": 3,
+              "avg_fare": 10377.79,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00883",
+              "score": 0.9925,
+              "cluster": 3,
+              "avg_fare": 11001.42,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00731",
+              "score": 0.9911,
+              "cluster": 3,
+              "avg_fare": 10738.42,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00275",
+              "score": 0.9896,
+              "cluster": 3,
+              "avg_fare": 10181.3,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 51,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00667",
+              "score": 0.6033,
+              "cluster": 3,
+              "avg_fare": 10666.23,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01115",
+              "score": 0.5973,
+              "cluster": 3,
+              "avg_fare": 10433.76,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00811",
+              "score": 0.5895,
+              "cluster": 3,
+              "avg_fare": 10116.29,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00259",
+              "score": 0.5881,
+              "cluster": 3,
+              "avg_fare": 10519.43,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00011",
+              "score": 0.5865,
+              "cluster": 3,
+              "avg_fare": 10685.9,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00004",
+      "cluster": 4,
+      "seq_length": 392,
+      "avg_fare": 9961.41,
+      "main_zones": [
+        "AIRPORT",
+        "BELLO",
+        "ENVIGADO",
+        "ITAGUI",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00332",
+              "score": 0.5135,
+              "cluster": 4,
+              "avg_fare": 10014.63,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01084",
+              "score": 0.5057,
+              "cluster": 4,
+              "avg_fare": 10223.68,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01132",
+              "score": 0.4945,
+              "cluster": 4,
+              "avg_fare": 10083.72,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00924",
+              "score": 0.4944,
+              "cluster": 4,
+              "avg_fare": 10384.35,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00852",
+              "score": 0.4858,
+              "cluster": 4,
+              "avg_fare": 9958.32,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 20,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00092",
+              "score": 0.53,
+              "cluster": 4,
+              "avg_fare": 10058.16,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00332",
+              "score": 0.52,
+              "cluster": 4,
+              "avg_fare": 10014.63,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00212",
+              "score": 0.49,
+              "cluster": 4,
+              "avg_fare": 10636.97,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00252",
+              "score": 0.49,
+              "cluster": 4,
+              "avg_fare": 9989.81,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00108",
+              "score": 0.48,
+              "cluster": 4,
+              "avg_fare": 10575.08,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 367,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00196",
+              "score": 0.9992,
+              "cluster": 4,
+              "avg_fare": 9986.22,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00268",
+              "score": 0.9991,
+              "cluster": 4,
+              "avg_fare": 9750.5,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01124",
+              "score": 0.9983,
+              "cluster": 4,
+              "avg_fare": 9675.15,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00012",
+              "score": 0.9983,
+              "cluster": 4,
+              "avg_fare": 9945.16,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00532",
+              "score": 0.9982,
+              "cluster": 4,
+              "avg_fare": 10460.77,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 20,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_01156",
+              "score": 0.5648,
+              "cluster": 4,
+              "avg_fare": 10401.12,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00356",
+              "score": 0.5594,
+              "cluster": 4,
+              "avg_fare": 9958.22,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01028",
+              "score": 0.5583,
+              "cluster": 4,
+              "avg_fare": 9613.79,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00332",
+              "score": 0.5564,
+              "cluster": 4,
+              "avg_fare": 10014.63,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01140",
+              "score": 0.5537,
+              "cluster": 4,
+              "avg_fare": 9549.28,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00005",
+      "cluster": 5,
+      "seq_length": 458,
+      "avg_fare": 9799.52,
+      "main_zones": [
+        "DOWNTOWN",
+        "EL_POBLADO",
+        "ENVIGADO",
+        "ITAGUI"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_01085",
+              "score": 0.5212,
+              "cluster": 5,
+              "avg_fare": 10061.01,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00013",
+              "score": 0.5032,
+              "cluster": 5,
+              "avg_fare": 9772.48,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_01053",
+              "score": 0.4966,
+              "cluster": 5,
+              "avg_fare": 9942.66,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00749",
+              "score": 0.4935,
+              "cluster": 5,
+              "avg_fare": 9842.78,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00813",
+              "score": 0.4933,
+              "cluster": 5,
+              "avg_fare": 9802.91,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 22,
+          "exact_in_candidates": 0,
+          "neighbors": [
+            {
+              "driver_id": "drv_00093",
+              "score": 0.53,
+              "cluster": 5,
+              "avg_fare": 9740.64,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_01021",
+              "score": 0.51,
+              "cluster": 5,
+              "avg_fare": 9887.47,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00373",
+              "score": 0.5,
+              "cluster": 5,
+              "avg_fare": 9642.55,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00965",
+              "score": 0.49,
+              "cluster": 5,
+              "avg_fare": 9853.36,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00293",
+              "score": 0.48,
+              "cluster": 5,
+              "avg_fare": 9625.47,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 323,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00125",
+              "score": 0.9981,
+              "cluster": 5,
+              "avg_fare": 9762.53,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_01037",
+              "score": 0.9978,
+              "cluster": 5,
+              "avg_fare": 9943.53,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00821",
+              "score": 0.9975,
+              "cluster": 5,
+              "avg_fare": 9766.87,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00869",
+              "score": 0.9952,
+              "cluster": 5,
+              "avg_fare": 10013.64,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_01117",
+              "score": 0.9945,
+              "cluster": 5,
+              "avg_fare": 9813.09,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 22,
+          "exact_in_candidates": 0,
+          "neighbors": [
+            {
+              "driver_id": "drv_00093",
+              "score": 0.6543,
+              "cluster": 5,
+              "avg_fare": 9740.64,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00789",
+              "score": 0.6466,
+              "cluster": 5,
+              "avg_fare": 9887.92,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00285",
+              "score": 0.6456,
+              "cluster": 5,
+              "avg_fare": 9494.83,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00765",
+              "score": 0.6443,
+              "cluster": 5,
+              "avg_fare": 9829.21,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00637",
+              "score": 0.6422,
+              "cluster": 5,
+              "avg_fare": 9787.74,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00006",
+      "cluster": 6,
+      "seq_length": 451,
+      "avg_fare": 9745.55,
+      "main_zones": [
+        "AIRPORT",
+        "BELEN",
+        "LAURELES",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00230",
+              "score": 0.5489,
+              "cluster": 6,
+              "avg_fare": 9908.47,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00798",
+              "score": 0.5319,
+              "cluster": 6,
+              "avg_fare": 9962.53,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00102",
+              "score": 0.5286,
+              "cluster": 6,
+              "avg_fare": 9963.65,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00910",
+              "score": 0.5286,
+              "cluster": 6,
+              "avg_fare": 9705.82,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01006",
+              "score": 0.5245,
+              "cluster": 6,
+              "avg_fare": 9714.3,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 64,
+          "exact_in_candidates": 4,
+          "neighbors": [
+            {
+              "driver_id": "drv_00230",
+              "score": 0.64,
+              "cluster": 6,
+              "avg_fare": 9908.47,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00502",
+              "score": 0.57,
+              "cluster": 6,
+              "avg_fare": 10141.52,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00798",
+              "score": 0.57,
+              "cluster": 6,
+              "avg_fare": 9962.53,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00910",
+              "score": 0.57,
+              "cluster": 6,
+              "avg_fare": 9705.82,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00358",
+              "score": 0.54,
+              "cluster": 6,
+              "avg_fare": 9821.48,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 321,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00270",
+              "score": 0.9987,
+              "cluster": 6,
+              "avg_fare": 10118.01,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00974",
+              "score": 0.9981,
+              "cluster": 6,
+              "avg_fare": 9508.6,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00190",
+              "score": 0.9981,
+              "cluster": 6,
+              "avg_fare": 10227.2,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01046",
+              "score": 0.9979,
+              "cluster": 6,
+              "avg_fare": 10221.34,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01038",
+              "score": 0.9976,
+              "cluster": 6,
+              "avg_fare": 9978.92,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 64,
+          "exact_in_candidates": 4,
+          "neighbors": [
+            {
+              "driver_id": "drv_00686",
+              "score": 0.681,
+              "cluster": 6,
+              "avg_fare": 9951.13,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01062",
+              "score": 0.6776,
+              "cluster": 6,
+              "avg_fare": 9808.71,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00358",
+              "score": 0.6763,
+              "cluster": 6,
+              "avg_fare": 9821.48,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01198",
+              "score": 0.6759,
+              "cluster": 6,
+              "avg_fare": 9878.06,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00606",
+              "score": 0.6758,
+              "cluster": 6,
+              "avg_fare": 9854.62,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00007",
+      "cluster": 7,
+      "seq_length": 291,
+      "avg_fare": 10092.9,
+      "main_zones": [
+        "AIRPORT",
+        "BELLO",
+        "ITAGUI",
+        "LAURELES",
+        "SABANETA"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00767",
+              "score": 0.4175,
+              "cluster": 7,
+              "avg_fare": 9848.59,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00111",
+              "score": 0.4037,
+              "cluster": 7,
+              "avg_fare": 10073.63,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00759",
+              "score": 0.3937,
+              "cluster": 7,
+              "avg_fare": 10161.61,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00703",
+              "score": 0.3911,
+              "cluster": 7,
+              "avg_fare": 10306.7,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00503",
+              "score": 0.39,
+              "cluster": 7,
+              "avg_fare": 9938.31,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 28,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00767",
+              "score": 0.48,
+              "cluster": 7,
+              "avg_fare": 9848.59,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00943",
+              "score": 0.43,
+              "cluster": 7,
+              "avg_fare": 10205.48,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00103",
+              "score": 0.42,
+              "cluster": 7,
+              "avg_fare": 10625.66,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00759",
+              "score": 0.41,
+              "cluster": 7,
+              "avg_fare": 10161.61,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00807",
+              "score": 0.41,
+              "cluster": 7,
+              "avg_fare": 10537.85,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 373,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00495",
+              "score": 0.999,
+              "cluster": 7,
+              "avg_fare": 9816.25,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00935",
+              "score": 0.999,
+              "cluster": 7,
+              "avg_fare": 10347.69,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00127",
+              "score": 0.9988,
+              "cluster": 7,
+              "avg_fare": 10112.92,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00295",
+              "score": 0.9988,
+              "cluster": 7,
+              "avg_fare": 10323.17,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_01175",
+              "score": 0.9987,
+              "cluster": 7,
+              "avg_fare": 10864.57,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 28,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00255",
+              "score": 0.5882,
+              "cluster": 7,
+              "avg_fare": 9804.8,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00343",
+              "score": 0.5838,
+              "cluster": 7,
+              "avg_fare": 10575.83,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00887",
+              "score": 0.5838,
+              "cluster": 7,
+              "avg_fare": 10121.55,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00703",
+              "score": 0.5808,
+              "cluster": 7,
+              "avg_fare": 10306.7,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00183",
+              "score": 0.5795,
+              "cluster": 7,
+              "avg_fare": 10164.39,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00008",
+      "cluster": 0,
+      "seq_length": 681,
+      "avg_fare": 10121.92,
+      "main_zones": [
+        "DOWNTOWN",
+        "EL_POBLADO",
+        "ENVIGADO",
+        "LAURELES",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00720",
+              "score": 0.6119,
+              "cluster": 0,
+              "avg_fare": 10188.77,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00312",
+              "score": 0.5931,
+              "cluster": 0,
+              "avg_fare": 10660.91,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00704",
+              "score": 0.5916,
+              "cluster": 0,
+              "avg_fare": 10230.38,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00280",
+              "score": 0.5862,
+              "cluster": 0,
+              "avg_fare": 9942.84,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00728",
+              "score": 0.585,
+              "cluster": 0,
+              "avg_fare": 10210.88,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 108,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00112",
+              "score": 0.63,
+              "cluster": 0,
+              "avg_fare": 10190.99,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00352",
+              "score": 0.62,
+              "cluster": 0,
+              "avg_fare": 10543.78,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01160",
+              "score": 0.62,
+              "cluster": 0,
+              "avg_fare": 10434.75,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00720",
+              "score": 0.6,
+              "cluster": 0,
+              "avg_fare": 10188.77,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01016",
+              "score": 0.6,
+              "cluster": 0,
+              "avg_fare": 10695.17,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 115,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00328",
+              "score": 0.9999,
+              "cluster": 0,
+              "avg_fare": 10145.72,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00280",
+              "score": 0.9996,
+              "cluster": 0,
+              "avg_fare": 9942.84,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00240",
+              "score": 0.9993,
+              "cluster": 0,
+              "avg_fare": 10191.53,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01080",
+              "score": 0.9993,
+              "cluster": 0,
+              "avg_fare": 10366.12,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00160",
+              "score": 0.9991,
+              "cluster": 0,
+              "avg_fare": 10257.61,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 108,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_01112",
+              "score": 0.6271,
+              "cluster": 0,
+              "avg_fare": 10130.59,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00664",
+              "score": 0.6219,
+              "cluster": 0,
+              "avg_fare": 10704.57,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01168",
+              "score": 0.6203,
+              "cluster": 0,
+              "avg_fare": 10403.08,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00120",
+              "score": 0.6169,
+              "cluster": 0,
+              "avg_fare": 10431.86,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00088",
+              "score": 0.6168,
+              "cluster": 0,
+              "avg_fare": 10361.4,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00009",
+      "cluster": 1,
+      "seq_length": 309,
+      "avg_fare": 10592.06,
+      "main_zones": [
+        "AIRPORT",
+        "DOWNTOWN",
+        "ENVIGADO",
+        "LAURELES"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00361",
+              "score": 0.4717,
+              "cluster": 1,
+              "avg_fare": 10693.14,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00977",
+              "score": 0.4575,
+              "cluster": 1,
+              "avg_fare": 10552.98,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00641",
+              "score": 0.4556,
+              "cluster": 1,
+              "avg_fare": 10916.47,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00577",
+              "score": 0.4518,
+              "cluster": 1,
+              "avg_fare": 10523.62,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00297",
+              "score": 0.4491,
+              "cluster": 1,
+              "avg_fare": 10428.19,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 23,
+          "exact_in_candidates": 1,
+          "neighbors": [
+            {
+              "driver_id": "drv_00793",
+              "score": 0.49,
+              "cluster": 1,
+              "avg_fare": 10702.19,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00689",
+              "score": 0.46,
+              "cluster": 1,
+              "avg_fare": 9964.63,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00305",
+              "score": 0.45,
+              "cluster": 1,
+              "avg_fare": 10606.1,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00617",
+              "score": 0.45,
+              "cluster": 1,
+              "avg_fare": 10646.84,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_01041",
+              "score": 0.45,
+              "cluster": 1,
+              "avg_fare": 10810.72,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 294,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00385",
+              "score": 0.9968,
+              "cluster": 1,
+              "avg_fare": 10358.44,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00577",
+              "score": 0.9964,
+              "cluster": 1,
+              "avg_fare": 10523.62,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00921",
+              "score": 0.9944,
+              "cluster": 1,
+              "avg_fare": 10694.17,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00129",
+              "score": 0.9933,
+              "cluster": 1,
+              "avg_fare": 10469.91,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00545",
+              "score": 0.9904,
+              "cluster": 1,
+              "avg_fare": 10155.13,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 23,
+          "exact_in_candidates": 1,
+          "neighbors": [
+            {
+              "driver_id": "drv_00793",
+              "score": 0.6238,
+              "cluster": 1,
+              "avg_fare": 10702.19,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00689",
+              "score": 0.6212,
+              "cluster": 1,
+              "avg_fare": 9964.63,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_01041",
+              "score": 0.6208,
+              "cluster": 1,
+              "avg_fare": 10810.72,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00297",
+              "score": 0.6174,
+              "cluster": 1,
+              "avg_fare": 10428.19,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_01113",
+              "score": 0.6164,
+              "cluster": 1,
+              "avg_fare": 11112.07,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00010",
+      "cluster": 2,
+      "seq_length": 378,
+      "avg_fare": 10838.28,
+      "main_zones": [
+        "BELLO",
+        "DOWNTOWN",
+        "LAURELES",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00978",
+              "score": 0.5258,
+              "cluster": 2,
+              "avg_fare": 10056.13,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00874",
+              "score": 0.5072,
+              "cluster": 2,
+              "avg_fare": 10421.69,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00202",
+              "score": 0.5,
+              "cluster": 2,
+              "avg_fare": 10466.34,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01050",
+              "score": 0.5,
+              "cluster": 2,
+              "avg_fare": 10508.86,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00282",
+              "score": 0.4978,
+              "cluster": 2,
+              "avg_fare": 10318.6,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 54,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00978",
+              "score": 0.6,
+              "cluster": 2,
+              "avg_fare": 10056.13,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01122",
+              "score": 0.6,
+              "cluster": 2,
+              "avg_fare": 10142.9,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00202",
+              "score": 0.58,
+              "cluster": 2,
+              "avg_fare": 10466.34,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00970",
+              "score": 0.58,
+              "cluster": 2,
+              "avg_fare": 10641.46,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00298",
+              "score": 0.57,
+              "cluster": 2,
+              "avg_fare": 10215.18,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 265,
+          "exact_in_candidates": 0,
+          "neighbors": [
+            {
+              "driver_id": "drv_00914",
+              "score": 0.9961,
+              "cluster": 2,
+              "avg_fare": 10325.19,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00626",
+              "score": 0.9944,
+              "cluster": 2,
+              "avg_fare": 10233.94,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00442",
+              "score": 0.9915,
+              "cluster": 2,
+              "avg_fare": 10402.57,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00514",
+              "score": 0.9892,
+              "cluster": 2,
+              "avg_fare": 10399.15,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00898",
+              "score": 0.9834,
+              "cluster": 2,
+              "avg_fare": 10081.08,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 54,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00186",
+              "score": 0.5875,
+              "cluster": 2,
+              "avg_fare": 10570.2,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00818",
+              "score": 0.5865,
+              "cluster": 2,
+              "avg_fare": 10767.42,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00970",
+              "score": 0.5841,
+              "cluster": 2,
+              "avg_fare": 10641.46,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00370",
+              "score": 0.5833,
+              "cluster": 2,
+              "avg_fare": 10333.2,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00602",
+              "score": 0.581,
+              "cluster": 2,
+              "avg_fare": 10363.21,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00011",
+      "cluster": 3,
+      "seq_length": 361,
+      "avg_fare": 10685.9,
+      "main_zones": [
+        "BELLO",
+        "DOWNTOWN",
+        "ENVIGADO",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00003",
+              "score": 0.54,
+              "cluster": 3,
+              "avg_fare": 10385.57,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00747",
+              "score": 0.5261,
+              "cluster": 3,
+              "avg_fare": 10418.63,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00683",
+              "score": 0.5249,
+              "cluster": 3,
+              "avg_fare": 10404.2,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00619",
+              "score": 0.5215,
+              "cluster": 3,
+              "avg_fare": 10721.89,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00723",
+              "score": 0.5091,
+              "cluster": 3,
+              "avg_fare": 10218.23,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 94,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00211",
+              "score": 0.57,
+              "cluster": 3,
+              "avg_fare": 10110.75,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00723",
+              "score": 0.54,
+              "cluster": 3,
+              "avg_fare": 10218.23,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00923",
+              "score": 0.54,
+              "cluster": 3,
+              "avg_fare": 11274.14,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00043",
+              "score": 0.53,
+              "cluster": 3,
+              "avg_fare": 10377.79,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01179",
+              "score": 0.53,
+              "cluster": 3,
+              "avg_fare": 10441.83,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 314,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00355",
+              "score": 0.9982,
+              "cluster": 3,
+              "avg_fare": 10139.05,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00467",
+              "score": 0.9934,
+              "cluster": 3,
+              "avg_fare": 10222.47,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00459",
+              "score": 0.9917,
+              "cluster": 3,
+              "avg_fare": 10875.09,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01139",
+              "score": 0.9904,
+              "cluster": 3,
+              "avg_fare": 10435.65,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00419",
+              "score": 0.9903,
+              "cluster": 3,
+              "avg_fare": 10945.31,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 94,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00091",
+              "score": 0.5903,
+              "cluster": 3,
+              "avg_fare": 10332.85,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00003",
+              "score": 0.5865,
+              "cluster": 3,
+              "avg_fare": 10385.57,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00667",
+              "score": 0.5847,
+              "cluster": 3,
+              "avg_fare": 10666.23,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00611",
+              "score": 0.583,
+              "cluster": 3,
+              "avg_fare": 10241.04,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00043",
+              "score": 0.5813,
+              "cluster": 3,
+              "avg_fare": 10377.79,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00012",
+      "cluster": 4,
+      "seq_length": 390,
+      "avg_fare": 9945.16,
+      "main_zones": [
+        "AIRPORT",
+        "BELLO",
+        "ENVIGADO",
+        "ITAGUI",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00212",
+              "score": 0.5247,
+              "cluster": 4,
+              "avg_fare": 10636.97,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01172",
+              "score": 0.5211,
+              "cluster": 4,
+              "avg_fare": 9944.06,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00804",
+              "score": 0.5157,
+              "cluster": 4,
+              "avg_fare": 10626.8,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00444",
+              "score": 0.5134,
+              "cluster": 4,
+              "avg_fare": 9822.0,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01084",
+              "score": 0.5058,
+              "cluster": 4,
+              "avg_fare": 10223.68,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 39,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00604",
+              "score": 0.58,
+              "cluster": 4,
+              "avg_fare": 9737.84,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00588",
+              "score": 0.57,
+              "cluster": 4,
+              "avg_fare": 10065.42,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00804",
+              "score": 0.57,
+              "cluster": 4,
+              "avg_fare": 10626.8,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01172",
+              "score": 0.57,
+              "cluster": 4,
+              "avg_fare": 9944.06,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00348",
+              "score": 0.56,
+              "cluster": 4,
+              "avg_fare": 9827.48,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 389,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00068",
+              "score": 0.9985,
+              "cluster": 4,
+              "avg_fare": 9924.25,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00004",
+              "score": 0.9983,
+              "cluster": 4,
+              "avg_fare": 9961.41,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00036",
+              "score": 0.998,
+              "cluster": 4,
+              "avg_fare": 9979.19,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00500",
+              "score": 0.9978,
+              "cluster": 4,
+              "avg_fare": 10674.62,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01124",
+              "score": 0.9972,
+              "cluster": 4,
+              "avg_fare": 9675.15,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 39,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00956",
+              "score": 0.5732,
+              "cluster": 4,
+              "avg_fare": 10166.57,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00804",
+              "score": 0.5677,
+              "cluster": 4,
+              "avg_fare": 10626.8,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00492",
+              "score": 0.5672,
+              "cluster": 4,
+              "avg_fare": 10269.86,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00444",
+              "score": 0.5635,
+              "cluster": 4,
+              "avg_fare": 9822.0,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00572",
+              "score": 0.5612,
+              "cluster": 4,
+              "avg_fare": 10229.69,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00013",
+      "cluster": 5,
+      "seq_length": 431,
+      "avg_fare": 9772.48,
+      "main_zones": [
+        "DOWNTOWN",
+        "EL_POBLADO",
+        "ENVIGADO",
+        "ITAGUI"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00933",
+              "score": 0.5259,
+              "cluster": 5,
+              "avg_fare": 9491.32,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00813",
+              "score": 0.5208,
+              "cluster": 5,
+              "avg_fare": 9802.91,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00973",
+              "score": 0.52,
+              "cluster": 5,
+              "avg_fare": 9964.79,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00565",
+              "score": 0.5096,
+              "cluster": 5,
+              "avg_fare": 9731.21,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00117",
+              "score": 0.5067,
+              "cluster": 5,
+              "avg_fare": 10038.7,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 43,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00565",
+              "score": 0.57,
+              "cluster": 5,
+              "avg_fare": 9731.21,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00605",
+              "score": 0.55,
+              "cluster": 5,
+              "avg_fare": 9804.75,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00085",
+              "score": 0.54,
+              "cluster": 5,
+              "avg_fare": 9729.34,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00453",
+              "score": 0.54,
+              "cluster": 5,
+              "avg_fare": 9882.39,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_01021",
+              "score": 0.53,
+              "cluster": 5,
+              "avg_fare": 9887.47,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 325,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00557",
+              "score": 0.9942,
+              "cluster": 5,
+              "avg_fare": 9724.22,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00253",
+              "score": 0.9934,
+              "cluster": 5,
+              "avg_fare": 9743.83,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00789",
+              "score": 0.9923,
+              "cluster": 5,
+              "avg_fare": 9887.92,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00381",
+              "score": 0.9903,
+              "cluster": 5,
+              "avg_fare": 10228.88,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00405",
+              "score": 0.984,
+              "cluster": 5,
+              "avg_fare": 9669.26,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 43,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00757",
+              "score": 0.6429,
+              "cluster": 5,
+              "avg_fare": 9942.65,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_01093",
+              "score": 0.6429,
+              "cluster": 5,
+              "avg_fare": 9854.63,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00397",
+              "score": 0.6416,
+              "cluster": 5,
+              "avg_fare": 10112.91,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00749",
+              "score": 0.6408,
+              "cluster": 5,
+              "avg_fare": 9842.78,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00381",
+              "score": 0.6402,
+              "cluster": 5,
+              "avg_fare": 10228.88,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00014",
+      "cluster": 6,
+      "seq_length": 467,
+      "avg_fare": 10294.21,
+      "main_zones": [
+        "AIRPORT",
+        "BELEN",
+        "LAURELES",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00990",
+              "score": 0.5,
+              "cluster": 6,
+              "avg_fare": 9887.71,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00310",
+              "score": 0.4898,
+              "cluster": 6,
+              "avg_fare": 9908.4,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00934",
+              "score": 0.4832,
+              "cluster": 6,
+              "avg_fare": 10008.17,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00102",
+              "score": 0.4792,
+              "cluster": 6,
+              "avg_fare": 9963.65,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00078",
+              "score": 0.4786,
+              "cluster": 6,
+              "avg_fare": 9775.58,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 29,
+          "exact_in_candidates": 0,
+          "neighbors": [
+            {
+              "driver_id": "drv_00670",
+              "score": 0.52,
+              "cluster": 6,
+              "avg_fare": 10172.24,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00950",
+              "score": 0.51,
+              "cluster": 6,
+              "avg_fare": 9757.93,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00038",
+              "score": 0.5,
+              "cluster": 6,
+              "avg_fare": 9894.54,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01006",
+              "score": 0.48,
+              "cluster": 6,
+              "avg_fare": 9714.3,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00558",
+              "score": 0.47,
+              "cluster": 6,
+              "avg_fare": 10194.03,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 321,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00574",
+              "score": 0.9995,
+              "cluster": 6,
+              "avg_fare": 10207.15,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00638",
+              "score": 0.9993,
+              "cluster": 6,
+              "avg_fare": 9810.17,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00294",
+              "score": 0.9991,
+              "cluster": 6,
+              "avg_fare": 9826.75,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01182",
+              "score": 0.9991,
+              "cluster": 6,
+              "avg_fare": 10299.04,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01142",
+              "score": 0.9986,
+              "cluster": 6,
+              "avg_fare": 9953.41,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 29,
+          "exact_in_candidates": 0,
+          "neighbors": [
+            {
+              "driver_id": "drv_00038",
+              "score": 0.6914,
+              "cluster": 6,
+              "avg_fare": 9894.54,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00814",
+              "score": 0.6866,
+              "cluster": 6,
+              "avg_fare": 9543.95,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00630",
+              "score": 0.6859,
+              "cluster": 6,
+              "avg_fare": 9404.3,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00550",
+              "score": 0.6855,
+              "cluster": 6,
+              "avg_fare": 9687.13,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01126",
+              "score": 0.6813,
+              "cluster": 6,
+              "avg_fare": 10035.95,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00015",
+      "cluster": 7,
+      "seq_length": 296,
+      "avg_fare": 9954.48,
+      "main_zones": [
+        "AIRPORT",
+        "BELLO",
+        "ITAGUI",
+        "LAURELES",
+        "SABANETA"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00767",
+              "score": 0.4352,
+              "cluster": 7,
+              "avg_fare": 9848.59,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00247",
+              "score": 0.4326,
+              "cluster": 7,
+              "avg_fare": 10211.16,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_01191",
+              "score": 0.4319,
+              "cluster": 7,
+              "avg_fare": 10487.26,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00639",
+              "score": 0.4313,
+              "cluster": 7,
+              "avg_fare": 9867.32,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00823",
+              "score": 0.4259,
+              "cluster": 7,
+              "avg_fare": 10215.58,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 5,
+          "exact_in_candidates": 0,
+          "neighbors": [
+            {
+              "driver_id": "drv_00791",
+              "score": 0.42,
+              "cluster": 7,
+              "avg_fare": 9956.18,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00671",
+              "score": 0.38,
+              "cluster": 7,
+              "avg_fare": 10226.84,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00079",
+              "score": 0.37,
+              "cluster": 7,
+              "avg_fare": 10583.31,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00020",
+              "score": 0.32,
+              "cluster": 4,
+              "avg_fare": 10303.03,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00668",
+              "score": 0.28,
+              "cluster": 4,
+              "avg_fare": 9919.47,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "SABANETA"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 336,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00143",
+              "score": 0.9993,
+              "cluster": 7,
+              "avg_fare": 10487.75,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00087",
+              "score": 0.9991,
+              "cluster": 7,
+              "avg_fare": 10130.45,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00551",
+              "score": 0.9987,
+              "cluster": 7,
+              "avg_fare": 10159.55,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00519",
+              "score": 0.9982,
+              "cluster": 7,
+              "avg_fare": 9833.81,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00815",
+              "score": 0.9975,
+              "cluster": 7,
+              "avg_fare": 10415.59,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 5,
+          "exact_in_candidates": 0,
+          "neighbors": [
+            {
+              "driver_id": "drv_00791",
+              "score": 0.5728,
+              "cluster": 7,
+              "avg_fare": 9956.18,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00671",
+              "score": 0.5552,
+              "cluster": 7,
+              "avg_fare": 10226.84,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00079",
+              "score": 0.5509,
+              "cluster": 7,
+              "avg_fare": 10583.31,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00668",
+              "score": 0.5224,
+              "cluster": 4,
+              "avg_fare": 9919.47,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00020",
+              "score": 0.4888,
+              "cluster": 4,
+              "avg_fare": 10303.03,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "SABANETA"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00016",
+      "cluster": 0,
+      "seq_length": 622,
+      "avg_fare": 10348.3,
+      "main_zones": [
+        "DOWNTOWN",
+        "EL_POBLADO",
+        "ENVIGADO",
+        "LAURELES",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00880",
+              "score": 0.5877,
+              "cluster": 0,
+              "avg_fare": 10053.8,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00912",
+              "score": 0.5854,
+              "cluster": 0,
+              "avg_fare": 10318.64,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00424",
+              "score": 0.5833,
+              "cluster": 0,
+              "avg_fare": 10424.52,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00072",
+              "score": 0.5769,
+              "cluster": 0,
+              "avg_fare": 10230.55,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00824",
+              "score": 0.5673,
+              "cluster": 0,
+              "avg_fare": 10383.7,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 108,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00072",
+              "score": 0.69,
+              "cluster": 0,
+              "avg_fare": 10230.55,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00912",
+              "score": 0.63,
+              "cluster": 0,
+              "avg_fare": 10318.64,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00880",
+              "score": 0.62,
+              "cluster": 0,
+              "avg_fare": 10053.8,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00512",
+              "score": 0.61,
+              "cluster": 0,
+              "avg_fare": 9900.0,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00672",
+              "score": 0.61,
+              "cluster": 0,
+              "avg_fare": 10135.88,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 255,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00264",
+              "score": 1.0,
+              "cluster": 0,
+              "avg_fare": 10278.24,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00192",
+              "score": 0.9998,
+              "cluster": 0,
+              "avg_fare": 10301.8,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01000",
+              "score": 0.9997,
+              "cluster": 0,
+              "avg_fare": 10673.17,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00784",
+              "score": 0.9996,
+              "cluster": 0,
+              "avg_fare": 10578.57,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00752",
+              "score": 0.9996,
+              "cluster": 0,
+              "avg_fare": 10113.78,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 108,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00592",
+              "score": 0.6252,
+              "cluster": 0,
+              "avg_fare": 10310.48,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00392",
+              "score": 0.625,
+              "cluster": 0,
+              "avg_fare": 10198.42,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00512",
+              "score": 0.6249,
+              "cluster": 0,
+              "avg_fare": 9900.0,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00304",
+              "score": 0.6235,
+              "cluster": 0,
+              "avg_fare": 10151.92,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01176",
+              "score": 0.6206,
+              "cluster": 0,
+              "avg_fare": 10244.93,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00017",
+      "cluster": 1,
+      "seq_length": 312,
+      "avg_fare": 10839.92,
+      "main_zones": [
+        "AIRPORT",
+        "DOWNTOWN",
+        "ENVIGADO",
+        "LAURELES"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00977",
+              "score": 0.4589,
+              "cluster": 1,
+              "avg_fare": 10552.98,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_01073",
+              "score": 0.4564,
+              "cluster": 1,
+              "avg_fare": 10551.99,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00721",
+              "score": 0.4557,
+              "cluster": 1,
+              "avg_fare": 10293.92,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_01105",
+              "score": 0.4424,
+              "cluster": 1,
+              "avg_fare": 10547.13,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00057",
+              "score": 0.4414,
+              "cluster": 1,
+              "avg_fare": 9952.27,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 11,
+          "exact_in_candidates": 1,
+          "neighbors": [
+            {
+              "driver_id": "drv_00441",
+              "score": 0.45,
+              "cluster": 1,
+              "avg_fare": 10975.28,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00505",
+              "score": 0.41,
+              "cluster": 1,
+              "avg_fare": 9997.44,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00953",
+              "score": 0.41,
+              "cluster": 1,
+              "avg_fare": 10396.98,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00721",
+              "score": 0.37,
+              "cluster": 1,
+              "avg_fare": 10293.92,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00929",
+              "score": 0.31,
+              "cluster": 1,
+              "avg_fare": 10771.76,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 378,
+          "exact_in_candidates": 4,
+          "neighbors": [
+            {
+              "driver_id": "drv_00153",
+              "score": 0.9959,
+              "cluster": 1,
+              "avg_fare": 10530.64,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00545",
+              "score": 0.9941,
+              "cluster": 1,
+              "avg_fare": 10155.13,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00825",
+              "score": 0.9909,
+              "cluster": 1,
+              "avg_fare": 10692.15,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00121",
+              "score": 0.9879,
+              "cluster": 1,
+              "avg_fare": 10353.82,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00729",
+              "score": 0.9812,
+              "cluster": 1,
+              "avg_fare": 10326.66,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 11,
+          "exact_in_candidates": 1,
+          "neighbors": [
+            {
+              "driver_id": "drv_00721",
+              "score": 0.6151,
+              "cluster": 1,
+              "avg_fare": 10293.92,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00441",
+              "score": 0.6151,
+              "cluster": 1,
+              "avg_fare": 10975.28,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00929",
+              "score": 0.6113,
+              "cluster": 1,
+              "avg_fare": 10771.76,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00953",
+              "score": 0.6106,
+              "cluster": 1,
+              "avg_fare": 10396.98,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            },
+            {
+              "driver_id": "drv_00505",
+              "score": 0.6028,
+              "cluster": 1,
+              "avg_fare": 9997.44,
+              "shared_zones": [
+                "AIRPORT",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "LAURELES"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00018",
+      "cluster": 2,
+      "seq_length": 418,
+      "avg_fare": 10450.94,
+      "main_zones": [
+        "BELLO",
+        "DOWNTOWN",
+        "LAURELES",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00610",
+              "score": 0.5426,
+              "cluster": 2,
+              "avg_fare": 10255.25,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00594",
+              "score": 0.5336,
+              "cluster": 2,
+              "avg_fare": 10183.23,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00882",
+              "score": 0.5316,
+              "cluster": 2,
+              "avg_fare": 10591.66,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00154",
+              "score": 0.5307,
+              "cluster": 2,
+              "avg_fare": 10092.04,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00738",
+              "score": 0.5249,
+              "cluster": 2,
+              "avg_fare": 10472.77,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 89,
+          "exact_in_candidates": 4,
+          "neighbors": [
+            {
+              "driver_id": "drv_00882",
+              "score": 0.65,
+              "cluster": 2,
+              "avg_fare": 10591.66,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00610",
+              "score": 0.62,
+              "cluster": 2,
+              "avg_fare": 10255.25,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00386",
+              "score": 0.6,
+              "cluster": 2,
+              "avg_fare": 10521.05,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00706",
+              "score": 0.58,
+              "cluster": 2,
+              "avg_fare": 9950.67,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01058",
+              "score": 0.58,
+              "cluster": 2,
+              "avg_fare": 10110.61,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 208,
+          "exact_in_candidates": 0,
+          "neighbors": [
+            {
+              "driver_id": "drv_00906",
+              "score": 0.993,
+              "cluster": 2,
+              "avg_fare": 10284.69,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00634",
+              "score": 0.991,
+              "cluster": 2,
+              "avg_fare": 10221.98,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00858",
+              "score": 0.9719,
+              "cluster": 2,
+              "avg_fare": 10004.9,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00810",
+              "score": 0.968,
+              "cluster": 2,
+              "avg_fare": 9947.89,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00482",
+              "score": 0.9676,
+              "cluster": 2,
+              "avg_fare": 10342.63,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 89,
+          "exact_in_candidates": 4,
+          "neighbors": [
+            {
+              "driver_id": "drv_00874",
+              "score": 0.5836,
+              "cluster": 2,
+              "avg_fare": 10421.69,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00930",
+              "score": 0.5803,
+              "cluster": 2,
+              "avg_fare": 10543.98,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00762",
+              "score": 0.5796,
+              "cluster": 2,
+              "avg_fare": 10040.7,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00314",
+              "score": 0.578,
+              "cluster": 2,
+              "avg_fare": 9905.81,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00074",
+              "score": 0.5767,
+              "cluster": 2,
+              "avg_fare": 10355.25,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "LAURELES",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00019",
+      "cluster": 3,
+      "seq_length": 376,
+      "avg_fare": 10455.59,
+      "main_zones": [
+        "BELLO",
+        "DOWNTOWN",
+        "ENVIGADO",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00899",
+              "score": 0.5207,
+              "cluster": 3,
+              "avg_fare": 10558.29,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00451",
+              "score": 0.5117,
+              "cluster": 3,
+              "avg_fare": 10429.92,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01107",
+              "score": 0.5093,
+              "cluster": 3,
+              "avg_fare": 10424.31,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00027",
+              "score": 0.5048,
+              "cluster": 3,
+              "avg_fare": 10516.82,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00547",
+              "score": 0.5024,
+              "cluster": 3,
+              "avg_fare": 11056.49,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 64,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00923",
+              "score": 0.59,
+              "cluster": 3,
+              "avg_fare": 11274.14,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00787",
+              "score": 0.56,
+              "cluster": 3,
+              "avg_fare": 10474.51,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00547",
+              "score": 0.55,
+              "cluster": 3,
+              "avg_fare": 11056.49,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01043",
+              "score": 0.54,
+              "cluster": 3,
+              "avg_fare": 10289.09,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00083",
+              "score": 0.53,
+              "cluster": 3,
+              "avg_fare": 10685.63,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 341,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00227",
+              "score": 0.9935,
+              "cluster": 3,
+              "avg_fare": 10312.7,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00339",
+              "score": 0.9934,
+              "cluster": 3,
+              "avg_fare": 10402.32,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00403",
+              "score": 0.9928,
+              "cluster": 3,
+              "avg_fare": 10179.15,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00115",
+              "score": 0.9856,
+              "cluster": 3,
+              "avg_fare": 10811.51,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00387",
+              "score": 0.9844,
+              "cluster": 3,
+              "avg_fare": 10848.3,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 64,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00923",
+              "score": 0.5939,
+              "cluster": 3,
+              "avg_fare": 11274.14,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00979",
+              "score": 0.5936,
+              "cluster": 3,
+              "avg_fare": 10765.99,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01115",
+              "score": 0.5889,
+              "cluster": 3,
+              "avg_fare": 10433.76,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00323",
+              "score": 0.583,
+              "cluster": 3,
+              "avg_fare": 10174.29,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00955",
+              "score": 0.5782,
+              "cluster": 3,
+              "avg_fare": 10103.46,
+              "shared_zones": [
+                "BELLO",
+                "DOWNTOWN",
+                "ENVIGADO",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00020",
+      "cluster": 4,
+      "seq_length": 416,
+      "avg_fare": 10303.03,
+      "main_zones": [
+        "AIRPORT",
+        "BELLO",
+        "ENVIGADO",
+        "ITAGUI",
+        "SABANETA",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00804",
+              "score": 0.4672,
+              "cluster": 4,
+              "avg_fare": 10626.8,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00164",
+              "score": 0.4659,
+              "cluster": 4,
+              "avg_fare": 10089.67,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00428",
+              "score": 0.4651,
+              "cluster": 4,
+              "avg_fare": 9971.55,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00764",
+              "score": 0.459,
+              "cluster": 4,
+              "avg_fare": 10335.42,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01116",
+              "score": 0.4576,
+              "cluster": 4,
+              "avg_fare": 9919.14,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 42,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00396",
+              "score": 0.54,
+              "cluster": 4,
+              "avg_fare": 9878.74,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00492",
+              "score": 0.54,
+              "cluster": 4,
+              "avg_fare": 10269.86,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00804",
+              "score": 0.54,
+              "cluster": 4,
+              "avg_fare": 10626.8,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00852",
+              "score": 0.54,
+              "cluster": 4,
+              "avg_fare": 9958.32,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01164",
+              "score": 0.54,
+              "cluster": 4,
+              "avg_fare": 9735.95,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 328,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_01012",
+              "score": 0.9985,
+              "cluster": 4,
+              "avg_fare": 10067.78,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01148",
+              "score": 0.9984,
+              "cluster": 4,
+              "avg_fare": 10629.76,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01172",
+              "score": 0.998,
+              "cluster": 4,
+              "avg_fare": 9944.06,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00212",
+              "score": 0.9978,
+              "cluster": 4,
+              "avg_fare": 10636.97,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00628",
+              "score": 0.9975,
+              "cluster": 4,
+              "avg_fare": 9848.42,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 42,
+          "exact_in_candidates": 3,
+          "neighbors": [
+            {
+              "driver_id": "drv_00812",
+              "score": 0.5641,
+              "cluster": 4,
+              "avg_fare": 9999.87,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00804",
+              "score": 0.5616,
+              "cluster": 4,
+              "avg_fare": 10626.8,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00908",
+              "score": 0.5614,
+              "cluster": 4,
+              "avg_fare": 10381.66,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00460",
+              "score": 0.5536,
+              "cluster": 4,
+              "avg_fare": 10504.46,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00052",
+              "score": 0.5521,
+              "cluster": 4,
+              "avg_fare": 10182.55,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ENVIGADO",
+                "ITAGUI",
+                "SABANETA",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00021",
+      "cluster": 5,
+      "seq_length": 461,
+      "avg_fare": 9942.27,
+      "main_zones": [
+        "DOWNTOWN",
+        "EL_POBLADO",
+        "ENVIGADO",
+        "ITAGUI"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00117",
+              "score": 0.491,
+              "cluster": 5,
+              "avg_fare": 10038.7,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00445",
+              "score": 0.4813,
+              "cluster": 5,
+              "avg_fare": 9784.14,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00685",
+              "score": 0.4795,
+              "cluster": 5,
+              "avg_fare": 10148.2,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00285",
+              "score": 0.4719,
+              "cluster": 5,
+              "avg_fare": 9494.83,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00485",
+              "score": 0.4713,
+              "cluster": 5,
+              "avg_fare": 9903.87,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 14,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00285",
+              "score": 0.56,
+              "cluster": 5,
+              "avg_fare": 9494.83,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00485",
+              "score": 0.53,
+              "cluster": 5,
+              "avg_fare": 9903.87,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00421",
+              "score": 0.52,
+              "cluster": 5,
+              "avg_fare": 9655.83,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00613",
+              "score": 0.5,
+              "cluster": 5,
+              "avg_fare": 10071.24,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_01181",
+              "score": 0.49,
+              "cluster": 5,
+              "avg_fare": 9663.34,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 261,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00413",
+              "score": 0.991,
+              "cluster": 5,
+              "avg_fare": 9418.9,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00973",
+              "score": 0.9871,
+              "cluster": 5,
+              "avg_fare": 9964.79,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00037",
+              "score": 0.9848,
+              "cluster": 5,
+              "avg_fare": 9795.18,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00093",
+              "score": 0.9835,
+              "cluster": 5,
+              "avg_fare": 9740.64,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00957",
+              "score": 0.977,
+              "cluster": 5,
+              "avg_fare": 10030.27,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 14,
+          "exact_in_candidates": 2,
+          "neighbors": [
+            {
+              "driver_id": "drv_00485",
+              "score": 0.6401,
+              "cluster": 5,
+              "avg_fare": 9903.87,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00925",
+              "score": 0.6384,
+              "cluster": 5,
+              "avg_fare": 9601.23,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_01149",
+              "score": 0.6323,
+              "cluster": 5,
+              "avg_fare": 9759.76,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00189",
+              "score": 0.6317,
+              "cluster": 5,
+              "avg_fare": 9832.33,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            },
+            {
+              "driver_id": "drv_00285",
+              "score": 0.6246,
+              "cluster": 5,
+              "avg_fare": 9494.83,
+              "shared_zones": [
+                "DOWNTOWN",
+                "EL_POBLADO",
+                "ENVIGADO",
+                "ITAGUI"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00022",
+      "cluster": 6,
+      "seq_length": 502,
+      "avg_fare": 9445.71,
+      "main_zones": [
+        "AIRPORT",
+        "BELEN",
+        "LAURELES",
+        "UNIV_NORTE"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00454",
+              "score": 0.5496,
+              "cluster": 6,
+              "avg_fare": 9763.74,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00910",
+              "score": 0.5303,
+              "cluster": 6,
+              "avg_fare": 9705.82,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00990",
+              "score": 0.5299,
+              "cluster": 6,
+              "avg_fare": 9887.71,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00134",
+              "score": 0.5231,
+              "cluster": 6,
+              "avg_fare": 10068.62,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01198",
+              "score": 0.5224,
+              "cluster": 6,
+              "avg_fare": 9878.06,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 27,
+          "exact_in_candidates": 1,
+          "neighbors": [
+            {
+              "driver_id": "drv_00990",
+              "score": 0.52,
+              "cluster": 6,
+              "avg_fare": 9887.71,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00614",
+              "score": 0.51,
+              "cluster": 6,
+              "avg_fare": 10021.6,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00678",
+              "score": 0.51,
+              "cluster": 6,
+              "avg_fare": 9806.4,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00142",
+              "score": 0.5,
+              "cluster": 6,
+              "avg_fare": 9561.72,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01166",
+              "score": 0.5,
+              "cluster": 6,
+              "avg_fare": 9844.53,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 183,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_00086",
+              "score": 0.9988,
+              "cluster": 6,
+              "avg_fare": 10070.3,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01166",
+              "score": 0.997,
+              "cluster": 6,
+              "avg_fare": 9844.53,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01198",
+              "score": 0.9969,
+              "cluster": 6,
+              "avg_fare": 9878.06,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00110",
+              "score": 0.9941,
+              "cluster": 6,
+              "avg_fare": 9905.75,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00950",
+              "score": 0.9911,
+              "cluster": 6,
+              "avg_fare": 9757.93,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 27,
+          "exact_in_candidates": 1,
+          "neighbors": [
+            {
+              "driver_id": "drv_00102",
+              "score": 0.7004,
+              "cluster": 6,
+              "avg_fare": 9963.65,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_01142",
+              "score": 0.6889,
+              "cluster": 6,
+              "avg_fare": 9953.41,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00990",
+              "score": 0.6877,
+              "cluster": 6,
+              "avg_fare": 9887.71,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00214",
+              "score": 0.6873,
+              "cluster": 6,
+              "avg_fare": 9791.58,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            },
+            {
+              "driver_id": "drv_00998",
+              "score": 0.6873,
+              "cluster": 6,
+              "avg_fare": 9859.84,
+              "shared_zones": [
+                "AIRPORT",
+                "BELEN",
+                "LAURELES",
+                "UNIV_NORTE"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "driver_id": "drv_00023",
+      "cluster": 7,
+      "seq_length": 301,
+      "avg_fare": 10167.1,
+      "main_zones": [
+        "AIRPORT",
+        "BELLO",
+        "ITAGUI",
+        "LAURELES",
+        "SABANETA"
+      ],
+      "methods": [
+        {
+          "method": "jaccard",
+          "candidates": 1199,
+          "exact_in_candidates": 5,
+          "neighbors": [
+            {
+              "driver_id": "drv_01095",
+              "score": 0.4659,
+              "cluster": 7,
+              "avg_fare": 9892.06,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00055",
+              "score": 0.4481,
+              "cluster": 7,
+              "avg_fare": 10643.43,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_01199",
+              "score": 0.4444,
+              "cluster": 7,
+              "avg_fare": 10085.8,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_01183",
+              "score": 0.4432,
+              "cluster": 7,
+              "avg_fare": 10045.28,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00255",
+              "score": 0.4358,
+              "cluster": 7,
+              "avg_fare": 9804.8,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "minhash",
+          "candidates": 15,
+          "exact_in_candidates": 1,
+          "neighbors": [
+            {
+              "driver_id": "drv_00439",
+              "score": 0.51,
+              "cluster": 7,
+              "avg_fare": 10421.18,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_01183",
+              "score": 0.5,
+              "cluster": 7,
+              "avg_fare": 10045.28,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00151",
+              "score": 0.44,
+              "cluster": 7,
+              "avg_fare": 9997.69,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00951",
+              "score": 0.43,
+              "cluster": 7,
+              "avg_fare": 9806.39,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00895",
+              "score": 0.41,
+              "cluster": 7,
+              "avg_fare": 10360.78,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "cosine",
+          "candidates": 355,
+          "exact_in_candidates": 4,
+          "neighbors": [
+            {
+              "driver_id": "drv_00351",
+              "score": 0.9994,
+              "cluster": 7,
+              "avg_fare": 10209.98,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00751",
+              "score": 0.9992,
+              "cluster": 7,
+              "avg_fare": 10329.19,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00095",
+              "score": 0.9988,
+              "cluster": 7,
+              "avg_fare": 10245.92,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00335",
+              "score": 0.9988,
+              "cluster": 7,
+              "avg_fare": 10179.93,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00215",
+              "score": 0.9985,
+              "cluster": 7,
+              "avg_fare": 10075.0,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        },
+        {
+          "method": "lcs",
+          "candidates": 15,
+          "exact_in_candidates": 1,
+          "neighbors": [
+            {
+              "driver_id": "drv_01183",
+              "score": 0.6017,
+              "cluster": 7,
+              "avg_fare": 10045.28,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00895",
+              "score": 0.5959,
+              "cluster": 7,
+              "avg_fare": 10360.78,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00151",
+              "score": 0.5954,
+              "cluster": 7,
+              "avg_fare": 9997.69,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00951",
+              "score": 0.5916,
+              "cluster": 7,
+              "avg_fare": 9806.39,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            },
+            {
+              "driver_id": "drv_00423",
+              "score": 0.5905,
+              "cluster": 7,
+              "avg_fare": 9578.3,
+              "shared_zones": [
+                "AIRPORT",
+                "BELLO",
+                "ITAGUI",
+                "LAURELES",
+                "SABANETA"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -24,14 +24,22 @@ importScripts(`https://cdn.jsdelivr.net/pyodide/v${PYODIDE_VERSION}/full/pyodide
 // Tasks que van al final de su workshop porque se comen la mayor parte del
 // tiempo: asi los demas paneles ya estan pintados cuando arrancan. La Task 2
 // del W1 es el benchmark de QuickSort; la 3 y la 5 del W4 corren el pipeline
-// de MapReduce varias veces (a 1x, 2x y 4x, y con 1 a 8 workers).
-const AL_FINAL = { "1": [2], "4": [3, 5] };
+// de MapReduce varias veces (a 1x, 2x y 4x, y con 1 a 8 workers); la 4 del W5
+// calcula el Jaccard de todos los pares y tres jobs de MinHash.
+const AL_FINAL = { "1": [2], "4": [3, 5], "5": [4] };
 
-// El CSV principal que escribe el dataset de cada workshop: es el que se
+// El archivo principal que escribe el dataset de cada workshop: es el que se
 // muestra en la vista Dataset y el que leen sus tasks. Se nombra explicito, no
 // por fecha de modificacion: el W3 escribe ademas edges_despacho.csv en el
-// mismo milisegundo, y el W4 sus fragmentos en data/w4/.
-const SALIDA_DATASET = { "1": "rides.csv", "2": "stream.csv", "3": "edges.csv", "4": "nodes.csv" };
+// mismo milisegundo, y el W4 sus fragmentos en data/w4/. El del W5 es JSON
+// Lines (un conductor por linea), no CSV.
+const SALIDA_DATASET = {
+  "1": "rides.csv",
+  "2": "stream.csv",
+  "3": "edges.csv",
+  "4": "nodes.csv",
+  "5": "similarity.jsonl",
+};
 
 let pyodide = null;
 let ready = false;
@@ -138,21 +146,36 @@ def read_results(ws):
     resultados, errores = _contrato().cargar(ws)
     return json.dumps({"results": resultados, "errors": errores})
 
+def _corto(v):
+    """Una celda legible de un valor de JSON Lines: las listas largas (la
+    secuencia de zonas, la firma de MinHash) se recortan."""
+    if isinstance(v, list):
+        partes = [json.dumps(x, ensure_ascii=False) if isinstance(x, (dict, list)) else str(x) for x in v[:4]]
+        return "[" + ", ".join(partes) + (f", ... ({len(v)})]" if len(v) > 4 else "]")
+    if isinstance(v, dict):
+        return json.dumps(v, ensure_ascii=False)
+    return str(v)
+
 def dataset_preview(name, n=8):
-    """Primeras n filas de data/<name>, el CSV principal del dataset que
-    acaba de correr."""
+    """Primeras n filas de data/<name>, el archivo principal del dataset que
+    acaba de correr: un CSV o, en el W5, JSON Lines."""
     import csv
     p = os.path.join(PROJ, "data", name)
     if not os.path.exists(p):
         return json.dumps({"name": "", "rows": [], "total": 0, "bytes": 0})
+    rows = []
+    total = 0
     with open(p, newline="", encoding="utf-8") as f:
-        r = csv.DictReader(f)
-        rows = []
-        total = 0
-        for row in r:
-            total += 1
-            if total <= n:
-                rows.append(row)
+        if name.endswith(".jsonl"):
+            for linea in f:
+                total += 1
+                if total <= n:
+                    rows.append({k: _corto(v) for k, v in json.loads(linea).items()})
+        else:
+            for row in csv.DictReader(f):
+                total += 1
+                if total <= n:
+                    rows.append(row)
     return json.dumps({"name": name, "rows": rows, "total": total, "bytes": os.path.getsize(p)})
 `);
 
