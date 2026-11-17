@@ -70,8 +70,11 @@ export function estimateRows(p: CityParams): number {
  *  con soluciones de referencia sencillas de las seis tasks (2026-10-06), asi
  *  que las del equipo pueden tardar otra cosa. W4: igual (2026-11-03, con la
  *  Task 5 en reducers=8 como pide el contrato); las Tasks 3 y 5 corren el
- *  pipeline de MapReduce varias veces y se llevan la mayor parte. */
-const SEG_POR_DEMO: Record<string, number> = { "2": 9.5, "3": 6, "4": 37 };
+ *  pipeline de MapReduce varias veces y se llevan la mayor parte. W5: igual
+ *  (2026-11-05, 31 s); el dataset (MinHash y vecinos por fuerza bruta) y la
+ *  Task 4 (Jaccard de todos los pares y tres jobs de MinHash) se llevan dos
+ *  tercios. */
+const SEG_POR_DEMO: Record<string, number> = { "2": 9.5, "3": 6, "4": 37, "5": 31 };
 
 export function estimateSeconds(p: CityParams, slug = "1"): number {
   const n = Math.max(1, estimateRows(p));

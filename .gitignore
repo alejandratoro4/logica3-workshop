@@ -9,6 +9,8 @@ data/rides.csv
 data/*.csv
 # Los fragmentos del W4 (src/w4/dataset.py), igual de reproducibles.
 data/w4/
+# Los conductores del W5 (src/w5/dataset.py), JSON Lines de ~8 MB.
+data/*.jsonl
 
 # ---------------------------------------------------------------------------
 # Python
