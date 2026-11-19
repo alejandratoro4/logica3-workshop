@@ -1,134 +1,134 @@
 {
   "task": "W4 Task 5 - Eficiencia paralela",
   "parallel": true,
-  "cpu_count": 16,
+  "cpu_count": 12,
   "runs": [
     {
       "scale": 1,
       "input_records": 495505,
       "workers": 1,
-      "time_s": 2.3315,
+      "time_s": 3.2678,
       "speedup": 1.0,
       "efficiency": 1.0,
-      "map_s": 1.8472,
-      "shuffle_s": 0.0,
-      "reduce_s": 0.4843,
+      "map_s": 2.6224,
+      "shuffle_s": 0.0001,
+      "reduce_s": 0.6454,
       "repetitions_s": [
-        2.4241,
-        2.3315,
-        2.2735
+        3.1564,
+        3.2678,
+        3.4544
       ]
     },
     {
       "scale": 1,
       "input_records": 495505,
       "workers": 2,
-      "time_s": 2.0224,
-      "speedup": 1.1528,
-      "efficiency": 0.5764,
-      "map_s": 1.4074,
-      "shuffle_s": 0.0,
-      "reduce_s": 0.6151,
+      "time_s": 3.0613,
+      "speedup": 1.0675,
+      "efficiency": 0.5337,
+      "map_s": 2.044,
+      "shuffle_s": 0.0001,
+      "reduce_s": 1.0172,
       "repetitions_s": [
-        2.1413,
-        2.0224,
-        1.9782
+        3.0971,
+        3.0347,
+        3.0613
       ]
     },
     {
       "scale": 1,
       "input_records": 495505,
       "workers": 4,
-      "time_s": 1.4247,
-      "speedup": 1.6365,
-      "efficiency": 0.4091,
-      "map_s": 0.9915,
-      "shuffle_s": 0.0,
-      "reduce_s": 0.4332,
+      "time_s": 2.219,
+      "speedup": 1.4726,
+      "efficiency": 0.3682,
+      "map_s": 1.4373,
+      "shuffle_s": 0.0001,
+      "reduce_s": 0.7815,
       "repetitions_s": [
-        1.4695,
-        1.4015,
-        1.4247
+        2.219,
+        2.1618,
+        2.3245
       ]
     },
     {
       "scale": 1,
       "input_records": 495505,
       "workers": 8,
-      "time_s": 1.5928,
-      "speedup": 1.4638,
-      "efficiency": 0.183,
-      "map_s": 1.138,
+      "time_s": 1.9839,
+      "speedup": 1.6472,
+      "efficiency": 0.2059,
+      "map_s": 1.2045,
       "shuffle_s": 0.0002,
-      "reduce_s": 0.4546,
+      "reduce_s": 0.7793,
       "repetitions_s": [
-        1.2296,
-        1.5928,
-        3.8047
+        1.9839,
+        2.0089,
+        1.9689
       ]
     },
     {
       "scale": 2,
       "input_records": 991010,
       "workers": 1,
-      "time_s": 4.8374,
+      "time_s": 6.6948,
       "speedup": 1.0,
       "efficiency": 1.0,
-      "map_s": 3.7489,
+      "map_s": 5.2755,
       "shuffle_s": 0.0001,
-      "reduce_s": 1.0884,
+      "reduce_s": 1.4193,
       "repetitions_s": [
-        4.8374,
-        4.8385,
-        4.7962
+        6.7975,
+        6.6948,
+        6.6794
       ]
     },
     {
       "scale": 2,
       "input_records": 991010,
       "workers": 2,
-      "time_s": 4.2935,
-      "speedup": 1.1267,
-      "efficiency": 0.5633,
-      "map_s": 2.94,
+      "time_s": 6.0057,
+      "speedup": 1.1147,
+      "efficiency": 0.5574,
+      "map_s": 3.9433,
       "shuffle_s": 0.0001,
-      "reduce_s": 1.3534,
+      "reduce_s": 2.0624,
       "repetitions_s": [
-        4.2935,
-        4.3775,
-        4.2136
+        5.9791,
+        6.0057,
+        6.1523
       ]
     },
     {
       "scale": 2,
       "input_records": 991010,
       "workers": 4,
-      "time_s": 4.2274,
-      "speedup": 1.1443,
-      "efficiency": 0.2861,
-      "map_s": 3.286,
-      "shuffle_s": 0.0003,
-      "reduce_s": 0.9409,
+      "time_s": 4.5636,
+      "speedup": 1.467,
+      "efficiency": 0.3667,
+      "map_s": 2.9546,
+      "shuffle_s": 0.0001,
+      "reduce_s": 1.6088,
       "repetitions_s": [
-        4.2274,
-        10.3363,
-        2.9968
+        4.4671,
+        4.5946,
+        4.5636
       ]
     },
     {
       "scale": 2,
       "input_records": 991010,
       "workers": 8,
-      "time_s": 2.4854,
-      "speedup": 1.9463,
-      "efficiency": 0.2433,
-      "map_s": 1.5076,
+      "time_s": 4.0659,
+      "speedup": 1.6466,
+      "efficiency": 0.2058,
+      "map_s": 2.5623,
       "shuffle_s": 0.0001,
-      "reduce_s": 0.9777,
+      "reduce_s": 1.5035,
       "repetitions_s": [
-        2.5612,
-        2.4854,
-        2.3876
+        3.934,
+        4.0659,
+        4.1417
       ]
     }
   ],
