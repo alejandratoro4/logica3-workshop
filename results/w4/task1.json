@@ -1,0 +1,179 @@
+{
+  "n_fragments": 8,
+  "workers": 4,
+  "parallel": true,
+  "jobs": [
+    {
+      "job": "1a",
+      "map_tasks": 8,
+      "reduce_tasks": 4,
+      "workers": 4,
+      "parallel": true,
+      "input_records": 495505,
+      "map_output_pairs": 495505,
+      "shuffle_pairs": 495505,
+      "shuffle_bytes": 24990825,
+      "reducer_loads": [
+        118719,
+        133248,
+        128621,
+        114917
+      ],
+      "max_reducer_load": 133248,
+      "distinct_keys": 1200,
+      "max_key_values": 482,
+      "hot_key": "drv_01187",
+      "hot_key_ties": 1,
+      "output_records": 494305,
+      "map_s": 0.7942,
+      "shuffle_s": 0.0,
+      "reduce_s": 0.7792,
+      "total_s": 1.5734
+    },
+    {
+      "job": "1b",
+      "map_tasks": 4,
+      "reduce_tasks": 4,
+      "workers": 4,
+      "parallel": true,
+      "input_records": 494305,
+      "map_output_pairs": 494305,
+      "shuffle_pairs": 400,
+      "shuffle_bytes": 19023,
+      "reducer_loads": [
+        104,
+        116,
+        84,
+        96
+      ],
+      "max_reducer_load": 116,
+      "distinct_keys": 100,
+      "max_key_values": 4,
+      "hot_key": "AIRPORT -> AIRPORT",
+      "hot_key_ties": 100,
+      "output_records": 100,
+      "map_s": 0.7479,
+      "shuffle_s": 0.0,
+      "reduce_s": 0.0018,
+      "total_s": 0.7498
+    },
+    {
+      "job": "2",
+      "map_tasks": 4,
+      "reduce_tasks": 4,
+      "workers": 4,
+      "parallel": true,
+      "input_records": 100,
+      "map_output_pairs": 200,
+      "shuffle_pairs": 200,
+      "shuffle_bytes": 7941,
+      "reducer_loads": [
+        60,
+        20,
+        40,
+        80
+      ],
+      "max_reducer_load": 80,
+      "distinct_keys": 10,
+      "max_key_values": 20,
+      "hot_key": "AIRPORT",
+      "hot_key_ties": 10,
+      "output_records": 10,
+      "map_s": 0.0007,
+      "shuffle_s": 0.0,
+      "reduce_s": 0.0008,
+      "total_s": 0.0016
+    }
+  ],
+  "validation": {
+    "edges_compared": 100,
+    "edges_match": true,
+    "max_diff_reloc_count": 0,
+    "max_diff_avg_fare": 0.004941,
+    "max_diff_avg_wait": 0.004976
+  },
+  "nodes": [
+    {
+      "zone_id": "AIRPORT",
+      "out_reloc_count": 69725,
+      "in_reloc_count": 69749,
+      "net_flow": 24,
+      "avg_fare": 10174.7324,
+      "avg_wait_for_driver_sec": 82.0573
+    },
+    {
+      "zone_id": "BELEN",
+      "out_reloc_count": 39961,
+      "in_reloc_count": 39978,
+      "net_flow": 17,
+      "avg_fare": 10206.744,
+      "avg_wait_for_driver_sec": 69.4591
+    },
+    {
+      "zone_id": "BELLO",
+      "out_reloc_count": 43404,
+      "in_reloc_count": 43399,
+      "net_flow": -5,
+      "avg_fare": 10237.5516,
+      "avg_wait_for_driver_sec": 72.1975
+    },
+    {
+      "zone_id": "DOWNTOWN",
+      "out_reloc_count": 64612,
+      "in_reloc_count": 64611,
+      "net_flow": -1,
+      "avg_fare": 10157.2055,
+      "avg_wait_for_driver_sec": 93.7372
+    },
+    {
+      "zone_id": "EL_POBLADO",
+      "out_reloc_count": 70473,
+      "in_reloc_count": 70537,
+      "net_flow": 64,
+      "avg_fare": 10149.9597,
+      "avg_wait_for_driver_sec": 92.5196
+    },
+    {
+      "zone_id": "ENVIGADO",
+      "out_reloc_count": 41336,
+      "in_reloc_count": 41332,
+      "net_flow": -4,
+      "avg_fare": 10206.8482,
+      "avg_wait_for_driver_sec": 71.2566
+    },
+    {
+      "zone_id": "ITAGUI",
+      "out_reloc_count": 32681,
+      "in_reloc_count": 32638,
+      "net_flow": -43,
+      "avg_fare": 10217.7428,
+      "avg_wait_for_driver_sec": 64.8695
+    },
+    {
+      "zone_id": "LAURELES",
+      "out_reloc_count": 53463,
+      "in_reloc_count": 53483,
+      "net_flow": 20,
+      "avg_fare": 10183.6292,
+      "avg_wait_for_driver_sec": 78.9252
+    },
+    {
+      "zone_id": "SABANETA",
+      "out_reloc_count": 33051,
+      "in_reloc_count": 33008,
+      "net_flow": -43,
+      "avg_fare": 10217.1664,
+      "avg_wait_for_driver_sec": 65.1021
+    },
+    {
+      "zone_id": "UNIV_NORTE",
+      "out_reloc_count": 45599,
+      "in_reloc_count": 45570,
+      "net_flow": -29,
+      "avg_fare": 10172.5844,
+      "avg_wait_for_driver_sec": 76.0907
+    }
+  ],
+  "nodes_match": true,
+  "elapsed_sec": 3.58
+}

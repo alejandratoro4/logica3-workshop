@@ -1,0 +1,3300 @@
+{
+  "drivers": 1200,
+  "queries": 50,
+  "angle_check": [
+    {
+      "bits": 16,
+      "pairs": 1000,
+      "mean_abs_error_deg": 15.2761,
+      "sample": [
+        {
+          "true_deg": 34.583,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 68.922,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 53.391,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 47.335,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 57.472,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 20.037,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 27.142,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 150.016,
+          "est_deg": 180.0
+        },
+        {
+          "true_deg": 34.124,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 144.701,
+          "est_deg": 168.75
+        },
+        {
+          "true_deg": 111.042,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 63.56,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 104.178,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 97.662,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 90.062,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 66.16,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 110.468,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 134.339,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 134.475,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 43.186,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 41.0,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 42.234,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 139.243,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 136.705,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 131.071,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 138.216,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 85.578,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 115.297,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 45.876,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 130.686,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 121.35,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 20.184,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 102.967,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 122.416,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 8.645,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 85.31,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 49.017,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 76.738,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 78.279,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 45.809,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 86.416,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 98.014,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 27.04,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 137.738,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 135.559,
+          "est_deg": 180.0
+        },
+        {
+          "true_deg": 30.615,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 13.313,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 105.91,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 28.523,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 62.166,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 109.322,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 31.294,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 135.546,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 94.794,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 107.988,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 113.027,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 4.084,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 113.237,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 124.648,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 105.084,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 138.38,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 137.572,
+          "est_deg": 168.75
+        },
+        {
+          "true_deg": 64.324,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 82.149,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 122.71,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 71.135,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 135.918,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 38.605,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 43.853,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 131.247,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 66.258,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 149.778,
+          "est_deg": 168.75
+        },
+        {
+          "true_deg": 119.58,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 55.236,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 100.95,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 22.32,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 159.657,
+          "est_deg": 168.75
+        },
+        {
+          "true_deg": 117.936,
+          "est_deg": 180.0
+        },
+        {
+          "true_deg": 74.532,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 132.61,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 68.463,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 18.742,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 119.226,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 8.186,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 141.387,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 45.336,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 98.508,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 87.778,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 152.806,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 51.969,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 100.68,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 71.713,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 35.667,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 10.04,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 36.519,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 67.335,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 120.513,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 54.759,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 149.083,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 20.546,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 10.297,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 46.209,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 118.367,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 7.477,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 47.661,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 108.806,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 35.372,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 136.875,
+          "est_deg": 168.75
+        },
+        {
+          "true_deg": 101.842,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 28.379,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 98.403,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 128.074,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 66.385,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 43.855,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 106.423,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 26.275,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 24.832,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 87.018,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 124.601,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 18.519,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 109.313,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 48.444,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 30.813,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 115.927,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 69.563,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 153.376,
+          "est_deg": 180.0
+        },
+        {
+          "true_deg": 138.84,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 57.361,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 125.772,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 21.934,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 81.703,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 62.331,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 133.371,
+          "est_deg": 180.0
+        },
+        {
+          "true_deg": 134.626,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 5.867,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 60.241,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 93.015,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 72.517,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 127.349,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 156.356,
+          "est_deg": 168.75
+        },
+        {
+          "true_deg": 8.61,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 77.131,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 145.666,
+          "est_deg": 180.0
+        },
+        {
+          "true_deg": 81.168,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 75.578,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 110.185,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 37.734,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 76.782,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 60.248,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 130.889,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 16.299,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 93.982,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 24.083,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 41.053,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 34.517,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 90.2,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 9.811,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 108.354,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 103.904,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 79.058,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 121.55,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 27.853,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 34.406,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 141.675,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 117.139,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 109.647,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 142.773,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 15.114,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 38.002,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 57.989,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 157.56,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 47.77,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 120.96,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 109.451,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 86.527,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 26.904,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 11.257,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 97.525,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 67.841,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 81.561,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 42.997,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 43.18,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 147.313,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 62.979,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 111.188,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 65.502,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 77.643,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 84.734,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 40.204,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 40.19,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 74.456,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 56.305,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 121.158,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 124.169,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 141.741,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 37.869,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 18.812,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 75.95,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 132.474,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 154.197,
+          "est_deg": 168.75
+        }
+      ]
+    },
+    {
+      "bits": 32,
+      "pairs": 1000,
+      "mean_abs_error_deg": 9.5543,
+      "sample": [
+        {
+          "true_deg": 34.583,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 68.922,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 53.391,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 47.335,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 57.472,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 20.037,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 27.142,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 150.016,
+          "est_deg": 168.75
+        },
+        {
+          "true_deg": 34.124,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 144.701,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 111.042,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 63.56,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 104.178,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 97.662,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 90.062,
+          "est_deg": 73.125
+        },
+        {
+          "true_deg": 66.16,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 110.468,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 134.339,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 134.475,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 43.186,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 41.0,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 42.234,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 139.243,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 136.705,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 131.071,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 138.216,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 85.578,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 115.297,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 45.876,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 130.686,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 121.35,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 20.184,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 102.967,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 122.416,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 8.645,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 85.31,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 49.017,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 76.738,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 78.279,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 45.809,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 86.416,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 98.014,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 27.04,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 137.738,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 135.559,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 30.615,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 13.313,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 105.91,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 28.523,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 62.166,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 109.322,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 31.294,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 135.546,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 94.794,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 107.988,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 113.027,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 4.084,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 113.237,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 124.648,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 105.084,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 138.38,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 137.572,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 64.324,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 82.149,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 122.71,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 71.135,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 135.918,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 38.605,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 43.853,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 131.247,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 66.258,
+          "est_deg": 73.125
+        },
+        {
+          "true_deg": 149.778,
+          "est_deg": 168.75
+        },
+        {
+          "true_deg": 119.58,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 55.236,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 100.95,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 22.32,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 159.657,
+          "est_deg": 168.75
+        },
+        {
+          "true_deg": 117.936,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 74.532,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 132.61,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 68.463,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 18.742,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 119.226,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 8.186,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 141.387,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 45.336,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 98.508,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 87.778,
+          "est_deg": 73.125
+        },
+        {
+          "true_deg": 152.806,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 51.969,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 100.68,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 71.713,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 35.667,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 10.04,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 36.519,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 67.335,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 120.513,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 54.759,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 149.083,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 20.546,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 10.297,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 46.209,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 118.367,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 7.477,
+          "est_deg": 5.625
+        },
+        {
+          "true_deg": 47.661,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 108.806,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 35.372,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 136.875,
+          "est_deg": 163.125
+        },
+        {
+          "true_deg": 101.842,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 28.379,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 98.403,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 128.074,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 66.385,
+          "est_deg": 73.125
+        },
+        {
+          "true_deg": 43.855,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 106.423,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 26.275,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 24.832,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 87.018,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 124.601,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 18.519,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 109.313,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 48.444,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 30.813,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 115.927,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 69.563,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 153.376,
+          "est_deg": 163.125
+        },
+        {
+          "true_deg": 138.84,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 57.361,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 125.772,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 21.934,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 81.703,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 62.331,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 133.371,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 134.626,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 5.867,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 60.241,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 93.015,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 72.517,
+          "est_deg": 73.125
+        },
+        {
+          "true_deg": 127.349,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 156.356,
+          "est_deg": 163.125
+        },
+        {
+          "true_deg": 8.61,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 77.131,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 145.666,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 81.168,
+          "est_deg": 73.125
+        },
+        {
+          "true_deg": 75.578,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 110.185,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 37.734,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 76.782,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 60.248,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 130.889,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 16.299,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 93.982,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 24.083,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 41.053,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 34.517,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 90.2,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 9.811,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 108.354,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 103.904,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 79.058,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 121.55,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 27.853,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 34.406,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 141.675,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 117.139,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 109.647,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 142.773,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 15.114,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 38.002,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 57.989,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 157.56,
+          "est_deg": 163.125
+        },
+        {
+          "true_deg": 47.77,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 120.96,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 109.451,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 86.527,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 26.904,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 11.257,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 97.525,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 67.841,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 81.561,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 42.997,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 43.18,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 147.313,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 62.979,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 111.188,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 65.502,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 77.643,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 84.734,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 40.204,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 40.19,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 74.456,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 56.305,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 121.158,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 124.169,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 141.741,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 37.869,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 18.812,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 75.95,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 132.474,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 154.197,
+          "est_deg": 168.75
+        }
+      ]
+    },
+    {
+      "bits": 64,
+      "pairs": 1000,
+      "mean_abs_error_deg": 7.0213,
+      "sample": [
+        {
+          "true_deg": 34.583,
+          "est_deg": 36.562
+        },
+        {
+          "true_deg": 68.922,
+          "est_deg": 64.688
+        },
+        {
+          "true_deg": 53.391,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 47.335,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 57.472,
+          "est_deg": 59.062
+        },
+        {
+          "true_deg": 20.037,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 27.142,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 150.016,
+          "est_deg": 165.938
+        },
+        {
+          "true_deg": 34.124,
+          "est_deg": 30.938
+        },
+        {
+          "true_deg": 144.701,
+          "est_deg": 154.688
+        },
+        {
+          "true_deg": 111.042,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 63.56,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 104.178,
+          "est_deg": 120.938
+        },
+        {
+          "true_deg": 97.662,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 90.062,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 66.16,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 110.468,
+          "est_deg": 98.438
+        },
+        {
+          "true_deg": 134.339,
+          "est_deg": 126.562
+        },
+        {
+          "true_deg": 134.475,
+          "est_deg": 143.438
+        },
+        {
+          "true_deg": 43.186,
+          "est_deg": 36.562
+        },
+        {
+          "true_deg": 41.0,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 42.234,
+          "est_deg": 42.188
+        },
+        {
+          "true_deg": 139.243,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 136.705,
+          "est_deg": 143.438
+        },
+        {
+          "true_deg": 131.071,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 138.216,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 85.578,
+          "est_deg": 98.438
+        },
+        {
+          "true_deg": 115.297,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 45.876,
+          "est_deg": 42.188
+        },
+        {
+          "true_deg": 130.686,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 121.35,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 20.184,
+          "est_deg": 25.312
+        },
+        {
+          "true_deg": 102.967,
+          "est_deg": 109.688
+        },
+        {
+          "true_deg": 122.416,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 8.645,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 85.31,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 49.017,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 76.738,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 78.279,
+          "est_deg": 81.562
+        },
+        {
+          "true_deg": 45.809,
+          "est_deg": 42.188
+        },
+        {
+          "true_deg": 86.416,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 98.014,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 27.04,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 137.738,
+          "est_deg": 137.812
+        },
+        {
+          "true_deg": 135.559,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 30.615,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 13.313,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 105.91,
+          "est_deg": 98.438
+        },
+        {
+          "true_deg": 28.523,
+          "est_deg": 30.938
+        },
+        {
+          "true_deg": 62.166,
+          "est_deg": 70.312
+        },
+        {
+          "true_deg": 109.322,
+          "est_deg": 126.562
+        },
+        {
+          "true_deg": 31.294,
+          "est_deg": 36.562
+        },
+        {
+          "true_deg": 135.546,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 94.794,
+          "est_deg": 98.438
+        },
+        {
+          "true_deg": 107.988,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 113.027,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 4.084,
+          "est_deg": 0.0
+        },
+        {
+          "true_deg": 113.237,
+          "est_deg": 98.438
+        },
+        {
+          "true_deg": 124.648,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 105.084,
+          "est_deg": 109.688
+        },
+        {
+          "true_deg": 138.38,
+          "est_deg": 154.688
+        },
+        {
+          "true_deg": 137.572,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 64.324,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 82.149,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 122.71,
+          "est_deg": 120.938
+        },
+        {
+          "true_deg": 71.135,
+          "est_deg": 64.688
+        },
+        {
+          "true_deg": 135.918,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 38.605,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 43.853,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 131.247,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 66.258,
+          "est_deg": 64.688
+        },
+        {
+          "true_deg": 149.778,
+          "est_deg": 163.125
+        },
+        {
+          "true_deg": 119.58,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 55.236,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 100.95,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 22.32,
+          "est_deg": 36.562
+        },
+        {
+          "true_deg": 159.657,
+          "est_deg": 171.562
+        },
+        {
+          "true_deg": 117.936,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 74.532,
+          "est_deg": 59.062
+        },
+        {
+          "true_deg": 132.61,
+          "est_deg": 137.812
+        },
+        {
+          "true_deg": 68.463,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 18.742,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 119.226,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 8.186,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 141.387,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 45.336,
+          "est_deg": 56.25
+        },
+        {
+          "true_deg": 98.508,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 87.778,
+          "est_deg": 87.188
+        },
+        {
+          "true_deg": 152.806,
+          "est_deg": 154.688
+        },
+        {
+          "true_deg": 51.969,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 100.68,
+          "est_deg": 115.312
+        },
+        {
+          "true_deg": 71.713,
+          "est_deg": 73.125
+        },
+        {
+          "true_deg": 35.667,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 10.04,
+          "est_deg": 8.438
+        },
+        {
+          "true_deg": 36.519,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 67.335,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 120.513,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 54.759,
+          "est_deg": 45.0
+        },
+        {
+          "true_deg": 149.083,
+          "est_deg": 160.312
+        },
+        {
+          "true_deg": 20.546,
+          "est_deg": 36.562
+        },
+        {
+          "true_deg": 10.297,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 46.209,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 118.367,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 7.477,
+          "est_deg": 2.812
+        },
+        {
+          "true_deg": 47.661,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 108.806,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 35.372,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 136.875,
+          "est_deg": 160.312
+        },
+        {
+          "true_deg": 101.842,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 28.379,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 98.403,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 128.074,
+          "est_deg": 143.438
+        },
+        {
+          "true_deg": 66.385,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 43.855,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 106.423,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 26.275,
+          "est_deg": 19.688
+        },
+        {
+          "true_deg": 24.832,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 87.018,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 124.601,
+          "est_deg": 126.562
+        },
+        {
+          "true_deg": 18.519,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 109.313,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 48.444,
+          "est_deg": 47.812
+        },
+        {
+          "true_deg": 30.813,
+          "est_deg": 25.312
+        },
+        {
+          "true_deg": 115.927,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 69.563,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 153.376,
+          "est_deg": 163.125
+        },
+        {
+          "true_deg": 138.84,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 57.361,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 125.772,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 21.934,
+          "est_deg": 14.062
+        },
+        {
+          "true_deg": 81.703,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 62.331,
+          "est_deg": 75.938
+        },
+        {
+          "true_deg": 133.371,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 134.626,
+          "est_deg": 126.562
+        },
+        {
+          "true_deg": 5.867,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 60.241,
+          "est_deg": 47.812
+        },
+        {
+          "true_deg": 93.015,
+          "est_deg": 92.812
+        },
+        {
+          "true_deg": 72.517,
+          "est_deg": 75.938
+        },
+        {
+          "true_deg": 127.349,
+          "est_deg": 120.938
+        },
+        {
+          "true_deg": 156.356,
+          "est_deg": 163.125
+        },
+        {
+          "true_deg": 8.61,
+          "est_deg": 8.438
+        },
+        {
+          "true_deg": 77.131,
+          "est_deg": 87.188
+        },
+        {
+          "true_deg": 145.666,
+          "est_deg": 154.688
+        },
+        {
+          "true_deg": 81.168,
+          "est_deg": 92.812
+        },
+        {
+          "true_deg": 75.578,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 110.185,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 37.734,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 76.782,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 60.248,
+          "est_deg": 73.125
+        },
+        {
+          "true_deg": 130.889,
+          "est_deg": 140.625
+        },
+        {
+          "true_deg": 16.299,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 93.982,
+          "est_deg": 92.812
+        },
+        {
+          "true_deg": 24.083,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 41.053,
+          "est_deg": 25.312
+        },
+        {
+          "true_deg": 34.517,
+          "est_deg": 30.938
+        },
+        {
+          "true_deg": 90.2,
+          "est_deg": 98.438
+        },
+        {
+          "true_deg": 9.811,
+          "est_deg": 11.25
+        },
+        {
+          "true_deg": 108.354,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 103.904,
+          "est_deg": 109.688
+        },
+        {
+          "true_deg": 79.058,
+          "est_deg": 87.188
+        },
+        {
+          "true_deg": 121.55,
+          "est_deg": 123.75
+        },
+        {
+          "true_deg": 27.853,
+          "est_deg": 19.688
+        },
+        {
+          "true_deg": 34.406,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 141.675,
+          "est_deg": 143.438
+        },
+        {
+          "true_deg": 117.139,
+          "est_deg": 137.812
+        },
+        {
+          "true_deg": 109.647,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 142.773,
+          "est_deg": 149.062
+        },
+        {
+          "true_deg": 15.114,
+          "est_deg": 19.688
+        },
+        {
+          "true_deg": 38.002,
+          "est_deg": 36.562
+        },
+        {
+          "true_deg": 57.989,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 157.56,
+          "est_deg": 165.938
+        },
+        {
+          "true_deg": 47.77,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 120.96,
+          "est_deg": 109.688
+        },
+        {
+          "true_deg": 109.451,
+          "est_deg": 106.875
+        },
+        {
+          "true_deg": 86.527,
+          "est_deg": 101.25
+        },
+        {
+          "true_deg": 26.904,
+          "est_deg": 30.938
+        },
+        {
+          "true_deg": 11.257,
+          "est_deg": 5.625
+        },
+        {
+          "true_deg": 97.525,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 67.841,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 81.561,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 42.997,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 43.18,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 147.313,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 62.979,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 111.188,
+          "est_deg": 109.688
+        },
+        {
+          "true_deg": 65.502,
+          "est_deg": 59.062
+        },
+        {
+          "true_deg": 77.643,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 84.734,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 40.204,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 40.19,
+          "est_deg": 42.188
+        },
+        {
+          "true_deg": 74.456,
+          "est_deg": 81.562
+        },
+        {
+          "true_deg": 56.305,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 121.158,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 124.169,
+          "est_deg": 118.125
+        },
+        {
+          "true_deg": 141.741,
+          "est_deg": 137.812
+        },
+        {
+          "true_deg": 37.869,
+          "est_deg": 30.938
+        },
+        {
+          "true_deg": 18.812,
+          "est_deg": 16.875
+        },
+        {
+          "true_deg": 75.95,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 132.474,
+          "est_deg": 126.562
+        },
+        {
+          "true_deg": 154.197,
+          "est_deg": 163.125
+        }
+      ]
+    },
+    {
+      "bits": 128,
+      "pairs": 1000,
+      "mean_abs_error_deg": 5.7275,
+      "sample": [
+        {
+          "true_deg": 34.583,
+          "est_deg": 40.781
+        },
+        {
+          "true_deg": 68.922,
+          "est_deg": 60.469
+        },
+        {
+          "true_deg": 53.391,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 47.335,
+          "est_deg": 49.219
+        },
+        {
+          "true_deg": 57.472,
+          "est_deg": 60.469
+        },
+        {
+          "true_deg": 20.037,
+          "est_deg": 15.469
+        },
+        {
+          "true_deg": 27.142,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 150.016,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 34.124,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 144.701,
+          "est_deg": 147.656
+        },
+        {
+          "true_deg": 111.042,
+          "est_deg": 109.688
+        },
+        {
+          "true_deg": 63.56,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 104.178,
+          "est_deg": 99.844
+        },
+        {
+          "true_deg": 97.662,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 90.062,
+          "est_deg": 85.781
+        },
+        {
+          "true_deg": 66.16,
+          "est_deg": 59.062
+        },
+        {
+          "true_deg": 110.468,
+          "est_deg": 111.094
+        },
+        {
+          "true_deg": 134.339,
+          "est_deg": 130.781
+        },
+        {
+          "true_deg": 134.475,
+          "est_deg": 142.031
+        },
+        {
+          "true_deg": 43.186,
+          "est_deg": 47.812
+        },
+        {
+          "true_deg": 41.0,
+          "est_deg": 40.781
+        },
+        {
+          "true_deg": 42.234,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 139.243,
+          "est_deg": 139.219
+        },
+        {
+          "true_deg": 136.705,
+          "est_deg": 144.844
+        },
+        {
+          "true_deg": 131.071,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 138.216,
+          "est_deg": 130.781
+        },
+        {
+          "true_deg": 85.578,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 115.297,
+          "est_deg": 113.906
+        },
+        {
+          "true_deg": 45.876,
+          "est_deg": 36.562
+        },
+        {
+          "true_deg": 130.686,
+          "est_deg": 136.406
+        },
+        {
+          "true_deg": 121.35,
+          "est_deg": 116.719
+        },
+        {
+          "true_deg": 20.184,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 102.967,
+          "est_deg": 95.625
+        },
+        {
+          "true_deg": 122.416,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 8.645,
+          "est_deg": 8.438
+        },
+        {
+          "true_deg": 85.31,
+          "est_deg": 94.219
+        },
+        {
+          "true_deg": 49.017,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 76.738,
+          "est_deg": 68.906
+        },
+        {
+          "true_deg": 78.279,
+          "est_deg": 80.156
+        },
+        {
+          "true_deg": 45.809,
+          "est_deg": 37.969
+        },
+        {
+          "true_deg": 86.416,
+          "est_deg": 91.406
+        },
+        {
+          "true_deg": 98.014,
+          "est_deg": 102.656
+        },
+        {
+          "true_deg": 27.04,
+          "est_deg": 28.125
+        },
+        {
+          "true_deg": 137.738,
+          "est_deg": 136.406
+        },
+        {
+          "true_deg": 135.559,
+          "est_deg": 146.25
+        },
+        {
+          "true_deg": 30.615,
+          "est_deg": 30.938
+        },
+        {
+          "true_deg": 13.313,
+          "est_deg": 14.062
+        },
+        {
+          "true_deg": 105.91,
+          "est_deg": 111.094
+        },
+        {
+          "true_deg": 28.523,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 62.166,
+          "est_deg": 70.312
+        },
+        {
+          "true_deg": 109.322,
+          "est_deg": 119.531
+        },
+        {
+          "true_deg": 31.294,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 135.546,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 94.794,
+          "est_deg": 98.438
+        },
+        {
+          "true_deg": 107.988,
+          "est_deg": 126.562
+        },
+        {
+          "true_deg": 113.027,
+          "est_deg": 94.219
+        },
+        {
+          "true_deg": 4.084,
+          "est_deg": 2.812
+        },
+        {
+          "true_deg": 113.237,
+          "est_deg": 102.656
+        },
+        {
+          "true_deg": 124.648,
+          "est_deg": 143.438
+        },
+        {
+          "true_deg": 105.084,
+          "est_deg": 108.281
+        },
+        {
+          "true_deg": 138.38,
+          "est_deg": 137.812
+        },
+        {
+          "true_deg": 137.572,
+          "est_deg": 127.969
+        },
+        {
+          "true_deg": 64.324,
+          "est_deg": 64.688
+        },
+        {
+          "true_deg": 82.149,
+          "est_deg": 90.0
+        },
+        {
+          "true_deg": 122.71,
+          "est_deg": 133.594
+        },
+        {
+          "true_deg": 71.135,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 135.918,
+          "est_deg": 130.781
+        },
+        {
+          "true_deg": 38.605,
+          "est_deg": 37.969
+        },
+        {
+          "true_deg": 43.853,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 131.247,
+          "est_deg": 136.406
+        },
+        {
+          "true_deg": 66.258,
+          "est_deg": 74.531
+        },
+        {
+          "true_deg": 149.778,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 119.58,
+          "est_deg": 133.594
+        },
+        {
+          "true_deg": 55.236,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 100.95,
+          "est_deg": 109.688
+        },
+        {
+          "true_deg": 22.32,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 159.657,
+          "est_deg": 165.938
+        },
+        {
+          "true_deg": 117.936,
+          "est_deg": 127.969
+        },
+        {
+          "true_deg": 74.532,
+          "est_deg": 70.312
+        },
+        {
+          "true_deg": 132.61,
+          "est_deg": 142.031
+        },
+        {
+          "true_deg": 68.463,
+          "est_deg": 85.781
+        },
+        {
+          "true_deg": 18.742,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 119.226,
+          "est_deg": 125.156
+        },
+        {
+          "true_deg": 8.186,
+          "est_deg": 9.844
+        },
+        {
+          "true_deg": 141.387,
+          "est_deg": 153.281
+        },
+        {
+          "true_deg": 45.336,
+          "est_deg": 53.438
+        },
+        {
+          "true_deg": 98.508,
+          "est_deg": 98.438
+        },
+        {
+          "true_deg": 87.778,
+          "est_deg": 81.562
+        },
+        {
+          "true_deg": 152.806,
+          "est_deg": 161.719
+        },
+        {
+          "true_deg": 51.969,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 100.68,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 71.713,
+          "est_deg": 71.719
+        },
+        {
+          "true_deg": 35.667,
+          "est_deg": 32.344
+        },
+        {
+          "true_deg": 10.04,
+          "est_deg": 7.031
+        },
+        {
+          "true_deg": 36.519,
+          "est_deg": 25.312
+        },
+        {
+          "true_deg": 67.335,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 120.513,
+          "est_deg": 133.594
+        },
+        {
+          "true_deg": 54.759,
+          "est_deg": 39.375
+        },
+        {
+          "true_deg": 149.083,
+          "est_deg": 147.656
+        },
+        {
+          "true_deg": 20.546,
+          "est_deg": 33.75
+        },
+        {
+          "true_deg": 10.297,
+          "est_deg": 15.469
+        },
+        {
+          "true_deg": 46.209,
+          "est_deg": 52.031
+        },
+        {
+          "true_deg": 118.367,
+          "est_deg": 116.719
+        },
+        {
+          "true_deg": 7.477,
+          "est_deg": 5.625
+        },
+        {
+          "true_deg": 47.661,
+          "est_deg": 40.781
+        },
+        {
+          "true_deg": 108.806,
+          "est_deg": 113.906
+        },
+        {
+          "true_deg": 35.372,
+          "est_deg": 26.719
+        },
+        {
+          "true_deg": 136.875,
+          "est_deg": 144.844
+        },
+        {
+          "true_deg": 101.842,
+          "est_deg": 111.094
+        },
+        {
+          "true_deg": 28.379,
+          "est_deg": 23.906
+        },
+        {
+          "true_deg": 98.403,
+          "est_deg": 109.688
+        },
+        {
+          "true_deg": 128.074,
+          "est_deg": 149.062
+        },
+        {
+          "true_deg": 66.385,
+          "est_deg": 70.312
+        },
+        {
+          "true_deg": 43.855,
+          "est_deg": 40.781
+        },
+        {
+          "true_deg": 106.423,
+          "est_deg": 116.719
+        },
+        {
+          "true_deg": 26.275,
+          "est_deg": 32.344
+        },
+        {
+          "true_deg": 24.832,
+          "est_deg": 23.906
+        },
+        {
+          "true_deg": 87.018,
+          "est_deg": 91.406
+        },
+        {
+          "true_deg": 124.601,
+          "est_deg": 125.156
+        },
+        {
+          "true_deg": 18.519,
+          "est_deg": 23.906
+        },
+        {
+          "true_deg": 109.313,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 48.444,
+          "est_deg": 52.031
+        },
+        {
+          "true_deg": 30.813,
+          "est_deg": 32.344
+        },
+        {
+          "true_deg": 115.927,
+          "est_deg": 109.688
+        },
+        {
+          "true_deg": 69.563,
+          "est_deg": 71.719
+        },
+        {
+          "true_deg": 153.376,
+          "est_deg": 157.5
+        },
+        {
+          "true_deg": 138.84,
+          "est_deg": 149.062
+        },
+        {
+          "true_deg": 57.361,
+          "est_deg": 54.844
+        },
+        {
+          "true_deg": 125.772,
+          "est_deg": 136.406
+        },
+        {
+          "true_deg": 21.934,
+          "est_deg": 15.469
+        },
+        {
+          "true_deg": 81.703,
+          "est_deg": 84.375
+        },
+        {
+          "true_deg": 62.331,
+          "est_deg": 81.562
+        },
+        {
+          "true_deg": 133.371,
+          "est_deg": 132.188
+        },
+        {
+          "true_deg": 134.626,
+          "est_deg": 127.969
+        },
+        {
+          "true_deg": 5.867,
+          "est_deg": 9.844
+        },
+        {
+          "true_deg": 60.241,
+          "est_deg": 63.281
+        },
+        {
+          "true_deg": 93.015,
+          "est_deg": 74.531
+        },
+        {
+          "true_deg": 72.517,
+          "est_deg": 71.719
+        },
+        {
+          "true_deg": 127.349,
+          "est_deg": 129.375
+        },
+        {
+          "true_deg": 156.356,
+          "est_deg": 163.125
+        },
+        {
+          "true_deg": 8.61,
+          "est_deg": 8.438
+        },
+        {
+          "true_deg": 77.131,
+          "est_deg": 80.156
+        },
+        {
+          "true_deg": 145.666,
+          "est_deg": 151.875
+        },
+        {
+          "true_deg": 81.168,
+          "est_deg": 82.969
+        },
+        {
+          "true_deg": 75.578,
+          "est_deg": 81.562
+        },
+        {
+          "true_deg": 110.185,
+          "est_deg": 105.469
+        },
+        {
+          "true_deg": 37.734,
+          "est_deg": 47.812
+        },
+        {
+          "true_deg": 76.782,
+          "est_deg": 81.562
+        },
+        {
+          "true_deg": 60.248,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 130.889,
+          "est_deg": 135.0
+        },
+        {
+          "true_deg": 16.299,
+          "est_deg": 14.062
+        },
+        {
+          "true_deg": 93.982,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 24.083,
+          "est_deg": 21.094
+        },
+        {
+          "true_deg": 41.053,
+          "est_deg": 30.938
+        },
+        {
+          "true_deg": 34.517,
+          "est_deg": 42.188
+        },
+        {
+          "true_deg": 90.2,
+          "est_deg": 88.594
+        },
+        {
+          "true_deg": 9.811,
+          "est_deg": 8.438
+        },
+        {
+          "true_deg": 108.354,
+          "est_deg": 115.312
+        },
+        {
+          "true_deg": 103.904,
+          "est_deg": 113.906
+        },
+        {
+          "true_deg": 79.058,
+          "est_deg": 74.531
+        },
+        {
+          "true_deg": 121.55,
+          "est_deg": 137.812
+        },
+        {
+          "true_deg": 27.853,
+          "est_deg": 22.5
+        },
+        {
+          "true_deg": 34.406,
+          "est_deg": 30.938
+        },
+        {
+          "true_deg": 141.675,
+          "est_deg": 143.438
+        },
+        {
+          "true_deg": 117.139,
+          "est_deg": 127.969
+        },
+        {
+          "true_deg": 109.647,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 142.773,
+          "est_deg": 143.438
+        },
+        {
+          "true_deg": 15.114,
+          "est_deg": 15.469
+        },
+        {
+          "true_deg": 38.002,
+          "est_deg": 40.781
+        },
+        {
+          "true_deg": 57.989,
+          "est_deg": 59.062
+        },
+        {
+          "true_deg": 157.56,
+          "est_deg": 156.094
+        },
+        {
+          "true_deg": 47.77,
+          "est_deg": 43.594
+        },
+        {
+          "true_deg": 120.96,
+          "est_deg": 111.094
+        },
+        {
+          "true_deg": 109.451,
+          "est_deg": 116.719
+        },
+        {
+          "true_deg": 86.527,
+          "est_deg": 88.594
+        },
+        {
+          "true_deg": 26.904,
+          "est_deg": 30.938
+        },
+        {
+          "true_deg": 11.257,
+          "est_deg": 8.438
+        },
+        {
+          "true_deg": 97.525,
+          "est_deg": 104.062
+        },
+        {
+          "true_deg": 67.841,
+          "est_deg": 61.875
+        },
+        {
+          "true_deg": 81.561,
+          "est_deg": 75.938
+        },
+        {
+          "true_deg": 42.997,
+          "est_deg": 37.969
+        },
+        {
+          "true_deg": 43.18,
+          "est_deg": 46.406
+        },
+        {
+          "true_deg": 147.313,
+          "est_deg": 154.688
+        },
+        {
+          "true_deg": 62.979,
+          "est_deg": 57.656
+        },
+        {
+          "true_deg": 111.188,
+          "est_deg": 112.5
+        },
+        {
+          "true_deg": 65.502,
+          "est_deg": 50.625
+        },
+        {
+          "true_deg": 77.643,
+          "est_deg": 92.812
+        },
+        {
+          "true_deg": 84.734,
+          "est_deg": 78.75
+        },
+        {
+          "true_deg": 40.204,
+          "est_deg": 63.281
+        },
+        {
+          "true_deg": 40.19,
+          "est_deg": 47.812
+        },
+        {
+          "true_deg": 74.456,
+          "est_deg": 70.312
+        },
+        {
+          "true_deg": 56.305,
+          "est_deg": 54.844
+        },
+        {
+          "true_deg": 121.158,
+          "est_deg": 111.094
+        },
+        {
+          "true_deg": 124.169,
+          "est_deg": 126.562
+        },
+        {
+          "true_deg": 141.741,
+          "est_deg": 136.406
+        },
+        {
+          "true_deg": 37.869,
+          "est_deg": 37.969
+        },
+        {
+          "true_deg": 18.812,
+          "est_deg": 19.688
+        },
+        {
+          "true_deg": 75.95,
+          "est_deg": 67.5
+        },
+        {
+          "true_deg": 132.474,
+          "est_deg": 139.219
+        },
+        {
+          "true_deg": 154.197,
+          "est_deg": 161.719
+        }
+      ]
+    }
+  ],
+  "banding": [
+    {
+      "bits": 16,
+      "bands": 4,
+      "rows": 4,
+      "recall_at_5": 1.0,
+      "mean_candidates": 411.14,
+      "comparisons_saved": 0.6571
+    },
+    {
+      "bits": 16,
+      "bands": 2,
+      "rows": 8,
+      "recall_at_5": 0.968,
+      "mean_candidates": 170.26,
+      "comparisons_saved": 0.858
+    },
+    {
+      "bits": 32,
+      "bands": 8,
+      "rows": 4,
+      "recall_at_5": 1.0,
+      "mean_candidates": 591.76,
+      "comparisons_saved": 0.5065
+    },
+    {
+      "bits": 32,
+      "bands": 4,
+      "rows": 8,
+      "recall_at_5": 0.992,
+      "mean_candidates": 236.92,
+      "comparisons_saved": 0.8024
+    },
+    {
+      "bits": 64,
+      "bands": 16,
+      "rows": 4,
+      "recall_at_5": 1.0,
+      "mean_candidates": 745.74,
+      "comparisons_saved": 0.378
+    },
+    {
+      "bits": 64,
+      "bands": 8,
+      "rows": 8,
+      "recall_at_5": 1.0,
+      "mean_candidates": 348.8,
+      "comparisons_saved": 0.7091
+    },
+    {
+      "bits": 128,
+      "bands": 32,
+      "rows": 4,
+      "recall_at_5": 1.0,
+      "mean_candidates": 827.28,
+      "comparisons_saved": 0.31
+    },
+    {
+      "bits": 128,
+      "bands": 16,
+      "rows": 8,
+      "recall_at_5": 1.0,
+      "mean_candidates": 420.12,
+      "comparisons_saved": 0.6496
+    }
+  ]
+}
