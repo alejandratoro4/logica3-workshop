@@ -1,0 +1,42 @@
+{
+  "n_drivers": 1200,
+  "n_zones": 10,
+  "pairs_same_cluster": 2000,
+  "pairs_other_cluster": 2000,
+  "k_values": [
+    {
+      "k": 2,
+      "mean_set_size": 49.9,
+      "possible_shingles": 100,
+      "observed_shingles": 100,
+      "jaccard_same_cluster": 0.6107,
+      "jaccard_other_cluster": 0.3292,
+      "difference": 0.2815,
+      "ratio": 1.855
+    },
+    {
+      "k": 3,
+      "mean_set_size": 147.19,
+      "possible_shingles": 1000,
+      "observed_shingles": 1000,
+      "jaccard_same_cluster": 0.4457,
+      "jaccard_other_cluster": 0.0822,
+      "difference": 0.3635,
+      "ratio": 5.422,
+      "matches_dataset_shingle_count": true
+    },
+    {
+      "k": 4,
+      "mean_set_size": 272.54,
+      "possible_shingles": 10000,
+      "observed_shingles": 9658,
+      "jaccard_same_cluster": 0.2327,
+      "jaccard_other_cluster": 0.0191,
+      "difference": 0.2136,
+      "ratio": 12.183
+    }
+  ],
+  "best_k": 3,
+  "best_k_criterion": "mayor diferencia entre el Jaccard medio dentro de un grupo y entre grupos",
+  "best_k_reason": "Se elige k = 3 porque es el que mas separa a los conductores del mismo grupo de los de grupos distintos: k = 2: 0.611 dentro contra 0.329 entre (diferencia 0.281); k = 3: 0.446 dentro contra 0.082 entre (diferencia 0.363); k = 4: 0.233 dentro contra 0.019 entre (diferencia 0.214). Con k pequeno hay pocas rachas posibles y casi todos los conductores las comparten, asi que hasta los de grupos distintos se parecen. Con k grande cada conductor tiene rachas mas propias: baja el parecido entre grupos, pero tambien el de dentro del grupo, y si los vecinos de verdad quedan con un Jaccard muy bajo, LSH necesita un umbral muy bajo y da demasiados candidatos. El mejor k es el punto donde la diferencia es mayor."
+}
