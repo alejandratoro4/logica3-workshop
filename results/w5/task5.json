@@ -1,0 +1,115 @@
+{
+  "queries": 24,
+  "query_rule": "los 3 de menor driver_id de cada grupo",
+  "s_tilde": 0.5022,
+  "lsh_config": {
+    "bands": 20,
+    "rows": 5,
+    "threshold": 0.5493
+  },
+  "cosine_config": {
+    "bits": 64,
+    "bands": 8,
+    "rows": 8
+  },
+  "methods": [
+    {
+      "method": "jaccard",
+      "mean_candidates": 1199.0,
+      "exact_examined": 1.0,
+      "mean_true_jaccard": 0.5058,
+      "same_cluster": 1.0
+    },
+    {
+      "method": "minhash",
+      "mean_candidates": 49.21,
+      "exact_examined": 0.5333,
+      "mean_true_jaccard": 0.4742,
+      "same_cluster": 0.9833
+    },
+    {
+      "method": "cosine",
+      "mean_candidates": 306.29,
+      "exact_examined": 0.7667,
+      "mean_true_jaccard": 0.4405,
+      "same_cluster": 1.0
+    },
+    {
+      "method": "lcs",
+      "mean_candidates": 49.21,
+      "exact_examined": 0.5333,
+      "mean_true_jaccard": 0.4556,
+      "same_cluster": 0.9833
+    }
+  ],
+  "overlap_at_5": [
+    {
+      "a": "jaccard",
+      "b": "minhash",
+      "overlap": 0.2667
+    },
+    {
+      "a": "jaccard",
+      "b": "cosine",
+      "overlap": 0.025
+    },
+    {
+      "a": "jaccard",
+      "b": "lcs",
+      "overlap": 0.1167
+    },
+    {
+      "a": "minhash",
+      "b": "cosine",
+      "overlap": 0.0083
+    },
+    {
+      "a": "minhash",
+      "b": "lcs",
+      "overlap": 0.2833
+    },
+    {
+      "a": "cosine",
+      "b": "lcs",
+      "overlap": 0.0167
+    }
+  ],
+  "outcome_test": [
+    {
+      "method": "jaccard",
+      "neighbor_mad": 246.17,
+      "random_mad": 402.15,
+      "neighbor_mad_se": 23.71
+    },
+    {
+      "method": "minhash",
+      "neighbor_mad": 276.26,
+      "random_mad": 402.15,
+      "neighbor_mad_se": 21.47
+    },
+    {
+      "method": "cosine",
+      "neighbor_mad": 275.89,
+      "random_mad": 402.15,
+      "neighbor_mad_se": 26.55
+    },
+    {
+      "method": "lcs",
+      "neighbor_mad": 289.09,
+      "random_mad": 402.15,
+      "neighbor_mad_se": 24.27
+    }
+  ],
+  "disagreements": "Hay dos fuentes de desacuerdo. (1) Candidatos: con (b, r) = (20, 5) el umbral 0.549 queda cerca de s~ = 0.502, el Jaccard tipico de un vecino real, asi que MinHash/LSH solo examina el 53% de los 5 vecinos exactos (falsos negativos de la curva S); lo que no es candidato no puede salir ni en minhash ni en lcs. Por eso overlap(jaccard, minhash) = 27%. (2) Orden: aun entre candidatos, el Jaccard estimado con 100 funciones tiene error tipico sqrt(s(1-s)/n) = 0.050, mientras que entre el 5.o y el 10.o vecino verdadero hay solo 0.009 de Jaccard (mediana): el top-5 por firma es casi un sorteo entre vecinos empatados. Un 27% de los vecinos exactos fue candidato y quedo fuera del top-5 por ese ruido. LCS ordena los mismos candidatos por la subsecuencia comun (el orden completo de las zonas, no ventanas de 3), asi que coincide con minhash en 28% y con el exacto en 12%. El coseno es el que mas se aleja (overlap con el exacto 2%): no ve el orden, y las dos metricas z (espera y numero de viajes) pesan mas que las fracciones por zona (norma media 1.24 contra 0.48), asi que el angulo lo deciden sobre todo variables que no son el recorrido. Separa los grupos (vecinos del mismo grupo: 100%), pero dentro del grupo su ranking no tiene relacion con el Jaccard (correlacion mediana coseno-Jaccard dentro del grupo: 0.01; hay companeros de grupo con coseno de hasta -0.58). Su top-5 tiene Jaccard verdadero medio 0.441 contra 0.506 del exacto. Los cuatro metodos aciertan el grupo plantado; discrepan en quien es el mas parecido dentro de el. Outcome test: jaccard, minhash, cosine, lcs quedan mas de 2 errores estandar por debajo del azar en avg_fare: los vecinos comparten territorio, y el territorio fija la distancia de los viajes y con ella la tarifa.",
+  "diagnostics": {
+    "minhash_estimate_se": 0.05,
+    "median_gap_jaccard_5th_10th": 0.0088,
+    "median_corr_cosine_jaccard_in_cluster": 0.0103,
+    "min_cosine_in_cluster": -0.5754,
+    "mean_norm_zone_fractions": 0.4821,
+    "mean_norm_z_metrics": 1.2372,
+    "exact_examined_but_out_of_top5_minhash": 0.2667
+  },
+  "lcs_pairs": 1181,
+  "lcs_seconds": 39.2
+}
