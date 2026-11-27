@@ -1,0 +1,222 @@
+{
+  "n_hashes": 100,
+  "workers": 2,
+  "parallel": true,
+  "signatures_match": true,
+  "total_pairs": 719400,
+  "configs": [
+    {
+      "bands": 20,
+      "rows": 5,
+      "threshold": 0.5493,
+      "candidate_pairs": 29898,
+      "pairs_above_threshold": 5781,
+      "false_positives": 24920,
+      "false_negatives": 803,
+      "shuffle_pairs": 24000,
+      "buckets": 16812,
+      "largest_bucket": 95,
+      "seconds": 0.1183,
+      "jaccard_buckets": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "pairs": 453159,
+          "candidates": 36,
+          "empirical_rate": 7.9e-05,
+          "theoretical_rate": 2.5e-05
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "pairs": 125813,
+          "candidates": 125,
+          "empirical_rate": 0.000994,
+          "theoretical_rate": 0.001387
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.3,
+          "pairs": 49924,
+          "candidates": 581,
+          "empirical_rate": 0.011638,
+          "theoretical_rate": 0.017626
+        },
+        {
+          "lo": 0.3,
+          "hi": 0.4,
+          "pairs": 20509,
+          "candidates": 1952,
+          "empirical_rate": 0.095178,
+          "theoretical_rate": 0.133438
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "pairs": 55345,
+          "candidates": 16403,
+          "empirical_rate": 0.296377,
+          "theoretical_rate": 0.29635
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "pairs": 13534,
+          "candidates": 9755,
+          "empirical_rate": 0.720777,
+          "theoretical_rate": 0.602047
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.7,
+          "pairs": 1116,
+          "candidates": 1046,
+          "empirical_rate": 0.937276,
+          "theoretical_rate": 0.84842
+        }
+      ]
+    },
+    {
+      "bands": 10,
+      "rows": 10,
+      "threshold": 0.7943,
+      "candidate_pairs": 924,
+      "pairs_above_threshold": 0,
+      "false_positives": 924,
+      "false_negatives": 0,
+      "shuffle_pairs": 12000,
+      "buckets": 11647,
+      "largest_bucket": 24,
+      "seconds": 0.1019,
+      "jaccard_buckets": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "pairs": 453159,
+          "candidates": 0,
+          "empirical_rate": 0.0,
+          "theoretical_rate": 0.0
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "pairs": 125813,
+          "candidates": 0,
+          "empirical_rate": 0.0,
+          "theoretical_rate": 0.0
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.3,
+          "pairs": 49924,
+          "candidates": 0,
+          "empirical_rate": 0.0,
+          "theoretical_rate": 1e-05
+        },
+        {
+          "lo": 0.3,
+          "hi": 0.4,
+          "pairs": 20509,
+          "candidates": 11,
+          "empirical_rate": 0.000536,
+          "theoretical_rate": 0.000558
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "pairs": 55345,
+          "candidates": 255,
+          "empirical_rate": 0.004607,
+          "theoretical_rate": 0.003399
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "pairs": 13534,
+          "candidates": 519,
+          "empirical_rate": 0.038348,
+          "theoretical_rate": 0.022646
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.7,
+          "pairs": 1116,
+          "candidates": 139,
+          "empirical_rate": 0.124552,
+          "theoretical_rate": 0.082022
+        }
+      ]
+    },
+    {
+      "bands": 50,
+      "rows": 2,
+      "threshold": 0.1414,
+      "candidate_pairs": 251095,
+      "pairs_above_threshold": 190296,
+      "false_positives": 75251,
+      "false_negatives": 14452,
+      "shuffle_pairs": 60000,
+      "buckets": 9039,
+      "largest_bucket": 272,
+      "seconds": 0.2224,
+      "jaccard_buckets": [
+        {
+          "lo": 0.0,
+          "hi": 0.1,
+          "pairs": 453159,
+          "candidates": 43363,
+          "empirical_rate": 0.09569,
+          "theoretical_rate": 0.12682
+        },
+        {
+          "lo": 0.1,
+          "hi": 0.2,
+          "pairs": 125813,
+          "candidates": 70216,
+          "empirical_rate": 0.558098,
+          "theoretical_rate": 0.601786
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.3,
+          "pairs": 49924,
+          "candidates": 47057,
+          "empirical_rate": 0.942573,
+          "theoretical_rate": 0.941348
+        },
+        {
+          "lo": 0.3,
+          "hi": 0.4,
+          "pairs": 20509,
+          "candidates": 20465,
+          "empirical_rate": 0.997855,
+          "theoretical_rate": 0.998834
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.5,
+          "pairs": 55345,
+          "candidates": 55344,
+          "empirical_rate": 0.999982,
+          "theoretical_rate": 0.999962
+        },
+        {
+          "lo": 0.5,
+          "hi": 0.6,
+          "pairs": 13534,
+          "candidates": 13534,
+          "empirical_rate": 1.0,
+          "theoretical_rate": 1.0
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.7,
+          "pairs": 1116,
+          "candidates": 1116,
+          "empirical_rate": 1.0,
+          "theoretical_rate": 1.0
+        }
+      ]
+    }
+  ]
+}
