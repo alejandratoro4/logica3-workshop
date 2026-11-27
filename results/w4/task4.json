@@ -1,0 +1,95 @@
+{
+  "hot_driver": {
+    "driver_id": "drv_01187",
+    "rides": 482
+  },
+  "workers": 4,
+  "reducers": 4,
+  "jobs": [
+    {
+      "job": "1a",
+      "input_records": 495505,
+      "map_output_pairs": 495505,
+      "replication_rate": 1.0,
+      "reducer_size_q": 482,
+      "hot_key": "drv_01187",
+      "hot_key_ties": 1
+    },
+    {
+      "job": "1b",
+      "input_records": 494305,
+      "map_output_pairs": 494305,
+      "replication_rate": 1.0,
+      "reducer_size_q": 10719,
+      "hot_key": "AIRPORT -> AIRPORT",
+      "hot_key_ties": 1
+    },
+    {
+      "job": "2",
+      "input_records": 100,
+      "map_output_pairs": 200,
+      "replication_rate": 2.0,
+      "reducer_size_q": 20,
+      "hot_key": "AIRPORT",
+      "hot_key_ties": 10
+    },
+    {
+      "job": "pagerank",
+      "input_records": 100,
+      "map_output_pairs": 100,
+      "replication_rate": 1.0,
+      "reducer_size_q": 10,
+      "hot_key": "AIRPORT",
+      "hot_key_ties": 10
+    }
+  ],
+  "reducer_sweep": [
+    {
+      "reduce_tasks": 1,
+      "reducer_loads": [
+        495505
+      ],
+      "max_reducer_load": 495505,
+      "mean_reducer_load": 495505.0,
+      "total_s": 2.8272
+    },
+    {
+      "reduce_tasks": 2,
+      "reducer_loads": [
+        247340,
+        248165
+      ],
+      "max_reducer_load": 248165,
+      "mean_reducer_load": 247752.5,
+      "total_s": 1.8535
+    },
+    {
+      "reduce_tasks": 4,
+      "reducer_loads": [
+        118719,
+        133248,
+        128621,
+        114917
+      ],
+      "max_reducer_load": 133248,
+      "mean_reducer_load": 123876.25,
+      "total_s": 1.4468
+    },
+    {
+      "reduce_tasks": 8,
+      "reducer_loads": [
+        61064,
+        62810,
+        72828,
+        60621,
+        57655,
+        70438,
+        55793,
+        54296
+      ],
+      "max_reducer_load": 72828,
+      "mean_reducer_load": 61938.125,
+      "total_s": 1.4091
+    }
+  ]
+}

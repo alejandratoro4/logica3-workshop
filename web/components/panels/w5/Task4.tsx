@@ -27,8 +27,9 @@ export default function Task4({ data: t }: PanelProps<W5Task4>) {
         </p>
       )}
       <p className="panel-desc">
-        El map calcula la firma de cada conductor y emite una clave por banda; el reduce junta los conductores
-        de cada bucket y emite sus pares.{" "}
+        Un primer job calcula en el map la firma de cada conductor; en cada (b, r), el map emite una clave por
+        banda y el reduce junta los conductores de cada bucket. Con esos buckets se arma el conjunto de pares
+        candidatos.{" "}
         {t.signatures_match
           ? "Las firmas del map son exactamente las del dataset."
           : "Las firmas del map no coinciden con las del dataset: la task uso otra familia o semilla."}{" "}
@@ -59,7 +60,7 @@ export default function Task4({ data: t }: PanelProps<W5Task4>) {
               <th>Shuffle</th>
               <th>Buckets</th>
               <th>Mayor bucket</th>
-              <th>Segundos</th>
+              <th>Segundos (bandas)</th>
             </tr>
           </thead>
           <tbody>
